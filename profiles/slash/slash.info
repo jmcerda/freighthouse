@@ -1,0 +1,8 @@
+name = Slash v1.2.25 (Released January 4th, 2014)
+description = Slash Premium Theme v1.2.25 Installation Profile (Drupal 7.25).
+version = VERSION
+core = 7.x
+dependencies[] = block
+files[] = realestate.profile
+
+

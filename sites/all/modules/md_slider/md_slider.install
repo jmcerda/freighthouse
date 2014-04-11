@@ -1,0 +1,75 @@
+<?php
+/**
+ * @file - Install file
+ */
+
+/**
+ * Implement hook_schema()
+ */
+function md_slider_schema() {
+  $schema = array();
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install()
+ */
+function md_slider_install() {
+  $module_path = drupal_get_path('module', 'md_slider');
+  $default_image = $module_path . '/images/default_bg.jpg';
+  $public_folder = variable_get('file_public_path', conf_path() . '/files');
+  copy($default_image,  $public_folder . '/md_slider_def_bg.jpg');
+}
+
+/**
+ * Implements hook_update_N()
+ */
+function md_slider_update_7200() {
+  $sliders = MDSlider::get_all();
+
+  foreach ($sliders as $slider) {
+    $slider->machine_name = str_replace('_', '-', $slider->machine_name);
+    $slider->save();
+  }
+}
+
+/**
+ * implements update new effect for slides
+ */
+function md_slider_update_7230() {
+  $sliders = MDSlider::get_all();
+
+  foreach ($sliders as $slider) {
+    $slides = MDSlide::get_by_slider_id($slider->slid);
+
+    $transition = "fade";
+    switch ($slider->settings["animation"]) {
+      case "scrollHorz":
+      case "scrollLeft":
+        $transition = "slide-in-left";
+        break;
+
+      case "scrollVert":
+      case "scrollRight":
+        $transition = "slide-in-right";
+        break;
+
+      case "scrollUp":
+        $transition = "slide-in-up";
+        break;
+
+      case "scrollDown":
+        $transition = "slide-in-down";
+        break;
+    }
+    foreach ($slides as $slide) {
+      $slide->settings["transitions"] = array($transition);
+      $slide->save();
+    }
+
+    // Remove slider effect setting
+    unset($slider->settings["animation"]);
+    $slider->save();
+  }
+}

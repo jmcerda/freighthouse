@@ -1,0 +1,348 @@
+<p><big>This is a walk through of an initial setup of a webserver using VirtualBox, Debian and Drupal from start to finish.</big></p>
+
+<p><big>VirtualBox is a .</big></p>
+
+<p><big>Not all components of this installation are required or even necessary in some cases.</big></p>
+
+<h2>Debian</h2>
+
+<p><big><a href="http://ftp.nl.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/">Click here</a> for an amd64 image of Debian or you can go to&nbsp;http://www.debian.org/distrib/netinst and choose something else.</big></p>
+
+<p><big>I suggest 64 bit.&nbsp;</big></p>
+
+<p><big>Advantages of 64 bit - from Debian:</big></p>
+
+<blockquote>
+    <ul>
+        <li><cite><big>no memory segmentation into low and high memory</big> </cite></li>
+        <li><cite><big>up to 128TiB virtual address space per process (instead of 2GiB)</big> </cite></li>
+        <li><cite><big>64TiB physical memory support instead of 4GiB (or 64GiB with the PAE extension)</big> </cite></li>
+        <li><cite><big>16 general purpose registers in the CPU instead of 8</big> </cite></li>
+        <li><cite><big>gcc defaults to SSE2 math instead of 387 FPU</big> </cite></li>
+        <li><cite><big>gcc omits frame-pointers by default at -O2</big> </cite></li>
+        <li><cite><big>compilation time optimization uses a common base for AMD64/Intel 64 instead of legacy i386 cruft</big> </cite></li>
+        <li><cite><big>memory pages are not executable by default</big> </cite></li>
+    </ul>
+</blockquote>
+
+<p><big>Source:&nbsp;http://www.debian.org/ports/amd64/</big></p>
+
+<p><big>Save the ISO on a USB flash drive.</big></p>
+
+<h2>VirtualBox</h2>
+
+<p><big>Go <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">here</a> and download VirtualBox for whatever platform you are using.</big></p>
+
+<p><big>Install, open and create a new instance by clicking on the blue icon.</big></p>
+
+<p><img alt="" class="attr__typeof__foaf:Image img__fid__169 img__view_mode__media_large media-image" src="http://10.0.1.13/sites/default/files/styles/large/public/vbox_new_0.jpeg?itok=fC2DYEtu" style="height:189px; width:480px"></p>
+
+<p><big>Fill out the basics and click through the setup dialogs.</big></p>
+
+<p><big>Remember, for the purposes of this article, type = Linux, version = Debian (32 or 64 bit depending on your ISO).&nbsp;</big></p>
+
+<p><big>Specify RAM allocation to your needs.</big></p>
+
+<p><big>Create a virtual hard drive, select VDI (VirtualBox Disk Image) format, and choose a fixed or dynamically allocated hard drive. A fixed drive delivers a small amount of improved performance though I generally use a dynamically allocated hard drive set up with a decent amount of space depending on the project and go from there.</big></p>
+
+<p><big>Finish the setup. You will see your new box listed in the VirtualBox interface.</big></p>
+
+<p><big>Right-click on the VM you just created BEFORE you start it and select settings. Under the network tab ensure that your network adapter is attached to a 'bridged adapter'.</big></p>
+
+<p><big>Start your VM and install Debian from the ISO that you saved on the flash drive.</big></p>
+
+<h2>Getting Started</h2>
+
+<p><big>So you know:</big></p>
+
+<p><big># = Root Instructions</big></p>
+
+<p><big>$ = Non-root Instructions</big></p>
+
+<p><big>&gt;= SQL Instructions</big></p>
+
+<p><big>&lt;example&gt; = Variable</big></p>
+
+<p><big>Once you have a machine up and running with Debian installed, you need to install all dependencies of a basic webserver.</big></p>
+
+<p><big>What I have included is common on my installations.</big></p>
+
+<p><big>You first need a command line interface connected to your instance (VM).</big></p>
+
+<p><big>You can use the terminal application that is included with Debian or you can connect via SSH from your host machine.</big></p>
+
+<p><big>I prefer using SSH because I like the tools I have already installed on my host environment.</big></p>
+
+<p><big>In order to use SSH you first need to ensure that SSH is installed on the guest box and identify the guest's IP address.</big></p>
+
+<p><big>Launch the terminal on your guest Debian installation.</big></p>
+
+<p><big>There are several commands you need to run as root.</big></p>
+
+<p><code>$ su - </code></p>
+
+<p><big>Enter the root password that you set up when you installed Debian.</big></p>
+
+<p><big>Get the IP.</big></p>
+
+<p><code># ifconfig </code></p>
+
+<p><big>Make a note of the inet addr:&lt;ip address&gt;.</big></p>
+
+<p><big>Install ssh.</big></p>
+
+<p><code># apt-get install ssh. </code></p>
+
+<p><big>Add your user to the sudoers file. This is the user that you set up during the initial Debian installation.</big></p>
+
+<p><code># visudo </code></p>
+
+<p><big>On line 24 add:</big></p>
+
+<p><code>&lt;username&gt;ALL=(ALL:ALL) ALL</code></p>
+
+<p><big>Save and exit.</big></p>
+
+<p><big>Ensure that Debian is up to date.</big></p>
+
+<p><code>$ sudo apt-get update &amp;&amp; apt-get -V upgrade</code></p>
+
+<p><big>Once you have installed SSH and have the IP you can connect to the VM from any machine on your network.</big></p>
+
+<p><code>$ ssh &lt;username&gt;@&lt;guest-ip&gt; </code></p>
+
+<h2>Install Apache, MySQL and PHP.</h2>
+
+<p><code>$ sudo apt-get install apache2 mysql-server php5</code></p>
+
+<p><big>You will be asked to set a password for MYSQL. Obvioulsy make it secure and dont forget it.</big></p>
+
+<p><big>Install PHP modules.</big></p>
+
+<p><code>$ sudo apt-get install php5-cgi php5-cli php5-common \<br>
+    php5-gd php5-mcrypt php5-curl php5-mysql php5-dev </code></p>
+
+<p><big>Install some common utilities.</big></p>
+
+<p><code>$ sudo apt-get install arping vim </code></p>
+
+<p><big>Install either Git or Subversion for version control capability.</big></p>
+
+<p><code>$ sudo apt-get install git</code></p>
+
+<p><big>-or-</big></p>
+
+<p><code>$ sudo apt-get install subversion </code></p>
+
+<h2>How to Install Drush</h2>
+
+<p><code>$ sudo apt-get install php-pear</code></p>
+
+<p><code>$ sudo pear channel-discover pear.drush.org</code></p>
+
+<p><code>$ sudo pear install drush/drush</code></p>
+
+<p><code>$ sudo pear upgrade drush/drush</code></p>
+
+<h2>Configure PHP</h2>
+
+<p><big>A PHP memory limit of 32MB is the lowest you can have for&nbsp;Drupal 7. 16MB for Drupal 6). 64MB is recommended. Most sites need more than 64MB especially if they are using more than a few contributed modules including Views and Panels, etc. By default, the limit is set to -1 which is unlimited and that should be changed.</big></p>
+
+<p><big>128MB memory limits and higher are not uncommon. I like 256MB.</big></p>
+
+<p><big>This change is made by modifying the settings in the loaded php.ini file.</big></p>
+
+<p><big>You will need to know which php.ini file is loaded.</big></p>
+
+<p><code>$&nbsp;php -i | grep php5</code></p>
+
+<p><big>The first couple of lines should tell you that your loaded configuration file is at&nbsp;/etc/php5/cli/php.ini.&nbsp;</big></p>
+
+<p><big>Always backup any file that you are going to modify. Its just good practice.</big></p>
+
+<p><big>The next command will manually backup your php.ini file and add the date to the filename. (Feel free to change the date format. Basically I am just using the date command with some PHP date values for customization).&nbsp;If for some reason your loaded php.ini file is somewhere other than /etc/php5/cli/php.ini, modify the following commands with the proper location.</big></p>
+
+<p><code>$ sudo cp -p /etc/php5/cli/php.ini&nbsp;/etc/php5/cli/php.ini-`date +%Y%m%d-%H%M` </code></p>
+
+<p><big>Next, make your changes. To use vim and change the code manually:</big></p>
+
+<p><code>$ vim&nbsp;/etc/php5/cli/php.ini </code></p>
+
+<p><big>Find the memory_limit value (line 407) and change it to memory_limit = 256MB</big></p>
+
+<p><big>Note: you can take also use perl to automate both the backup and modifcation of the file by using a single command:</big></p>
+
+<p><big>$ sudo perl -i-`date +%Y%m%d-%H%M` -p -e 's/memory_limit = .*/\<br>
+    memory_limit = 256M/g;' /etc/php5/cli/php.ini</big></p>
+
+<h2>Get Source</h2>
+
+<p><big>Move to the root web directory.</big></p>
+
+<p><code>$ cd /var/www</code></p>
+
+<p><big>Remove Apache's default index.html file.</big></p>
+
+<p><code>$ cd /var/www/</code></p>
+
+<p><big>Whatever the method....</big></p>
+
+<p><code>$ sudo drush dl drupal</code></p>
+
+<p><big>or</big></p>
+
+<p><code>$ sudo drush make &lt;example&gt;.make</code></p>
+
+<p><big>or</big></p>
+
+<p><code>$ sudo git clone http://github.com/ &lt;somepath&gt;/&lt;example&gt;.git </code></p>
+
+<p><big>etc.</big></p>
+
+<h2>Configure Your Web User</h2>
+
+<p><big>Create the web user</big></p>
+
+<p><code>$ sudo useradd -d /var/www/&lt;sitename&gt;/ &lt;webuser&gt;</code></p>
+
+<p><big>Update web user password</big></p>
+
+<p><code>$ sudo passwd &lt;webuser&gt;</code></p>
+
+<p><big>Add user to web (Apache) group</big></p>
+
+<p><code>$ sudo usermod -a -G www-data &lt;webuser&gt;</code></p>
+
+<h2>Configure HTTP</h2>
+
+<p><big>Enable Apache mod-rewrite</big></p>
+
+<p><code>$ sudo a2enmod rewrite</code></p>
+
+<p><big>Restart Apache</big></p>
+
+<p><code>$ sudo service apache2 restart</code></p>
+
+<p><big>Set DocumentRoot &amp; Allow Overrides</big></p>
+
+<p><big>Backup the file.</big></p>
+
+<p><code>$ sudo cp -p /etc/apache2/sites-available/default /etc/apache2/sites-available/default-`date +%Y%m%d-%H%M`</code></p>
+
+<p><big>Make your edits</big></p>
+
+<p><code>$ sudo vim /etc/apache2/sites-available/default</code></p>
+
+<p><big>Change DocumentRoot to /var/www/&lt;siteroot&gt; (line 4)</big></p>
+
+<p><big>Change "AllowOverride None" to "AllowOverride All" for Directory /var/www/ (line 11)</big></p>
+
+<p><big>Note: redirect from http to https is handled by the .htaccess file.</big></p>
+
+<p><big>Enable the site.</big></p>
+
+<p><code>$ sudo a2ensite &lt;siteroot&gt;</code></p>
+
+<p><big>Restart Apache</big></p>
+
+<p><code>$ sudo service apache2 restart</code></p>
+
+<h2>Configure HTTPS (if needed)</h2>
+
+<p><big>Enable ssl module if not already enabled &nbsp;</big></p>
+
+<p><code>$ sudo a2enmod ssl</code></p>
+
+<p><big>Enable default-ssl if not already enabled</big></p>
+
+<p><code>$ sudo a2ensite default-ssl</code></p>
+
+<p><big>Restart Apache.</big></p>
+
+<p><code>$ sudo service apache2 restart</code></p>
+
+<p><big>Set DocumentRoot &amp; Allow Overrides</big></p>
+
+<p><code>$ sudo cp -p /etc/apache2/sites-available/default-ssl /etc/apache2/sites-available/default-ssl-`date +%Y%m%d-%H%M`</code></p>
+
+<p><code>$ sudo vim /etc/apache2/sites-available/default-ssl</code></p>
+
+<p><big>Change DocumentRoot to /var/www/&lt;siteroot&gt;.</big></p>
+
+<p><big>Change "AllowOverride None" to "AllowOverride All" for Directory /var/www/.</big></p>
+
+<p><big>Restart Apache.</big></p>
+
+<p><code>$ sudo service apache2 restart</code></p>
+
+<h2>Set up the Database.</h2>
+
+<p><big>Login to MYSQL using the password that you set previously.</big></p>
+
+<p><code>$ sudo mysql -u root -p</code></p>
+
+<p><big>Create the database.</big></p>
+
+<p><code>&gt; CREATE DATABASE &lt;dbname&gt;;</code></p>
+
+<p><big>Create the sql user.</big></p>
+
+<p><code>&gt; CREATE USER &lt;dbuser&gt;@'localhost' IDENTIFIED BY '&lt;password&gt;';</code></p>
+
+<p><big>Give sql user privileges to the db.</big></p>
+
+<p><code>&gt; GRANT ALL PRIVILEGES ON &lt;dbname&gt;.* TO '&lt;dbuser&gt;'@'localhost' IDENTIFIED BY '&lt;password&gt;';</code></p>
+
+<p><code>&gt; exit;</code></p>
+
+<p><big>If this is a new site and you are not importing an existing database, stop here and move on to the next section.</big></p>
+
+<h2>Import your MySQL database.</h2>
+
+<p><code>$ sudo mysql -u &lt;dbuser&gt; -p &lt;dbname&gt; &lt; &lt;database&gt;.sql</code></p>
+
+<p><code>$ sudo mysql -u root -p</code></p>
+
+<p><code>&gt; USE &lt;dbname&gt;;</code></p>
+
+<p><code>&gt; exit;</code></p>
+
+<h2>Drupal settings.php file</h2>
+
+<p><big>Ensure that your settings.php file (found at /var/www/&lt;sitename&gt;/sites/default/settings.php) has the correct database information.</big></p>
+
+<p><code>$sudo vim /var/www/freighthouse/sites/default/settings.php</code></p>
+
+<p><big>Edit the $db_url definition in settings.php and ensure that password is set&nbsp; securely.</big></p>
+
+<p><big>Drupal 6</big></p>
+
+<p><big>$db_url = 'mysql://&lt;dbname&gt;:&lt;dbpassword&gt;@localhost/&lt;siteroot&gt;;</big></p>
+
+<p><big>Drupal 7</big></p>
+
+<p><big>Adjust the array found at lines 218 - 224.</big></p>
+
+<h2>Filesystem permissions</h2>
+
+<p><big>Finally, you will need to securely set your site filesystem ownership and permissions. A scripted version of the following commands is <a href="article/2013/06/18/drupal-permissions-protect-your-filesystem" target="_self">available here</a>.</big></p>
+
+<p><code>$ sudo chmod -R ug=rX,o= /var/www/&lt;siteroot&gt;</code></p>
+
+<p><big>Create a tmp directory if you don't already have one...</big></p>
+
+<p><code>$ sudo mkdir /var/www/&lt;siteroot&gt;/tmp</code></p>
+
+<p><big>Set tmp perms...</big></p>
+
+<p><code>$ sudo chmod -R ug=rwX,o= var/www/&lt;siteroot&gt;/tmp</code></p>
+
+<p><big>Secure the files directory...</big></p>
+
+<p><code>$ sudo chmod -R ug=rwX,o= var/www/&lt;siteroot&gt;/sites/default/files</code></p>
+
+<p><big>Secure your settings.php file.</big></p>
+
+<p><code>$ sudo chmod -R 440 var/www/&lt;siteroot&gt;/sites/default/settings.php</code></p>
+
+<h3>Done!</h3>

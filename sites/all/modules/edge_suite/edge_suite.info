@@ -1,0 +1,12 @@
+name = Edge Suite
+description = "Import, manage and configure Edge Animate compositions."
+core = 7.x
+dependencies[] = entity
+files[] = includes/edge_suite_comp_builder.inc
+
+; Information added by Drupal.org packaging script on 2014-01-23
+version = "7.x-2.x-dev"
+core = "7.x"
+project = "edge_suite"
+datestamp = "1390495709"
+

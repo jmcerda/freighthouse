@@ -1,0 +1,287 @@
+<p>
+    <big>This is a walk through of an initial setup of a webserver using VirtualBox and Debian.</big>
+</p>
+
+<p>
+    <big>Not all components of this installation are required or even necessary in some cases.</big>
+</p>
+
+<h3>Debian</h3>
+
+<p>
+    <big><a href="http://ftp.nl.debian.org/debian/dists/wheezy/main/installer-amd64/current/images/">Click here</a> for an amd64 image of Debian or you can go to&nbsp;http://www.debian.org/distrib/netinst and choose something else.</big>
+</p>
+
+<p>
+    <big>I suggest 64 bit.&nbsp;</big>
+</p>
+
+<p>
+    <big>Advantages of 64 bit - from Debian:</big>
+</p>
+
+<blockquote>
+    <ul>
+        <li>
+            <cite>
+                <big>no memory segmentation into low and high memory</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>up to 128TiB virtual address space per process (instead of 2GiB)</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>64TiB physical memory support instead of 4GiB (or 64GiB with the PAE extension)</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>16 general purpose registers in the CPU instead of 8</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>gcc defaults to SSE2 math instead of 387 FPU</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>gcc omits frame-pointers by default at -O2</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>compilation time optimization uses a common base for AMD64/Intel 64 instead of legacy i386 cruft</big>
+            </cite>
+        </li>
+        <li>
+            <cite>
+                <big>memory pages are not executable by default</big>
+            </cite>
+        </li>
+    </ul>
+</blockquote>
+
+<p>
+    <big>Source:&nbsp;http://www.debian.org/ports/amd64/</big>
+</p>
+
+<p>
+    <big>Save the ISO on a USB flash drive.</big>
+</p>
+
+<h3>VirtualBox</h3>
+
+<p>
+    <big>Go <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">here</a> and download VirtualBox for whatever platform you are using.</big>
+</p>
+
+<p>
+    <big>Install, open and create a new instance by clicking on the blue icon.</big>
+</p>
+
+<p>
+    <img alt="" class="attr__typeof__foaf:Image img__fid__169 img__view_mode__media_large media-image" src="http://10.0.1.13/sites/default/files/styles/large/public/vbox_new_0.jpeg?itok=fC2DYEtu" style="height:189px; width:480px">
+</p>
+
+<p>
+    <big>Fill out the basics and click through the setup dialogs.</big>
+</p>
+
+<p>
+    <big>Remember, for the purposes of this article, type = Linux, version = Debian (32 or 64 bit depending on your ISO).&nbsp;</big>
+</p>
+
+<p>
+    <big>Specify RAM allocation to your needs.</big>
+</p>
+
+<p>
+    <big>Create a virtual hard drive, select VDI (VirtualBox Disk Image) format, and choose a fixed or dynamically allocated hard drive. A fixed drive delivers a small amount of improved performance though I generally use a dynamically allocated hard drive set up with a decent amount of space depending on the project and go from there.</big>
+</p>
+
+<p>
+    <big>Finish the setup. You will see your new box listed in the VirtualBox interface.</big>
+</p>
+
+<p>
+    <big>Right-click on the VM you just created BEFORE you start it and select settings. Under the network tab ensure that your network adapter is attached to a 'bridged adapter'.</big>
+</p>
+
+<p>
+    <big>Start your VM and install Debian from the ISO that you saved on the flash drive.</big>
+</p>
+
+<h3>Getting Started</h3>
+
+<p>
+    <big>So you know:</big>
+</p>
+
+<p>
+    <big>
+        <code># = Root Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>$ = Non-root Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>&gt;= SQL Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>&lt;example&gt; = Variable</code>
+    </big>
+</p>
+
+<p>
+    <big>Once you have a machine up and running with Debian installed, you need to install all dependencies of a basic webserver.</big>
+</p>
+
+<p>
+    <big>What I have included is common on my installations.</big>
+</p>
+
+<p>
+    <big>You first need a command line interface connected to your instance (VM).</big>
+</p>
+
+<p>
+    <big>You can use the terminal application that is included with Debian or you can connect via SSH from your host machine.</big>
+</p>
+
+<p>
+    <big>I prefer using SSH because I like the tools I have already installed on my host environment.</big>
+</p>
+
+<p>
+    <big>In order to use SSH you first need to ensure that SSH is installed on the guest box and identify the guest's IP address.</big>
+</p>
+
+<p>
+    <big>Launch the terminal on your guest Debian installation.</big>
+</p>
+
+<p>
+    <big>There are several commands you need to run as root.</big>
+</p>
+
+<p>
+    <code>$ su -</code>
+</p>
+
+<p>
+    <big>Enter the root password that you set up when you installed Debian.</big>
+</p>
+
+<p>
+    <big>Add your user to the sudoers file. This is the user that you set up during the initial Debian installation.</big>
+</p>
+
+<p>
+    <code># visudo</code>
+</p>
+
+<p>
+    <big>On line 24 add:</big>
+</p>
+
+<p>
+    <code>&lt;username&gt;ALL=(ALL:ALL) ALL</code>
+</p>
+
+<p>
+    <big>Save and exit.</big>
+</p>
+
+
+<p>
+    <big>Get the IP.</big>
+</p>
+
+<p>
+    <code># ifconfig</code>
+</p>
+
+<p>
+    <big>Make a note of the inet addr:&lt;ip address&gt;.</big>
+</p>
+
+<p>
+    <big>Log out as root.</big>
+</p>
+
+<p>
+    <code># exit</code>
+</p>
+
+<p>
+    <big>Ensure that Debian is up to date.</big>
+</p>
+
+<p>
+    <code>$ sudo apt-get update &amp;&amp; apt-get -V upgrade</code>
+</p>
+
+
+<h3>Install Apache, MySQL and PHP.</h3>
+
+<p>
+    <code>$ sudo apt-get install apache2 mysql-server php5</code>
+</p>
+
+<p>
+    <big>You will be asked to set a password for MYSQL. Obvioulsy make it secure and dont forget it.</big>
+</p>
+
+<p>
+    <big>Install some common PHP modules.</big>
+</p>
+
+<p>
+    <code>$ sudo apt-get install php5-cgi php5-cli php5-common \
+        <br>php5-gd php5-mcrypt php5-curl php5-mysql php5-dev</code>
+</p>
+
+<p>
+    <big>Open a browser and go to http://120.0.0.1</big>
+</p>
+
+<h3>Install utilities.</h3>
+
+<p>
+    <code>$ sudo apt-get install arping vim ssh</code>
+</p>
+
+<h3>Install either Git or Subversion for version control capability.</h3>
+
+<p>
+    <code>$ sudo apt-get install git</code>
+</p>
+
+<p>
+    <big>-or-</big>
+</p>
+
+<p>
+    <code>$ sudo apt-get install subversion</code>
+</p>
+
+<h3>Install Perl</h3>
+<p><code>$ sudo apt-get install perl</code></p>
+
+
+<p>
+    <big>If you have anything to ask or add please feel free to comment below!</big>
+</p>

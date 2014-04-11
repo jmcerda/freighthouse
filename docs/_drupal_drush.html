@@ -1,0 +1,423 @@
+<h3>Getting Started</h3>
+
+<p>
+    <big>So you know:</big>
+</p>
+
+<p>
+    <big>
+        <code># = Root Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>$ = Non-root Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>&gt;= SQL Instructions</code>
+    </big>
+</p>
+
+<p>
+    <big>
+        <code>&lt;example&gt; = Variable</code>
+    </big>
+</p>
+<h3>Prerequisites</h3>
+<p>
+    <big>You should already have a machine up and running with Debian installed with all dependencies of a basic webserver.
+    </big>
+</p>
+<p>
+    <big>You will also need a command line interface connected to your instance (VM).</big>
+</p>
+
+<p>
+    <big>You can use the terminal application on your VM that is included with Debian or you can connect via SSH from your host machine.</big>
+</p>
+
+<p>
+    <big>I prefer using SSH because I like the tools I have already installed on my host environment.</big>
+</p>
+
+<p>
+    <big>In order to use SSH you first need to ensure that SSH is installed on the guest box and identify the guest's IP address.</big>
+</p>
+
+<h3>Connect to the machine.</h3>
+<p>
+    <code>$ ssh &lt;username&gt;@&lt;guest-ip&gt;</code>
+</p>
+
+<h3>Install Pear and Drush</h3>
+
+<p>
+    <code>$ sudo apt-get install php-pear</code>
+</p>
+
+<p>
+    <code>$ sudo pear channel-discover pear.drush.org</code>
+</p>
+
+<p>
+    <code>$ sudo pear install drush/drush</code>
+</p>
+
+<p>
+    <code>$ sudo pear upgrade drush/drush</code>
+</p>
+
+
+<h3>Get Source</h3>
+
+<p>
+    <big>Move to the root web directory.</big>
+</p>
+
+<p>
+    <code>$ cd /var/www/</code>
+</p>
+
+<p>
+    <big>Remove Apache's default index.html file.</big>
+</p>
+
+<p>
+    <code>$ sudo rm /var/www/index.html</code>
+</p>
+
+<p>
+    <big>Whatever the method....</big>
+</p>
+
+<p>
+    <code>$ sudo drush dl drupal</code>
+</p>
+
+<p>
+    <big>or</big>
+</p>
+
+<p>
+    <code>$ sudo drush make &lt;example&gt;.make</code>
+</p>
+
+<p>
+    <big>or</big>
+</p>
+
+<p>
+    <code>$ sudo git clone http://github.com/ &lt;somepath&gt;/&lt;example&gt;.git</code>
+</p>
+
+<p>
+    <big>etc.</big>
+</p>
+
+<h3>Configure Your Web User</h3>
+
+<p>
+    <big>Create the web user</big>
+</p>
+
+<p>
+    <code>$ sudo useradd -d /var/www/&lt;sitename&gt;/ &lt;webuser&gt;</code>
+</p>
+
+<p>
+    <big>Update web user password</big>
+</p>
+
+<p>
+    <code>$ sudo passwd &lt;webuser&gt;</code>
+</p>
+
+<p>
+    <big>Add user to web (Apache) group</big>
+</p>
+
+<p>
+    <code>$ sudo usermod -a -G www-data &lt;webuser&gt;</code>
+</p>
+
+<h3>Configure PHP for Drupal</h3>
+
+<p>
+    <big>A PHP memory limit of 32MB is the lowest you can have for&nbsp;Drupal 7. 16MB for Drupal 6). 64MB is recommended. Most sites need more than 64MB especially if they are using more than a few contributed modules including Views and Panels, etc. By default, the limit is set to -1 which is unlimited and that should be changed.</big>
+</p>
+
+<p>
+    <big>128MB memory limits and higher are not uncommon. I commonly set mine to 256MB.</big>
+</p>
+
+<p>
+    <big>This change is made by modifying the settings in the loaded php.ini file.</big>
+</p>
+
+<p>
+    <big>You will need to know which php.ini file is loaded.</big>
+</p>
+
+<p>
+    <code>$&nbsp;php -i | grep php5</code>
+</p>
+
+<p>
+    <big>The first couple of lines should tell you that your loaded configuration file is at&nbsp;/etc/php5/cli/php.ini.&nbsp;</big>
+</p>
+
+<p>
+    <big>Backup the file.</big>
+</p>
+
+<p>
+    <big>Always backup any file that you are going to modify. Its just good practice.</big>
+</p>
+
+<p>
+    <big>The next command will manually backup your php.ini file and add the date to the filename. (Feel free to change the date format. Basically I am just using the date command with some PHP date values for customization).&nbsp;If for some reason your loaded php.ini file is somewhere other than /etc/php5/cli/php.ini, modify the following commands with the proper location.</big>
+</p>
+
+<p>
+    <code>$ sudo cp -p /etc/php5/cli/php.ini&nbsp;/etc/php5/cli/php.ini-`date +%Y%m%d-%H%M`</code>
+</p>
+
+<p>
+    <big>Next, make your changes. To use vim and change the code manually:</big>
+</p>
+
+<p>
+    <code>$ sudo vim&nbsp;/etc/php5/cli/php.ini</code>
+</p>
+
+<p>
+    <big>Find the memory_limit value (line 407) and change it to memory_limit = 256MB</big>
+</p>
+
+<p>
+    <big>Extra: you can take also use perl to automate both the backup and modifcation of the file by using a single command:</big>
+</p>
+
+<p>
+    <code>$ sudo perl -i-`date +%Y%m%d-%H%M` -p -e 's/memory_limit = .*/\
+        <br>memory_limit = 256M/g;' /etc/php5/cli/php.ini</code>
+</p>
+
+<h3>Configure HTTP</h3>
+
+<p>
+    <big>Enable Apache mod-rewrite</big>
+</p>
+
+<p>
+    <code>$ sudo a2enmod rewrite</code>
+</p>
+
+<p>
+    <big>Restart Apache</big>
+</p>
+
+<p>
+    <code>$ sudo service apache2 restart</code>
+</p>
+
+<p>
+    <big>Set DocumentRoot &amp; Allow Overrides:</big>
+</p>
+
+<p>
+    <big>Copy the default vhost file.</big>
+</p>
+
+<p><big>Backup default</big></p>
+<p>
+    <code>$ sudo cp -p /etc/apache2/sites-available/default /etc/apache2/sites-available/default-`date +%Y%m%d-%H%M`</code>
+</p>
+
+<p><big>Create your vhost</big></p>
+<p>
+    <code>$ sudo cp -p /etc/apache2/sites-available/default /etc/apache2/sites-available/&lt;siteroot&gt;</code>
+</p>
+
+<p>
+    <big>Make your edits</big>
+</p>
+
+<p>
+    <code>$ sudo vim /etc/apache2/sites-available/&lt;siteroot&gt;</code>
+</p>
+
+<p>
+    <big>Change DocumentRoot to /var/www/&lt;siteroot&gt; (line 4)</big>
+</p>
+
+<p>
+    <big>Change "AllowOverride None" to "AllowOverride All" for Directory /var/www/&lt;siteroot&gt;</big>
+</p>
+
+<p>
+    <big>Note: redirect from http to https is handled by the .htaccess file.</big>
+</p>
+<p><big>Save the file and exit</big></p>
+
+<p>
+    <big>Enable your site</big>
+</p>
+
+<p>
+    <code>$ sudo a2ensite &lt;siteroot&gt;</code>
+</p>
+
+<p>
+    <big>Restart Apache</big>
+</p>
+
+<p>
+    <code>$ sudo service apache2 restart</code>
+</p>
+
+<h3>Set up the Database.</h3>
+
+<p>
+    <big>Login to MYSQL using the password that you set previously.</big>
+</p>
+
+<p>
+    <code>$ sudo mysql -u root -p</code>
+</p>
+
+<p>
+    <big>Create the database.</big>
+</p>
+
+<p>
+    <code>&gt; CREATE DATABASE &lt;dbname&gt;;</code>
+</p>
+
+<p>
+    <big>Create the sql user.</big>
+</p>
+
+<p>
+    <code>&gt; CREATE USER '&lt;dbuser&gt;'@'localhost' IDENTIFIED BY '&lt;password&gt;';</code>
+</p>
+
+<p>
+    <big>Give sql user privileges to the db.</big>
+</p>
+
+<p>
+    <code>&gt; GRANT ALL PRIVILEGES ON &lt;dbname&gt;.* TO '&lt;dbuser&gt;'@'localhost' IDENTIFIED BY '&lt;password&gt;';</code>
+</p>
+
+<p>
+    <code>&gt; exit;</code>
+</p>
+
+<p>
+    <big>If this is a new site and you are not importing an existing database, skip the next section regarding MYSQL import.</big>
+</p>
+
+<h2>Import your MySQL database.</h2>
+
+<p>
+    <code>$ sudo mysql -u &lt;dbuser&gt; -p &lt;dbname&gt; &lt; &lt;database&gt;.sql</code>
+</p>
+
+<p>
+    <code>$ sudo mysql -u root -p</code>
+</p>
+
+<p>
+    <code>&gt; USE &lt;dbname&gt;;</code>
+</p>
+
+<p>
+    <code>&gt; exit;</code>
+</p>
+
+<h3>Modify Drupal settings.php file.</h3>
+
+<p>
+    <big>Ensure that your settings.php file (found at /var/www/&lt;sitename&gt;/sites/default/settings.php) has the correct database information.</big>
+</p>
+
+<p>
+    <code>$sudo vim /var/www/freighthouse/sites/default/settings.php</code>
+</p>
+
+<p>
+    <big>Edit the $db_url definition in settings.php and ensure that password is set&nbsp; securely.</big>
+</p>
+
+<p>
+    <big>Drupal 6</big>
+</p>
+
+<p>
+    <big>$db_url = 'mysql://&lt;dbname&gt;:&lt;dbpassword&gt;@localhost/&lt;siteroot&gt;;</big>
+</p>
+
+<p>
+    <big>Drupal 7</big>
+</p>
+
+<p>
+    <big>Adjust the array found at lines 218 - 224.</big>
+</p>
+
+<h3>Filesystem permissions</h3>
+
+<p>
+    <big>Finally, you will need to securely set your site filesystem ownership and permissions. A scripted version of the following commands is <a href="article/2013/06/18/drupal-permissions-protect-your-filesystem" target="_self">available here</a>.</big>
+</p>
+
+<p>
+    <code>$ sudo chmod -R ug=rX,o= /var/www/&lt;siteroot&gt;</code>
+</p>
+
+<p>
+    <big>Create a tmp directory if you don't already have one...</big>
+</p>
+
+<p>
+    <code>$ sudo mkdir /var/www/&lt;siteroot&gt;/tmp</code>
+</p>
+
+<p>
+    <big>Set tmp perms...</big>
+</p>
+
+<p>
+    <code>$ sudo chmod -R ug=rwX,o= /var/www/&lt;siteroot&gt;/tmp</code>
+</p>
+
+<p>
+    <big>Secure the files directory...</big>
+</p>
+
+<p>
+    <code>$ sudo chmod -R ug=rwX,o= /var/www/&lt;siteroot&gt;/sites/default/files</code>
+</p>
+
+<p>
+    <big>Secure your settings.php file.</big>
+</p>
+
+<p>
+    <code>$ sudo chmod -R 440 /var/www/&lt;siteroot&gt;/sites/default/settings.php</code>
+</p>
+
+<h3>Done!</h3>
+
+<p>
+    <big>Open a browser and go to your site.</big>
+</p>
+
+<p>
+    <big>If you have anything to ask or add please feel free to comment below!</big>
+</p>
