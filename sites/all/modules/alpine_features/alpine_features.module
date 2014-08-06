@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Alpine Features feature.
+ */
+
+include_once 'alpine_features.features.inc';

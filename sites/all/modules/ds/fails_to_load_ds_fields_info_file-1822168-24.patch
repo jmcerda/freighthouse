@@ -1,0 +1,13 @@
+diff --git a/ds.module b/ds.module
+index 39e61df..4d77e5f 100644
+--- a/ds.module
++++ b/ds.module
+@@ -525,6 +525,8 @@ function ds_get_fields($entity_type, $cache = TRUE) {
+ 
+   static $static_fields, $fields_cached = array();
+   static $loaded = FALSE;
++  // Load $the ds file that handles ds call of hook_ds_fields_info, otherwise it doesn't get loaded
++  module_load_include('inc', 'ds', 'ds.ds_fields_info');
+ 
+   // Get fields from cache.
+   if (!$loaded) {

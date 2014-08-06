@@ -1,0 +1,49 @@
+.follow-box {
+  overflow: hidden;
+  border:solid 1px #cccccc;
+  padding: 5px;
+}
+.follow-box .header, .follow-box .content-top, .follow-box .content, .follow-box .content-bottom {
+  clear: both;
+}
+.follow-box .header {
+  border-bottom: solid 1px #ccc;
+  overflow: hidden;;
+}
+
+.follow-box .content-bottom {
+  border-top: solid 1px #ccc;
+}
+
+.follow-box .header-left {
+  float:left;
+  padding: 5px;
+}
+.follow-box .header-right {
+  overflow: hidden;
+}
+
+.follow-box .header-right a,  .follow-box .content-top a{
+  text-decoration: none;
+}
+
+.follow-box .header-right-bottom {
+  padding-top: 5px;
+}
+
+.follow-box .content ul li {
+  float: left;
+  margin: 0.2em;
+}
+
+.follow-box .content-top {
+  font-size: 11px;
+  color:#454545;
+  padding-top: 5px
+}
+
+.follow-box .content-bottom {
+  font-size: 10px;
+  color:#454545;
+  padding-top: 5px
+}

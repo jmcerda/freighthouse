@@ -1,0 +1,6 @@
+name = Freighthouse Libraries
+description = "Makes JS libraries available to the Libraries API"
+package = Freigthhouse
+core = 7.x
+
+files[] = fh_libraries.module
