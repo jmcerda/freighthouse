@@ -1,0 +1,9 @@
+name = Twitter Follow Block
+description = Adds a Twitter Follow Block to your site.
+package = Blocks
+core = 7.x
+dependencies[] = block
+dependencies[] = libraries (>=7.x-2.1)
+;scripts[] = jquery.followblock.js
+;stylesheets[all][] = followblock.css
+;configure = admin/structure/block/manage/twitter_follow/twitter-follow-block/configure
