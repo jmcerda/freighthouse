@@ -38,7 +38,12 @@ require_once dirname(__FILE__) . '/file_entity.field.inc';
  */
 function file_entity_hook_info() {
   $hooks = array(
+<<<<<<< HEAD
     'file_operations',
+=======
+    'file_operation_info',
+    'file_operation_info_alter',
+>>>>>>> origin/jmcerda
     'file_type_info',
     'file_type_info_alter',
     'file_formatter_info',
@@ -84,6 +89,7 @@ function file_entity_hook_info_alter(&$info) {
 }
 
 /**
+<<<<<<< HEAD
  * Implements hook_module_implements_alter().
  */
 function file_entity_module_implements_alter(&$implementations, $hook) {
@@ -95,6 +101,8 @@ function file_entity_module_implements_alter(&$implementations, $hook) {
 }
 
 /**
+=======
+>>>>>>> origin/jmcerda
  * Implements hook_help().
  */
 function file_entity_help($path, $arg) {
@@ -199,6 +207,7 @@ function file_entity_menu() {
     'type' => MENU_DEFAULT_LOCAL_TASK,
     'weight' => -10,
   );
+<<<<<<< HEAD
   $items['file/add/upload/file'] = array(
     'title' => 'File',
     'type' => MENU_DEFAULT_LOCAL_TASK,
@@ -213,6 +222,8 @@ function file_entity_menu() {
     'type' => MENU_LOCAL_TASK,
     'weight' => -5,
   );
+=======
+>>>>>>> origin/jmcerda
   $items['file/%file'] = array(
     'title callback' => 'entity_label',
     'title arguments' => array('file', 1),
@@ -1902,6 +1913,7 @@ function _file_entity_query_file_entity_access_alter($query, $type) {
           $file_conditions->exists($subquery);
         }
         // Otherwise attach it to the node query itself.
+<<<<<<< HEAD
         elseif ($table == 'file_managed') {
           // Fix for https://drupal.org/node/2073085
           $db_or = db_or();
@@ -1909,6 +1921,8 @@ function _file_entity_query_file_entity_access_alter($query, $type) {
           $db_or->isNull($falias . '.' . $field);
           $query->condition($db_or);
         }
+=======
+>>>>>>> origin/jmcerda
         else {
           $query->exists($subquery);
         }
@@ -1948,7 +1962,11 @@ function file_entity_file_download($uri) {
     return file_get_content_headers($file);
   }
 
+<<<<<<< HEAD
   return -1;
+=======
+  return NULL;
+>>>>>>> origin/jmcerda
 }
 
 /**
@@ -2183,6 +2201,62 @@ function file_entity_upload_validators_pre_render($element) {
 }
 
 /**
+<<<<<<< HEAD
+=======
+ * Implements hook_file_default_displays_alter() on behalf of image.module.
+ */
+function image_file_default_displays_alter(&$file_displays) {
+  // Images should be displayed as unstyled images by default.
+  if (isset($file_displays['image__default__file_field_file_default'])) {
+    $file_displays['image__default__file_field_file_default']->status = FALSE;
+  }
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'image__default__file_field_image';
+  $file_display->weight = 50;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  $file_displays['image__default__file_field_image'] = $file_display;
+
+  // Image previews should be displayed as image thumbnails by default.
+  if (isset($file_displays['image__preview__file_field_file_default'])) {
+    $file_displays['image__preview__file_field_file_default']->status = FALSE;
+  }
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'image__preview__file_field_image';
+  $file_display->weight = 50;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'image_style' => 'thumbnail',
+    'image_link' => '',
+  );
+  $file_displays['image__preview__file_field_image'] = $file_display;
+
+  // Image teasers should be displayed as medium images by default.
+  if (isset($file_displays['image__teaser__file_field_file_default'])) {
+    $file_displays['image__teaser__file_field_file_default']->status = FALSE;
+  }
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'image__teaser__file_field_image';
+  $file_display->weight = 50;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
+  );
+  $file_displays['image__teaser__file_field_image'] = $file_display;
+}
+
+/**
+>>>>>>> origin/jmcerda
  * @name pathauto_file Pathauto integration for the core file module.
  * @{
  */
@@ -2243,7 +2317,11 @@ function pathauto_file_operations() {
  */
 function pathauto_file_update_alias(stdClass $file, $op, array $options = array()) {
   // Skip processing if the user has disabled pathauto for the file.
+<<<<<<< HEAD
   if (isset($file->path['pathauto']) && empty($file->path['pathauto']) && empty($options['force'])) {
+=======
+  if (isset($file->path['pathauto']) && empty($file->path['pathauto'])) {
+>>>>>>> origin/jmcerda
     return;
   }
 
@@ -2460,6 +2538,7 @@ function file_entity_admin_menu_map() {
 }
 
 /*
+<<<<<<< HEAD
  * Generates a token to protect a file download URL.
  *
  * This prevents unauthorized crawling of all file download URLs since the
@@ -2468,17 +2547,32 @@ function file_entity_admin_menu_map() {
  * and bandwidth.
  *
  * @see image_style_path_token()
+=======
+ * Generate a file download CSRF token.
+ *
+ * This is essentially a duplicate of drupal_get_token, that attempts to still
+ * work if the user is anonymous, by using ip_address() as the identifier
+ * rather than session_id().
+>>>>>>> origin/jmcerda
  *
  * @param object $file
  *   A file entity object.
  *
  * @return string
+<<<<<<< HEAD
  *   An eight-character token which can be used to protect file downloads
  *   against denial-of-service attacks.
  */
 function file_entity_get_download_token($file) {
   // Return the first eight characters.
   return substr(drupal_hmac_base64("file/$file->fid/download:" . $file->uri, drupal_get_private_key() . drupal_get_hash_salt()), 0, 8);
+=======
+ *   A CSRF token string.
+ */
+function file_entity_get_download_token($file) {
+  $identifier = !empty($GLOBALS['user']->uid) ? session_id() : ip_address();
+  return drupal_hmac_base64("file/$file->fid/download", $identifier . drupal_get_private_key() . drupal_get_hash_salt());
+>>>>>>> origin/jmcerda
 }
 
 /**
@@ -2524,7 +2618,11 @@ function file_entity_field_attach_load($entity_type, $entities, $age, $options) 
           foreach ($items as $delta => $item) {
             // If alt and title text is not specified, fall back to alt and
             // title text on the file.
+<<<<<<< HEAD
             if (!empty($item['fid']) && (empty($item['alt']) || empty($item['title']))) {
+=======
+            if (empty($item['alt']) || empty($item['title'])) {
+>>>>>>> origin/jmcerda
               $file = file_load($item['fid']);
               foreach (array('alt', 'title') as $key) {
                 if (empty($item[$key]) && !empty($file->{$key})) {

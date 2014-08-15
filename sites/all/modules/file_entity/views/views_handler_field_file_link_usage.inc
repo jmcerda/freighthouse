@@ -25,6 +25,7 @@ class views_handler_field_file_link_usage extends views_handler_field_file_link 
     $this->options['alter']['path'] = "file/$file->fid/usage";
     $this->options['alter']['query'] = drupal_get_destination();
 
+<<<<<<< HEAD
     // Get total count for each file.
     $total_count = 0;
     foreach (file_usage_list($file) as $module => $usage) {
@@ -36,6 +37,9 @@ class views_handler_field_file_link_usage extends views_handler_field_file_link 
     }
 
     $text = !empty($this->options['text']) ? $this->options['text'] : format_plural((int) $total_count, '1 place', '@count places');
+=======
+    $text = !empty($this->options['text']) ? $this->options['text'] : t('Usage');
+>>>>>>> origin/jmcerda
     return $text;
   }
 }

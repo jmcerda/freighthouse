@@ -596,7 +596,10 @@ function file_type_delete($type) {
  *   Type of the file_type to disable
  */
 function file_type_enable($type) {
+<<<<<<< HEAD
   ctools_include('export');
+=======
+>>>>>>> origin/jmcerda
   ctools_export_crud_enable('file_type', $type);
 }
 
@@ -608,7 +611,10 @@ function file_type_enable($type) {
  *   Type of the file_type to disable
  */
 function file_type_disable($type) {
+<<<<<<< HEAD
   ctools_include('export');
+=======
+>>>>>>> origin/jmcerda
   ctools_export_crud_disable('file_type', $type);
 }
 
@@ -701,7 +707,11 @@ function file_uri_to_object($uri, $use_existing = TRUE) {
   if (empty($file)) {
     $file = new stdClass();
     $file->uid = $GLOBALS['user']->uid;
+<<<<<<< HEAD
     $file->filename = drupal_basename($uri);
+=======
+    $file->filename = basename($uri);
+>>>>>>> origin/jmcerda
     $file->uri = $uri;
     $file->filemime = file_get_mimetype($uri);
     // This is gagged because some uris will not support it.

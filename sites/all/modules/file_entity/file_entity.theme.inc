@@ -142,10 +142,15 @@ function theme_file_entity_file_video($variables) {
   if ($variables['muted']) {
     $video_attributes['muted'] = 'muted';
   }
+<<<<<<< HEAD
   if ($variables['width']) {
     $video_attributes['width'] = $variables['width'];
   }
   if ($variables['height']) {
+=======
+  if ($variables['width'] && $variables['height']) {
+    $video_attributes['width'] = $variables['width'];
+>>>>>>> origin/jmcerda
     $video_attributes['height'] = $variables['height'];
   }
 

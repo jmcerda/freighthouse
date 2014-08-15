@@ -27,6 +27,7 @@ function file_entity_views_data() {
       'handler' => 'views_handler_argument_file_type',
     ),
   );
+<<<<<<< HEAD
 
   // File schema type.
   $data['file_managed']['schema_type'] = array(
@@ -37,6 +38,8 @@ function file_entity_views_data() {
     ),
   );
 
+=======
+>>>>>>> origin/jmcerda
   // Rendered file.
   $data['file_managed']['rendered'] = array(
     'title' => t('Rendered'),
@@ -109,15 +112,21 @@ function file_entity_views_data() {
     'help' => t('Provide a simple link to view the usage of the file entity.'),
     'field' => array(
       'handler' => 'views_handler_field_file_link_usage',
+<<<<<<< HEAD
       'click sortable' => TRUE,
+=======
+>>>>>>> origin/jmcerda
       'real field' => 'fid',
       'additional fields' => array(
         'fid',
       ),
     ),
+<<<<<<< HEAD
     'sort' => array(
       'handler' => 'views_handler_sort',
     ),
+=======
+>>>>>>> origin/jmcerda
   );
 
   return $data;

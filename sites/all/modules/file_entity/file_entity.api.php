@@ -339,6 +339,7 @@ function hook_file_download_headers_alter(array &$headers, $file) {
 }
 
 /**
+<<<<<<< HEAD
  * React to a file being downloaded.
  */
 function hook_file_transfer($uri, array $headers) {
@@ -350,6 +351,8 @@ function hook_file_transfer($uri, array $headers) {
 }
 
 /**
+=======
+>>>>>>> origin/jmcerda
  * Decides which file type (bundle) should be assigned to a file entity.
  *
  * @param object $file

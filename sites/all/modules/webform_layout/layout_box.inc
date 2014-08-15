@@ -38,8 +38,12 @@ function _webform_edit_layout_box($component) {
       'vert' => t('Vertical'),
     ),
   );
+<<<<<<< HEAD
   // Hide the description box.
   $form['extra']['description']['#access'] = FALSE;
+=======
+  $form['extra']['description'] = array(); // Hide the description box.
+>>>>>>> origin/jmcerda
   return $form;
 }
 
@@ -78,9 +82,15 @@ function webform_layout_box_prerender($element) {
 function _webform_display_layout_box($component, $value, $format = 'html') {
   if ($format == 'text') {
     $element = array(
+<<<<<<< HEAD
       '#title' => '',
       '#weight' => $component['weight'],
       '#theme_wrappers' => array(),
+=======
+      '#title' => $component['name'],
+      '#weight' => $component['weight'],
+      '#theme_wrappers' => array('webform_element_text'),
+>>>>>>> origin/jmcerda
     );
   }
   else {

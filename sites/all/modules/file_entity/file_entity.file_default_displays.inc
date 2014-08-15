@@ -93,6 +93,7 @@ function file_entity_file_default_displays() {
   $file_display->settings = '';
   $file_displays['image__teaser__file_field_file_default'] = $file_display;
 
+<<<<<<< HEAD
   // Enhance the default image displays if the Image module is enabled.
   if (module_exists('image')) {
     // Images should be displayed as unstyled images by default.
@@ -132,6 +133,8 @@ function file_entity_file_default_displays() {
     $file_displays['image__teaser__file_field_image'] = $file_display;
   }
 
+=======
+>>>>>>> origin/jmcerda
   $file_display = new stdClass();
   $file_display->api_version = 1;
   $file_display->name = 'video__default__file_field_file_video';

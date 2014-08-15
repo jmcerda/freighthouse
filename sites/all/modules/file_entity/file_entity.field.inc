@@ -160,11 +160,14 @@ function file_entity_field_formatter_settings_form($field, $instance, $view_mode
       '#type' => 'checkbox',
       '#default_value' => $settings['loop'],
     );
+<<<<<<< HEAD
     $element['muted'] = array(
       '#title' => t('Muted'),
       '#type' => 'checkbox',
       '#default_value' => $settings['muted'],
     );
+=======
+>>>>>>> origin/jmcerda
     $element['width'] = array(
       '#type' => 'textfield',
       '#title' => t('Width'),
@@ -225,8 +228,15 @@ function file_entity_field_formatter_settings_summary($field, $instance, $view_m
     if (isset($settings['multiple_file_behavior'])) {
       $summary[] = t('Multiple files: %multiple', array('%multiple' => $settings['multiple_file_behavior']));
     }
+<<<<<<< HEAD
   }
   elseif ($display['type'] === 'file_video') {
+=======
+
+  }
+  elseif ($display['type'] === 'file_video') {
+    $summary_items = array();
+>>>>>>> origin/jmcerda
     if (isset($settings['controls'])) {
       $summary[] = t('Controls: %controls', array('%controls' => $settings['controls'] ? 'visible' : 'hidden'));
     }
@@ -289,9 +299,12 @@ function file_entity_field_formatter_view($entity_type, $entity, $field, $instan
     foreach ($items as $delta => $item) {
       if (!isset($recursion_queue[$item['fid']])) {
         $files_display[$item['fid']] = file_load($item['fid']);
+<<<<<<< HEAD
         if (!empty($item['description'])) {
           $files_display[$item['fid']]->description = $item['description'];
         }
+=======
+>>>>>>> origin/jmcerda
       }
     }
 
@@ -336,14 +349,22 @@ function file_entity_field_formatter_view($entity_type, $entity, $field, $instan
     if ($multiple_file_behavior == 'tags') {
       foreach ($items as $delta => $item) {
         if ($item['type'] == 'audio') {
+<<<<<<< HEAD
           $source_lists[$delta] = array($item);
+=======
+          $source_lists[] = array($item);
+>>>>>>> origin/jmcerda
         }
       }
     }
     else {
       foreach ($items as $delta => $item) {
         if ($item['type'] == 'audio') {
+<<<<<<< HEAD
           $source_lists[0][$delta] = $item;
+=======
+          $source_lists[0][] = $item;
+>>>>>>> origin/jmcerda
         }
       }
     }
@@ -370,20 +391,33 @@ function file_entity_field_formatter_view($entity_type, $entity, $field, $instan
     if ($multiple_file_behavior == 'tags') {
       foreach ($items as $delta => $item) {
         if ($item['type'] == 'video') {
+<<<<<<< HEAD
           $source_lists[$delta] = array($item);
+=======
+          $source_lists[] = array($item);
+>>>>>>> origin/jmcerda
         }
       }
     }
     else {
       foreach ($items as $delta => $item) {
         if ($item['type'] == 'video') {
+<<<<<<< HEAD
           $source_lists[0][$delta] = $item;
+=======
+          $source_lists[0][] = $item;
+>>>>>>> origin/jmcerda
         }
       }
     }
 
     // Render each source list as an <video> element.
     foreach ($source_lists as $delta => $sources) {
+<<<<<<< HEAD
+=======
+      $width = $settings['width'];
+      $height = $settings['height'];
+>>>>>>> origin/jmcerda
       $element[$delta] = array(
         '#theme' => 'file_entity_file_video',
         '#files' => $sources,
@@ -391,8 +425,13 @@ function file_entity_field_formatter_view($entity_type, $entity, $field, $instan
         '#autoplay' => $settings['autoplay'],
         '#loop' => $settings['loop'],
         '#muted' => $settings['muted'],
+<<<<<<< HEAD
         '#width' => $settings['width'],
         '#height' => $settings['height'],
+=======
+        '#width' => ($width && $height) ? $width : NULL,
+        '#height' => ($width && $height) ? $height : NULL,
+>>>>>>> origin/jmcerda
       );
     }
   }

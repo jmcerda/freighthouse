@@ -37,18 +37,28 @@ function file_entity_download_page($file) {
   }
 
   $headers = array(
+<<<<<<< HEAD
     'Content-Type' => mime_header_encode($file->filemime),
     'Content-Disposition' => 'attachment; filename="' . mime_header_encode(drupal_basename($file->uri)) . '"',
+=======
+    'Content-Type' => 'force-download',
+    'Content-Disposition' => 'attachment; filename="' . $file->filename . '"',
+>>>>>>> origin/jmcerda
     'Content-Length' => $file->filesize,
     'Content-Transfer-Encoding' => 'binary',
     'Pragma' => 'no-cache',
     'Cache-Control' => 'must-revalidate, post-check=0, pre-check=0',
     'Expires' => '0',
+<<<<<<< HEAD
+=======
+    'Accept-Ranges' => 'bytes',
+>>>>>>> origin/jmcerda
   );
 
   // Let other modules alter the download headers.
   drupal_alter('file_download_headers', $headers, $file);
 
+<<<<<<< HEAD
   // Let other modules know the file is being downloaded.
   module_invoke_all('file_transfer', $file->uri, $headers);
 
@@ -65,6 +75,9 @@ function file_entity_download_page($file) {
     drupal_send_headers();
     drupal_exit();
   }
+=======
+  file_transfer($file->uri, $headers);
+>>>>>>> origin/jmcerda
 }
 
 /**
@@ -80,7 +93,10 @@ function file_entity_download_page($file) {
 function file_entity_add_upload($form, &$form_state, array $options = array()) {
   $step = (isset($form_state['step']) && in_array($form_state['step'], array(1, 2, 3, 4))) ? $form_state['step'] : 1;
   $form['#step'] = $step;
+<<<<<<< HEAD
   $form['#options'] = $options;
+=======
+>>>>>>> origin/jmcerda
   switch ($step) {
     case 1:
       return file_entity_add_upload_step_upload($form, $form_state, $options);
@@ -194,6 +210,7 @@ function file_entity_add_upload_step_fields($form, &$form_state, array $options 
   $file = file_load($form_state['storage']['upload']);
   $file->type = $form_state['storage']['type'];
 
+<<<<<<< HEAD
   // Let users modify the filename here.
   $form['filename'] = array(
     '#type' => 'textfield',
@@ -204,6 +221,8 @@ function file_entity_add_upload_step_fields($form, &$form_state, array $options 
     '#weight' => -10,
   );
 
+=======
+>>>>>>> origin/jmcerda
   // Add fields.
   field_attach_form('file', $file, $form, $form_state);
 
@@ -349,12 +368,16 @@ function file_entity_add_upload_submit($form, &$form_state) {
       else {
         // Check if we can skip step 3.
         $schemes = file_get_stream_wrappers(STREAM_WRAPPERS_WRITE_VISIBLE);
+<<<<<<< HEAD
         if (!file_entity_file_is_writeable($file)) {
           // The file is read-only (remote) and must use its provided scheme.
           $form['#step'] += ($trigger == 'edit-previous') ? -1 : 1;
           $form_state['storage']['scheme'] = file_uri_scheme($file->uri);
         }
         elseif (count($schemes) == 1) {
+=======
+        if (count($schemes) == 1) {
+>>>>>>> origin/jmcerda
           // There is only one possible stream wrapper for this file.
           // Skip the third page.
           $form['#step'] += ($trigger == 'edit-previous') ? -1 : 1;
@@ -510,9 +533,12 @@ function file_entity_add_upload_multiple_submit($form, &$form_state) {
     $form['upload']['#upload_location'] . '/' :
     variable_get('file_default_scheme', 'public') . '://';
 
+<<<<<<< HEAD
   // Ensure writable destination directory for the files.
   file_prepare_directory($upload_location, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
 
+=======
+>>>>>>> origin/jmcerda
   // We can't use file_save_upload() because of
   // http://www.jacobsingh.name/content/tight-coupling-no-not.
   foreach ($form_state['values']['upload'] as $uploaded_file) {
@@ -760,10 +786,14 @@ function file_entity_edit_submit($form, &$form_state) {
   if (!empty($form_state['values']['replace_upload'])) {
     $replacement = $form_state['values']['replace_upload'];
     // Move file from temp to permanent home.
+<<<<<<< HEAD
     if (file_unmanaged_copy($replacement->uri, $file->uri, FILE_EXISTS_REPLACE)) {
       // @todo Add watchdog() about replaced file here?
       file_delete($replacement);
     }
+=======
+    file_unmanaged_copy($replacement->uri, $file->uri, FILE_EXISTS_REPLACE);
+>>>>>>> origin/jmcerda
   }
 
   // Run entity form submit handling and save the file.
@@ -1020,6 +1050,7 @@ function file_entity_get_upload_validators(array $options = array()) {
 
   return $validators;
 }
+<<<<<<< HEAD
 
 function file_entity_upload_archive_form($form, &$form_state) {
   $options = array(
@@ -1101,3 +1132,5 @@ function file_entity_upload_archive_form_submit($form, &$form_state) {
     $form_state['redirect'] = 'admin/content/file';
   }
 }
+=======
+>>>>>>> origin/jmcerda
