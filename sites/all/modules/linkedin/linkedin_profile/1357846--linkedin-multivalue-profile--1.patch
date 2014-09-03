@@ -1,0 +1,15 @@
+=== modified file 'linkedin_profile/linkedin_profile.module'
+--- old/linkedin_profile/linkedin_profile.module	2012-02-27 00:42:00 +0000
++++ new/linkedin_profile/linkedin_profile.module	2012-02-27 01:13:37 +0000
+@@ -118,9 +118,8 @@
+                 $items[] = theme('linkedin_profile_user_page_' . $multiples[$key] . '_item', $variables);
+               }
+               else {
+-                //iterate
+                 foreach ($items_val as $item_val) {
+-                  $variables[$multiples[$key]] = $items_val;
++                  $variables[$multiples[$key]] = $item_val;
+                   $items[] = theme('linkedin_profile_user_page_' . $multiples[$key] . '_item', $variables);
+                 }
+               }
+
