@@ -1,4 +1,0 @@
-name = MD Alpine Module
-description = Module for MD Alpine Theme configuration
-core = 7.x
-package = Megadrupal
