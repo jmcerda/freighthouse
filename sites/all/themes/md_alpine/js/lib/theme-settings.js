@@ -213,7 +213,7 @@ jQuery(function($){
 		$(this).parent().parent().find("a").removeClass("border-white");
 		$(this).parent().prev().find("a").addClass("border-white")
 	});
-	
+
 	// Fonts
 	$(".choosefont").choosefont();
 	// Cookies Tabs
@@ -222,7 +222,7 @@ jQuery(function($){
 				expires: 1
 		}
 	});
-	
+
 	$(".md-listleft li.ui-state-active").each(function(){
 		$(this).prev().find("a").addClass("border-white");
 	});
@@ -251,7 +251,7 @@ jQuery(function($){
 
 	listBackgroundw = $(".md-wrap").width() - 300;
 	$(".md-listBackground").width(listBackgroundw);
-	
+
 	$('.md-listBackground legend').each(function(){
 		tmphtml = $(this).find('span').html();
 		$(this).replaceWith('<h3>' + tmphtml + '</h3>');
@@ -309,7 +309,7 @@ jQuery(function($){
     fakeselect('#edit-node-article-display', 'nbd', 6);
     fakeselect('#edit-node-photo-display', 'npd', 4);
     fakeselect('#edit-node-video-display', 'nvd', 4);
-	
+
 	// Design: Header
 	changetopbl($('#dk_container_edit-ht-type .dk_option_current a').attr('data-dk-dropdown-value'));
 	$('#dk_container_edit-ht-type .dk_options_inner a').click(function(){
@@ -354,6 +354,7 @@ jQuery(function($){
     filestyle("#edit-header-slide-image-fallback-upload", '.form-item-files-header-slide-image-fallback-upload', '.form-item-header-slide-image-fallback');
     filestyle("#edit-nf-slide-image-fallback-upload", '.form-item-files-nf-slide-image-fallback-upload', '.form-item-nf-slide-image-fallback');
     filestyle("#edit-team-image-upload", '.form-item-files-team-image-upload', '.form-item-team-image-path');
+    filestyle("#edit-location-image-upload", '.form-item-files-location-image-upload', '.form-item-location-image-path');
     for(var i=1;i<=7;i++) {
         filestyle("#edit-pr-"+i+"-bg-image-upload", '.form-item-files-pr-'+i+'-bg-image-upload', '.form-item-pr-'+i+'-bg-image-path');
         //filestyle("#edit-pr-"+i+"-customer-image-upload-no1", '.form-item-files-pr-'+i+'-customer-image-upload-no1', '.form-item-pr-'+i+'-customer-image-path-no1');
@@ -369,11 +370,11 @@ jQuery(function($){
 		} else if ($focused1.length && !$open1.length) {
 			$dk1 = $focused1;
 		}
-		
+
 		if ((e.keyCode == 13) && $dk1) {
 			changebackground($('#dk_container_edit-choose-bg .dk_option_current a').attr('data-dk-dropdown-value'));
 		}
-		
+
 		var
 			$open2    = $('#dk_container_edit-ht-type.dk_open'),
 			$focused2 = $('#dk_container_edit-ht-type.dk_focus'),
@@ -384,12 +385,12 @@ jQuery(function($){
 		} else if ($focused2.length && !$open2.length) {
 			$dk2 = $focused2;
 		}
-		
+
 		if ((e.keyCode == 13) && $dk2) {
 			changetopbl($('#dk_container_edit-ht-type .dk_option_current a').attr('data-dk-dropdown-value'));
 		}
 	});
-	
+
 	/* Custom node display */
 	shareEnable();
 	$('#edit-node-enable').bind('change', function() {
@@ -450,16 +451,16 @@ jQuery(function($){
 				$('.form-item-ht-text').hide();
 		}
 	}
-	
+
 	function filestyle(file, filewrap, path, inputtext) {
 		inputtext = typeof inputtext !== 'undefined' ? inputtext : 0;
 
 		$(path).find('.form-text').after($(file));
 		$(filewrap).remove();
-		
+
 		var self = $(file);
 		var text = $('<div class="filetext"><span></span>Upload a file</div>');
-								
+
 		self.wrap('<div class="filewrapper btn-upload">').after(text).css({"opacity": "0"}).bind("change", function() {
 			if (inputtext == 1) {
 				$(path).find('.description').before('<div>File: ' + self.val().replace("C:\\fakepath\\", "") + ' selected</div>');
@@ -468,7 +469,7 @@ jQuery(function($){
 			}
 		});
 	}
-	
+
 	function fakeselect($select, $block, $optionnumber){
 		var $block_html = '<div class="'+$block+'wrap clearfix"><ul>';
 		var $tmpval = 0;
@@ -479,12 +480,12 @@ jQuery(function($){
 			}
 		}
 		$block_html += '</ul></div>';
-		
+
 		$($select).parent().append($block_html);
-		
+
 		var $tmpselect = $($select + " option[selected]").val();
 		$('#' + $block+$tmpselect).parent().addClass('selected');
-		
+
 		$('.'+$block+'wrap li').each(function() {
 			$(this).click(function(){
 				$('.'+$block+'wrap .selected').removeClass('selected');
@@ -496,7 +497,7 @@ jQuery(function($){
 		});
 		$($select).hide();
 	}
-	
+
 	function changeimgsize(id, maxw, maxh) {
 		$(id + " .imgwidth").after('<div class="slider-width"></div>');
 		$(id + " .imgheight").after('<div class="slider-height"></div>');
@@ -532,7 +533,7 @@ jQuery(function($){
 				$(id + " .slider-img" ).width( ui.value );
 			}
 		});
-		
+
 		$(id + " .slider-height").slider({
 			range: "min",
 			value: imgheight,
@@ -555,7 +556,7 @@ jQuery(function($){
 				$(id + " .slider-img" ).height( ui.value );
 			}
 		});
-		
+
 		$(id + " .button").click(function(){
 			imgwidth = resetwidth;
 			imgheight = resetheight;
@@ -570,7 +571,7 @@ jQuery(function($){
 			return false;
 		})
 	}
-	
+
 	function inputtoslide(id, minv, maxv) {
         sliderclass = id.replace("#", "")+'inputtoslide';
 		$(id).before('<div class="'+ sliderclass +' inputtoslide"></div>').after(' px');
@@ -589,11 +590,11 @@ jQuery(function($){
             $(this).prev().slider('value',$(id).val());
         });
     }
-	
+
 	function perBackgroundType(item) {
 		var custom_checkbox = $('#edit-' + item + '-enable');
 		var div = $('#div-' + item + '-collapse');
-	
+
 		custom_checkbox.change(
 			function() {
 				if (custom_checkbox.attr('checked')) {
@@ -608,7 +609,7 @@ jQuery(function($){
 			div.hide();
 		}
 	}
-	
+
 	function shareEnable() {
 		var custom_checkbox = $('.node-share-checkbox');
 		custom_checkbox.change(
@@ -622,7 +623,7 @@ jQuery(function($){
 				}
 			}
 		);
-		
+
 		custom_checkbox.each(function() {
 			div = $(this).parent().next();
 			if (!$(this).attr('checked')) {
@@ -632,11 +633,11 @@ jQuery(function($){
 			}
 		});
 	}
-	
+
 	function jqROund(a) {
 	 return Math.round(a);
 	}
-	
+
 	$(window).resize(function() {
 		listBackgroundw = $(".md-wrap").width() - 300;
 		$(".md-listBackground").width(listBackgroundw);

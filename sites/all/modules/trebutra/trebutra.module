@@ -125,7 +125,7 @@ function trebutra_mail($key, &$message, $params) {
  */
 function trebutra_bug_form($form, &$form_state) {
   $form['desc'] = array(
-    '#title' => t('Having an technical issue with our site? Let us know here!'),
+    '#title' => t('If you would like to submit a support request, do it here!'),
     '#type' => 'fieldset',
   );
   $form['title'] = array(
@@ -141,9 +141,20 @@ function trebutra_bug_form($form, &$form_state) {
     '#rows' => 5,
   );
   $form['email'] = array(
-    '#title' => t('Your email (optional)'),
+    '#title' => t('Your email'),
     '#type' => 'textfield',
+    '#required' => TRUE,
   );
+  $form['problem'] = array(
+    '#type' => 'select',
+    '#title' => t('Support Type'),
+    '#options' => array(
+      'Site Support' => t('Site Support'),
+      'System support' => t('System support'),
+      'Email support' => t('Email support'),
+      'Billing support' => t('Billing support'),
+      'General support' => t('General support'),
+    );
   $form['severity'] = array(
     '#type' => 'select',
     '#title' => t('Severity'),
@@ -165,7 +176,7 @@ function trebutra_bug_form($form, &$form_state) {
  * Form submission handler for trebutra_bug_form().
  */
 function trebutra_bug_form_submit($form, &$form_state) {
-  drupal_set_message(t("Thank you for making a submission. If necessary, we will contact you via email for more information."));
+  drupal_set_message(t("Thank you for making a submission. We will contact you via email for more information."));
   trebutra_api_call_to_trello($form_state['values']);
 }
 
