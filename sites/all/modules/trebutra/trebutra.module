@@ -164,7 +164,7 @@ function trebutra_bug_form($form, &$form_state) {
       'Critical' => t('Major issues, site hard to use'),
       'Emergency' => t('Show stopper, site unusable'),
     )
-  );
+  ),
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Save'),
