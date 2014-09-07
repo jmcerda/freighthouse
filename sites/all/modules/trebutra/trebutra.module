@@ -143,18 +143,7 @@ function trebutra_bug_form($form, &$form_state) {
   $form['email'] = array(
     '#title' => t('Your email'),
     '#type' => 'textfield',
-    '#required' => TRUE,
   );
-  $form['problem'] = array(
-    '#type' => 'select',
-    '#title' => t('Support Type'),
-    '#options' => array(
-      'Site Support' => t('Site Support'),
-      'System support' => t('System support'),
-      'Email support' => t('Email support'),
-      'Billing support' => t('Billing support'),
-      'General support' => t('General support'),
-    );
   $form['severity'] = array(
     '#type' => 'select',
     '#title' => t('Severity'),
@@ -163,7 +152,7 @@ function trebutra_bug_form($form, &$form_state) {
       'Major' => t('Minor bug, site usable'),
       'Critical' => t('Major issues, site hard to use'),
       'Emergency' => t('Show stopper, site unusable'),
-    )
+    ),
   );
   $form['submit'] = array(
     '#type' => 'submit',
