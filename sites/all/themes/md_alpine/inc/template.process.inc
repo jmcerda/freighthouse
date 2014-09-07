@@ -869,7 +869,7 @@ function get_skin_color ($skin_name) {
             $color = '#6ac0d5';
             break;
         case 'orange':
-            $color = '#ee5e07';
+            $color = '#ffcc00';
             break;
         case 'purple':
             $color = '#7e599d';
