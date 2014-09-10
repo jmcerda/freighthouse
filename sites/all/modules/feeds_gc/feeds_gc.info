@@ -1,0 +1,7 @@
+; $Id$
+name = Feeds Garbage Collection
+description = Unpublish nodes no longer in feeds imported by the Feeds Module.
+dependencies[] = feeds
+package = Feeds
+core = 7.x
+files[] = FeedsNodeProcessorGC.inc

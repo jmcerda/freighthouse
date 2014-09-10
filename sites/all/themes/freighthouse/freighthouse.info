@@ -13,7 +13,7 @@ settings[toggle_favicon] = 1
 settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
 settings[default_logo] = 1
-settings[default_favicon] = 1
+settings[default_favicon] = 0
 settings[css3_textarea] = 0
 settings[webclip_precomp] = 1
 settings[typo_heading_style_enable] = 0
@@ -51,6 +51,8 @@ regions[portfolio] = Portfolio
 regions[parallax_three] = Parallax Three
 
 regions[team] = Team
+
+regions[location] = Location
 
 regions[parallax_four] = Parallax Four
 
