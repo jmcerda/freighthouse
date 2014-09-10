@@ -141,3 +141,13 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+
+AddType audio/basic .au .snd 
+AddType audio/ogg .oga 
+AddType audio/webm .webm 
+AddType video/mpeg .mpeg .mpg .mpe 
+AddType video/mp4 .mp4 .m4v 
+AddType video/quicktime .qt .mov 
+AddType video/x-msvideo .avi 
+AddType video/webm .webm 
+AddType video/ogg .ogv 
