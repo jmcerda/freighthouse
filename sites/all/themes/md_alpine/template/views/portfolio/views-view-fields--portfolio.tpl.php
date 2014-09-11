@@ -52,11 +52,34 @@
 <!-- portfolio item -->
 <div class="portfolio-item <?php foreach($row->field_field_po_taxonomy as $key => $value): print 'tid-'.$value['raw']['tid'].' ';endforeach;?>">
     <div class="portfolio">
-        <a href="#!?q=ajax_portfolio&nid=<?php print $row->nid;?>" data-nid="<?php print $row->nid;?>" class="zoom"> <img src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt="">
+        <a href="#!?q=ajax_portfolio&nid=<?php print $row->nid;?>" data-nid="<?php print $row->nid;?>" class="zoom"> <?php if(isset($fields['field_po_thumbnail']) && !empty($row->field_field_po_thumbnail)):?><img src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt=""/><?php endif;?>
             <div class="hover-items">
                 <span> <?php if($icon_type): print $icon_type; endif;?> <em class="lead"><?php print $fields['title']->content;?></em> <em><?php if($portfolio_type): print $portfolio_type; endif;?></em> </span>
             </div>
         </a>
     </div>
+    <?php
+    unset($fields['field_multimedia']);
+    unset($fields['field_po_taxonomy']);
+    unset($fields['field_po_layout_mode']);
+    unset($fields['field_po_author_name']);
+    unset($fields['field_po_author_company']);
+    unset($fields['field_po_thumbnail']);
+    unset($fields['field_po_description']);
+    unset($fields['field_po_button_text']);
+    unset($fields['field_po_button_link']);
+    unset($fields['title']);
+    unset($fields['body']);
+    ?>
+    <?php foreach ($fields as $id => $field): ?>
+        <?php if (!empty($field->separator)): ?>
+            <?php print $field->separator; ?>
+        <?php endif; ?>
+
+        <?php print $field->wrapper_prefix; ?>
+        <?php print $field->label_html; ?>
+        <?php print $field->content; ?>
+        <?php print $field->wrapper_suffix; ?>
+    <?php endforeach; ?>
 </div>
 <!-- portfolio item -->
