@@ -34,6 +34,12 @@ Icon
 Thumbs.db
 ._*
 
+# Eclipse generated files #
+###########################
+.buildpath
+.settings
+.project
+
 # Vim generated files #
 ######################
 *.un~
