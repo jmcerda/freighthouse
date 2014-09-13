@@ -5,7 +5,7 @@
  * @param $form_state
  * @param $form_id
  */
-function md_alpine_form_alter(&$form, &$form_state, $form_id) {
+function freighthouse_form_alter(&$form, &$form_state, $form_id) {
     if (strpos($form_id,"webform_client_form") === false) {
         switch ($form_id) {
             case 'user_login':
