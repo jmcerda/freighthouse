@@ -78,6 +78,8 @@
   padding: 0 6px;
 }
 
+/* removing help link on sytax highlighter */
 .toolbar_item .command_help .help {
   display:none;
 }
+
