@@ -78,6 +78,6 @@
   padding: 0 6px;
 }
 
-.command_help {
+.toolbar_item .command_help .help {
   display:none;
 }
