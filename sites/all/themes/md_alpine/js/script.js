@@ -322,7 +322,7 @@
                 // optimizeDisplay: True will fit the video size into the window size optimizing the view;
                 loop: false, // True or false loops the movie once ended.
                 // vol: 1 to 100 (number) set the volume level of the video.
-                startAt: 0, // Set the seconds the video should start at.
+                startAt: 10, // Set the seconds the video should start at.
                 autoPlay: headerVdAutoPlay, // True or false play the video once ready.
                 showYTLogo: false, // Show or hide the YT logo and the link to the original video URL.
                 showControls: false // Show or hide the controls bar at the bottom of the page.
