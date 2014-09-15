@@ -86,7 +86,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
  * Theme the username/password description of the user login form
  * and the user login block.
  */
-function theme_lt_username_description($variables) {
+function freighthouse_username_description($variables) {
   switch ($variables['form_id']) {
     case 'user_login':
       // The username field's description when shown on the /user/login page.
@@ -98,7 +98,7 @@ function theme_lt_username_description($variables) {
   }
 }
 
-function theme_lt_password_description($variables) {
+function freighthouse_password_description($variables) {
   switch ($variables['form_id']) {
     case 'user_login':
       // The password field's description on the /user/login page.
