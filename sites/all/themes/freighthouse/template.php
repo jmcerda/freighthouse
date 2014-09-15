@@ -80,6 +80,33 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
               </div>
             ';
     }
+}
 
+/**
+ * Theme the username/password description of the user login form
+ * and the user login block.
+ */
+function theme_lt_username_description($variables) {
+  switch ($variables['form_id']) {
+    case 'user_login':
+      // The username field's description when shown on the /user/login page.
+      return t();
+      break;
+    case 'user_login_block':
+      return '';
+      break;
+  }
+}
 
+function theme_lt_password_description($variables) {
+  switch ($variables['form_id']) {
+    case 'user_login':
+      // The password field's description on the /user/login page.
+      return t();
+      break;
+    case 'user_login_block':
+      // If showing the login form in a block, don't print any descriptive text.
+      return '';
+      break;
+  }
 }
