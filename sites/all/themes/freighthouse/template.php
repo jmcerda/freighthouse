@@ -90,7 +90,7 @@ function freighthouse_username_description($variables) {
   switch ($variables['form_id']) {
     case 'user_login':
       // The username field's description when shown on the /user/login page.
-      return t();
+      return t("");
       break;
     case 'user_login_block':
       return '';
@@ -102,7 +102,7 @@ function freighthouse_password_description($variables) {
   switch ($variables['form_id']) {
     case 'user_login':
       // The password field's description on the /user/login page.
-      return t();
+      return t("");
       break;
     case 'user_login_block':
       // If showing the login form in a block, don't print any descriptive text.
