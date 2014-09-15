@@ -5,7 +5,7 @@
  * @param $form_state
  * @param $form_id
  */
-drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/fh.css', array('group' => CSS_THEME));
+// drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/fh.css', array('group' => CSS_THEME));
 
 function freighthouse_form_alter(&$form, &$form_state, $form_id) {
     if (strpos($form_id,"webform_client_form") === false) {
