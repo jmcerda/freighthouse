@@ -83,3 +83,14 @@
   display:none;
 }
 
+
+/* avatar style on front blog vview */
+.timeline-content #timeline .post-info .box-inner img, .post-avatar a img, .post-avatar img {
+  max-width: 50%;
+}
+
+/* blog timeline */
+.timeline-content #timeline .timeline-item {
+  width: 50%;
+}
+
