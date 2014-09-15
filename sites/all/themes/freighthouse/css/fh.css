@@ -94,3 +94,6 @@
   width: 50%;
 }
 
+.timeline {
+  display: flex;
+}
