@@ -12,14 +12,6 @@
 <?php endif;?>
 <?php print $messages;?>
 
-<?php if($page['blog']):?>
-    <!-- Blog Section -->
-    <section id="blog" class="section-content timeline-content bgdark">
-        <?php print render($page['blog']);?>
-    </section>
-    <!-- Blog Section -->
-<?php endif;?>
-
 <?php if($page['about']):?>
 <!-- About Section -->
     <section id="about" class="section-content">
@@ -121,6 +113,14 @@
         <?php print render($page['parallax_six']);?>
     </div>
     <!-- Parallax Container -->
+<?php endif;?>
+
+<?php if($page['blog']):?>
+    <!-- Blog Section -->
+    <section id="blog" class="section-content timeline-content bgdark">
+        <?php print render($page['blog']);?>
+    </section>
+    <!-- Blog Section -->
 <?php endif;?>
 
 <?php if($page['parallax_seven']):?>
