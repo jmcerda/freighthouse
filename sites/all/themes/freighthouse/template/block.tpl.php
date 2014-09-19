@@ -75,36 +75,6 @@
     <?php print render($title_suffix); ?>
 <?php else:?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-    <!-- <?php if($block->delta != 'parallax_1' && $block->delta != 'parallax_2' && $block->delta != 'parallax_3' && $block->delta != 'parallax_4' && $block->delta != 'parallax_5' && $block->delta != 'parallax_6' && $block->delta != 'parallax_7' && $block->delta != 'header' && $block->delta != 'footer' && $block->delta != 'menu'):?>
-        <div class="container">
-            <div class="section-title text-center">
-                <?php if(isset($before_title)):?>
-                    <div class="<?php print $tt_des_animate;?>">
-                        <span class="line big"></span>
-                        <span ><?php print $before_title;?></span>
-                        <span class="line big"></span>
-                    </div>
-                <?php endif?>
-                <?php print render($title_prefix); ?>
-                <?php if ($block->subject): ?>
-                    <h1 class="<?php print $tt_des_animate;?>"><?php print $block->subject;?></h1>
-                <?php endif;?>
-                <?php print render($title_suffix); ?>
-                <?php if(isset($after_title)):?>
-                    <div class="<?php print $tt_des_animate;?>">
-                        <span class="line"></span>
-                        <span><?php print $after_title;?></span>
-                        <span class="line"></span>
-                    </div>
-                <?php endif;?>
-                <?php if(isset($description)):?>
-                    <p class="lead <?php print $tt_des_animate;?>">
-                        <?php print $description;?>
-                    </p>
-                <?php endif;?>
-            </div>
-        </div>
-    <?php endif;?> -->
     <div class="content <?php print $content_animate;?>"<?php print $content_attributes; ?>>
         <?php print $content ;?>
     </div>
