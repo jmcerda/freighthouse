@@ -101,3 +101,7 @@
 .element-line, .sidebar {
   margin-top: 0px;
 }
+
+#head_logo {
+  width:50%;
+}
