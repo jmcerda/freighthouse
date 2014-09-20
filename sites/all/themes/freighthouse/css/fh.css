@@ -147,7 +147,8 @@ a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-
 }/* DARK BACKGROUND COLOR(RGBA) */
 
 /* END ORANGE */
+
 h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-group label {
   color: #222;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'proxima-nova', sans-serif !important;
 }
