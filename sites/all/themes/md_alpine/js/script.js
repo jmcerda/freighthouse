@@ -346,8 +346,8 @@
                 });
                 // After the movie
                 $("#bgndVideo").on("YTPEnd",function(){
-                    //$('#home').addClass('video-section');
-                    //$(".fullscreen-image").show();
+                    $('#home').addClass('video-section');
+                    $(".fullscreen-image").show();
                 });
             }
             if (headerVdAutoPlay == false){
