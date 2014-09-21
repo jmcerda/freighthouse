@@ -153,6 +153,6 @@ h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-grou
   font-family: 'proxima-nova', sans-serif !important;
 }
 
-div.section-title.text-center div.hidden-xs span {
-  font-weight: lighter;
+.section-title div span {
+  font-weight: lighter !important;
 }
