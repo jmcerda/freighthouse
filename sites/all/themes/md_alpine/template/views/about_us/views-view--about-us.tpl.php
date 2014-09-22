@@ -54,11 +54,28 @@
         </div>
     <?php endif; ?>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="element-line">
                 <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center" alt="">
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="element-line">
+                <span>
+                    <?php
+                        $nid = 102;
+                        $node = node_load($nid);
+                        $nodeView = node_view($node, 'full');
+                        print drupal_render($nodeView['body']);
+                    ?>
+                </span>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-12">
+
+        </div>
+    </div>
         <?php if ($rows): ?>
                 <?php print $rows; ?>
         <?php elseif ($empty): ?>
