@@ -156,3 +156,7 @@ h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-grou
 .section-title div span {
   font-weight: lighter !important;
 }
+
+html.js.js.flexbox.canvas.canvastext.webgl.no-touch.geolocation.postmessage.no-websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.no-cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.video.audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths.wf-proximanova-n1-active.wf-proximanova-n3-active.wf-proximanova-n4-active.wf-proximanova-n6-active.wf-proximanova-n7-active.wf-active body.html.front.logged-in.no-sidebars.page-node.i18n-en section#about.section-content div#block-views-about-us-block.block.block-views.contextual-links-region div.content.item_fade_in div.container.view.view-about-us.view-id-about_us.view-display-id-block.view-dom-id-d819c11b92bd119294523f3d1f24a988 div.row div.col-md-6 div.element-line img.img-responsive.img-center {
+  max-width: 75%;
+}
