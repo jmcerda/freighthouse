@@ -4,7 +4,7 @@ core = 7.x
 base theme = md_alpine
 
 ; ; stylesheets[all][] = css/fh.css
-stylesheets[all][] = css/style.css
+; ; stylesheets[all][] = css/style.css
 
 settings[toggle_logo] = 1
 settings[toggle_name] = 1
