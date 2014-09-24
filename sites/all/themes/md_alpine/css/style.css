@@ -1857,3 +1857,11 @@ li.expanded, li.collapsed, li.leaf {
 .slides img {
     width: 100%;
 }
+
+.about_image {
+	max-width: 75%;
+}
+
+.about_text {
+	max-width: 75%;
+}
