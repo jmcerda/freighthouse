@@ -34,7 +34,7 @@ if(isset($content['field_bl_multimedia'])) {
             <span><?php print t('Posted by');?> <a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
             <span class="line big"></span>
         </div>
-        <h1><?php print $node->title;?></h1>     
+        <h1><?php print $node->title;?></h1>
         <div>
             <span class="line"></span>
             <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
