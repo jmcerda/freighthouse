@@ -54,16 +54,16 @@
         </div>
     <?php endif; ?>
     <div class="row">
-        <div class="col-md-6 about_image">
+        <div class="col-md-6">
             <div class="element-line">
                 <?php if(theme_get_setting('team_image_path')):?>
-                <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center" alt="">
+                <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center about_image" alt="We are Freighthouse">
                 <?php endif;?>
             </div>
         </div>
-        <div class="col-md-6 about_text">
+        <div class="col-md-6">
             <div class="element-line">
-                <span>
+                <span style="about_text">
                     <?php
                         $nid = 102;
                         $node = node_load($nid);
