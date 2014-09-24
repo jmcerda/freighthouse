@@ -70,6 +70,7 @@
     unset($fields['field_po_button_link']);
     unset($fields['title']);
     unset($fields['body']);
+    unset($fields['field_entity_reference']);
     ?>
     <?php foreach ($fields as $id => $field): ?>
         <?php if (!empty($field->separator)): ?>
