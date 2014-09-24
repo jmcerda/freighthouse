@@ -32,6 +32,7 @@ function md_alpine_preprocess_html(&$vars) {
     } else {
         drupal_add_css($themepath . '/css/colors/blu.css');
     }
+    drupal_add_js($themepath . '/js/lib/jquery.migrate-1.2.1.js');
     drupal_add_js($themepath . '/js/lib/jquery.browser.js');
     drupal_add_js($themepath . '/js/lib/modernizr.js');
     drupal_add_js($themepath . '/js/lib/jquery.mb.YTPlayer.js');
@@ -75,7 +76,9 @@ function md_alpine_preprocess_html(&$vars) {
     if(in_array('node-type-blog',$vars['classes_array'])) {
         $vars['classes_array'][] = 'blog-page';
     }
-
+    /* ----------------------------------------------- Preloader ----------------------------------------------------*/
+    $preloader = theme_get_setting('enable_preloader') ? theme_get_setting('enable_preloader') : 1;
+    drupal_add_js(array('enaPreloader' => theme_get_setting('enable_preloader')),'setting');
     /* ----------------------------------------------- Menu ---------------------------------------------------------*/
     if(theme_get_setting('menu_sticky')) {
         drupal_add_js(array('menuStickyEnable' => theme_get_setting('menu_sticky')),'setting');
@@ -157,7 +160,7 @@ function md_alpine_preprocess_html(&$vars) {
             }
         }
         if(theme_get_setting('pr_'.$i.'_bg_image_path')) {
-            $css .= '#'.$id.' {background-image : url("'.md_alpine_theme_setting_check_path(theme_get_setting('pr_'.$i.'_bg_image_path')).'");}';
+            $css .= '#'.$id.' {background-image : url("'.md_alpine_parallax_bg_check_path(theme_get_setting('pr_'.$i.'_bg_image_path')).'");}';
         }
     }
 
@@ -192,12 +195,12 @@ function md_alpine_preprocess_html(&$vars) {
         drupal_add_js(array('mapZoom' => 16),'setting');
     }
     if(theme_get_setting('map_latlng')){
-            $map_title = theme_get_setting('map_marker_title');
-            $map_des = theme_get_setting('map_marker_description');
-            $map_latlng = theme_get_setting('map_latlng');
-            $map_types = theme_get_setting('map_types');
-            $map_zoom_level = theme_get_setting('map_zoom_level');
-            $map_js = ' jQuery(document).ready(function() {
+        $map_title = theme_get_setting('map_marker_title');
+        $map_des = theme_get_setting('map_marker_description');
+        $map_latlng = theme_get_setting('map_latlng');
+        $map_types = theme_get_setting('map_types');
+        $map_zoom_level = theme_get_setting('map_zoom_level');
+        $map_js = ' jQuery(document).ready(function() {
         if(jQuery("#map_canvas").size() > 0) {
             jQuery(window).load(function(){
                 //Google Map
@@ -241,8 +244,9 @@ function md_alpine_preprocess_html(&$vars) {
             });
         }
     });';
-            drupal_add_js($map_js,array('type' => 'inline','scope' => 'footer'));
+        drupal_add_js($map_js,array('type' => 'inline','scope' => 'footer'));
     }
+
 
     $vars['theme_setting_css'] = $css;
 	// Custom Web clip
@@ -632,7 +636,7 @@ function md_alpine_font_to_css($font) {
     $css = "";
     if(count($font_arr) == 6) {
         if ($font_arr[0] != '0') {
-            $css = ''.$font_arr[5].';';
+            $css = ''.$font_arr[5].'';
         }
     }
     return $css;
@@ -773,6 +777,7 @@ function md_alpine_process_page(&$vars) {
  * Implements hook_preprocess_page().
  */
 function md_alpine_preprocess_page(&$vars, $hook) {
+    $css = '';
     // Page title in node page
     if(isset($vars['node'])) {
         $node = $vars['node'];
@@ -800,7 +805,40 @@ function md_alpine_preprocess_page(&$vars, $hook) {
     if(theme_get_setting('footer_text')){
         $vars['footer_text'] = theme_get_setting('footer_text');
     }
+    if (isset($vars['node']->type)) {
+        // If the content type's machine name is "my_machine_name" the file
+        // name will be "page--my-machine-name.tpl.php".
+        $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
+    }
+    $content_wrapper_classes = '';
+    $sidebar_classes = 'sidebar';
+    $sidebar_position = theme_get_setting('sidebar_position') ? theme_get_setting('sidebar_position') : 'no';
+    if(isset($vars['page']['spb_enabled']) && $vars['page']['spb_enabled'] == TRUE) {
+        $css .= '.mdpb-live-content .item_top,.mdpb-live-content .item_bottom,.mdpb-live-content .item_left,.mdpb-live-content .item_right,.mdpb-live-content .item_fade_in {opacity: 1;}
+                 .mdpb-live-content .item_top {top: 0px;} .mdpb-live-content .item_bottom {bottom:0px;} .mdpb-live-content .item_left {left:0px;} .mdpb-live-content .item_right {right:0px;} .mdpb-live-content .item_fade_in {right:0px;}';
+        drupal_add_css($css,'inline');
+    } else {
+        if($sidebar_position == 'no') {
+            unset($vars['page']['sidebar']);
+            $content_wrapper_classes = 'col-md-12';
+        } else {
+            if(empty($vars['page']['sidebar'])) {
+                $content_wrapper_classes = 'col-md-12';
+            } else {
+                if(isset($vars['page']['sidebar']) && $sidebar_position == 'right') {
+                    $content_wrapper_classes = 'col-md-9';
+                    $sidebar_classes = 'sidebar col-md-3';
+                }
+                if(isset($vars['page']['sidebar']) && $sidebar_position == 'left') {
+                    $content_wrapper_classes = 'col-md-9 col-md-push-3';
+                    $sidebar_classes = 'sidebar col-md-3 col-md-pull-9';
+                }
+            }
+        }
+    }
 
+    $vars['content_wrapper_classes'] = $content_wrapper_classes;
+    $vars['sidebar_wrapper_classes'] = $sidebar_classes;
     $themepath = drupal_get_path('theme', 'md_alpine');
 }
 /**
@@ -813,7 +851,7 @@ function md_alpine_preprocess_maintenance_page(&$vars) {
         drupal_add_css('public://icon/fontello/fontello/css/fontello.css');
         drupal_add_css('public://icon/fontello/fontello/css/animation.css');
     }
-
+   
     /********************************** Skin ********************************/
     if (theme_get_setting('skins') != '0') {
         drupal_add_css($theme_path . '/css/colors/'.theme_get_setting('skins').'.css', array('group' => CSS_THEME));

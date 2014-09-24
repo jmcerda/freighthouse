@@ -3,15 +3,119 @@
 
     //Page Preloader
     $(window).load(function() {
-        $("#intro-loader").delay(500).fadeOut();
-        $(".mask").delay(1000).fadeOut("slow");
+        var enaPreloader = Drupal.settings.enaPreloader ? Drupal.settings.enaPreloader : 1;
+        if(enaPreloader == 1) {
+            $("#intro-loader").delay(500).fadeOut();
+            $(".mask").delay(1000).fadeOut("slow");
+        }
+    });
 
+	
+    $(document).ready(function() {
+        console.log($(".md-section"));
+		loadingJS();
+        $(document).delegate("DOMSubtreeModified",".md-section",function(){
+            console.log("section-changed");
+            /*$('.item_top').each(function() {
+                $(this).appear(function() {
+                    $(this).delay(150).animate({
+                        opacity : 1,
+                        top : "0px"
+                    }, 1000);
+                });
+            });
+
+            //Elements Appear from bottom
+            $('.item_bottom').each(function() {
+                $(this).appear(function() {
+                    $(this).delay(150).animate({
+                        opacity : 1,
+                        bottom : "0px"
+                    }, 1000);
+                });
+            });
+
+            //Elements Appear from left
+            $('.item_left').each(function() {
+                $(this).appear(function() {
+                    $(this).delay(150).animate({
+                        opacity : 1,
+                        left : "0px"
+                    }, 1000);
+                });
+            });
+
+            //Elements Appear from right
+            $('.item_right').each(function() {
+                $(this).appear(function() {
+                    $(this).delay(150).animate({
+                        opacity : 1,
+                        right : "0px"
+                    }, 1000);
+                });
+            });
+
+            //Elements Appear in fadeIn effect
+            $('.item_fade_in').each(function() {
+                $(this).appear(function() {
+                    $(this).delay(150).animate({
+                        opacity : 1,
+                        right : "0px"
+                    }, 1000);
+                });
+            });*/
+            $('.cart').appear(function() {
+                var easy_pie_chart = {};
+                $('.circular-item').removeClass("hidden");
+                $('.circular-pie').each(function() {
+                    var text_span = $(this).children('span');
+                    $(this).easyPieChart($.extend(true, {}, easy_pie_chart, {
+                        scaleLength: 5,
+                        lineCap: 'butt',
+                        rotate: 0,
+                        easing: 'easeOutBounce',
+                        delay: 1000,
+                        animate:  2000,
+                        size : 250,
+                        barColor : $(this).data('color'),
+                        lineWidth : 20,
+                        trackColor : '#2B2925',
+                        scaleColor : false,
+                        onStep : function(value) {
+                            text_span.text(Math.round(value) + '%');
+                        }
+                    }));
+                });
+            });
+
+        });
     });
 
 
-    $(document).ready(function() {
 
+    //Parallax
+    $(window).on('load', function() {
+        parallaxInit();
+    });
+
+    function loadingJS() {
+        //Back To Top
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 400) {
+                $("#back-top").fadeIn(200);
+            } else {
+                $("#back-top").fadeOut(200);
+            }
+        });
+        $('#back-top').click(function(event) {
+            event.preventDefault();
+            $('body').stop().animate({
+                scrollTop : 0
+            }, 1500, 'easeInOutExpo');
+        });
         //Elements Appear from top
+
         $('.item_top').each(function() {
             $(this).appear(function() {
                 $(this).delay(150).animate({
@@ -61,9 +165,13 @@
             });
         });
 
+
+
+
+
         var menuStickyEnable = Drupal.settings.menuStickyEnable;
         if(menuStickyEnable == '1') {
-            if($("body").hasClass("logged-in")) {
+            if($("body").hasClass("logged-in") && $("body").hasClass("toolbar")) {
                 $("#navigation").sticky({
                     topSpacing : 60
                 });
@@ -100,8 +208,8 @@
         });
         //Owl Carousel Span
         /*$(".owl-pagination .owl-page span").each(function(){
-            $(this).css('display','block');
-        });*/
+         $(this).css('display','block');
+         });*/
         // Portfolio Isotope
         var container = jQuery('#portfolio-wrap');
         container.imagesLoaded( function(){
@@ -148,7 +256,7 @@
 
         function setProjects() {
             setColumns();
-            container.isotope('reLayout');
+            //container.isotope('reLayout');
         }
 
         container.imagesLoaded(function() {
@@ -234,23 +342,23 @@
             $("#ajaxpage .section-title").hide();
         }
         //Comments Form
-        if($("#comments").size() > 0) {
-            $(".comment-formular textarea").attr('placeholder','Enter Message');
-            $(".comment-formular textarea").attr('class','form-control input-lg');
-        }
+        /*if($("#comments").size() > 0) {
+         $(".comment-formular textarea").attr('placeholder','Enter Message');
+         $(".comment-formular textarea").attr('class','form-control input-lg');
+         }*/
         var basePath = Drupal.settings.basePath;
-       /* if($("body").hasClass("front")) {
-            $("ul.navbar-nav li").each(function(){
-                var link = $(this).find("a");
-                link.removeClass("active");
-                var href = link.attr('href');
-                if(href.search("#") != -1) {
-                    var newHref = href.replace(basePath,'');
-                    link.attr('href',newHref);
-                }
-            })
-        }*/
-         //Navigation Scrolling
+        /* if($("body").hasClass("front")) {
+         $("ul.navbar-nav li").each(function(){
+         var link = $(this).find("a");
+         link.removeClass("active");
+         var href = link.attr('href');
+         if(href.search("#") != -1) {
+         var newHref = href.replace(basePath,'');
+         link.attr('href',newHref);
+         }
+         })
+         }*/
+        //Navigation Scrolling
         $(function() {
             $('#brand, .nav li a, a.start-button').bind('click', function(event) {
                 var $anchor = $(this);
@@ -285,19 +393,7 @@
             onMobile = true;
         }
 
-        //Back To Top
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 400) {
-                $("#back-top").fadeIn(200);
-            } else {
-                $("#back-top").fadeOut(200);
-            }
-        });
-        $('#back-top').click(function() {
-            $('html, body').stop().animate({
-                scrollTop : 0
-            }, 1500, 'easeInOutExpo');
-        });
+
 
         if ((onMobile === false ) && ($('.parallax-slider').length )) {
             skrollr.init({
@@ -346,8 +442,8 @@
                 });
                 // After the movie
                 $("#bgndVideo").on("YTPEnd",function(){
-                    $('#home').addClass('video-section');
-                    $(".fullscreen-image").show();
+                    //$('#home').addClass('video-section');
+                    //$(".fullscreen-image").show();
                 });
             }
             if (headerVdAutoPlay == false){
@@ -453,12 +549,7 @@
             };
             Core.initialize();
         })();
-    });
-    //Parallax
-    $(window).bind('load', function() {
-        parallaxInit();
-    });
-
+    }
     function parallaxInit() {
         $('#one-parallax').parallax("50%", 0.5);
         $('#two-parallax').parallax("50%", 0.5);
@@ -469,7 +560,6 @@
         $('#seven-parallax').parallax("50%", 0.5);
         /*add as necessary*/
     }
-
 
 })(jQuery);
 

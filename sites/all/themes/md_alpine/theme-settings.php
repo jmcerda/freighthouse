@@ -381,7 +381,7 @@ function md_alpine_save_settings($form, &$form_state) {
                             $form_state['values']['pr_'.$i.'_connect'][$new_key]['title'] = $form_input['pr_'.$i.'_connect_title_'.$number] ? $form_input['pr_'.$i.'_connect_title_'.$number] : '';
                             $form_state['values']['pr_'.$i.'_connect'][$new_key]['des'] = $form_input['pr_'.$i.'_connect_des_'.$number] ? $form_input['pr_'.$i.'_connect_des_'.$number] : '';
 
-                            $icon_input = $form_input['pr_'.$i.'_connect_icon_'.$number]['icon'];
+                            $icon_input = isset($form_input['pr_'.$i.'_connect_icon_'.$number]['icon']) ? $form_input['pr_'.$i.'_connect_icon_'.$number]['icon'] : '';
                             if($icon_input != null){
                                 $social_icon_explode = explode("|",$icon_input);
                                 $form_state['values']['pr_'.$i.'_connect'][$new_key]['icon']['bundle'] = $social_icon_explode[0];
@@ -403,7 +403,7 @@ function md_alpine_save_settings($form, &$form_state) {
                             $form_state['values']['pr_'.$i.'_number'][$new_key]['number_count'] = $form_input['pr_'.$i.'_number_count_'.$number] ? $form_input['pr_'.$i.'_number_count_'.$number] : '';
                             $form_state['values']['pr_'.$i.'_number'][$new_key]['des'] = $form_input['pr_'.$i.'_number_des_'.$number] ? $form_input['pr_'.$i.'_number_des_'.$number] : '';
 
-                            $icon_input = $form_input['pr_'.$i.'_number_icon_'.$number]['icon'];
+                            $icon_input = isset($form_input['pr_'.$i.'_number_icon_'.$number]['icon']) ? $form_input['pr_'.$i.'_number_icon_'.$number]['icon'] : '';
                             if($icon_input != null){
                                 $social_icon_explode = explode("|",$icon_input);
                                 $form_state['values']['pr_'.$i.'_number'][$new_key]['icon']['bundle'] = $social_icon_explode[0];
@@ -441,7 +441,7 @@ function md_alpine_save_settings($form, &$form_state) {
                             $form_state['values']['pr_'.$i.'_overview'][$new_key]['title'] = $form_input['pr_'.$i.'_overview_title_'.$number] ? $form_input['pr_'.$i.'_overview_title_'.$number] : '';
                             $form_state['values']['pr_'.$i.'_overview'][$new_key]['des'] = $form_input['pr_'.$i.'_overview_des_'.$number] ? $form_input['pr_'.$i.'_overview_des_'.$number] : '';
                             $form_state['values']['pr_'.$i.'_overview'][$new_key]['link'] = $form_input['pr_'.$i.'_overview_link_'.$number] ? $form_input['pr_'.$i.'_overview_link_'.$number] : '';
-                            $icon_input = $form_input['pr_'.$i.'_overview_icon_'.$number]['icon'];
+                            $icon_input = isset($form_input['pr_'.$i.'_overview_icon_'.$number]['icon']) ? $form_input['pr_'.$i.'_overview_icon_'.$number]['icon'] : '';
                             if($icon_input != null){
                                 $social_icon_explode = explode("|",$icon_input);
                                 $form_state['values']['pr_'.$i.'_overview'][$new_key]['icon']['bundle'] = $social_icon_explode[0];
@@ -545,8 +545,6 @@ function md_alpine_save_settings($form, &$form_state) {
     $form_state['values'] = saveImage('fvicon_path','fvicon_upload',$form_state['values']);
     $form_state['values'] = saveImage('team_image_path','team_image_upload',$form_state['values']);
 
-    $form_state['values']['logo_path'] = $form_state['values']['logo_normal_path'];
-    $form_state['values']['favicon_path'] = $form_state['values']['fvicon_path'];
     if($form_state['values']['default_logo'] == 1){
         $form_state['values']['logo_path'] = '';
         $form_state['values']['logo_normal_path'] = '';
@@ -560,7 +558,8 @@ function md_alpine_save_settings($form, &$form_state) {
     cache_clear_all();
 }
 function saveImage($path, $upload, $form_state_value) {
-    $validators = array('file_validate_extensions' => array('jpeg jpg gif ico png'));
+    $validators = array('file_validate_extensions' => array('ico png gif jpg jpeg apng svg'));
+
     if ($image_file = file_save_upload($upload,$validators)) {
 
         $parts = pathinfo($image_file->filename);

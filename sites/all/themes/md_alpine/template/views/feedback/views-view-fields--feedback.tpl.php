@@ -30,11 +30,9 @@
         <img src="<?php print image_style_url('feedback_thumbnail',$row->field_field_fb_thumbail[0]['rendered']['#item']['uri']);?>" class="img-circle img-center img-responsive" alt=""/>
     <?php endif;?>
     <h2><?php print $fields['title']->content;?></h2>
-    <p>
-        <?php print $fields['field_fb_detail']->content;?>
-    </p>
-    <p class="lead">
-        <?php print $fields['field_fb_company']->content;?>
-    </p>
+
+    <?php print $fields['field_fb_detail']->content;?>
+
+    <?php print $fields['field_fb_company']->content;?>
 </div>
 <!-- Client slide -->

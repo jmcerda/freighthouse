@@ -33,24 +33,37 @@ function md_alpine_theme_settings_display(&$form, &$form_state) {
         '#prefix'  				=> '<div id="s-map" class="md-tabcontent clearfix">',
         '#suffix'        => '</div><!-- / #footer -->',
     );
-    $form['md_alpine_settings']['display']['map']['map_marker_title'] = array(
+    $form['md_alpine_settings']['display']['map']['enable_map'] = array(
+        '#type'             => 'checkbox',
+        '#title'            => t('Enable Google Map'),
+        '#default_value'     => theme_get_setting('enable_map')
+    );
+    $form['md_alpine_settings']['display']['map']['map_setting'] = array(
+        '#type'             => 'container',
+        '#states'           => array(
+            'visible'       => array(
+                ':input[name=enable_map]' => array('checked' => true)
+            )
+        )
+    );
+    $form['md_alpine_settings']['display']['map']['map_setting']['map_marker_title'] = array(
         '#type' 					=> 'textfield',
         '#title'					=> t('Marker Title'),
         '#default_value' 	        =>  theme_get_setting('map_marker_title') ? theme_get_setting('map_marker_title') : t('Megadrupal'),
     );
-    $form['md_alpine_settings']['display']['map']['map_marker_description'] = array(
+    $form['md_alpine_settings']['display']['map']['map_setting']['map_marker_description'] = array(
         '#type' 					=> 'textarea',
         '#title'					=> t('Marker Description'),
         '#resizable'    => FALSE,
         '#default_value' 	        =>  theme_get_setting('map_marker_description') ? theme_get_setting('map_marker_description') : t('Ha Noi , Viet Nam, Asia'),
     );
-    $form['md_alpine_settings']['display']['map']['map_latlng'] = array(
+    $form['md_alpine_settings']['display']['map']['map_setting']['map_latlng'] = array(
         '#type' 					=> 'textfield',
         '#title'					=> t('Google Map location'),
         '#default_value' 	        =>  theme_get_setting('map_latlng') ? theme_get_setting('map_latlng') : t('40.748395,-73.985542'),
         '#description'              =>  t('Find your map point by reading our documentation'),
     );
-    $form['md_alpine_settings']['display']['map']['map_types']   = array(
+    $form['md_alpine_settings']['display']['map']['map_setting']['map_types']   = array(
         '#type'         => 'select',
         '#title'        => t('Map types'),
         '#options'      => array(
@@ -61,7 +74,7 @@ function md_alpine_theme_settings_display(&$form, &$form_state) {
         ),
         '#default_value'    => theme_get_setting('map_types') ? theme_get_setting('map_types') : t('ROADMAP'),
     );
-    $form['md_alpine_settings']['display']['map']['map_zoom_level'] = array(
+    $form['md_alpine_settings']['display']['map']['map_setting']['map_zoom_level'] = array(
         '#type'         => 'textfield',
         '#title'        => t(' Map Zoom Level'),
         '#default_value'    => theme_get_setting('map_zoom_level') ? theme_get_setting('map_zoom_level') : 16,

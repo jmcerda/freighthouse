@@ -8,37 +8,39 @@
 function md_alpine_theme_settings_design(&$form, &$form_state) {
     global $base_url;
     $options = array();
-    foreach (icon_bundles() as $bundle_name => $bundle) {
-        if (!$bundle['status']) {
-            continue;
-        }
-        foreach ($bundle['icons'] as $icon_key => $icon_value) {
-            $icon_name = is_string($icon_key) ? $icon_key : $icon_value;
-            if (is_array($icon_value) && isset($icon_value['name'])) {
-                $icon_name = $icon_value['name'];
+    if(module_exists('icon')) {
+        foreach (icon_bundles() as $bundle_name => $bundle) {
+            if (!$bundle['status']) {
+                continue;
             }
-            $icon_title = is_string($icon_value) ? $icon_value : $icon_name;
-            if (is_array($icon_value) && isset($icon_value['title'])) {
-                $icon_title = $icon_value['title'];
+            foreach ($bundle['icons'] as $icon_key => $icon_value) {
+                $icon_name = is_string($icon_key) ? $icon_key : $icon_value;
+                if (is_array($icon_value) && isset($icon_value['name'])) {
+                    $icon_name = $icon_value['name'];
+                }
+                $icon_title = is_string($icon_value) ? $icon_value : $icon_name;
+                if (is_array($icon_value) && isset($icon_value['title'])) {
+                    $icon_title = $icon_value['title'];
+                }
+                $options[$bundle['title']][$bundle['name'] . '|' . $icon_name] = $icon_title;
             }
-            $options[$bundle['title']][$bundle['name'] . '|' . $icon_name] = $icon_title;
+            $icon_default_value = $options;
         }
-    $icon_default_value = $options;
-    }
-    $icon_mark_up = '';
-    $icon_fake_markup = '<ul class="list-icon">';
-    foreach($icon_default_value as $key => $value) {
-        $icon_mark_up .= '<option selected="selected" value="">- No Icon -</option><optgroup label="'.$key.'">';
-        foreach ($icon_default_value[$key] as $key2 => $value2) {
-            $fake_icon_explode = explode("|",$key2);
-            $icon_fake_markup .= '<li><a href="javascript:;" class="fake-icon" icon-name="'.$fake_icon_explode[1].'" data-icon="'.$key2.'"><i class="'.$fake_icon_explode[0].' '.$fake_icon_explode[1].'"></i></a></li>';
-            $icon_mark_up .= '<option value="'.$key2.'">'.$value2.'</option>';
+        $icon_mark_up = '';
+        $icon_fake_markup = '<ul class="list-icon">';
+        foreach($icon_default_value as $key => $value) {
+            $icon_mark_up .= '<option selected="selected" value="">- No Icon -</option><optgroup label="'.$key.'">';
+            foreach ($icon_default_value[$key] as $key2 => $value2) {
+                $fake_icon_explode = explode("|",$key2);
+                $icon_fake_markup .= '<li><a href="javascript:;" class="fake-icon" icon-name="'.$fake_icon_explode[1].'" data-icon="'.$key2.'"><i class="'.$fake_icon_explode[0].' '.$fake_icon_explode[1].'"></i></a></li>';
+                $icon_mark_up .= '<option value="'.$key2.'">'.$value2.'</option>';
+            }
+            $icon_mark_up .= '</optgroup>';
         }
-        $icon_mark_up .= '</optgroup>';
+        $icon_fake_markup .= '</ul>';
+        drupal_add_js(array('iconMarkUp' => $icon_mark_up),'setting');
+        drupal_add_js(array('iconFakeMarkUp' => $icon_fake_markup),'setting');
     }
-    $icon_fake_markup .= '</ul>';
-    drupal_add_js(array('iconMarkUp' => $icon_mark_up),'setting');
-    drupal_add_js(array('iconFakeMarkUp' => $icon_fake_markup),'setting');
 
 	$form['md_alpine_settings']['design'] = array(
 		'#type' 					=> 'fieldset',
@@ -50,6 +52,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
 	$form['md_alpine_settings']['design']['design_htmllist'] = array(
 		'#markup' 				=> '<div class="md-listleft">
 				<ul>
+				    <li><a href="#ds-preloader">Preloader</a></li>
 				    <li><a href="#ds-general">Skins</a></li>
 				    <li><a href="#ds-menu">Menu</a></li>
 				    <li><a href="#ds-sidebar">Sidebar</a></li>
@@ -66,13 +69,30 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
 		'#markup' 				=> '</div><!-- /.md-listleft -->',
 		'#weight' 				=> 15,
 	);
+    /* 0.   Preloader
+    --------------------------------------------------------------------------*/
+     $form['md_alpine_settings']['design']['design_preloader'] = array(
+        '#type' 					=> 'fieldset',
+        '#weight' 				=> -5,
+        '#prefix'  				=> '<div id="ds-preloader" class="md-tabcontent clearfix">',
+        '#suffix'        => '</div><!-- / #ds-general -->',
+    );
+
+    $form['md_alpine_settings']['design']['design_preloader']['enable_preloader'] = array(
+        '#type'          => 'checkbox',
+        '#title'         => t('Enable Preloader'),
+        '#default_value' => theme_get_setting('enable_preloader'),
+    );
+
+    /* 1.   Site Skins
+     --------------------------------------------------------------------------*/
     $form['md_alpine_settings']['design']['design_general'] = array(
         '#type' 					=> 'fieldset',
         '#weight' 				=> -5,
         '#prefix'  				=> '<div id="ds-general" class="md-tabcontent clearfix">',
         '#suffix'        => '</div><!-- / #ds-general -->',
     );
-    // Site skins
+
     $form['md_alpine_settings']['design']['design_general']['skins'] = array(
         '#type'          => 'select',
         '#title'         => t('Choose skin'),
@@ -148,7 +168,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
     $form['md_alpine_settings']['design']['design_sidebar']['sidebar_position'] = array(
         '#type'          => 'select',
         '#title'         => t('Sidebar position'),
-        '#default_value' => theme_get_setting('sidebar_position') ? theme_get_setting('sidebar_position') : 'right',
+        '#default_value' => theme_get_setting('sidebar_position'),
         '#options'       => array(
             'no'        => t('No sidebar'),
             'left'      => t('Left'),
@@ -785,16 +805,19 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
             $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key.'_openhtml'] = array(
                 '#markup' => '<li id="ft-social-sortable-'.$num.'" class="draggable-item sortable-item toggle-item" data-num="'.substr($num,2).'" data-id="ft-social-sortable-no'.substr($num,2).'">'
             );
-            $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key]['ft_social_icon_'.$num] = array(
-                '#type' => 'icon_selector',
-                '#title'    => 'Social Icon',
-                '#default_bundle' => isset($social_icon['bundle']) ? $social_icon['bundle'] : '',
-                '#default_icon' => $social_icon['icon'],
-                '#attributes'   => array(
-                    'class' => array('icon-select'),
-                    'id'    => array('footer-social-'.$num.'')
-                )
-            );
+            if(module_exists('icon')) {
+                $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key]['ft_social_icon_'.$num] = array(
+                    '#type' => 'icon_selector',
+                    '#title'    => 'Social Icon',
+                    '#default_bundle' => isset($social_icon['bundle']) ? $social_icon['bundle'] : '',
+                    '#default_icon' => $social_icon['icon'],
+                    '#attributes'   => array(
+                        'class' => array('icon-select'),
+                        'id'    => array('footer-social-'.$num.'')
+                    )
+                );
+            }
+
 
             $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key]['ft_social_link_'.$num] = array(
                 '#type' => 'textfield',
@@ -811,19 +834,22 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
         }
     } else {
         $social_icon_1 = theme_get_setting('ft_social_icon_1');
-        $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key.'_openhtml'] = array(
+        $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview']['ft_social_preview_openhtml'] = array(
             '#markup' => '<li id="ft-social-sortable-no1" class="draggable-item sortable-item toggle-item" data-num="1" data-id="ft-social-sortable-no1">'
         );
-        $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview']['ft_social_icon_no1'] = array(
-            '#type' => 'icon_selector',
-            '#title'    => 'Social Icon',
-            '#default_bundle' => isset($social_icon_1['bundle']) ? $social_icon_1['bundle'] : '',
-            '#default_icon' => $social_icon_1['icon'],
-            '#attributes'   => array(
-                'class' => array('icon-select'),
-                'id'    => array('footer-social-no1')
-            )
-        );
+        if(module_exists('icon')) {
+            $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview']['ft_social_icon_no1'] = array(
+                '#type' => 'icon_selector',
+                '#title'    => 'Social Icon',
+                '#default_bundle' => isset($social_icon_1['bundle']) ? $social_icon_1['bundle'] : '',
+                '#default_icon' => $social_icon_1['icon'],
+                '#attributes'   => array(
+                    'class' => array('icon-select'),
+                    'id'    => array('footer-social-no1')
+                )
+            );
+
+        }
 
         $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview']['ft_social_link_no1'] = array(
             '#type' => 'textfield',
@@ -834,7 +860,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
             '#default_value' => theme_get_setting('ft_social_link_no1'),
             '#maxlength' => 1000,
         );
-        $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview'][$key.'_closehtml'] = array(
+        $form['md_alpine_settings']['design']['design_footer']['footer_social']['social_acc_wrapper']['ft_social_preview']['ft_social_preview_closehtml'] = array(
             '#markup' => '<div class="preview-controls"><input class="remove form-submit" value="Remove"></div><div class="preview-demo"></div></li>'
         );
     }
@@ -1159,16 +1185,19 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview'][$key.'_openhtml'] = array(
                 '#markup' => '<li id="pr-'.$i.'-connect-sortable-'.$num.'" class="draggable-item sortable-item toggle-item" data-num="'.substr($num,2).'" data-id="pr-'.$i.'-connect-sortable-no'.substr($num,2).'">'
             );
-            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview'][$key]['pr_'.$i.'_connect_icon_'.$num] = array(
-                '#type' => 'icon_selector',
-                '#title'    => 'Social Connect Icon',
-                '#default_bundle' => isset($connect_icon['bundle']) ? $connect_icon['bundle'] : '',
-                '#default_icon' => isset($connect_icon['icon']) ? $connect_icon['icon'] : '',
-                '#attributes'   => array(
-                    'class' => array('icon-select'),
-                    'id'    => array('pr-'.$i.'-connect-fake-'.$num.''),
-                ),
-            );
+            if(module_exists('icon')) {
+                $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview'][$key]['pr_'.$i.'_connect_icon_'.$num] = array(
+                    '#type' => 'icon_selector',
+                    '#title'    => 'Social Connect Icon',
+                    '#default_bundle' => isset($connect_icon['bundle']) ? $connect_icon['bundle'] : '',
+                    '#default_icon' => isset($connect_icon['icon']) ? $connect_icon['icon'] : '',
+                    '#attributes'   => array(
+                        'class' => array('icon-select'),
+                        'id'    => array('pr-'.$i.'-connect-fake-'.$num.''),
+                    ),
+                );
+            }
+
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview'][$key]['pr_'.$i.'_connect_link_'.$num] = array(
                 '#type' => 'textfield',
                 '#title'    => 'Social Connect Icon Link',
@@ -1193,16 +1222,19 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             '#markup' => '<li id="pr-'.$i.'-connect-sortable-no1" class="draggable-item sortable-item toggle-item" data-num="1" data-id="pr-'.$i.'-connect-sortable-no1">'
         );
         $connect_icon_no1 = theme_get_setting('pr_'.$i.'_connect_icon_no1');
-        $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview']['pr_'.$i.'_connect_icon_no1'] = array(
-            '#type' => 'icon_selector',
-            '#title'    => 'Social Connect Icon',
-            '#default_bundle' => isset($connect_icon_no1['bundle']) ? $connect_icon_no1['bundle'] : '',
-            '#default_icon' => $connect_icon_no1['icon'],
-            '#attributes'   => array(
-                'class' => array('icon-select'),
-                'id'    => array('pr-'.$i.'-connect-fake-no1'),
-            ),
-        );
+        if(module_exists('icon')) {
+            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview']['pr_'.$i.'_connect_icon_no1'] = array(
+                '#type' => 'icon_selector',
+                '#title'    => 'Social Connect Icon',
+                '#default_bundle' => isset($connect_icon_no1['bundle']) ? $connect_icon_no1['bundle'] : '',
+                '#default_icon' => $connect_icon_no1['icon'],
+                '#attributes'   => array(
+                    'class' => array('icon-select'),
+                    'id'    => array('pr-'.$i.'-connect-fake-no1'),
+                ),
+            );
+        }
+
         $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_connect']['pr_'.$i.'_connect_content_wrapper']['pr_'.$i.'_connect_preview']['pr_'.$i.'_connect_link_no1'] = array(
             '#type' => 'textfield',
             '#title'    => 'Social Connect Icon Link',
@@ -1281,18 +1313,21 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview'][$key.'_openhtml'] = array(
                 '#markup' => '<li id="pr-'.$i.'-number-sortable-'.$num.'" class="draggable-item sortable-item toggle-item" data-num="'.substr($num,2).'" data-id="pr-'.$i.'-number-sortable-no'.substr($num,2).'">'
             );
-            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview'][$key]['pr_'.$i.'_number_icon_'.$num] = array(
-                '#type' => 'icon_selector',
-                '#title'    => 'Icon',
-                '#default_bundle' => isset($number_icon['bundle']) ? $number_icon['bundle'] : '',
-                '#default_icon' => isset($number_icon['icon']) ? $number_icon['icon'] : '',
-                '#attributes'   => array(
-                    'class' => array('icon-select'),
-                    'id'    => array('pr-'.$i.'-number-fake-'.$num.''),
-                ),
-                '#prefix' => '<div>',
-                '#suffix' => '</div>',
-            );
+            if(module_exists('icon')) {
+                $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview'][$key]['pr_'.$i.'_number_icon_'.$num] = array(
+                    '#type' => 'icon_selector',
+                    '#title'    => 'Icon',
+                    '#default_bundle' => isset($number_icon['bundle']) ? $number_icon['bundle'] : '',
+                    '#default_icon' => isset($number_icon['icon']) ? $number_icon['icon'] : '',
+                    '#attributes'   => array(
+                        'class' => array('icon-select'),
+                        'id'    => array('pr-'.$i.'-number-fake-'.$num.''),
+                    ),
+                    '#prefix' => '<div>',
+                    '#suffix' => '</div>',
+                );
+            }
+
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview'][$key]['pr_'.$i.'_number_count_'.$num] = array(
                 '#type' => 'textfield',
                 '#title'    => 'Count Number From',
@@ -1319,16 +1354,19 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             '#markup' => '<li id="pr-'.$i.'-number-sortable-no1" class="draggable-item sortable-item toggle-item" data-num="1" data-id="pr-'.$i.'-number-sortable-no1">'
         );
         $number_icon_no1 = theme_get_setting('pr_'.$i.'_number_icon_no1');
-        $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview']['pr_'.$i.'_number_icon_no1'] = array(
-            '#type' => 'icon_selector',
-            '#title'    => 'Icon',
-            '#default_bundle' => isset($number_icon_no1['bundle']) ? $number_icon_no1['bundle'] : '',
-            '#default_icon' => $number_icon_no1['icon'],
-            '#attributes'   => array(
-                'class' => array('icon-select'),
-                'id'    => array('pr-'.$i.'-number-fake-no1'),
-            ),
-        );
+        if(module_exists('icon')) {
+            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview']['pr_'.$i.'_number_icon_no1'] = array(
+                '#type' => 'icon_selector',
+                '#title'    => 'Icon',
+                '#default_bundle' => isset($number_icon_no1['bundle']) ? $number_icon_no1['bundle'] : '',
+                '#default_icon' => $number_icon_no1['icon'],
+                '#attributes'   => array(
+                    'class' => array('icon-select'),
+                    'id'    => array('pr-'.$i.'-number-fake-no1'),
+                ),
+            );
+        }
+
         $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_number']['pr_'.$i.'_number_content_wrapper']['pr_'.$i.'_number_preview']['pr_'.$i.'_number_count_no1'] = array(
             '#type' => 'textfield',
             '#title'    => 'Count Number',
@@ -1525,18 +1563,21 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview'][$key.'_openhtml'] = array(
                 '#markup' => '<li id="pr-'.$i.'-overview-sortable-'.$num.'" class="draggable-item sortable-item toggle-item" data-num="'.substr($num,2).'" data-id="pr-'.$i.'-overview-sortable-no'.substr($num,2).'">'
             );
-            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview'][$key]['pr_'.$i.'_overview_icon_'.$num] = array(
-                '#type' => 'icon_selector',
-                '#title'    => 'Overview Icon',
-                '#default_bundle' => isset($overview_icon['bundle']) ? $overview_icon['bundle'] : '',
-                '#default_icon' => $overview_icon['icon'],
-                '#attributes'   => array(
-                    'class' => array('icon-select'),
-                    'id'    => array('pr-'.$i.'-overview-fake-'.$num.''),
-                ),
-                '#prefix' => '<div>',
-                '#suffix' => '</div>',
-            );
+            if(module_exists('icon')) {
+                $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview'][$key]['pr_'.$i.'_overview_icon_'.$num] = array(
+                    '#type' => 'icon_selector',
+                    '#title'    => 'Overview Icon',
+                    '#default_bundle' => isset($overview_icon['bundle']) ? $overview_icon['bundle'] : '',
+                    '#default_icon' => $overview_icon['icon'],
+                    '#attributes'   => array(
+                        'class' => array('icon-select'),
+                        'id'    => array('pr-'.$i.'-overview-fake-'.$num.''),
+                    ),
+                    '#prefix' => '<div>',
+                    '#suffix' => '</div>',
+                );
+            }
+
             $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview'][$key]['pr_'.$i.'_overview_title_'.$num] = array(
                 '#type' => 'textfield',
                 '#title'    => 'Overview Title',
@@ -1568,16 +1609,19 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
             '#markup' => '<li id="pr-'.$i.'-overview-sortable-no1" class="draggable-item sortable-item toggle-item" data-num="1" data-id="pr-'.$i.'-overview-sortable-no1">'
         );
         $overview_icon_no1 = theme_get_setting('pr_'.$i.'_overview_icon_no1');
-        $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview']['pr_'.$i.'_overview_icon_no1'] = array(
-            '#type' => 'icon_selector',
-            '#title'    => 'Overview Icon',
-            '#default_bundle' => isset($overview_icon_no1['bundle']) ? $overview_icon_no1['bundle'] : '',
-            '#default_icon' => $overview_icon_no1['icon'],
-            '#attributes'   => array(
-                'class' => array('icon-select'),
-                'id'    => array('pr-'.$i.'-overview-fake-no1'),
-            ),
-        );
+        if(module_exists('icon')) {
+            $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview']['pr_'.$i.'_overview_icon_no1'] = array(
+                '#type' => 'icon_selector',
+                '#title'    => 'Overview Icon',
+                '#default_bundle' => isset($overview_icon_no1['bundle']) ? $overview_icon_no1['bundle'] : '',
+                '#default_icon' => $overview_icon_no1['icon'],
+                '#attributes'   => array(
+                    'class' => array('icon-select'),
+                    'id'    => array('pr-'.$i.'-overview-fake-no1'),
+                ),
+            );
+        }
+
         $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_overview']['pr_'.$i.'_overview_content_wrapper']['pr_'.$i.'_overview_preview']['pr_'.$i.'_overview_title_no1'] = array(
             '#type' => 'textfield',
             '#title'    => 'Overview Title',
@@ -1619,16 +1663,19 @@ function md_alpine_prepare_parallax_form(&$form, $i) {
         '#suffix'   => '</div>'
     );
     $contact_icon_no1 = theme_get_setting('pr_'.$i.'_contact_icon_no1');
-    $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_contact']['pr_'.$i.'_contact_content_wrapper']['pr_'.$i.'_contact_icon_no1'] = array(
-        '#type' => 'icon_selector',
-        '#title'    => 'Contact Icon',
-        '#default_bundle' => isset($contact_icon_no1['bundle']) ? $contact_icon_no1['bundle'] : '',
-        '#default_icon' => $contact_icon_no1['icon'],
-        '#attributes'   => array(
-            'class' => array('icon-select'),
-            'id'    => array('pr-'.$i.'-contact-fake-no1'),
-        ),
-    );
+    if(module_exists('icon')) {
+        $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_contact']['pr_'.$i.'_contact_content_wrapper']['pr_'.$i.'_contact_icon_no1'] = array(
+            '#type' => 'icon_selector',
+            '#title'    => 'Contact Icon',
+            '#default_bundle' => isset($contact_icon_no1['bundle']) ? $contact_icon_no1['bundle'] : '',
+            '#default_icon' => $contact_icon_no1['icon'],
+            '#attributes'   => array(
+                'class' => array('icon-select'),
+                'id'    => array('pr-'.$i.'-contact-fake-no1'),
+            ),
+        );
+    }
+
     $form['md_alpine_settings']['design']['design_parallax']['parallax_'.$i.'']['pr_'.$i.'_contact']['pr_'.$i.'_contact_content_wrapper']['pr_'.$i.'_contact_title_no1'] = array(
         '#type' => 'textfield',
         '#title'    => 'Contact Title',

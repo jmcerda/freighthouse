@@ -79,12 +79,16 @@ function md_alpine_menu_link(array $variables) {
     if(current_path() == $frontpage && drupal_is_front_page()) {
         if(!$element['#below'] && $element['#href'] == '<front>') {
             $element['#localized_options']['attributes']['class'] = array('int-collapse-menu');
-            return '<li><a class="int-collapse-menu" href="#'.$element['#localized_options']['fragment'].'">'.$element['#title'].'</a></li>';
+            if(isset($element['#localized_options']['fragment'])) {
+                return '<li><a class="int-collapse-menu" href="#'.$element['#localized_options']['fragment'].'">'.$element['#title'].'</a></li>';
+            }
         }
     }
     if(!$element['#below'] && $element['#href'] == '<front>') {
         $element['#localized_options']['attributes']['class'] = array('int-collapse-menu');
-        return '<li><a class="int-collapse-menu" href="'.$GLOBALS['base_url'].'/#'.$element['#localized_options']['fragment'].'">'.$element['#title'].'</a></li>';
+        if(isset($element['#localized_options']['fragment'])) {
+            return '<li><a class="int-collapse-menu" href="'.$GLOBALS['base_url'].'/#'.$element['#localized_options']['fragment'].'">'.$element['#title'].'</a></li>';
+        }
     }
     $output = l($element['#title'], $element['#href'], $element['#localized_options']);
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
@@ -161,11 +165,10 @@ function md_alpine_form_alter(&$form, &$form_state, $form_id) {
                 $form['pass']['#attributes']['class'][] = 'form-control input-lg';
                 $form['pass']['#prefix'] = '<div class="col-md-12 col-sm-12 col-md-12 col-xs-12">';
                 $form['pass']['#suffix'] = '</div>';
-                $form['actions']['submit']['#value'] = t('Login');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
 							<div class="col-md-12 text-center">
-									<div class="action mybutton medium"><span>';
-                $form['actions']['submit']['#suffix'] = '</span></div>
+									<div class="action mybutton medium">';
+                $form['actions']['submit']['#suffix'] = '</div>
 							</div>
 						</div>';
                 break;
@@ -176,8 +179,6 @@ function md_alpine_form_alter(&$form, &$form_state, $form_id) {
                 $form['account']['mail']['#attributes']['class'][] = 'form-control input-lg';
                 $form['account']['mail']['#prefix'] = '<div class="col-md-12 col-sm-12 col-md-12 col-xs-12">';
                 $form['account']['mail']['#suffix'] = '</div>';
-
-                $form['actions']['submit']['#value'] = t('Create new account');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
 							<div class="col-md-12 text-center">
 									<div class="action mybutton medium"><span>';
@@ -192,7 +193,6 @@ function md_alpine_form_alter(&$form, &$form_state, $form_id) {
                 $form['pass']['#attributes']['class'][] = 'form-control input-lg';
                 $form['pass']['#prefix'] = '<div class="col-md-12 col-sm-12 col-md-12 col-xs-12">';
                 $form['pass']['#suffix'] = '</div>';
-                $form['actions']['submit']['#value'] = t('Login');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
 							<div class="col-md-12 text-center">
 									<div class="action mybutton medium"><span>';
@@ -204,7 +204,6 @@ function md_alpine_form_alter(&$form, &$form_state, $form_id) {
                 $form['name']['#attributes']['class'][] = 'form-control input-lg';
                 $form['name']['#prefix'] = '<div class="col-md-12 col-sm-12 col-md-12 col-xs-12">';
                 $form['name']['#suffix'] = '</div>';
-                $form['actions']['submit']['#value'] = t('Request new password');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
 							<div class="col-md-12 text-center">
 									<div class="action mybutton medium"><span>';
@@ -214,17 +213,13 @@ function md_alpine_form_alter(&$form, &$form_state, $form_id) {
                 break;
         }
     } else {
-
         $form['#attributes']['class'][] = 'element-inline';
-        $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
 							<div class="col-md-12 text-center">
-								<div class="action form-button medium">
-									<div class="mybutton medium"><span data-hover="Send Message">';
-        $form['actions']['submit']['#sufix'] = '</span></div>
-								</div>
+									<div class="action mybutton medium"><span>';
+        $form['actions']['submit']['#suffix'] = '</span></div>
 							</div>
-						';
+						</div>';
     }
 
 
@@ -449,6 +444,28 @@ function md_alpine_theme_setting_check_path($path) {
         $return_path = $path;
     } else {
         $return_path = file_create_url(file_build_uri($path));
+    }
+    return $return_path;
+}
+/**
+ * Check file path upload in theme setting
+ */
+function md_alpine_parallax_bg_check_path($path) {
+    $path_scheme = file_uri_scheme($path);
+    if ($path_scheme == 'public') {
+        $derivative_uri = image_style_path('background_parallax', $path);
+        $success        = file_exists($derivative_uri) || image_style_create_derivative('background_parallax', "public://".$path."", $derivative_uri);
+
+        $new_image_url  = file_create_url($derivative_uri);
+        $return_path = $new_image_url;
+    } else if (($path_scheme == 'http') || ($path_scheme == 'https')) {
+        $return_path = $path;
+    } else {
+        $derivative_uri = image_style_path('background_parallax', "public://".$path."");
+        $success        = file_exists($derivative_uri) || image_style_create_derivative('background_parallax', "public://".$path."", $derivative_uri);
+
+        $new_image_url  = file_create_url($derivative_uri);
+        $return_path = $new_image_url;
     }
     return $return_path;
 }

@@ -38,24 +38,24 @@ $node = node_load($row->nid);
                 <?php if($node->sticky == 1):?>
                     <div class="pricing-featured">
                 <?php endif;?>
-                <ul>
-                    <li class="title-row">
-                        <h4><?php print $fields['title']->content;?></h4>
-                    </li>
-                    <li class="price-row">
-                        <h1><?php print $fields['field_pc_currency']->content.$fields['field_pc_price']->content;?></h1><span>/<?php print $fields['field_pc_time']->content;?></span>
-                    </li>
-                    <?php foreach($row->field_field_pc_description as $key => $value):?>
-                        <li>
-                            <?php print $value['rendered']['#markup'];?>
-                        </li>
-                    <?php endforeach;?>
-                    <li class="btn-row">
-                        <div class="mybutton small">
-                            <a href="<?php print $fields['field_pc_link']->content;?>"><span data-hover="<?php print $fields['field_pc_button_text_hover']->content;?>"><?php print $fields['field_pc_button_text']->content;?></span></a>
-                        </div>
-                    </li>
-                </ul>
+                        <ul>
+                            <li class="title-row">
+                                <h4><?php print $fields['title']->content;?></h4>
+                            </li>
+                            <li class="price-row">
+                                <h1><?php print $fields['field_pc_currency']->content.$fields['field_pc_price']->content;?></h1><span>/<?php print $fields['field_pc_time']->content;?></span>
+                            </li>
+                            <?php foreach($row->field_field_pc_description as $key => $value):?>
+                                <li>
+                                    <?php print $value['rendered']['#markup'];?>
+                                </li>
+                            <?php endforeach;?>
+                            <li class="btn-row">
+                                <div class="mybutton small">
+                                    <a href="<?php print $fields['field_pc_link']->content;?>"><span data-hover="<?php print $fields['field_pc_button_text_hover']->content;?>"><?php print $fields['field_pc_button_text']->content;?></span></a>
+                                </div>
+                            </li>
+                        </ul>
                 <?php if($node->sticky == 1):?>
                     </div>
                 <?php endif;?>

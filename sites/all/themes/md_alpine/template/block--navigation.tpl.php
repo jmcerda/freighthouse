@@ -13,7 +13,7 @@ if(theme_get_setting('logo_normal_path')) {
                 <span class="sr-only">Toggle navigation</span>
                 <i class="icon fontello icon-menu icon-2x"></i>
             </button>
-            <a id="brand" class="navbar-brand" href="<?php print $base_url;?>"> <img src="<?php print $logo_path;?>" alt=""> </a>
+            <a id="brand" class="navbar-brand" href="<?php print $base_url;?>"> <img src="<?php print $logo_path;?>" alt=""/> </a>
         </div>
         <div class="navbar-collapse collapse">
             <?php print $content;?>

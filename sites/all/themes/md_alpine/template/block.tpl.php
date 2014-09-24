@@ -57,13 +57,11 @@
         $tt_des_animate = 'item_left';
     }
 
-    $content_animate = variable_get($block->delta.'_content_animate');
+    $content_animate = variable_get($block->delta.'_content_animate','');
     if($content_animate != null) {
         if($content_animate == 'none') {
             $content_animate = '';
         }
-    } else {
-        $content_animate = 'item_right';
     }
 
     $current_path = current_path();
@@ -81,7 +79,7 @@
                 <?php if(isset($before_title)):?>
                     <div class="<?php print $tt_des_animate;?>">
                         <span class="line big"></span>
-                        <span ><?php print $before_title;?></span>
+                        <span ><?php print t($before_title);?></span>
                         <span class="line big"></span>
                     </div>
                 <?php endif?>
@@ -93,14 +91,14 @@
                 <?php if(isset($after_title)):?>
                     <div class="<?php print $tt_des_animate;?>">
                         <span class="line"></span>
-                        <span><?php print $after_title;?></span>
+                        <span><?php print t($after_title);?></span>
                         <span class="line"></span>
                     </div>
                 <?php endif;?>
                 <?php if(isset($description)):?>
-                    <p class="lead <?php print $tt_des_animate;?>">
-                        <?php print $description;?>
-                    </p>
+                    <div class="lead <?php print $tt_des_animate;?>">
+                        <?php print t($description);?>
+                    </div>
                 <?php endif;?>
             </div>
         </div>

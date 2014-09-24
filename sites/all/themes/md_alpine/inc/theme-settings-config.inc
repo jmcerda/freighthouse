@@ -55,14 +55,14 @@ function md_alpine_theme_settings_config(&$form, &$form_state) {
     $form['md_alpine_settings']['config']['restore']['restore_file_upload'] = array(
         '#type' => 'file',
     );
-
+    /*
     $form['md_alpine_settings']['config']['restore']['restore_code'] = array(
         '#type' => 'textarea',
         '#title'    => t('Transfer Theme Options Data'),
         '#default_value' => '',
         '#description' => t('You can transfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Restore Options".')
     );
-
+    */
     $form['md_alpine_settings']['config']['restore']['restore_theme_settings'] = array(
         '#type' => 'submit',
         '#value'    => t('Restore Settings'),

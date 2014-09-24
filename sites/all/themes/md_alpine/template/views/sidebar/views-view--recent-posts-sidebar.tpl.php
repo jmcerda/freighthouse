@@ -37,7 +37,7 @@ if(isset($view->display[$current_display]->display_options['display_description'
 <div class="widget <?php print $classes; ?>">
     <?php print render($title_prefix); ?>
     <div class="widget-title">
-        <h4><?php print $view->human_name;?></h4>
+        <h4><?php print t($view->human_name);?></h4>
     </div>
     <?php if ($title): ?>
         <?php print $title; ?>

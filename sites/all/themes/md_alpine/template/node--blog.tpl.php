@@ -1,4 +1,3 @@
-
 <?php
 global $base_url;
 if(isset($content['field_bl_multimedia'])) {
@@ -8,23 +7,58 @@ if(isset($content['field_bl_multimedia'])) {
         $file_type = $value['file']->type;
         $file_uri = $value['file']->uri;
         if($file_type == 'image') {
-            $media_content .= '<li><img src="'.image_style_url('blog_multimedia',$file_uri).'"/></li>';
+            if(count($multimedia) > 1 ) {
+                $media_content .= '<li>';
+            }
+            $media_content .= '<img src="'.image_style_url('blog_multimedia',$file_uri).'"/>';
+            if(count($multimedia) > 1 ) {
+                $media_content .= '</li>';
+            }
         } else {
-            $media_content .= '<li>'.render($content['field_bl_multimedia'][$key]).'</li>';
+            if(count($multimedia) > 1 ) {
+                $media_content .= '<li>';
+            }
+            $media_content .= render($content['field_bl_multimedia'][$key]);
+            if(count($multimedia) > 1 ) {
+                $media_content .= '</li>';
+            }
         }
     }
 }
 ?>
-<?php ?>
+<?php if(strpos(current_path(),'taxonomy/term') !== FALSE):?>
+<div class="col-md-10 col-md-offset-1">
+    <div class="section-title text-center">
+        <div>
+            <span class="line big"></span>
+            <span><?php print t('Posted by');?> <a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
+            <span class="line big"></span>
+        </div>
+        <h1><?php print $node->title;?></h1>     
+        <div>
+            <span class="line"></span>
+            <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
+            <span class="line"></span>
+        </div>
+    </div>
+<?php endif;?>
 
 <div class="element-line">
+    <?php if(isset($multimedia) && count($multimedia) > 1) :?>
     <div class="flexslider">
-        <ul class="slides">
+            <ul class="slides">
+        <?php endif;?>
             <?php if(isset($media_content) && $media_content != null): print $media_content; endif;?>
-        </ul>
+        <?php if(isset($multimedia) && count($multimedia) > 1) :?>
+            </ul>
     </div>
+    <?php endif;?>
     <div class="blog-text">
         <?php print render($content['body']);?>
     </div>
     <?php print render($content['comments']); ?>
 </div>
+
+<?php if(strpos(current_path(),'taxonomy/term') !== FALSE):?>
+</div>
+<?php endif;?>

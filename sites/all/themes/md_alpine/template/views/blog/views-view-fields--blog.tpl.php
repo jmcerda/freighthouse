@@ -32,7 +32,7 @@ $node = node_load($row->nid);
 <li class="timeline-item">
     <div class="item_left">
         <div class="well post">
-            <div class="post-info bgdark text-center">
+            <div class="post-info text-center">
                 <h5 class="info-date"><?php print date('F d, Y',$row->node_created);?><small><?php print date('H:i',$row->node_created);?></small></h5>
                 <?php print $fields['picture']->content;?>
                 <h5><?php print $node->name;?></h5>
@@ -53,12 +53,12 @@ $node = node_load($row->nid);
                     </ul>
                 </div>
                 <?php else:?>
-                    <a href="<?php print $base_url.'/node/'.$row->nid;?>" class="zoom"><?php if(isset($row->field_field_bl_thumbnail[0])):?> <img src="<?php print image_style_url('blog_thumbnail',$row->field_field_bl_thumbnail[0]['rendered']['#item']['uri']);?>" class="img-responsive" alt=""><?php endif;?> </a>
+                    <a href="<?php print $base_url.'/node/'.$row->nid;?>" class="zoom"><?php if(isset($row->field_field_bl_thumbnail[0])):?> <img src="<?php print image_style_url('blog_thumbnail',$row->field_field_bl_thumbnail[0]['rendered']['#item']['uri']);?>" class="img-responsive" alt=""/><?php endif;?> </a>
                 <?php endif;?>
                 <div class="post-text">
-                    <p class="lead">
+                    <div class="lead">
                         <?php print $fields['field_bl_description']->content;?>
-                    </p>
+                    </div>
                 </div>
             </div>
             <div class="post-arrow"></div>

@@ -37,9 +37,7 @@ $social = $row->field_field_team_socials;
                     <div class="team-detail">
                         <div class="team-content">
                             <h3><strong><?php print $fields['title']->content;?></strong></h3>
-                            <p>
-                                <?php print $fields['field_team_job']->content;?>
-                            </p>
+                            <?php print $fields['field_team_job']->content;?>
                             <ul>
                                 <?php foreach($social as $key => $value):
                                     $field_collection_val = $value['raw']['value'];
@@ -53,7 +51,7 @@ $social = $row->field_field_team_socials;
                         </div>
                     </div>
                 </div>
-                <img src="<?php print image_style_url('team_thumbnail',$row->field_field_team_thumbnail[0]['rendered']['#item']['uri']);?>" alt="" class="img-responsive">
+                <img src="<?php print image_style_url('team_thumbnail',$row->field_field_team_thumbnail[0]['rendered']['#item']['uri']);?>" alt="" class="img-responsive"/>
             </div>
         </div>
     </div>

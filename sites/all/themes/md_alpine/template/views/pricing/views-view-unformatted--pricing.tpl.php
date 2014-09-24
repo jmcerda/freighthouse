@@ -29,8 +29,6 @@
         $column_type = 2;
     }
 ?>
-
-    <?php foreach ($rows as $id => $row): ?>
-        <?php print $row; ?>
-    <?php endforeach; ?>
-</div>
+<?php foreach ($rows as $id => $row): ?>
+    <?php print $row; ?>
+<?php endforeach; ?>

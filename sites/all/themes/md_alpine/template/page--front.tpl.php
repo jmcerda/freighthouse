@@ -1,7 +1,9 @@
 <!-- Intro loader -->
+<?php if(theme_get_setting('enable_preloader') == 1) :?>
 <div class="mask">
     <div id="intro-loader"></div>
 </div>
+<?php endif;?>
 <!-- Intro loader -->
 <?php if($page['header']):?>
     <?php print render($page['header']);?>
@@ -133,3 +135,5 @@
 <?php if($page['footer']):?>
     <?php print render($page['footer']);?>
 <?php endif;?>
+<!-- Back to top -->
+<a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>

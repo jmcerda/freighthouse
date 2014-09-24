@@ -238,6 +238,9 @@
     $(document).ready(function() {
         initializePortfolio();
     });
+    $('.md-section-wrapper').bind("DOMSubtreeModified",function(){
+        initializePortfolio();
+    });
 //END DOCUMENT.READY FUNCTION
 
 // BEGIN WINDOW.LOAD FUNCTION

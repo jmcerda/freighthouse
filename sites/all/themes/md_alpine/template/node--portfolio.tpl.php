@@ -130,9 +130,7 @@ if(isset($node->field_po_layout_mode)) {
 
                             <div class="project-details">
                                 <h4><?php print t('Project Description');?></h4>
-                                <p>
-                                    <?php print render($content['field_po_description']);?>
-                                </p>
+                                <?php print render($content['field_po_description']);?>
                             </div>
 
                             <div class="project-details">

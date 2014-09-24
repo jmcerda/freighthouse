@@ -27,17 +27,18 @@
  * @ingroup views_templates
  */
 ?>
-<?php $view_result = $view->result[0];?>
+<?php if(isset( $view->result[0])) : $view_result = $view->result[0];?>
 <div class="section-title text-center">
-    <p class="lead">
-        <?php print $view_result->node_title;?>
-        <br>
-    </p>
+    <?php if(isset($view_result)) : print $view_result->node_title; endif;?>
+    <br>
 </div>
-
+<?php endif;?>
 <!-- Google maps print -->
-<div id="map_canvas" class="element-line"></div>
-<div class="container <?php print $classes; ?>">
+<?php if(theme_get_setting('enable_map') == 1) :?>
+    <div id="map_canvas" class="element-line"></div>
+<?php endif;?>
+
+<div class="<?php print $classes; ?>">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
         <?php print $title; ?>
@@ -65,17 +66,19 @@
     <?php if ($rows): ?>
         <div class="container">
             <div class="element-line">
-                <p class="lead text-center">
-                    <?php if(isset($view_result->field_field_contact_description[0])):print t($view_result->field_field_contact_description[0]['rendered']['#markup']);endif;?>
-                </p>
+                <?php if(isset($view_result)):?>
+                    <div class="lead text-center">
+                        <?php if(isset($view_result->field_field_contact_description[0])):print t($view_result->field_field_contact_description[0]['rendered']['#markup']);endif;?>
+                    </div>
+                <?php endif;?>
                 <div class="row">
                     <?php print $rows; ?>
                 </div>
-                <?php elseif ($empty): ?>
-                <div class="view-empty">
-                    <?php print $empty; ?>
-                </div>
             </div>
+        </div>
+    <?php elseif ($empty): ?>
+        <div class="view-empty">
+            <?php print $empty; ?>
         </div>
     <?php endif; ?>
 

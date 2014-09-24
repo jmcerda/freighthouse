@@ -56,7 +56,9 @@
     <div class="row">
         <div class="col-md-6">
             <div class="element-line">
+                <?php if(theme_get_setting('team_image_path')):?>
                 <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center" alt="">
+                <?php endif;?>
             </div>
         </div>
         <div class="col-md-6">
@@ -83,10 +85,7 @@
                 <?php print $empty; ?>
             </div>
         <?php endif; ?>
-
-
     </div>
-
 
     <?php if ($pager): ?>
         <?php print $pager; ?>

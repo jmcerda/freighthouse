@@ -104,11 +104,11 @@
 	    });
 			
 			$('#'+id +'-fontsize').live("focusout",function(){
-					_updateTextStyle()
+					_updateTextStyle();
 	    });
 
 			$('#'+id +'-sizetype,'+ '#'+ id +'-uppercase').change(function(){
-					_updateTextStyle()
+					_updateTextStyle();
 	    });
 
   		// Functions
