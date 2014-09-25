@@ -336,7 +336,7 @@ or procurement.
                             </div>
                             </div>
                             <!-- Parallax content -->
-                            <div class="parallax-content">
+                            <div class="parallax-content overview_parallax">
                                 <div class="row">';
                             $overview = theme_get_setting('pr_'.$i.'_overview');
                             foreach ($overview as $key => $value){
