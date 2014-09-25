@@ -321,7 +321,7 @@ function md_alpine_module_block_view($delta = '') {
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
-                            <-- Parallax Body -->
+                            <!-- Parallax Body -->
                             <div style ="container">
                             <span class="overview_left">
                             <h2>When you build applications on rock solid systems, you never go wrong</h2>
