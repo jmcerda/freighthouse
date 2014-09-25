@@ -1879,7 +1879,3 @@ li.expanded, li.collapsed, li.leaf {
 	float: right;
 		max-width: 50%;
 }
-
-.overview_parallax {
-	width:100%;
-}
