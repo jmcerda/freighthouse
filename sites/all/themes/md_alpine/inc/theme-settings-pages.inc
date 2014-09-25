@@ -12,7 +12,7 @@ function md_alpine_theme_settings_pages(&$form, &$form_state) {
 		'#prefix'  				=> '<div id="md-pages" class="md-tabcontent clearfix">',
 		'#suffix'        => '</div><!-- / #md-pages -->',
 	);
-	
+
 	$form['md_alpine_settings']['pages']['pages_htmllist'] = array(
 		'#markup' 				=> '<div class="md-listleft">
 				<ul>
@@ -24,7 +24,7 @@ function md_alpine_theme_settings_pages(&$form, &$form_state) {
 		'#markup' 				=> '</div><!-- /.md-listleft -->',
 		'#weight' 				=> 15,
 	);
-	
+
 
 
 }
