@@ -324,21 +324,36 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="overview_container">
-                                    <span class="overview_left">
-                                        <h2>Build applications on rock solid systems and never have to depend on your IT department again!</h2>
+
+
+                                <span>
+                                    <span style="float:left;width:30%;">
+                                        <h2>Build applications on rock solid systems</h2>
                                     </span>
-                                    <span class="overview_right">
-                                        <p>
-                                            <ul>
-                                                <li>Start new projects on the fly, without waiting for IT</li>
-or procurement.
-                                                <li>Eliminate sysadmin bottlenecks so you can take your site from the kickoff meeting to up and running, faster than ever before.</li>
-                                                <li>Eliminate costly mistakes </li>
-                                                <li>Keep your team on the same page, avoiding lost work and wasted effort, thanks to modern version control.</li>
-                                                <li>Use the built-in workflow to invite colleagues, themers, managers, stakeholders. It takes just seconds to give a developer site access through the Dashboard.<li>Get real-time updates on active work through the Dashboard, and keep track of the entire project history.</li>
-                                            </ul>
+                                    <span style="float:right;width:70%;text-align:left;">
+                                        <h4 style="color:#FFFFFF;">“We wanted a combination of a best-in-class DMP with a best-in-class DSP. Turn is one of the absolute best, and the platform is really going to facilitate a lot of innovation within DIRECTV.”</h4>
+                                        <p class="">Jeremy Michael Cerda, Creative Director | Web Architect<br />
+                                        <a style="color:#ffcc00;text-decoration:none;text-align:center;" href="news/its-more-advertising-data-powers-innovation-directv">&gt; Watch the video</a>
                                         </p>
                                     </span>
+                                 </span>
+
+
+//                                     <span class="overview_left">
+//                                         <h2>Build applications on rock solid systems and never have to depend on your IT department again!</h2>
+//                                     </span>
+//                                     <span class="overview_right">
+//                                         <p>
+//                                             <ul>
+//                                                 <li>Start new projects on the fly, without waiting for IT</li>
+// or procurement.
+//                                                 <li>Eliminate sysadmin bottlenecks so you can take your site from the kickoff meeting to up and running, faster than ever before.</li>
+//                                                 <li>Eliminate costly mistakes </li>
+//                                                 <li>Keep your team on the same page, avoiding lost work and wasted effort, thanks to modern version control.</li>
+//                                                 <li>Use the built-in workflow to invite colleagues, themers, managers, stakeholders. It takes just seconds to give a developer site access through the Dashboard.<li>Get real-time updates on active work through the Dashboard, and keep track of the entire project history.</li>
+//                                             </ul>
+//                                         </p>
+//                                     </span>
                                 </div>
                             </div>
                             <!-- Parallax content -->
