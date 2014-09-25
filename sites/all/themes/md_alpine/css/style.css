@@ -1868,6 +1868,7 @@ li.expanded, li.collapsed, li.leaf {
 
 .overview_container {
 	width: 100%;
+	display: inline-block;
 }
 
 .overview_left {
