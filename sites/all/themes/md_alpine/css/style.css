@@ -1865,3 +1865,11 @@ li.expanded, li.collapsed, li.leaf {
 .about_text {
 	max-width: 75%;
 }*/
+
+.overview_left {
+	float: left;
+}
+
+.overview_right {
+	float: right;
+}
