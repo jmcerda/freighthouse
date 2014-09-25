@@ -322,7 +322,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style ="container">
+                            <div style ="container overview_container">
                             <div class="overview_left">
                             <h2>Build applications on rock solid systems and never have to depend on your IT department again!</h2>
                             </div>

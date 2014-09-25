@@ -1866,6 +1866,10 @@ li.expanded, li.collapsed, li.leaf {
 	max-width: 75%;
 }*/
 
+.overview_container {
+	width: 100%;
+}
+
 .overview_left {
 	float: left;
 	max-width: 50%;
@@ -1873,5 +1877,5 @@ li.expanded, li.collapsed, li.leaf {
 
 .overview_right {
 	float: right;
-	max-width: 50%;
+		max-width: 50%;
 }
