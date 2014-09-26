@@ -323,7 +323,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-                            print file_get_contents('../../themes/freighthouse/template/overview.html');
+                            file_get_contents('../../themes/freighthouse/template/overview.html');
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
