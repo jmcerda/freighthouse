@@ -323,25 +323,9 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-                                <div class="overview_container">
-
-
-                                <span>
-                                    <span style="float:left;width:30%;">
-                                        <h2>Build applications on rock solid systems</h2>
-                                    </span>
-                                    <span style="float:right;width:70%;text-align:left;">
-                                        <h4 style="color:#FFFFFF;">“We wanted a combination of a best-in-class DMP with a best-in-class DSP. Turn is one of the absolute best, and the platform is really going to facilitate a lot of innovation within DIRECTV.”</h4>
-                                        <p class="">Jeremy Michael Cerda, Creative Director | Web Architect<br />
-                                        <a style="color:#ffcc00;text-decoration:none;text-align:center;" href="news/its-more-advertising-data-powers-innovation-directv">&gt; Watch the video</a>
-                                        </p>
-                                    </span>
-                                 </span>
-
-
-
-                                </div>
+                            include ($directory."../../themes/freighthouse/template/overview.html")
                             </div>
+                            <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
                                 <div class="row">';
