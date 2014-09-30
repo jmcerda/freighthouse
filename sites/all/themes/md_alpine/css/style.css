@@ -1910,6 +1910,6 @@ li.expanded, li.collapsed, li.leaf {
 	background-color: rgba(0,0,0,0.6);
 }
 
-.section_content {
-	padding: 30px 0;
+#about #service #portfolio #blog > .section_content {
+	padding: 50px 0;
 }
