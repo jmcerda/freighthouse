@@ -1877,6 +1877,8 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .overview_right {
+	color: #FFFFFF;
+	text-align: left;
 	float: right;
 	max-width: 50%;
 }
