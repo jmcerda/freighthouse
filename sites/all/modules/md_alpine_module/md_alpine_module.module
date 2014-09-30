@@ -155,7 +155,18 @@ function md_alpine_module_block_view($delta = '') {
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
-
+                            <!-- Parallax Body -->
+                            <div style ="container">
+                                <div class="parallax_container_add">
+                                    <span>
+                                        <span class="connect_left">
+                                        </span>
+                                        <span class="connect_right">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content social-link">
                                 <div class="row">';
@@ -238,6 +249,18 @@ function md_alpine_module_block_view($delta = '') {
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
+                            <!-- Parallax Body -->
+                            <div style ="container">
+                                <div class="parallax_container_add">
+                                    <span>
+                                        <span class="number_left">
+                                        </span>
+                                        <span class="number_right">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
                                 <div class="row text-center number-counters">';
@@ -323,7 +346,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-                                <div class="overview_container">
+                                <div class="parallax_container_add">
                                     <span>
                                         <span class="overview_left">
                                             <h2>Build web applications on rock solid systems</h2>
