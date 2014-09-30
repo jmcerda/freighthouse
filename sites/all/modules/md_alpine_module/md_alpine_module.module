@@ -323,11 +323,19 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-
-                            $overview = file_get_contents('../../themes/freighthouse/template/overview.html');
-
-                            print ($overview);
-                            </div>
+                                <div class="overview_container">
+                                    <span>
+                                        <span class="overview_left">
+                                            <h2>Build web applications on rock solid systems</h2>
+                                        </span>
+                                        <span style="overview_right">
+                                            <h3 style="color:#FFFFFF;">“We wanted to provide a combination of a best-in-class hosting solution with best-in-class content management platform. Pantheon is one of the absolute best, and the platform is will facilitate the complete development cylcle for Freighthouse.”</h3>
+                                            <p class="">Jeremy Michael Cerda, Creative Director | Web Architect</p>
+                                            <a href="architecture">&gt; Watch the video</a>
+                                            </p>
+                                        </span>
+                                    </span>
+                                </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
