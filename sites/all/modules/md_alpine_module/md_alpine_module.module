@@ -323,7 +323,9 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-                            echo file_get_contents('../../themes/freighthouse/template/overview.html');
+                            $overview = file_get_contents('../../themes/freighthouse/template/overview.html');
+
+                            print ($overview);
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
