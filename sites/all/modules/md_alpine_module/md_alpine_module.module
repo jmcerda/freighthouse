@@ -166,7 +166,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                             </div>
-                            <-- Parallax Body -->
+                            <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content social-link">
                                 <div class="row">';
@@ -260,7 +260,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                             </div>
-                            <-- Parallax Body -->
+                            <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
                                 <div class="row text-center number-counters">';
