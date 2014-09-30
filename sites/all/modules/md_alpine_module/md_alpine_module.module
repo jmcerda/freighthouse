@@ -328,14 +328,15 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="overview_left">
                                             <h2>Build web applications on rock solid systems</h2>
                                         </span>
-                                        <span style="overview_right">
-                                            <h3 style="color:#FFFFFF;">“We wanted to provide a combination of a best-in-class hosting solution with best-in-class content management platform. Pantheon is one of the absolute best, and the platform is will facilitate the complete development cylcle for Freighthouse.”</h3>
-                                            <p class="">Jeremy Michael Cerda, Creative Director | Web Architect</p>
-                                            <a href="architecture">&gt; Watch the video</a>
+                                        <span class="overview_right">
+                                            <h3>“Our strategy was to deploy the absolute best-in-class content management system available on a platform which facilitates consistant workflows throughout entire development cycle.”</h3>
+                                            <p class="">Jeremy Michael Cerda, Creative Director | Sr. Web Architect</p>
+                                            <a class='colorbox-load' href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315&iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
                                     </span>
                                 </div>
+                            </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
