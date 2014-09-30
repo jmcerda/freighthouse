@@ -1882,3 +1882,7 @@ li.expanded, li.collapsed, li.leaf {
 	float: right;
 	max-width: 50%;
 }
+
+.parallax_overlay {
+	background-color: rgba(0,0,0,0.6);
+}
