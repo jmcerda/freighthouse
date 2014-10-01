@@ -1782,8 +1782,8 @@ footer .social-icon a:hover {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 60px;
-    background-color: #0098F9;
-    color: #fff;
+    background-color: transparent;
+    color: #7c7c7c;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 }
 .btn-new .start-button span {
