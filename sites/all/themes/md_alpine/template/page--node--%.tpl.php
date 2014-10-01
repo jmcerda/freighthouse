@@ -11,15 +11,15 @@
                 <?php if(isset($node) && !empty($node->title)):?>
                 <div class="section-title text-center">
                     <div>
-                        <span class="line"></span>
-                        <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
-                        <span class="line"></span>
+                        <span class="line big"></span>
+                        <span><?php print t('Posted by');?> <a href="<?php print base_url().'/user/'.$node->uid;?>"><?php print $node->name;?></a></span>
+                        <span class="line big"></span>
                     </div>
                     <h1 class="item_left"><?php print $node->title;?></h1>
                     <div>
-                        <span class="line big"></span>
-                        <span><?php print t('By');?> <a href="<?php print base_url().'/user/'.$node->uid;?>"><?php print $node->name;?></a></span>
-                        <span class="line big"></span>
+                        <span class="line"></span>
+                        <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
+                        <span class="line"></span>
                     </div>
                     <?php if(isset($node->field_bl_description)):?>
                         <p class="lead">

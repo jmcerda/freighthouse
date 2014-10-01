@@ -30,15 +30,15 @@ if(isset($content['field_bl_multimedia'])) {
 <div class="col-md-10 col-md-offset-1">
     <div class="section-title text-center">
         <div>
+            <span class="line big"></span>
+            <span><?php print t('Posted by');?> <a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
+            <span class="line big"></span>
+        </div>
+        <h1><?php print $node->title;?></h1>     
+        <div>
             <span class="line"></span>
             <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
             <span class="line"></span>
-        </div>
-        <h1><?php print $node->title;?></h1>
-        <div>
-            <span class="line big"></span>
-            <span><?php print t('By');?> <a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
-            <span class="line big"></span>
         </div>
     </div>
 <?php endif;?>

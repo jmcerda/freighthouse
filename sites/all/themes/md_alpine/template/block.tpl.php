@@ -73,7 +73,7 @@
     <?php print render($title_suffix); ?>
 <?php else:?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-/*    <?php if($block->delta != 'parallax_1' && $block->delta != 'parallax_2' && $block->delta != 'parallax_3' && $block->delta != 'parallax_4' && $block->delta != 'parallax_5' && $block->delta != 'parallax_6' && $block->delta != 'parallax_7' && $block->delta != 'header' && $block->delta != 'footer' && $block->delta != 'menu'):?>
+    <?php if($block->delta != 'parallax_1' && $block->delta != 'parallax_2' && $block->delta != 'parallax_3' && $block->delta != 'parallax_4' && $block->delta != 'parallax_5' && $block->delta != 'parallax_6' && $block->delta != 'parallax_7' && $block->delta != 'header' && $block->delta != 'footer' && $block->delta != 'menu'):?>
         <div class="container">
             <div class="section-title text-center">
                 <?php if(isset($before_title)):?>
@@ -100,9 +100,9 @@
                         <?php print t($description);?>
                     </div>
                 <?php endif;?>
+            </div>
         </div>
     <?php endif;?>
-    */
     <div class="content <?php print $content_animate;?>"<?php print $content_attributes; ?>>
         <?php print $content ;?>
     </div>
