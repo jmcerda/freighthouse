@@ -1913,3 +1913,11 @@ li.expanded, li.collapsed, li.leaf {
 .section-content {
   padding: 90px 0;
 }
+
+.owl-prev {
+	left: -100px;
+}
+
+.owl-next {
+	right:-100;
+}
