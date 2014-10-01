@@ -1919,5 +1919,5 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .owl-theme .owl-next {
-	right:-100;
+	right: -100px;
 }
