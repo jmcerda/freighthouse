@@ -1524,73 +1524,34 @@ footer .social-icon a:hover {
 .mybutton.ultra a, .mybutton.ultra button {
 	font-size: 20px;
 	line-height: 60px;
-	-moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.ultra a span, .mybutton.ultra button span {
 	padding: 0 30px;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.big a, .mybutton.big button {
 	font-size: 17px;
 	line-height: 50px;
-	-moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.big a span, .mybutton.big button span {
 	padding: 0 20px;
-	-moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.medium a, .mybutton.medium button {
 	font-size: 14px;
 	line-height: 40px;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.medium a span, .mybutton.medium button span {
 	padding: 0 15px;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
 }
 .mybutton.small a, .mybutton.small button {
-	-moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
 	font-size: 12px;
 	line-height: 35px;
-	background-color: transparent;
 }
 .mybutton.small a span, .mybutton.small button span {
-	padding: 5px 10px;
-	-moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-	background-color: transparent;
+	padding: 0 10px;
 }
 .mybutton {
-  background-color:transparent;
+	display: inline;
+/*  background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
@@ -1601,7 +1562,7 @@ footer .social-icon a:hover {
   font-family:arial;
   font-size:17px;
   padding:10px 30px;
-  text-decoration:none;
+  text-decoration:none;*/
 }
 .mybutton a, .mybutton button, .action .mybutton {
 	text-transform: uppercase;
@@ -1610,6 +1571,7 @@ footer .social-icon a:hover {
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	padding: 0;
+	border: 0;
 	position: relative;
 	display: inline-block;
 	outline: none;
@@ -1631,7 +1593,12 @@ footer .social-icon a:hover {
 .form-actions .mybutton span:before,.action .mybutton span:before {padding-top: 9px; height: 29px;}
 .action .mybutton span .webform-submit,.form-actions .mybutton span input,
 .action .mybutton span input{
-  background-color:transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    color: #7c7c7c;
+    text-transform: uppercase;
+/*  background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
@@ -1642,7 +1609,7 @@ footer .social-icon a:hover {
   font-family:arial;
   font-size:17px;
   padding:10px 30px;
-  text-decoration:none;
+  text-decoration:none;*/
 }
 
 .mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
