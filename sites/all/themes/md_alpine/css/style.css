@@ -1921,3 +1921,26 @@ li.expanded, li.collapsed, li.leaf {
 .owl-theme .owl-next {
 	right: -100px;
 }
+
+.mybutton {
+  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
+  display:inline-block;
+  cursor:pointer;
+  color:#7c7c7c;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 30px;
+  text-decoration:none;
+}
+.mybutton:hover {
+  background-color:transparent;
+}
+.mybutton:active {
+  position:relative;
+  top:1px;
+}
+
