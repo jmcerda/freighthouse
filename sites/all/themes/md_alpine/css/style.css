@@ -1550,19 +1550,18 @@ footer .social-icon a:hover {
 	padding: 0 10px;
 }
 .mybutton {
-	display: inline;
-/*  background-color:transparent;
+  background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
   border:1px solid #7c7c7c;
-  display:inline-block;
+  display:inline;
   cursor:pointer;
   color:#7c7c7c;
   font-family:arial;
   font-size:17px;
   padding:10px 30px;
-  text-decoration:none;*/
+  text-decoration:none;
 }
 .mybutton a, .mybutton button, .action .mybutton {
 	text-transform: uppercase;
