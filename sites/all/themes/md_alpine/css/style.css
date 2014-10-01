@@ -1914,10 +1914,10 @@ li.expanded, li.collapsed, li.leaf {
   padding: 90px 0;
 }
 
-.owl-prev {
+.owl-theme .owl-prev {
 	left: -100px;
 }
 
-.owl-next {
+.owl-theme .owl-next {
 	right:-100;
 }
