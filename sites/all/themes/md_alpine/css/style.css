@@ -1553,7 +1553,10 @@ footer .social-icon a:hover {
 }
 .mybutton a, .mybutton button, .action .mybutton {
 	text-transform: uppercase;
-	border: 0;
+	border:1px solid #7c7c7c;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
 	padding: 0;
 	position: relative;
 	display: inline-block;
@@ -1562,23 +1565,26 @@ footer .social-icon a:hover {
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	letter-spacing: 0;
-    color: #FFF;
+  color: #7c7c7c;
 }
 .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton {
 	color: #fff;
 	text-align: center;
 	position: relative;
 	display: inline-block;
-    cursor:auto;
+	cursor:auto;
 }
 .form-actions .mybutton span:before,.action .mybutton span:before {padding-top: 9px; height: 29px;}
 .action .mybutton span .webform-submit,.form-actions .mybutton span input,
 .action .mybutton span input{
-    display: inline-block;
-    padding: 10px 20px;
-    border: 0;
-    color: #FFF;
-    text-transform: uppercase;
+		display: inline-block;
+		padding: 10px 20px;
+		border:1px solid #7c7c7c;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		border-radius:10px;
+		color: #7c7c7c;
+		text-transform: uppercase;
 }
 
 .mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
@@ -1921,26 +1927,3 @@ li.expanded, li.collapsed, li.leaf {
 .owl-theme .owl-next {
 	right: -100px;
 }
-
-.mybutton {
-  background-color:transparent;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #7c7c7c;
-  display:inline-block;
-  cursor:pointer;
-  color:#7c7c7c;
-  font-family:arial;
-  font-size:17px;
-  padding:10px 30px;
-  text-decoration:none;
-}
-.mybutton:hover {
-  background-color:transparent;
-}
-.mybutton:active {
-  position:relative;
-  top:1px;
-}
-
