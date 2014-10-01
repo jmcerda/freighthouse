@@ -1626,7 +1626,10 @@ footer .social-icon a:hover {
 }
 .mybutton2 a, .mybutton2 button {
 	text-transform: uppercase;
-	border: 0;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
 	padding: 0;
 	position: relative;
 	display: inline-block;
