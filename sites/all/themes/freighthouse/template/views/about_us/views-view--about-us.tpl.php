@@ -63,7 +63,7 @@
         </div>
         <div class="col-md-6">
             <div class="element-line">
-                <span style="about_text">
+                <span class="about_text">
                     <?php
                         $nid = 102;
                         $node = node_load($nid);

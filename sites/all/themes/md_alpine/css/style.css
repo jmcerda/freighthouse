@@ -1872,6 +1872,8 @@ li.expanded, li.collapsed, li.leaf {
   font-weight: 200;
 }
 
+.overview_right body
+
 .connect_left {
   float: left;
   max-width: 50%;
@@ -1911,3 +1913,6 @@ li.expanded, li.collapsed, li.leaf {
 	-webkit-border-radius:5px;
 }
 
+.about_text {
+	font-weight: 200;
+}
