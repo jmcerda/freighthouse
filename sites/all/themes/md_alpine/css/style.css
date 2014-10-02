@@ -1785,6 +1785,10 @@ footer .social-icon a:hover {
     background-color: transparent;
     color: #7c7c7c;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid #7c7c7c;
 }
 .btn-new .start-button span {
     display: block; padding: 0 30px;
