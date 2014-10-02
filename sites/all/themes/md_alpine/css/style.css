@@ -1551,10 +1551,10 @@ footer .social-icon a:hover {
 }
 .mybutton {
   background-color:transparent;
-  -moz-border-radius:10px;
+/*  -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius:10px;
-  border:1px solid #7c7c7c;
+  border:1px solid #7c7c7c;*/
   display:inline;
   cursor:pointer;
   color:#7c7c7c;
