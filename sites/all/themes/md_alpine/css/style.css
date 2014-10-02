@@ -991,7 +991,7 @@ body.front #ajaxpage {
 	background: rgba(255,255,255,0.15);
 }
 .parallax-overlay {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 .parallax-box a {
 	background: #fff;
@@ -1858,7 +1858,6 @@ li.expanded, li.collapsed, li.leaf {
     width: 100%;
 }
 
-
 .overview_left {
   float: left;
   max-width: 50%;
@@ -1893,7 +1892,4 @@ li.expanded, li.collapsed, li.leaf {
   text-align: left;
   float: right;
   max-width: 50%;
-}
-.parallax_overlay {
-  background-color: rgba(0,0,0,0.6);
 }
