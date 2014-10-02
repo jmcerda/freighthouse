@@ -1499,18 +1499,14 @@ footer .social-icon a:hover {
 .item_left {
 	left: -80px;
 	padding-right: 0px;
-	opacity: .5;
+	opacity: 0	;
 	position: relative;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
 }
 .item_right {
 	right: -80px;
 	padding-left: 0px;
-	opacity: .5;
+	opacity: 0;
 	position: relative;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
 }
 .item_fade_in {
 	opacity: 0;
@@ -1905,4 +1901,8 @@ li.expanded, li.collapsed, li.leaf {
 
 .about_image {
   max-width: 65%;
+}
+
+.fh_box {
+	opacity: .7;
 }
