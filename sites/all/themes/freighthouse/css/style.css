@@ -1,4 +1,4 @@
-#intro-loader {
+/*#intro-loader {
   width: 75px;
   height: 75px;
   position: absolute;
@@ -6,7 +6,7 @@
   left: 50%;
   margin: -33px 0 0 -33px;
   background: url("../img/infinite_loader.gif");
-}
+}*/
 
 /* ##### Location ##### */
 #location .location-element {
@@ -155,4 +155,239 @@ h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-grou
 
 .section-title div span {
   font-weight: lighter !important;
+}
+
+/* ##### CUSTOM BUTTON ##### */
+.mybutton a:hover, .mybutton button:hover, .mybutton a:focus
+.mybutton button:focus {
+  outline: none;
+  background-color: transparent;
+}
+.mybutton.ultra a, .mybutton.ultra button {
+  font-size: 20px;
+  line-height: 60px;
+}
+.mybutton.ultra a span, .mybutton.ultra button span {
+  padding: 0 30px;
+}
+.mybutton.big a, .mybutton.big button {
+  font-size: 17px;
+  line-height: 50px;
+}
+.mybutton.big a span, .mybutton.big button span {
+  padding: 0 20px;
+}
+.mybutton.medium a, .mybutton.medium button {
+  font-size: 14px;
+  line-height: 40px;
+}
+.mybutton.medium a span, .mybutton.medium button span {
+  padding: 0 15px;
+}
+.mybutton.small a, .mybutton.small button {
+  font-size: 12px;
+  line-height: 35px;
+}
+.mybutton.small a span, .mybutton.small button span {
+  padding: 0 10px;
+}
+.mybutton {
+  background-color:transparent;
+/*  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;*/
+  display:inline;
+  cursor:pointer;
+  color:#7c7c7c;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 30px;
+  text-decoration:none;
+}
+.mybutton a, .mybutton button, .action .mybutton {
+  text-transform: uppercase;
+  border:1px solid #7c7c7c;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  padding: 0;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  letter-spacing: 0;
+  color: #7c7c7c;
+  background-color: transparent;
+}
+.mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton {
+  color: #7c7c7c;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor:auto;
+  background-color: transparent;
+}
+.form-actions .mybutton span:before,.action .mybutton span:before {padding-top: 9px; height: 29px;}
+.action .mybutton span .webform-submit,.form-actions .mybutton span input,
+.action .mybutton span input{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    color: #7c7c7c;
+    text-transform: uppercase;
+/*  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
+  display:inline-block;
+  cursor:pointer;
+  color:#7c7c7c;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 30px;
+  text-decoration:none;*/
+}
+
+.mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
+.mybutton2 button:focus, .mybutton span {
+  outline: none;
+}
+.mybutton2.ultra a, .mybutton2.ultra button {
+  font-size: 20px;
+  line-height: 60px;
+}
+.mybutton2.ultra a span, .mybutton2.ultra button span {
+  padding: 0 30px;
+}
+.mybutton2.big a, .mybutton2.big button {
+  font-size: 17px;
+  line-height: 50px;
+}
+.mybutton2.big a span, .mybutton2.big button span {
+  padding: 0 20px;
+}
+.mybutton2.medium a, .mybutton2.medium button {
+  font-size: 14px;
+  line-height: 40px;
+}
+.mybutton2.medium a span, .mybutton2.medium button span {
+  padding: 0 15px;
+}
+.mybutton2.small a, .mybutton2.small button {
+  font-size: 12px;
+  line-height: 35px;
+}
+.mybutton2.small a span, .mybutton2.small button span {
+  padding: 0 10px;
+}
+.mybutton2 {
+  display:inline-block;
+  position: relative;
+  z-index: 1;
+}
+.mybutton2 a, .mybutton2 button {
+  text-transform: uppercase;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+
+.mybutton2 a span, .mybutton2 button span {
+  color: #7c7c7c;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-new .start-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+    background-color: transparent;
+    color: #7c7c7c;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid #7c7c7c;
+}
+
+.about_image {
+  max-width: 75%;
+}
+/*
+.about_text {
+  max-width: 75%;
+}*/
+
+.parallax_container_add {
+  width: 100%;
+  display: inline-block;
+}
+
+.overview_left {
+  float: left;
+  max-width: 50%;
+}
+
+.overview_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+
+.connect_left {
+  float: left;
+  max-width: 50%;
+}
+
+.connect_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+
+.number_left {
+  float: left;
+  max-width: 50%;
+}
+
+.number_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+.parallax_overlay {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.section-content {
+  padding: 90px 0;
+}
+
+.owl-theme .owl-prev {
+  left: -100px;
+}
+
+.owl-theme .owl-next {
+  right: -100px;
 }
