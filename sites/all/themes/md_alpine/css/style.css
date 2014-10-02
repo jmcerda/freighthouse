@@ -44,7 +44,6 @@ p.lead {
 h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-group label {
 	color: #7c7c7c !important;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
 }
 
 blockquote {
@@ -1862,6 +1861,7 @@ li.expanded, li.collapsed, li.leaf {
 .overview_left {
   float: left;
   max-width: 50%;
+  text-align: left;
 }
 
 .overview_right {
@@ -1869,7 +1869,6 @@ li.expanded, li.collapsed, li.leaf {
   text-align: left;
   float: right;
   max-width: 50%;
-  font-weight: 200;
 }
 
 .overview_right body
