@@ -1691,7 +1691,7 @@ footer .social-icon a:hover {
     width: 45px;
     color: #000;
     top:50%;
-   left:-5px;
+   	left:-100px;
     transition: all 0.5s;
 
   /*background-image: url('../images/sl.png');*/
@@ -1712,7 +1712,7 @@ footer .social-icon a:hover {
     width: 45px;
     color: #000;
     top:50%;
-    right:-5px;
+    right:-100px;
     transition: all 0.5s;
     /*background-image: url('../images/sr.png');*/
 }
@@ -1892,4 +1892,13 @@ li.expanded, li.collapsed, li.leaf {
   text-align: left;
   float: right;
   max-width: 50%;
+}
+
+.parallax_container_add {
+  width: 100%;
+  display: inline-block;
+}
+
+.about_image {
+  max-width: 75%;
 }
