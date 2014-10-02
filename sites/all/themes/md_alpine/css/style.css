@@ -42,7 +42,7 @@ p.lead {
 .no-margin{ margin:0;}
 
 h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-group label {
-	color: #7c7c7c;
+	color: #7c7c7c !important;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 }
