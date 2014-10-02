@@ -1499,14 +1499,18 @@ footer .social-icon a:hover {
 .item_left {
 	left: -80px;
 	padding-right: 0px;
-	opacity: 0;
+	opacity: .5;
 	position: relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 .item_right {
 	right: -80px;
 	padding-left: 0px;
-	opacity: 0;
+	opacity: .5;
 	position: relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 .item_fade_in {
 	opacity: 0;
