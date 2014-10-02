@@ -1872,8 +1872,6 @@ li.expanded, li.collapsed, li.leaf {
   max-width: 50%;
 }
 
-.overview_right body
-
 .connect_left {
   float: left;
   max-width: 50%;
@@ -1911,6 +1909,7 @@ li.expanded, li.collapsed, li.leaf {
 	opacity: .7;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	border-radius: 5px;
 }
 
 .about_text {
