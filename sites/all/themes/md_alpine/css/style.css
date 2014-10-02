@@ -71,15 +71,6 @@ blockquote {
 	position: fixed;
 	z-index: 100000;
 }
-#intro-loader {
-	width: 65px;
-	height: 65px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -33px 0 0 -33px;
-	background: url("../img/intro-loader.gif");
-}
 
 .section-content {
 	padding: 90px 0;
@@ -1856,4 +1847,399 @@ li.expanded, li.collapsed, li.leaf {
 }
 .slides img {
     width: 100%;
+}
+
+
+/*#intro-loader {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -33px 0 0 -33px;
+  background: url("../img/infinite_loader.gif");
+}*/
+
+/* ##### Location ##### */
+#location .location-element {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#location .location-element:hover .location-inner {
+  display: block;
+}
+#location .location-element .location-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  background: rgba(0,0,0,0.8);
+}
+#location .location-element .location-inner .location-detail {
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#location .location-element .location-inner .location-detail .location-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 15px;
+  color: #fff;
+}
+#location .location-element .location-inner .location-detail .location-content h3 {
+  margin: 0 0 8px 0;
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid #666;
+  text-transform: uppercase;
+}
+#location .location-element .location-inner .location-detail .location-content h3, #location .location-element .location-inner .location-detail .location-content a {
+  color: #fff;
+}
+#location .location-element .location-inner .location-detail .location-content p {
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 18px;
+}
+#location .location-element .location-inner .location-detail .location-content p, #location .location-element .location-inner .location-detail .location-content a {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+}
+#location .location-element .location-inner .location-detail .location-content a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+#location .location-element .location-inner .location-detail .location-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#location .location-element .location-inner .location-detail .location-content ul li {
+  display: inline;
+  padding: 0 6px;
+}
+
+/* removing help link on sytax highlighter */
+.toolbar_item .command_help .help {
+  display:none;
+}
+
+
+/* avatar style on front blog vview */
+/*.timeline-content #timeline .post-info .box-inner img, .post-avatar a img, .post-avatar img {
+  max-width: 50%;
+}*/
+
+/* blog timeline */
+/*.timeline-content #timeline .timeline-item {
+  width: 50%;
+}*/
+/*
+.timeline {
+  display: flex;
+}*/
+
+.element-line, .sidebar {
+  margin-top: 0px;
+}
+
+#head_logo img {
+  width:auto;
+/*  height: auto;*/
+/*  max-height: 100%;*/
+  max-width: 100%;
+
+  /* ORGANGE CSS */
+
+a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-content #timeline .post-body .blog-title h1 a:hover, .service-items a:hover, .service-items a:hover h3, .form-group label.error, .blog-content a:hover, .panel-group .panel-heading a, .panel-group .panel-heading a:hover, .media .media-body .lead {
+  color: #ffcc00;
+}/* COLOR STANDARD */
+
+.section-title .lead strong, .progress .progress-bar, .nav-tabs > li > a, .parallax-box a:hover, .pager .puls > a:hover, .pricing-box .pricing-featured li.price-row, .pager .pagination li a:hover, .widget .widget-tag li a:hover, .hi-icon-effect-1 .hi-icon, .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .action .mybutton span input,.mybutton span input,.mybutton span:before, .action .mybutton span:before {
+  background: #ffcc00;
+}/* BACKGROUND STANDARD COLOR */
+
+.nav-tabs > li > a, .form-group .form-control.error, .form-group .form-control.error:focus {
+  border: 1px solid #ffcc00;
+}/* BORDER STANDARD COLOR */
+
+.hi-icon-effect-1 .hi-icon:after {
+  box-shadow: 0 0 0 4px #ffcc00;
+}/* BOX-SHADOW STANDARD COLOR */
+
+.no-touch .hi-icon-effect-1 .hi-icon:hover {
+  background: rgba(255,165,0,1);
+}/* BACKGROUND STANDARD COLOR(RGBA) */
+
+.parallax-box a:hover p, .parallax-background-color p{
+  color: #fce6be;
+}/* COLOR LIGHT */
+
+.csstransforms3d .mybutton a span::before, .csstransforms3d .mybutton button span::before, .mybutton2 a::before {
+  background: #ffcc00;
+} /* BACKGROUND DARK COLOR */
+
+.pricing-box .pricing-featured li.price-row span{
+  color:#cc8400;
+}/* DARK COLOR */
+
+.parallax-background-color{
+  background: rgba(204,132,0,0.9);
+}/* DARK BACKGROUND COLOR(RGBA) */
+
+/* END ORANGE */
+
+h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-group label {
+  color: #222;
+  font-family: 'proxima-nova', sans-serif !important;
+}
+
+.section-title div span {
+  font-weight: lighter !important;
+}
+
+/* ##### CUSTOM BUTTON ##### */
+.mybutton a:hover, .mybutton button:hover, .mybutton a:focus
+.mybutton button:focus {
+  outline: none;
+  background-color: transparent;
+}
+.mybutton.ultra a, .mybutton.ultra button {
+  font-size: 20px;
+  line-height: 60px;
+}
+.mybutton.ultra a span, .mybutton.ultra button span {
+  padding: 0 30px;
+}
+.mybutton.big a, .mybutton.big button {
+  font-size: 17px;
+  line-height: 50px;
+}
+.mybutton.big a span, .mybutton.big button span {
+  padding: 0 20px;
+}
+.mybutton.medium a, .mybutton.medium button {
+  font-size: 14px;
+  line-height: 40px;
+}
+.mybutton.medium a span, .mybutton.medium button span {
+  padding: 0 15px;
+}
+.mybutton.small a, .mybutton.small button {
+  font-size: 12px;
+  line-height: 35px;
+}
+.mybutton.small a span, .mybutton.small button span {
+  padding: 0 10px;
+}
+.mybutton {
+  background-color:transparent;
+/*  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;*/
+  display:inline;
+  cursor:pointer;
+  color:#7c7c7c;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 30px;
+  text-decoration:none;
+}
+.mybutton a, .mybutton button, .action .mybutton {
+  text-transform: uppercase;
+  border:1px solid #7c7c7c;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  padding: 0;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  letter-spacing: 0;
+  color: #7c7c7c;
+  background-color: transparent;
+}
+.mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton {
+  color: #7c7c7c;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor:auto;
+  background-color: transparent;
+}
+.form-actions .mybutton span:before,.action .mybutton span:before {padding-top: 9px; height: 29px;}
+.action .mybutton span .webform-submit,.form-actions .mybutton span input,
+.action .mybutton span input{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 0;
+    color: #7c7c7c;
+    text-transform: uppercase;
+/*  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
+  display:inline-block;
+  cursor:pointer;
+  color:#7c7c7c;
+  font-family:arial;
+  font-size:17px;
+  padding:10px 30px;
+  text-decoration:none;*/
+}
+
+.mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
+.mybutton2 button:focus, .mybutton span {
+  outline: none;
+}
+.mybutton2.ultra a, .mybutton2.ultra button {
+  font-size: 20px;
+  line-height: 60px;
+}
+.mybutton2.ultra a span, .mybutton2.ultra button span {
+  padding: 0 30px;
+}
+.mybutton2.big a, .mybutton2.big button {
+  font-size: 17px;
+  line-height: 50px;
+}
+.mybutton2.big a span, .mybutton2.big button span {
+  padding: 0 20px;
+}
+.mybutton2.medium a, .mybutton2.medium button {
+  font-size: 14px;
+  line-height: 40px;
+}
+.mybutton2.medium a span, .mybutton2.medium button span {
+  padding: 0 15px;
+}
+.mybutton2.small a, .mybutton2.small button {
+  font-size: 12px;
+  line-height: 35px;
+}
+.mybutton2.small a span, .mybutton2.small button span {
+  padding: 0 10px;
+}
+.mybutton2 {
+  display:inline-block;
+  position: relative;
+  z-index: 1;
+}
+.mybutton2 a, .mybutton2 button {
+  text-transform: uppercase;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:1px solid #7c7c7c;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+
+.mybutton2 a span, .mybutton2 button span {
+  color: #7c7c7c;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-new .start-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+    background-color: transparent;
+    color: #7c7c7c;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid #7c7c7c;
+}
+
+.about_image {
+  max-width: 75%;
+}
+/*
+.about_text {
+  max-width: 75%;
+}*/
+
+.parallax_container_add {
+  width: 100%;
+  display: inline-block;
+}
+
+.overview_left {
+  float: left;
+  max-width: 50%;
+}
+
+.overview_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+
+.connect_left {
+  float: left;
+  max-width: 50%;
+}
+
+.connect_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+
+.number_left {
+  float: left;
+  max-width: 50%;
+}
+
+.number_right {
+  color: #7c7c7c;
+  text-align: left;
+  float: right;
+  max-width: 50%;
+}
+.parallax_overlay {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.section-content {
+  padding: 90px 0;
+}
+
+.owl-theme .owl-prev {
+  left: -100px;
+}
+
+.owl-theme .owl-next {
+  right: -100px;
 }
