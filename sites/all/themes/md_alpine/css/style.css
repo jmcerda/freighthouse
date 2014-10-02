@@ -998,6 +998,7 @@ body.front #ajaxpage {
 	background: #fff;
 	padding: 30px 20px;
 	display: block;
+	border-radius: 5px;
 }
 .parallax-box a:hover i, .parallax-box a:hover h4 {
 	color: #fff;
