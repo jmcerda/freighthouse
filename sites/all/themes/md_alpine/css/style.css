@@ -103,7 +103,7 @@ blockquote {
 .section-title h1, .section-title h2, .section-title h3 {
 	text-transform: uppercase;
 	color: #000;
-	font-weight: 600;
+	font-weight: 300;
 	display: inline-block;
 }
 
