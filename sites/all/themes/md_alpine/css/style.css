@@ -1857,3 +1857,13 @@ li.expanded, li.collapsed, li.leaf {
 .slides img {
     width: 100%;
 }
+
+.overview_right {
+	width:50%;
+	float: right;
+}
+
+.overview_left {
+	width:50%;
+	float:left;
+}
