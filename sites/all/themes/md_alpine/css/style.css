@@ -1869,6 +1869,7 @@ li.expanded, li.collapsed, li.leaf {
   text-align: left;
   float: right;
   max-width: 50%;
+  font-weight: 200;
 }
 
 .connect_left {
@@ -1909,3 +1910,4 @@ li.expanded, li.collapsed, li.leaf {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
+
