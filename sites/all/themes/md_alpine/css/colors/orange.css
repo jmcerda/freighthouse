@@ -23,7 +23,7 @@ a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-
 }/* COLOR LIGHT */
 
 .csstransforms3d .mybutton a span::before, .csstransforms3d .mybutton button span::before, .mybutton2 a::before {
-	background: #e29200;
+	background: transparent;
 } /* BACKGROUND DARK COLOR */
 
 .pricing-box .pricing-featured li.price-row span{
