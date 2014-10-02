@@ -1555,7 +1555,7 @@ footer .social-icon a:hover {
 }
 .mybutton a, .mybutton button, .action .mybutton {
 	text-transform: uppercase;
-	border: 0;
+	border: 1;
 	padding: 0;
 	position: relative;
 	display: inline-block;
@@ -1622,7 +1622,7 @@ footer .social-icon a:hover {
 }
 .mybutton2 a, .mybutton2 button {
 	text-transform: uppercase;
-	border: 0;
+	border: 1;
 	padding: 0;
 	position: relative;
 	display: inline-block;
