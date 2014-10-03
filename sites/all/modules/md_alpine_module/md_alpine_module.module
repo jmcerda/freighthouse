@@ -352,8 +352,10 @@ function md_alpine_module_block_view($delta = '') {
                                             <h2>Build web applications on rock solid systems</h2>
                                         </span>
                                         <span class="overview_right">
-                                            <h3>“Our strategy was to deploy the absolute best-in-class content management system available on a platform which facilitates consistant workflows throughout entire development cycle. Drupal and Pantheon are the answer.”</h3>
-                                            <p >Jeremy Michael Cerda, Creative Director | Sr. Web Architect</p>
+                                            <h3>“We have a four column strategy - We start by deploying the best content management systems available on a state of the art platform which facilitates consistent workflows throughout entire development cycle.
+                                                </br>
+                                                We then bring gorgeous content and artwork together with social marketing strategies based on real time data and analytics, we are able to provide every project with a complete, vertically integrated solution. Our people are the fifth column..”</h3>
+                                            <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
