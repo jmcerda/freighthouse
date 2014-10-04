@@ -1010,9 +1010,9 @@ body.front #ajaxpage {
 	color: #8d8d8d;
 }
 .parallax-box h4 {
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 200;
+	text-transform: lowercase;
 	margin: 12px 0;
 }
 .parallax-box p {
