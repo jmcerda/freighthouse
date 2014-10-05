@@ -1459,6 +1459,8 @@ footer .social-icon a:hover {
 	font-variant: normal;
 	text-transform: none;
 	display: block;
+	margin-left: -0.6em;
+	margin-right: 0.2em;
 	-webkit-font-smoothing: antialiased;
 }
 .hi-icon-effect-1 .hi-icon {
@@ -1915,4 +1917,8 @@ li.expanded, li.collapsed, li.leaf {
 
 .about_text {
 	font-weight: 200;
+}
+
+.img-circle {
+	width: 2em;
 }
