@@ -72,7 +72,7 @@ blockquote {
 	position: fixed;
 	z-index: 100000;
 }
-#intro-loader {
+/*#intro-loader {
 	width: 65px;
 	height: 65px;
 	position: absolute;
@@ -80,7 +80,7 @@ blockquote {
 	left: 50%;
 	margin: -33px 0 0 -33px;
 	background: url("../img/intro-loader.gif");
-}
+}*/
 
 .section-content {
 	padding: 90px 0;
@@ -102,7 +102,7 @@ blockquote {
 }
 
 .section-title h1, .section-title h2, .section-title h3 {
-	text-transform: lowercase;
+	text-transform: uppercase;
 	color: #000;
 	font-weight: 200;
 	display: inline-block;
