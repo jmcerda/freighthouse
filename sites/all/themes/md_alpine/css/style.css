@@ -89,20 +89,20 @@ blockquote {
 	background: #F3F3F3;
 }
 .section-title div {
-	font-size: 17px;
+	font-size: 1em;
 	letter-spacing: 1px;
 }
 .section-title div span {
 	display: inline-block;
 	color: #7C7C7C;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 .section-title h1 {
 	font-size: 3.5em;
 }
 
 .section-title h1, .section-title h2, .section-title h3 {
-	text-transform: uppercase;
+	text-transform: lowercase;
 	color: #000;
 	font-weight: 200;
 	display: inline-block;
@@ -176,7 +176,7 @@ blockquote {
 	-moz-border-radius: 0;
 	border-radius: 0;
 	border: 0;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 .panel-group .panel-heading .panel-title {
 	font-weight: 600;
@@ -698,7 +698,7 @@ body.front #ajaxpage {
 }
 .project-description h4 {
 	display: inline-block;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	padding: 0px 0px 10px;
 	font-weight: 600;
 	border-bottom: 1px solid #DEDEDE;
