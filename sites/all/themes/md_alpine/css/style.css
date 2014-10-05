@@ -1432,8 +1432,8 @@ footer .social-icon a:hover {
 	display: inline-block;
 	cursor: pointer;
 	margin: 15px;
-	width: 105px;
-	height: 105px;
+	width: 2em;
+	height: 2em;
 	border-radius: 50% !important;
 	text-align: center;
 	position: relative;
