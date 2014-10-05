@@ -29,21 +29,21 @@
     $icon_type = '';
     $portfolio_type = '';
     if(isset($multimedia) && count($multimedia) > 1 ) {
-        $icon_type = $icon_type = '<i class="fontello icon-menu icon-4x"></i>';
+        $icon_type = $icon_type = '<i class="fontello icon-digital9 icon-4x"></i>';
         $portfolio_type  = t('Gallery Project');
     } else {
         if(isset($multimedia[0])) {
             $file_type = $multimedia[0]['rendered']['#file']->type;
             if($file_type == 'video') {
-                $icon_type = '<i class="fontello icon-youtube-play icon-4x"></i>';
+                $icon_type = '<i class="fontello icon-camera42 icon-4x"></i>';
                 $portfolio_type  = t('Video Production');
             }
             if($file_type == 'audio') {
-                $icon_type = '<i class="fontello icon-music icon-4x"></i>';
+                $icon_type = '<i class="fontello icon-headset3 icon-4x"></i>';
                 $portfolio_type  = t('Audio Production');
             }
             if($file_type == 'image') {
-                $icon_type = '<i class="fontello icon-picture icon-4x"></i>';
+                $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
                 // $portfolio_type  = t('Single Image');
                 $portfolio_type  = t('Development & Architecture');
             }
