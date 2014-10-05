@@ -36,15 +36,16 @@
             $file_type = $multimedia[0]['rendered']['#file']->type;
             if($file_type == 'video') {
                 $icon_type = '<i class="fontello icon-youtube-play icon-4x"></i>';
-                $portfolio_type  = t('Video Project');
+                $portfolio_type  = t('Video Production');
             }
             if($file_type == 'audio') {
                 $icon_type = '<i class="fontello icon-music icon-4x"></i>';
-                $portfolio_type  = t('Audio Project');
+                $portfolio_type  = t('Audio Production');
             }
             if($file_type == 'image') {
                 $icon_type = '<i class="fontello icon-picture icon-4x"></i>';
-                $portfolio_type  = t('Single Image');
+                // $portfolio_type  = t('Single Image');
+                $portfolio_type  = t('Development & Architecture');
             }
         }
     }
@@ -52,7 +53,8 @@
 <!-- portfolio item -->
 <div class="portfolio-item <?php foreach($row->field_field_po_taxonomy as $key => $value): print 'tid-'.$value['raw']['tid'].' ';endforeach;?>">
     <div class="portfolio">
-        <a href="#!?q=ajax_portfolio&nid=<?php print $row->nid;?>" data-nid="<?php print $row->nid;?>" class="zoom"> <?php if(isset($fields['field_po_thumbnail']) && !empty($row->field_field_po_thumbnail)):?><img src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt=""/><?php endif;?>
+        <!-- <a href="#!?q=ajax_portfolio&nid= -->
+        <a href="&nid?width=600&height=600<?php print $row->nid;?>" data-nid="<?php print $row->nid;?>" class="zoom colorbox-node"> <?php if(isset($fields['field_po_thumbnail']) && !empty($row->field_field_po_thumbnail)):?><img src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt="Freighthouse"/><?php endif;?>
             <div class="hover-items">
                 <span> <?php if($icon_type): print $icon_type; endif;?> <em class="lead"><?php print $fields['title']->content;?></em> <em><?php if($portfolio_type): print $portfolio_type; endif;?></em> </span>
             </div>
