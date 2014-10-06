@@ -188,7 +188,7 @@ function md_alpine_module_block_view($delta = '') {
                                                 </p>
                                             </div>
                                         </div>
-                                    </div></center>;
+                                    </div></center>';
                             }
                             $block['content'] .= '</div>
                                 </div>
