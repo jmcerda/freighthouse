@@ -1924,6 +1924,7 @@ li.expanded, li.collapsed, li.leaf {
 	-webkit-border-radius:5px;
 	border-radius: 5px;
 	text-align: center;
+	margin-top: -70px;
 }
 
 .about_text {
