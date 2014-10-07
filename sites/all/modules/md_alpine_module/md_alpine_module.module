@@ -358,15 +358,43 @@ function md_alpine_module_block_view($delta = '') {
                                     <span>
                                         <span class="overview_left">
                                             <h2>Four columns of production</h2>
+                                            <!-- Parallax content -->
+                                            <div class="parallax-content">
+                                            <div class="row">';
+                                            $overview = theme_get_setting('pr_'.$i.'_overview');
+                                            foreach ($overview as $key => $value){
+                                                $block['content'] .= '<!-- Item box -->
+                                                    // <div>
+                                                        <div class="element-line">
+                                                            <div class="item_left">';
+                                                                if($overview[$key]['icon']['icon'] != null && $overview[$key]['des'] != null) {
+                                                                    $block['content'] .= '
+                                                                        <div class="parallax-box fh_box">
+                                                                            <a href="'.$overview[$key]['link'].'"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
+                                                                            <p>
+                                                                                '.$overview[$key]['des'].'
+                                                                            </p> </a>
+                                                                        </div>';
+                                                                }
+                                                $block['content'] .= '
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item box -->';
+                                            }
+                                            $block['content'] .= '
+                                                </div>
+                                            </div>
+                                            <!-- Parallax content -->
+                                            <ul>
+                                                <li>Development</li>
+                                                <li>Architecture</li>
+                                                <li>Design</li>
+                                                <li>Marcom</li>
                                         </span>
                                         <span class="overview_right">
-                                            <big><p>“We start by deploying the best content management systems available on a state of the art platform which facilitates consistent workflows throughout the entire development cycle."
+                                            <big><p>“We start by deploying the best content management systems available on a state of the art platform which facilitates consistent workflows throughout the entire development cycle...</br>...by bringing gorgeous content, artwork, and media to the experience, and using delivery strategies based on real time data and analytics, we are able to provide every project with a complete and  vertically integrated solution."
                                             </p>
-                                            <p>"We then bring gorgeous content, artwork, and media to the experience, and make delivery using marketing strategies based on real time data and analytics."
-                                            </p>
-                                            <p>"We are able to provide every project with a complete and  vertically integrated solution."
-                                            </p>
-                                            <p>"Our people are the fifth column..”
                                             </p></big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315?iframe=true">&gt; Watch the video</a>
@@ -376,34 +404,6 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                             </div>
                             <!-- Parallax Body -->
-                            <!-- Parallax content -->
-                            <div class="parallax-content">
-                                <div class="row">';
-                            $overview = theme_get_setting('pr_'.$i.'_overview');
-                            foreach ($overview as $key => $value){
-                                $block['content'] .= '<!-- Item box -->
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="element-line">
-                                            <div class="item_left">';
-                                                if($overview[$key]['icon']['icon'] != null && $overview[$key]['des'] != null) {
-                                                    $block['content'] .= '
-                                                        <div class="parallax-box fh_box">
-                                                            <a href="'.$overview[$key]['link'].'"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
-                                                            <p>
-                                                                '.$overview[$key]['des'].'
-                                                            </p> </a>
-                                                        </div>';
-                                                }
-                                $block['content'] .= '
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Item box -->';
-                            }
-                            $block['content'] .= '
-                                </div>
-                            </div>
-                            <!-- Parallax content -->
                         </div>
                     </div>
                 </div>';
