@@ -387,7 +387,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <!-- Parallax content -->
                                         </span>
                                         <span class="col-md-6 col-sm-6 col-xs-12 overview_right">
-                                            <big><p>“We start by deploying the best content management systems available on a state of the art platform which facilitates consistent workflows throughout the entire development cycle...</br>...by bringing gorgeous content, artwork, and media to the experience, and using delivery strategies based on real time data and analytics, we are able to provide every project with a complete and  vertically integrated solution."
+                                            <big><p>“By deploying the best CMS available on Pantheon we can provide consistent workflows throughout the entire development cycle.</p><p>By bringing gorgeous content, artwork, and media to the experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution every time to every client."
                                             </p>
                                             </p></big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
