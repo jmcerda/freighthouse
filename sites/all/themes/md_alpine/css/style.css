@@ -1920,7 +1920,6 @@ li.expanded, li.collapsed, li.leaf {
 	-webkit-border-radius:5px;
 	border-radius: 5px;
 	text-align: center;
-	padding: 10px 0px 5px;
 }
 
 .about_text {
@@ -1931,6 +1930,7 @@ li.expanded, li.collapsed, li.leaf {
 	width: 2em;
 }
 
-.parallax-box > .fh_box > h4 {
+.parallax-box .fh_box {
 	display: inline;
+	padding: 10px 0px 5px;
 }
