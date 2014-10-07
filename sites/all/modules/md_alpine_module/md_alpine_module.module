@@ -386,11 +386,6 @@ function md_alpine_module_block_view($delta = '') {
                                                 </div>
                                             </div>
                                             <!-- Parallax content -->
-                                            <ul>
-                                                <li>Development</li>
-                                                <li>Architecture</li>
-                                                <li>Design</li>
-                                                <li>Marcom</li>
                                         </span>
                                         <span class="overview_right">
                                             <big><p>“We start by deploying the best content management systems available on a state of the art platform which facilitates consistent workflows throughout the entire development cycle...</br>...by bringing gorgeous content, artwork, and media to the experience, and using delivery strategies based on real time data and analytics, we are able to provide every project with a complete and  vertically integrated solution."
