@@ -1928,3 +1928,7 @@ li.expanded, li.collapsed, li.leaf {
 .img-circle {
 	width: 2em;
 }
+
+.parallax-box .fh_box > h4 {
+	display: inline;
+}
