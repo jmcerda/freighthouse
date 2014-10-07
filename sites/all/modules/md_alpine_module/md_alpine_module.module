@@ -363,7 +363,7 @@ function md_alpine_module_block_view($delta = '') {
                                             $overview = theme_get_setting('pr_'.$i.'_overview');
                                             foreach ($overview as $key => $value){
                                                 $block['content'] .= '<!-- Item box -->
-                                                    <div class="col-md-2 col-sm-2 col-xs-1">
+                                                    <div>
                                                         <div class="element-line">
                                                             <div class="item_left">';
                                                                 if($overview[$key]['icon']['icon'] != null && $overview[$key]['des'] != null) {
