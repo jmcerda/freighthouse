@@ -1936,6 +1936,10 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .parallax-box h4 {
-	display: inline;
-	padding: 10px 0px 5px;
+/*	display: inline;
+	padding: 10px 0px 5px;*/
+}
+
+.view-services .service-items {
+	display: none;
 }
