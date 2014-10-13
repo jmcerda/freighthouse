@@ -1943,3 +1943,7 @@ li.expanded, li.collapsed, li.leaf {
 .service-items {
 	display: none;
 }
+
+.parallax-overlay h1 {
+	collor:#ffffff;
+}
