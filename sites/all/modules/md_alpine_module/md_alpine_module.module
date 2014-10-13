@@ -367,9 +367,9 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        // <span class="col-md-3 col-sm-11 col-xs-11 par_left">
-                                        // </span>
-                                        <span class="col-md-11 col-sm-11 col-xs-11">
+                                        <span class="col-md-3 col-sm-11 col-xs-11 par_left">
+                                        </span>
+                                        <span class="col-md-8 col-sm-11 col-xs-11 par_right">
                                             <big><p>“By deploying the best CMS available on Pantheon we can provide consistent workflows throughout the entire development cycle.</p><p>Adding gorgeous content, artwork, and media to the experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution every time to each client."
                                             </p>
                                             </p></big>
