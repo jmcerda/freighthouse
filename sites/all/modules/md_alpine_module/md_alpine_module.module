@@ -264,16 +264,16 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="col-md-8 col-sm-11 col-xs-11 par_right">
                                             <big>
                                             <p>
-                                            We create user experiences that not only include beautiful aesthetics and entice emotional response, but also engage and inspire as well.
+                                            What leads to an effective emotional design strategy?</br>Creating user experiences that not only include beautiful aesthetics and entice positive user response, but also engage and inspire.
                                             </p>
-                                            <p>“A minimalist yet sophisticated presentation layer helps to drive the desired user response and emotion."
+                                            <p>“A minimalist yet sophisticated presentation layer and a workable personality layer."
                                             </p>
                                             </big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
-                                        <span class="col-md-3 col-sm-11 col-xs-11 par_left"><p>testing</p>
+                                        <span class="col-md-3 col-sm-11 col-xs-11 par_left">
                                         </span>
                                     </span>
                                 </div>
