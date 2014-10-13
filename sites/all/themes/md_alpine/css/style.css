@@ -1944,7 +1944,11 @@ li.expanded, li.collapsed, li.leaf {
 	display: none;
 }
 
-.parallax-overlay h1 p {
+.parallax-overlay h1 {
 	collor:#ffffff;
 	font-weight: 200;
+}
+
+.parallax-overlay p {
+	collor:#ffffff;
 }
