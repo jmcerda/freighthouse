@@ -368,14 +368,15 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
-                                        <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p>
-                                        <p>You don’t need a global IT team to promote hundreds of products a year.</p>
-                                        <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.
-                                        </p></big>
-                                    </span>
-                                    <span class="col-md-8 col-sm-11 col-xs-11 par_right">
-                                            <big><p>“Freighthouse provides consistent architecture and workflow throughout the entire development cycle.</p><p>Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p></big>
+                                            <big><p>Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p></big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
+                                        </span>
+                                        <span class="col-md-8 col-sm-11 col-xs-11 par_right">
+                                            <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p>
+                                            <p>You don’t need a global IT team to promote hundreds of products a year.</p>
+                                            <p>We can provide consistent architecture and workflow throughout the entire development cycle.</p>
+                                            <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.</p>
+                                            </big>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
