@@ -1861,7 +1861,7 @@ li.expanded, li.collapsed, li.leaf {
     width: 100%;
 }
 
-.overview_left {
+.par_left {
   float: left;
 /*  max-width: 40%;*/
   text-align: left;
@@ -1875,7 +1875,7 @@ li.expanded, li.collapsed, li.leaf {
 	display: inline;
 }*/
 
-.overview_right {
+.par_right {
   color: #9c9c9c;
   text-align: left;
   float: right;
