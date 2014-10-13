@@ -376,7 +376,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                         </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
-                                            <p><big><i>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</i></big></p>
+                                            <p style="color:#fff"><i>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</i></p>
                                             <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                     </span>
