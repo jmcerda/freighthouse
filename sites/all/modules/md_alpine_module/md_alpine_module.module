@@ -261,7 +261,7 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        <span class="col-md-8 col-sm-11 col-xs-11 overview_right">
+                                        <span class="col-md-8 col-sm-11 col-xs-11 overview_left">
                                             <big><p>“Test"
                                             </p>
                                             </p></big>
@@ -269,7 +269,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=PsYTvhGhmYo?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
-                                        <span class="col-md-3 col-sm-11 col-xs-11 overview_left"><p>testing</p>
+                                        <span class="col-md-3 col-sm-11 col-xs-11 overview_right"><p>testing</p>
                                         </span>
                                     </span>
                                 </div>
