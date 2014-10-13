@@ -4,9 +4,9 @@ core = 7.x
 dependecies[] = block
 files[] = block_revisions.test
 
-; Information added by drupal.org packaging script on 2013-09-30
-version = "7.x-1.x-dev"
+; Information added by Drupal.org packaging script on 2014-10-02
+version = "7.x-1.0+0-dev"
 core = "7.x"
 project = "block_revisions"
-datestamp = "1380556357"
+datestamp = "1412240578"
 
