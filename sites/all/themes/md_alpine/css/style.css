@@ -1952,8 +1952,17 @@ li.expanded, li.collapsed, li.leaf {
 	color:#ffffff;
 }
 
+.marcom_blocks ul {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+}
+
 .marcom_blocks li {
-	display: inline;
+	display: inline-block;
 	float: left;
 	list-style-type: none;
 	border: 1px solid #7c7c7c;
