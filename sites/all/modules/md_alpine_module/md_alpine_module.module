@@ -174,8 +174,8 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="element-line marcom_blocks">
-                                        <span class="col-md-4">
+                                    <div class="element-line">
+                                        <span class="marcom_blocks">
                                             <ul>
                                             <li>
                                             <h4>Advanced segmentation</h4>
