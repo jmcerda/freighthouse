@@ -1953,14 +1953,11 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .marcom_blocks li {
-	display: block;
+	display: inline-block;
+	float: left;
 	list-style-type: none;
 	border: 1px solid #7c7c7c;
 	background-color:rgba(255,255,255,0.15);
 	border-radius: 5px;
-	padding: 10px;
+	margin: 25px;
 }
-
-.marcom_left {}
-
-.marcom_right {}
