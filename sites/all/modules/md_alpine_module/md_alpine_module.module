@@ -173,6 +173,14 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                     </span>
                                 </div>
+                                <div class="col-md-12">
+                                    <?php
+                                        $nid = 115;
+                                        $node = node_load($nid);
+                                        $nodeView = node_view($node, 'full');
+                                        print drupal_render($nodeView['body']);
+                                    ?>
+                                </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
