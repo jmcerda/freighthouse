@@ -1952,7 +1952,7 @@ li.expanded, li.collapsed, li.leaf {
 	color:#ffffff;
 }
 
-.marcom_blocks ul {
+.marcom_blocks li {
 	list-style-type: none;
 	background-color:;
 	border-radius: 5px;
