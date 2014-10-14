@@ -227,8 +227,8 @@ function md_alpine_module_block_view($delta = '') {
 									<div class="element-line">
 										<div class="item_right">';
                             if(theme_get_setting('pr_'.$i.'_button_text') && theme_get_setting('pr_'.$i.'_button_text_hover')) {
-                                $block['content'] .= '<div class="mybutton ultra">
-												<a href="'.theme_get_setting('pr_'.$i.'_button_link').'"> <span data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
+                                $block['content'] .= '<div class="mybutton ultra colorbox-load">
+												<a href="'.theme_get_setting('pr_'.$i.'_button_link').'?width=500&height=500&iframe=true"> <span data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
 											</div>';
                             }
                             $block['content'] .= '</div>
@@ -521,7 +521,7 @@ function _md_alpine_header_block_content() {
         $content .= '</ul>
                         </div>
                             <div class="mybutton ultra">
-                                <a class="start-button" style="color:#FFF" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
+                                <a class="start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
                             </div>
                         </div>
                     </div>
