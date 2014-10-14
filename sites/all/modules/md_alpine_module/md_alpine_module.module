@@ -173,66 +173,6 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                     </span>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="element-line">
-                                        <span class="marcom_blocks">
-                                            <ul>
-                                            <li>
-                                            <h4>Segmentation</h4>
-                                            Individual and personalized user experience based on behaviour and preference data.
-                                            </li>
-                                            <li>
-                                            <h4>Marketing Attribution</h4>
-                                            Find exactly what exictes your audience provide content tailored to their needs.
-                                            </li>
-
-                                            <li>
-                                            <h4>Mobile Analytics</h4>
-                                            Analyze and monitor mobile campaigns and learn just how users engage with your brand.
-                                            </li>
-
-                                            <li>
-                                            <h4>Predictive Marketing</h4>
-                                            Gain insight into your campaigns and make decsisions that really matter.
-                                            </li>
-
-                                            <li>
-                                            <h4>Real-time analytics</h4>
-                                            Get a birds eye view of user engagement and instantly react to customer trends.
-                                            </li>
-
-                                            <li>
-                                            <h4>Advanced visualization</h4>
-                                            Collect deep analysis to quickly learn how you will improve before everyone else.
-                                            </li>
-                                            </ul>
-                                            <ul>
-                                            <li>
-                                            <h4>Big Data</h4>
-                                            Interpret complex datasets in real time to find insights and behaviors you normally would have missed - instantly.
-                                            </li>
-
-                                            <li>
-                                            <h4>Social Analytics</h4>
-                                           Learn what impact you are really creating with your clients and their networks to eliminate any unneeded or annoying contact.
-                                            </li>
-
-                                            <li>
-
-                                            <li>
-                                            <h4>Customer analysis</h4>
-                                            Focus on high value clients, know what they like and understand how to give it to them.
-                                            </li>
-
-                                            <li>
-                                            <h4>Reports</h4>
-                                            View and analyze your reporting data from compreshensive visualizations to maximize the comprehension of your current situation quickly and effectively.
-                                            </li>
-                                            </ul>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
