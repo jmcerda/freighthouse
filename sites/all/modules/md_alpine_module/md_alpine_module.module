@@ -179,7 +179,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <?php
                                                 $nid = 115;
                                                 $node = node_load($nid);
-                                                $nodeView = node_view($node, 'full');
+                                                $nodeView = node_view($node);
                                                 print drupal_render($nodeView['body']);
                                             ?>
                                         </span>
