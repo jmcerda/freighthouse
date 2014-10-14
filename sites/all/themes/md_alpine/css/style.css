@@ -1953,7 +1953,7 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .marcom_blocks li {
-	display: inline-block;
+	display: inline;
 	float: left;
 	list-style-type: none;
 	border: 1px solid #7c7c7c;
