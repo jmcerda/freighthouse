@@ -227,7 +227,7 @@ function md_alpine_module_block_view($delta = '') {
 									<div class="element-line">
 										<div class="item_right">';
                             if(theme_get_setting('pr_'.$i.'_button_text') && theme_get_setting('pr_'.$i.'_button_text_hover')) {
-                                $block['content'] .= '<div class="mybutton ultra colorbox-load">
+                                $block['content'] .= '<div class="mybutton ultra">
 												<a href="'.theme_get_setting('pr_'.$i.'_button_link').'"> <span data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
 											</div>';
                             }
@@ -369,7 +369,7 @@ function md_alpine_module_block_view($delta = '') {
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
                                             <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
-                                            <p>You don’t need a global IT team to promote hundreds of products a year.</p>
+                                            <p>You do not need a global IT team to promote hundreds of products a year.</p>
                                             <p>We can provide consistent architecture and workflows throughout the entire development cycle.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=HHEOrJWZMbw?width=560&height=315?iframe=true">&gt; Watch the video</a>
@@ -521,7 +521,7 @@ function _md_alpine_header_block_content() {
         $content .= '</ul>
                         </div>
                             <div class="mybutton ultra">
-                                <a class="start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
+                                <a class="start-button" style="color:#FFF" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
                             </div>
                         </div>
                     </div>
