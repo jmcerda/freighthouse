@@ -175,7 +175,7 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="col-md-12">
                                     <div class="element-line marcom_blocks">
-                                        <span class="col-md-6 marcom_left">
+                                        <span class="col-md-4">
                                             <ul>
                                             <li>
                                             <h4>Advanced segmentation</h4>
@@ -206,8 +206,6 @@ function md_alpine_module_block_view($delta = '') {
                                             Collect deep analysis before anyone else to quickly learn how you can get better.
                                             </li>
                                             </ul>
-                                        </span>
-                                        <span class="col-md-6 marcom_right"
                                             <ul>
                                             <li>
                                             <h4>Big Data</h4>
