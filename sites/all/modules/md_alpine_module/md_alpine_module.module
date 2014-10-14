@@ -174,14 +174,13 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="element-line">
-                                        <span class="marcom_text">
-                                            <div id="marcom_blocks">
+                                    <div class="element-line marcom_blocks">
+                                        <span class="marcom_left">
                                             <ul>
                                             <li>
                                             <h4>Advanced segmentation</h4>
                                             We customize user experience based on Every one of your visitors received individualized and personalized experiences based on real time data about their behaviors and preferences.
-
+                                            </li>
                                             <li>
                                             <h4>Marketing Attribution</h4>
                                             See exactly what turns on your audience and deliver exclusive content tailored to their needs.
@@ -206,7 +205,10 @@ function md_alpine_module_block_view($delta = '') {
                                             <h4>Advanced visualizations</h4>
                                             Collect deep analysis before anyone else to quickly learn how you can get better.
                                             </li>
-
+                                            </ul>
+                                        </span>
+                                        <span class="marcom_right"
+                                            <ul>
                                             <li>
                                             <h4>Big Data</h4>
                                             Collect and interpret complex datasets in real time to learn unknown insights and behaviors
