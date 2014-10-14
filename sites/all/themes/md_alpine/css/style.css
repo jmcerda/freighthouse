@@ -1563,7 +1563,7 @@ footer .social-icon a:hover {
 	display: inline-block;
 	outline: none;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 200;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	letter-spacing: 0;
     color: #FFF;
@@ -1630,7 +1630,7 @@ footer .social-icon a:hover {
 	display: inline-block;
 	outline: none;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 200;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	letter-spacing: 1px;
 }
@@ -1750,7 +1750,7 @@ footer .social-icon a:hover {
 .btn-new .start-button {
     display: inline-block;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
     text-transform: uppercase;
     line-height: 60px;
     background-color: #0098F9;
