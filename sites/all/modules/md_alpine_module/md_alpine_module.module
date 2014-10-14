@@ -175,12 +175,64 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="col-md-12">
                                     <div class="element-line">
-                                        <span class="about_text">
-                                            <?php
-                                                $nid = 115;
-                                                $node = node_load(array('nid' => $nid));
-                                                print node_view($node);
-                                            ?>
+                                        <span class="marcom_text">
+                                            <div id="marcom_blocks">
+                                            <ul>
+                                            <li>
+                                            <h4>Advanced segmentation</h4>
+                                            We customize user experience based on Every one of your visitors received individualized and personalized experiences based on real time data about their behaviors and preferences.
+
+                                            <li>
+                                            <h4>Marketing Attribution</h4>
+                                            See exactly what turns on your audience and deliver exclusive content tailored to their needs.
+                                            </li>
+
+                                            <li>
+                                            <h4>Mobile Analytics</h4>
+                                            Understand your mobile campaigns so that you can learn how customers are engageing with your brand.
+                                            </li>
+
+                                            <li>
+                                            <h4>Predictive Marketing</h4>
+                                            Analyze customer data to gain insight into your real impact.
+                                            </li>
+
+                                            <li>
+                                            <h4>Real-time analytics</h4>
+                                            Instantly react to user trends to give you the play by play view of their engagement.
+                                            </li>
+
+                                            <li>
+                                            <h4>Advanced visualizations</h4>
+                                            Collect deep analysis before anyone else to quickly learn how you can get better.
+                                            </li>
+
+                                            <li>
+                                            <h4>Big Data</h4>
+                                            Collect and interpret complex datasets in real time to learn unknown insights and behaviors
+                                            </li>
+
+                                            <li>
+                                            <h4>Social Analytics</h4>
+                                            Understand what kind of impact you are really making with your customers, their communities and their content to find how what you are doing is contributing to your bottom line.
+                                            </li>
+
+                                            <li>
+                                            <h4>Audience Optimization</h4>
+                                            Merge traditional and digital data together to find how you can get better.
+                                            </li>
+
+                                            <li>
+                                            <h4>Customer analysis</h4>
+                                            Focus on high value clients, know what they like and understand how to give it to them
+                                            </li>
+
+                                            <li>
+                                            <h4>Reports</h4>
+                                            Easily bring real-time data to a compreshensive visualization that will maximize your understanding of your current situation
+                                            </li>
+                                            </ul>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
