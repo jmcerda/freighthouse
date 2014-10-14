@@ -1944,10 +1944,21 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .parallax-overlay h1 {
-	collor:#ffffff;
+	color:#ffffff;
 	font-weight: 200;
 }
 
 #white {
 	color:#ffffff;
 }
+
+.marcom_blocks ul {
+	list-style-type: none;
+	background-color:;
+	border-radius: 5px;
+	rgba(255,255,255,0.15);
+}
+
+.marcom_left {}
+
+.marcom_right {}
