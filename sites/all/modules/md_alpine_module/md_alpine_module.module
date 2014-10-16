@@ -290,7 +290,6 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We can provide consistent architecture and workflows throughout the entire development cycle.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=HHEOrJWZMbw?width=560&height=315?iframe=true">&gt; Watch the video</a>
-                                            </p>
                                         </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
                                             <p><ul>
@@ -393,15 +392,24 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        <span class="col-md-7 col-sm-11 col-xs-11 par_left">
-                                            <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
+                                        <span class="col-md-6 col-sm-12 col-xs-12 par_left">
+                                        <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
                                             <p>You do not need a global IT team to promote hundreds of products a year.</p>
                                             <p>We can provide consistent architecture and workflows throughout the entire development cycle.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=HHEOrJWZMbw?width=560&height=315?iframe=true">&gt; Watch the video</a>
-                                            </p>
                                         </span>
-                                        <span class="col-md-4 col-sm-11 col-xs-11 par_right">
+                                        <span class="col-md-6 col-sm-12 col-xs-12 par_right">
+                                        <big>
+                                        <p style="color:#ffcc00">Elite enterprise web development and design talent for every open source technology.</p></big>
+                                        <p>We specialize in building dynamic teams of real technical artists from the ground up and enrich your reach, productivity and marketability.
+                                        </p>
+                                        <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
+                                        </p>
+                                        <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
+                                        </p>
+                                        <a class="colorbox-load" href="request-proposal>&gt; hire a developer</a>
+                                            </p>
                                         </span>
                                     </span>
                                 </div>
