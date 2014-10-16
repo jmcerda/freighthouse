@@ -419,6 +419,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
+                                <span class="col-md-12">
                                 <div class="row">';
                             $overview = theme_get_setting('pr_'.$i.'_overview');
                             foreach ($overview as $key => $value){
@@ -443,6 +444,7 @@ function md_alpine_module_block_view($delta = '') {
                             }
                             $block['content'] .= '
                                 </div>
+                                </span>
                             </div>
                             <!-- Parallax content -->
                         </div>
