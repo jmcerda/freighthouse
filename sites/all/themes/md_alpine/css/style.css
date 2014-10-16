@@ -80,7 +80,8 @@ blockquote {
 	top: 50%;
 	left: 50%;
 	margin: -33px 0 0 -33px;
-	background: url("../img/intro-loader.gif");
+	/*background: url("../img/intro-loader.gif");*/
+	background: url("../../../../default/files/world.png");
 }
 
 .section-content {
