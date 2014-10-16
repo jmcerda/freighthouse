@@ -296,11 +296,11 @@ function md_alpine_module_block_view($delta = '') {
                                             <big><p style="color:#ffcc00">On-demand design and development</p></big>
                                             <p>Freighthouse provides elite enterprise web and software development & design talent for every open source technology.
                                             </p>
-                                            <p>We specialize in creating dynamic teams of real technical artists from the ground up and enrich your organization's reach, productivity and marketability.
+                                            <p>We specialize in creating dynamic teams of real technical artists from the ground up and enrich your reach, productivity and marketability.
                                             </p>
                                             <p>Our consultants completely integrate into your team and organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
                                             </p>
-                                            <p>Whether it's HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
+                                            <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
                                         </span>
                                     </span>
