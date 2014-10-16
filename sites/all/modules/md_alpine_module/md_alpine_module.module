@@ -407,6 +407,9 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
                                         </span>
+                                        <span class="col-md-6 col-sm-12 col-xs-12">
+                                        <img url="../../themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"</img>
+                                        </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
                                         <big>
                                             <p style="color:#ffcc00">Productivity & Accountability.</p>
