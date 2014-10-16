@@ -288,9 +288,9 @@ function md_alpine_module_block_view($delta = '') {
                                             <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
                                             <p>No longer be at the mercy of your IT department.</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle thatenables you to quickly and easily launch new projects and campaigns as needed.</p>
-                                            <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT & developer resource issues.</p>
+                                            <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT & developer resources.</p>
                                             <p>One platform. Many sites. Unlimited reach.</p>
-                                            <a style="color:#ffcc00" class="colorbox-load" href="//youtu.be/5ciBJeqsBh0?width=560&height=315?iframe=true">&gt; Watch the video</a>
+                                            <a style="color:#ffcc00" class="colorbox-load" href="//www.youtube.com/v/5ciBJeqsBh0?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                         </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
                                             <p><ul>
