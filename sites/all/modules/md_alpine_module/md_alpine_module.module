@@ -404,36 +404,15 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
-                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always know exactly what is being worked on by who and to the second to maximize productivity and accountability.<p>
+                                        <big>
+                                            <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                            </big>
+                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always know exactly what is being worked on and by who.</p>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
-                                        <p>While we generally work remotely, we do offer on-site availability at your location - anywhere in the world. In less than a week we can have a designer or developer in your office, ramped up and ready to go!
-                                        <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
+                                        <p>While we generally work remotely, we do offer on-site availability at your location - anywhere in the world. In less than a week we can have a designer or developer in your office, ramped up and ready to go!</p>
                                         </span>
                                     </span>
-                                    <!-- Parallax content -->
-                                    <div class="parallax-content">
-                                        <div class="row text-center number-counters">';
-                                    $number = theme_get_setting('pr_'.$i.'_number');
-                                    foreach ($number as $key => $value){
-                                        $block['content'] .= '
-                                            <div class="col-md-3 col-sm-6">
-                                                <div class="counters-item element-line">';
-                                        if(isset($number[$key]['icon'])) {
-                                            $block['content'] .= '<i class="'.$number[$key]['icon']['bundle'].' '.$number[$key]['icon']['icon'].' icon-4x"></i>';
-                                        }
-                                        $block['content'] .= '<strong data-to="'.$number[$key]['number_count'].'">'.$number[$key]['number_count'].'</strong>
-                                                    <p class="lead">
-                                                        '.$number[$key]['des'].'
-                                                    </p>
-                                                </div>
-                                            </div>';
-
-                                    }
-                                    $block['content'] .= '
-                                        </div>
-                                    </div>
-                                    <!-- Parallax content -->
                                 </div>
                             </div>
                             <!-- Parallax Body -->
