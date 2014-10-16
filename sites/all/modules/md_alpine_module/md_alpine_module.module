@@ -303,6 +303,16 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
                                         </span>
+                                        <span class="col-md-12 col-sm-12 col-xs-12">
+                                            <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always know exactly what is being worked on by who and to the second to maximize productivity and accountability.
+                                            </p>
+                                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!
+                                            </p>
+                                            <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.
+                                            </p>
+                                            <p>We are ALWAYS available any time to provide you with immediate assistance!
+                                            <p>
+                                        </span>
                                     </span>
                                 </div>
                             </div>
