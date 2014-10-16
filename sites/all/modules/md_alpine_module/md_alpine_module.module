@@ -292,6 +292,9 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>One platform. Many sites. Unlimited reach.</p>
                                             <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&autoplay=1&iframe=true">&gt; Watch the video</a>
                                         </span>
+                                        <span class="col-md-6 col-sm-12 col-xs-12">
+                                            <img src="../../../themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png">
+                                        </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
                                             <p><ul>
                                                 <li>On demand design and development consulting</li>
@@ -406,9 +409,6 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
-                                        </span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12">
-                                        <img src="../../themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png">
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
                                         <big>
