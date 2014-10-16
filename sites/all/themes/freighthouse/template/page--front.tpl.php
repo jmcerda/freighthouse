@@ -59,20 +59,20 @@
     <!-- Team Section -->
 <?php endif;?>
 
-<?php if($page['location']):?>
-    <!-- Location Section -->
-    <section id="location" class="section-content">
-        <?php print render($page['location']);?>
-    </section>
-    <!-- location Section -->
-<?php endif;?>
-
 <?php if($page['parallax_four']):?>
     <!-- Parallax Container -->
     <div id="four-parallax" class="parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <?php print render($page['parallax_four']);?>
     </div>
     <!-- Parallax Container -->
+<?php endif;?>
+
+<?php if($page['location']):?>
+    <!-- Location Section -->
+    <section id="location" class="section-content">
+        <?php print render($page['location']);?>
+    </section>
+    <!-- location Section -->
 <?php endif;?>
 
 <?php if($page['client']):?>
