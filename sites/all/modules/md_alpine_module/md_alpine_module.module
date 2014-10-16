@@ -286,8 +286,8 @@ function md_alpine_module_block_view($delta = '') {
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
                                             <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
-                                            <p>You do not need a global IT team to promote hundreds of products a year.</p>
-                                            <p>We can provide consistent architecture and workflows throughout the entire development cycle.</p>
+                                            <p>No longer be at the mercy of your IT department.</p>
+                                            <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without contending over scarce IT & developer resources.</p>
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=HHEOrJWZMbw?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                         </span>
@@ -307,6 +307,10 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
+                            <span class="col-md-12">
+                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go! So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.
+                            </p>
+                            </span>
                                 <div class="row text-center number-counters">';
                             $number = theme_get_setting('pr_'.$i.'_number');
                             foreach ($number as $key => $value){
