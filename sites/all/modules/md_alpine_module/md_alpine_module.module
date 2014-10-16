@@ -403,9 +403,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
                                             <big>
-                                            <p style="color:#ffcc00">Placeholder</p>
+                                            <p style="color:#ffcc00">You how much development staffing sucks.</p>
                                             </big>
-                                            <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.
+                                            <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.
                                             </p>
                                             <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
                                             </p>
