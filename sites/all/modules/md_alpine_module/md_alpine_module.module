@@ -284,7 +284,7 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12 par_left">
+                                        <span class="col-md-7 col-sm-11 col-xs-11 par_left">
                                             <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
                                             <p>You do not need a global IT team to promote hundreds of products a year.</p>
                                             <p>We can provide consistent architecture and workflows throughout the entire development cycle.</p>
@@ -292,26 +292,15 @@ function md_alpine_module_block_view($delta = '') {
                                             <a class="colorbox-load" href="https://www.youtube.com/watch?v=HHEOrJWZMbw?width=560&height=315?iframe=true">&gt; Watch the video</a>
                                             </p>
                                         </span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12 par_left">
-                                            <big><p style="color:#ffcc00">On-demand design and development</p></big>
-                                            <p>Freighthouse provides elite enterprise web and software development & design talent for every open source technology.
-                                            </p>
-                                            <p>We specialize in creating dynamic teams of real technical artists from the ground up and enrich your reach, productivity and marketability.
-                                            </p>
-                                            <p>Our consultants completely integrate into your team and organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
-                                            </p>
-                                            <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
-                                            </p>
-                                        </span>
-                                        <span class="col-md-12 col-sm-12 col-xs-12">
-                                            <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always know exactly what is being worked on by who and to the second to maximize productivity and accountability.
-                                            </p>
-                                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!
-                                            </p>
-                                            <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.
-                                            </p>
-                                            <p>We are ALWAYS available any time to provide you with immediate assistance!
-                                            <p>
+                                        <span class="col-md-4 col-sm-11 col-xs-11 par_right">
+                                            <p><ul>
+                                                <li>On demand design and development consulting</li>
+                                                <li>Seamless architecutre and accountability</li>
+                                                <li>Zero ramp up costs.</li>
+                                                <li>Zero termination costs.</li>
+                                                <li>No recruiting fees...ever.</li>
+                                                <li>Qualified pre-screened candidates - we do the work to qualify each and every consultant.</li>
+                                                </ul>
                                         </span>
                                     </span>
                                 </div>
