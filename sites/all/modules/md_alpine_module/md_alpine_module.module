@@ -401,8 +401,8 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
                                         <big>
-                                        <p style="color:#ffcc00">Elite enterprise web development and design talent for every open source technology.</p></big>
-                                        <p>We specialize in building dynamic teams of real technical artists from the ground up and enrich your reach, productivity and marketability.
+                                        <p style="color:#ffcc00"></p></big>
+                                        <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.
                                         </p>
                                         <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
                                         </p>
