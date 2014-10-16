@@ -43,22 +43,6 @@
     <!-- Parallax Container -->
 <?php endif;?>
 
-<?php if($page['portfolio']):?>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section-content">
-        <?php print render($page['portfolio']);?>
-    </section>
-    <!-- Portfolio Section -->
-<?php endif;?>
-
-<?php if($page['parallax_five']):?>
-    <!-- Parallax Container -->
-    <div id="five-parallax" class="parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-        <?php print render($page['parallax_five']);?>
-    </div>
-    <!-- Parallax Container -->
-<?php endif;?>
-
 <?php if($page['parallax_three']):?>
     <!-- Parallax Container -->
     <div id="three-parallax" class="parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
@@ -99,12 +83,28 @@
     <!-- Client Section -->
 <?php endif;?>
 
+<?php if($page['parallax_five']):?>
+    <!-- Parallax Container -->
+    <div id="five-parallax" class="parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <?php print render($page['parallax_five']);?>
+    </div>
+    <!-- Parallax Container -->
+<?php endif;?>
+
 <?php if($page['pricing']):?>
     <!-- Pricing Section -->
     <section id="pricing" class="section-content">
         <?php print render($page['pricing']);?>
     </section>
     <!-- Pricing Section -->
+<?php endif;?>
+
+<?php if($page['portfolio']):?>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-content">
+        <?php print render($page['portfolio']);?>
+    </section>
+    <!-- Portfolio Section -->
 <?php endif;?>
 
 <?php if($page['parallax_six']):?>
