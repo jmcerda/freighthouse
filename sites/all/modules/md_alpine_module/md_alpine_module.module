@@ -407,7 +407,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <big>
                                             <p style="color:#ffcc00">Productivity & Accountability.</p>
                                             </big>
-                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always know exactly what is being worked on and by who.</p>
+                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always have instant insight of your project status. .</p>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
                                         <p>While we generally work remotely, we do offer on-site availability at your location - anywhere in the world. In less than a week we can have a designer or developer in your office, ramped up and ready to go!</p>
