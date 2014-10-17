@@ -1871,6 +1871,7 @@ li.expanded, li.collapsed, li.leaf {
   padding: 30px;
   /*color: #9c9c9c;*/
   color: #d8d8d8;
+  margin-bottom: 20px;
 }
 
 /*.overview_left .parallax-content {
