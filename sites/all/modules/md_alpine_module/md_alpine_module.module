@@ -112,7 +112,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                             </big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
-                                            <a class="colorbox-load" href="//youtube.com/embed/PsYTvhGhmYo?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&autoplay=1&iframe=true">&gt; Watch the video</a>
+                                            <a class="colorbox-load" href="//youtube.com/embed/PsYTvhGhmYo?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&autoplay=1&playlist=o&iframe=true">&gt; Watch the video</a>
                                             </p>
                                             <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
                                             <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
@@ -290,7 +290,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle thatenables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT & developer resources.</p>
                                             <p>One platform. Many sites. Unlimited reach.</p>
-                                            <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&autoplay=1&iframe=true">&gt; Watch the video</a>
+                                            <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&autoplay=1&playlist=0&iframe=true">&gt; Watch the video</a>
                                         </span>
                                         <span class="col-md-5 col-sm-12 col-xs-12">
                                             <img src="../../themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png">
