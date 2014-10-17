@@ -1870,7 +1870,7 @@ li.expanded, li.collapsed, li.leaf {
   border-radius: 5px;
   padding: 30px;
   /*color: #9c9c9c;*/
-  color: #f8f8f8;
+  color: #d8d8d8;
 }
 
 /*.overview_left .parallax-content {
@@ -1885,19 +1885,7 @@ li.expanded, li.collapsed, li.leaf {
   border-radius: 5px;
   padding: 25px;
   margin-bottom: 20px;
-  color: #f8f8f8;
-}
-
-.connect_left {
-  float: left;
-  max-width: 50%;
-}
-
-.connect_right {
-  color: #7c7c7c;
-  text-align: left;
-  float: right;
-  max-width: 50%;
+  color: #d8d8d8;
 }
 
 .number_left {
