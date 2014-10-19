@@ -285,7 +285,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
-                                            <big><p style="color:#ffcc00">The battle between marketing and IT is over.</p></big>
+                                            <big><p style="color:#d8d8d8">The battle between marketing and IT is over.</p></big>
                                             <p>No longer be at the mercy of your IT department.</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT & developer resources.</p>
@@ -310,7 +310,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
-                            <span class="col-md-12">
+                            <span class="col-md-12 par_center">
                             <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go! So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.
                             </p>
                             </span>
