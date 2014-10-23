@@ -1866,7 +1866,8 @@ li.expanded, li.collapsed, li.leaf {
 .par_left {
   float: left;
   text-align: left;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+  /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);*/
+  background: none repeat scroll 0 0 rgba(255,255,255,0.15);
   border-radius: 5px;
   padding: 30px;
   /*color: #9c9c9c;*/
