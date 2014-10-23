@@ -1870,7 +1870,7 @@ li.expanded, li.collapsed, li.leaf {
   background: none repeat scroll 0 0 rgba(255,255,255,0.15);
   border-radius: 5px;
   padding: 30px;
-  color: #5c5a52;
+  color: #000000;
   /*color: #d8d8d8;*/
   margin-bottom: 20px;
 }
