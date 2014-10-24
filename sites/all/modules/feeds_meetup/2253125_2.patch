@@ -1,0 +1,32 @@
+diff --git a/feeds_meetup.module b/feeds_meetup.module
+index 7cb39e8..17df146 100644
+--- a/feeds_meetup.module
++++ b/feeds_meetup.module
+@@ -24,7 +24,7 @@ function feeds_meetup_feeds_plugins() {
+     'description' => 'Parse Meetup event feeds.',
+     'help' => 'Parse Meetup event XML feeds using XPath.',
+     'handler' => array(
+-      'parent' => 'FeedsMeetupParserBase',
++      'parent' => 'FeedsParser',
+       'class' => 'FeedsMeetupEventParser',
+       'file' => 'FeedsMeetupEventParser.inc',
+       'path' => drupal_get_path('module', 'feeds_meetup'),
+@@ -35,7 +35,7 @@ function feeds_meetup_feeds_plugins() {
+     'description' => 'Parse Meetup group feeds.',
+     'help' => 'Parse Meetup group XML feeds using XPath.',
+     'handler' => array(
+-      'parent' => 'FeedsMeetupParserBase',
++      'parent' => 'FeedsParser',
+       'class' => 'FeedsMeetupGroupParser',
+       'file' => 'FeedsMeetupGroupParser.inc',
+       'path' => drupal_get_path('module', 'feeds_meetup'),
+@@ -46,7 +46,7 @@ function feeds_meetup_feeds_plugins() {
+     'description' => 'Parse Meetup venue feeds.',
+     'help' => 'Parse Meetup venue XML feeds using XPath.',
+     'handler' => array(
+-      'parent' => 'FeedsMeetupParserBase',
++      'parent' => 'FeedsParser',
+       'class' => 'FeedsMeetupVenueParser',
+       'file' => 'FeedsMeetupVenueParser.inc',
+       'path' => drupal_get_path('module', 'feeds_meetup'),
+
