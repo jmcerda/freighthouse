@@ -310,7 +310,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax content -->
                             <div class="parallax-content">
                             <span class="col-md-12 par_center">
-                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go! So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.
+                            <p>On-site consulting at your location - anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.
                             </p>
                             </span>
                                 <div class="row text-center number-counters">';
