@@ -292,13 +292,13 @@ function md_alpine_module_block_view($delta = '') {
                                             <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
                                         </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
-                                            <p><ul>
-                                                <li>On demand design and development consulting</li>
+                                            <p>
+                                            <ul>
                                                 <li>Seamless architecutre and accountability</li>
                                                 <li>Zero ramp up costs.</li>
                                                 <li>Zero termination costs.</li>
                                                 <li>No recruiting fees...ever.</li>
-                                                </ul>
+                                            </ul>
                                         </span>
                                         <span class="col-md-4 col-sm-12 col-xs-12 par_right">
                                             <p><img style="width:80%" src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
@@ -395,6 +395,10 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
+                                    <span class="col-md-12 par_center">
+                                    <p>On demand, project based consulting and project management - from anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.
+                                    </p>
+                                    </span>
                                     <span>
                                         <span class="col-md-5 col-sm-12 col-xs-12 par_left">
                                             <big>
@@ -419,10 +423,6 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                             </div>
-                            <span class="col-md-12 par_center">
-                            <p>On-site consulting at your location - anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.
-                            </p>
-                            </span>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
