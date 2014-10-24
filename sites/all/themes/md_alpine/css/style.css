@@ -38,8 +38,8 @@ iframe {
 	border: 0;
 }
 p.lead {
-	/*color: #7c7c7c;*/
-	color: #5c5a52;
+	color: #7c7c7c;
+	/*color: #5c5a52;*/
 }
 .no-margin{ margin:0;}
 
@@ -1982,5 +1982,9 @@ li.expanded, li.collapsed, li.leaf {
 
 #back-top .icon-2x {
 	font-size: 1em;
+}
+
+.number-counters {
+	font-size: 40px;
 }
 
