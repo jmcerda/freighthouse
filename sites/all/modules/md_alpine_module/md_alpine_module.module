@@ -405,10 +405,8 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                             <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
                                             </p>
-                                        </span>
-                                        <span class="col-md-5 col-sm-12 col-xs-12 par_left">
-                                        <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
-                                        </p>
+                                            <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
+                                            </p>
                                         </span>
                                         <span class="col-md-5 col-sm-12 col-xs-12 par_right">
                                         <big>
