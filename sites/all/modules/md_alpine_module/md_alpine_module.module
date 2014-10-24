@@ -310,8 +310,6 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax content -->
                             <div class="parallax-content">
                             <span class="col-md-12 par_center">
-                            <p>On-site consulting at your location - anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.
-                            </p>
                             </span>
                                 <div class="row text-center number-counters">';
                             $number = theme_get_setting('pr_'.$i.'_number');
@@ -412,7 +410,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <big>
                                             <p style="color:#ffcc00">Productivity & Accountability.</p>
                                             </big>
-                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer. You always have instant insight of your project status. .</p>
+                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                         </span>
                                         <span class="col-md-5 col-sm-12 col-xs-12 par_right">
                                         <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
@@ -421,6 +419,10 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </div>
                             </div>
+                            <span class="col-md-12 par_center">
+                            <p>On-site consulting at your location - anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.
+                            </p>
+                            </span>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
