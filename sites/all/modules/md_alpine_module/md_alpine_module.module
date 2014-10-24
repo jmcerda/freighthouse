@@ -397,7 +397,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                 <span>
                                     <span class="col-md-12 col-sm-12 col-xs-12 par_center">
-                                    <big><p>On demand, project based consulting and project management - from anywhere in the world.</br>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.</p>
+                                    <big><p>We have traveled over 73,000 miles, worked from 55 cities in 17 countries and have locations in New York City and Mexico City.</p>
                                     </big>
                                     </span>
                                 </span>
