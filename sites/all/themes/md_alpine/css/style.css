@@ -1985,6 +1985,6 @@ li.expanded, li.collapsed, li.leaf {
 }
 
 .number-counters {
-	font-size: 40px;
+	font-size: 40px !important;
 }
 
