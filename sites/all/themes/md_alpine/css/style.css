@@ -1975,3 +1975,12 @@ li.expanded, li.collapsed, li.leaf {
 	border-radius: 5px;
 	margin: 25px;
 }
+
+.toolbar_item .command_help .help {
+	display:none;
+}
+
+.fontello .icon-angle-up .icon-2x {
+	font-size: 1em;
+}
+

@@ -398,11 +398,11 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12 par_left">
+                                        <span class="col-md-5 col-sm-12 col-xs-12 par_left">
                                             <big>
                                             <p style="color:#ffcc00">You know how much development staffing sucks.</p>
                                             </big>
-                                            <p>Most employment agencies have do not know the first thing about development.<p>
+                                            <p>Most employment agencies dont know the first thing about development.<p>
                                             <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.
                                             </p>
                                             <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
