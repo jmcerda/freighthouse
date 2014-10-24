@@ -1984,7 +1984,7 @@ li.expanded, li.collapsed, li.leaf {
 	font-size: 1em;
 }
 
-.number-counters {
+..number-counters strong {
 	font-size: 40px !important;
 }
 
