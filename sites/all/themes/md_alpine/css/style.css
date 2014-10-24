@@ -1980,7 +1980,7 @@ li.expanded, li.collapsed, li.leaf {
 	display:none;
 }
 
-.fontello .icon-angle-up .icon-2x {
+#back-top .icon-2x {
 	font-size: 1em;
 }
 
