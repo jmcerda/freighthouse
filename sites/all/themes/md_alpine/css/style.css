@@ -1866,11 +1866,11 @@ li.expanded, li.collapsed, li.leaf {
 .par_left {
   float: left;
   text-align: left;
-  /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);*/
-  background: none repeat scroll 0 0 rgba(255,255,255,0.70);
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
+  /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
   padding: 30px;
-  color: #000000;
+  color: #cccccc;
   /*color: #d8d8d8;*/
   margin-bottom: 20px;
 }
@@ -1893,12 +1893,12 @@ li.expanded, li.collapsed, li.leaf {
 
 .par_center {
   text-align: center;
-  /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);*/
-  background: none repeat scroll 0 0 rgba(255,255,255,0.70);
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
+  /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 20px;
-  color: #d8d8d8;
+  color: #cccccc;
 }
 
 .number_left {
