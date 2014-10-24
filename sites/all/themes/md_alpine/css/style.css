@@ -1976,7 +1976,7 @@ li.expanded, li.collapsed, li.leaf {
 	margin: 25px;
 }
 
-.toolbar_item .command_help .help {
+.syntaxhighlighter .toolbar {
 	display:none;
 }
 
