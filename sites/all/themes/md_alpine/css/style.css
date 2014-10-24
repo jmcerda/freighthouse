@@ -1883,12 +1883,12 @@ li.expanded, li.collapsed, li.leaf {
   /*color: #9c9c9c;*/
   text-align: center;
   float: right;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 20px;
-  color: #d8d8d8;
+  color: #cccccc;
 }
 
 .par_center {
