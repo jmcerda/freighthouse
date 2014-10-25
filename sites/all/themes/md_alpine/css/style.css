@@ -1869,10 +1869,10 @@ li.expanded, li.collapsed, li.leaf {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
-  padding: 30px;
+  padding-right: 30px;
   color: #cccccc;
   /*color: #d8d8d8;*/
-  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /*.overview_left .parallax-content {
@@ -1886,8 +1886,8 @@ li.expanded, li.collapsed, li.leaf {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
-  padding: 30px;
-  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   color: #cccccc;
 }
 
