@@ -397,6 +397,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_left">
+                                        <span class="par_left">
                                             <big>
                                             <p style="color:#ffcc00">You know how much development staffing sucks.</p>
                                             </big>
@@ -407,12 +408,15 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
+                                            </span>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12 par_right">
+                                        <span class="par_right">
                                         <big>
                                             <p style="color:#ffcc00">Productivity & Accountability.</p>
                                             </big>
                                         <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
+                                        </span>
                                         </span>
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12 par_right">
