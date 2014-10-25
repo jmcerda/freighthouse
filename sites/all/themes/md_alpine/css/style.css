@@ -1999,6 +1999,9 @@ li.expanded, li.collapsed, li.leaf {
 
 .start-button {
 	border: 2px solid #cccccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 
 .mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
