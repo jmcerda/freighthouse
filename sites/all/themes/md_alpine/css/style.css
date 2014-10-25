@@ -1997,3 +1997,10 @@ li.expanded, li.collapsed, li.leaf {
 	background: rgba(255,255,255,0.35) !important;
 }/* BACKGROUND STANDARD COLOR(RGBA) */
 
+.start-button {
+	border: 2px solid #cccccc;
+}
+
+.mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
+	color: #cccccc;
+}
