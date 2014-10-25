@@ -1997,11 +1997,8 @@ li.expanded, li.collapsed, li.leaf {
 	background: rgba(255,255,255,0.35) !important;
 }/* BACKGROUND STANDARD COLOR(RGBA) */
 
-.start-button {
+.section-title .lead strong, .progress .progress-bar, .nav-tabs > li > a, .parallax-box a:hover, .pager .puls > a:hover, .pricing-box .pricing-featured li.price-row, .pager .pagination li a:hover, .widget .widget-tag li a:hover, .hi-icon-effect-1 .hi-icon, .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span:before, .csstransforms3d .mybutton button:hover span:before, .mybutton2 a span, .mybutton2 button span, .action .mybutton span input, .mybutton span input, .mybutton span:before, .action .mybutton span:before, .mybutton input[type="submit"] {
 	border: 2px solid #cccccc;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 }
 
 .mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
