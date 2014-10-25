@@ -404,11 +404,13 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Most employment agencies dont know the first thing about development.<p>
                                             <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.
                                             </p>
+                                        </span>
+                                        <span class="par_left">
                                             <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
                                             </p>
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
                                             </p>
-                                            </span>
+                                        </span>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
                                         <span class="par_right">
