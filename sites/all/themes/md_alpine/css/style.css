@@ -1987,7 +1987,13 @@ li.expanded, li.collapsed, li.leaf {
   box-shadow: 0 0 0 4px rgba(255,255,255,0.5) !important;
 }/* BOX-SHADOW STANDARD COLOR */
 
+
+
 .parallax-box a:hover p, .parallax-background-color p{
   color: #ffcc00 !important;
 }/* COLOR LIGHT */
+
+.no-touch .hi-icon-effect-1 .hi-icon:hover {
+	background: rgba(255,255,255,0.5) !important;
+}/* BACKGROUND STANDARD COLOR(RGBA) */
 
