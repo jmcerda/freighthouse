@@ -123,7 +123,7 @@ a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-
 }/* BORDER STANDARD COLOR */
 
 .hi-icon-effect-1 .hi-icon:after {
-  box-shadow: 0 0 0 4px #ffcc00;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.5);
 }/* BOX-SHADOW STANDARD COLOR */
 
 .no-touch .hi-icon-effect-1 .hi-icon:hover {
