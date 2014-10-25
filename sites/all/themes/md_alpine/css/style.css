@@ -1869,24 +1869,20 @@ li.expanded, li.collapsed, li.leaf {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
-  padding: 30px;
+  padding: 25px;
   color: #cccccc;
-  /*color: #d8d8d8;*/
+  margin-bottom: 20px;
 }
 
-/*.overview_left .parallax-content {
-	display: inline;
-}*/
-
 .par_right {
-  /*color: #9c9c9c;*/
   text-align: center;
   float: right;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
-  padding: 30px;
+  padding: 25px;
   color: #cccccc;
+   margin-bottom: 20px;
 }
 
 .par_center {
