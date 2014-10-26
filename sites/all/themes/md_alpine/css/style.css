@@ -81,7 +81,7 @@ blockquote {
 	left: 50%;
 	margin: -33px 0 0 -33px;
 	/*background: url("../img/intro-loader.gif");*/
-	background: url("../../../../default/files/world.png");
+	background: url("../img/fh_icon.gif");
 }
 
 .section-content {
@@ -1997,8 +1997,10 @@ li.expanded, li.collapsed, li.leaf {
 	background: rgba(255,255,255,0.35) !important;
 }/* BACKGROUND STANDARD COLOR(RGBA) */
 
-
-
 .mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
 	color: #cccccc;
+}
+
+.form-item .description {
+	display: none;
 }
