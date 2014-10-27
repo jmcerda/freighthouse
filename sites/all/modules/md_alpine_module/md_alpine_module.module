@@ -98,22 +98,55 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div class="container-fluid">
+                            <div style="container">
                                 <div class="parallax_container_add">
-                                    <span>
-                                        <span class="par_left">
-                                            <h3>Strategy is everything</h3>
-                                            <p> Dont be a damn fool. You really dont have to spend 8 percent of your budget on marketing analytics...
-                                            </p>
-                                            <p> We use proven market data and analytics so that we can make a real impact, so you decide who and when.
-                                            </p>
+                                    <div class="element-line">
+                                        <span class="marcom_blocks">
+                                            <ul>
+                                            <li>
+                                            <h4>Segmentation</h4>
+                                            Individual and personalized user experience based on behaviour and preference data.
+                                            </li>
+                                            <li>
+                                            <h4>Marketing Attribution</h4>
+                                            Find exactly what exictes your audience provide content tailored to their needs.
+                                            </li>
+                                            <li>
+                                            <h4>Mobile Analytics</h4>
+                                            Analyze and monitor mobile campaigns and learn just how users engage with your brand.
+                                            </li>
+                                            <li>
+                                            <h4>Predictive Marketing</h4>
+                                            Gain insight into your campaigns and make decsisions that really matter.
+                                            </li>
+                                            <li>
+                                            <h4>Real-time analytics</h4>
+                                            Get a birds eye view of user engagement and instantly react to customer trends.
+                                            </li>
+                                            <li>
+                                            <h4>Advanced visualization</h4>
+                                            Collect deep analysis to quickly learn how you will improve before everyone else.
+                                            </li>
+                                            <li>
+                                            <h4>Big Data</h4>
+                                            Interpret complex datasets in real time to find insights and behaviors you normally would have missed - instantly.
+                                            </li>
+                                            <li>
+                                            <h4>Social Analytics</h4>
+                                           Learn what impact you are really creating with your clients and their networks to eliminate any unneeded or annoying contact.
+                                            </li>
+                                            <li>
+                                            <h4>Customer analysis</h4>
+                                            Focus on high value clients, know what they like and understand how to give it to them.
+                                            </li>
+                                            <li>
+                                            <h4>Reports</h4>
+                                            View and analyze your reporting data from comprehensive visualizations to maximize the comprehension of your current situation quickly and effectively.
+                                            </li>
+                                            </ul>
+                                            </div>
                                         </span>
-                                        <span class="par_right">
-                                            <h3>Social is everything</h3>
-                                            <p>A holistic approach towards moving your market towards your brand ensures that outreach is never limited.
-                                            </p>
-                                        </span>
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Parallax Body -->
@@ -175,7 +208,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style ="container">
+                            <div style="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
@@ -281,7 +314,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style ="container">
+                            <div style="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
@@ -393,7 +426,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style ="container">
+                            <div style="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
