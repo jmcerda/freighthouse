@@ -103,7 +103,7 @@ function md_alpine_module_block_view($delta = '') {
                                     <div class="col-md-12">
                                         <div class="element-line">
                                             <span class="about_text">
-                                            print render(field_view_field('node', '106', 'body'));
+                                            'print render(field_view_field('node', '106', 'body'));'
                                             </span>
                                         </div>
                                     </div>
