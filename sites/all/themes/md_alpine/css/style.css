@@ -81,7 +81,7 @@ blockquote {
 	left: 50%;
 	margin: -33px 0 0 -33px;
 	/*background: url("../img/intro-loader.gif");*/
-	background: url("../../../../default/files/world.png");
+	background: url("../img/fh_icon.png");
 }
 
 .section-content {
@@ -1570,7 +1570,7 @@ footer .social-icon a:hover {
     color: #FFF;
 }
 .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton {
-	color: #7c7c7c;
+	color: #cccccc;
 	text-align: center;
 	position: relative;
 	display: inline-block;
@@ -1582,7 +1582,7 @@ footer .social-icon a:hover {
     display: inline-block;
     padding: 10px 20px;
     border: 0;
-    color: #7c7c7c;
+    color: #cccccc;
     text-transform: uppercase;
 }
 
@@ -1984,7 +1984,7 @@ li.expanded, li.collapsed, li.leaf {
 
 
 .hi-icon-effect-1 .hi-icon:after {
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.20) !important;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.20) !important;
 }/* BOX-SHADOW STANDARD COLOR */
 
 
@@ -1997,7 +1997,10 @@ li.expanded, li.collapsed, li.leaf {
 	background: rgba(255,255,255,0.35) !important;
 }/* BACKGROUND STANDARD COLOR(RGBA) */
 
-
 .mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
 	color: #cccccc;
+}
+
+.form-item .description {
+	display: none;
 }
