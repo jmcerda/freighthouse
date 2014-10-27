@@ -97,7 +97,26 @@ function md_alpine_module_block_view($delta = '') {
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
-
+                            <!-- Parallax Body -->
+                            <div class="container-fluid">
+                                <div class="parallax_container_add">
+                                    <span>
+                                        <span class="par_left">
+                                            <h3>Strategy is everything</h3>
+                                            <p> Dont be a damn fool. You really dont have to spend 8 percent of your budget on marketing analytics...
+                                            </p>
+                                            <p> We use proven market data and analytics so that we can make a real impact, so you decide who and when.
+                                            </p>
+                                        </span>
+                                        <span class="par_right">
+                                            <h3>Social is everything</h3>
+                                            <p>A holistic approach towards moving your market towards your brand ensures that outreach is never limited.
+                                            </p>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
                                 <div class="cart">
