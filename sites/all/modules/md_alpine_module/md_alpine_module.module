@@ -103,10 +103,10 @@ function md_alpine_module_block_view($delta = '') {
                                     <div class="col-md-12">
                                         <div class="element-line">
                                             <span class="about_text">
-                                                '$node = node_load($nid=106);
-                                                $node_view = node_view($node, 'body');
-                                                $rendered_node = drupal_render($node_view);
-                                                echo $rendered_node;'
+                                                $node = node_load('$nid=106');
+                                                $node_view = node_view('$node', 'body');
+                                                $rendered_node = drupal_render('$node_view');
+                                                echo $rendered_node;
                                             </span>
                                         </div>
                                     </div>
