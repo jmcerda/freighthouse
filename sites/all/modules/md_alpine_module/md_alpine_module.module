@@ -383,7 +383,7 @@ function md_alpine_module_block_view($delta = '') {
                         $block['content'] .= 'parallax-background-color';
                     }
                     $block['content'] .= '">
-                    <div class="section-content overview" id="overview">
+                    <div class="section-content" id="overview">
                         <div class="container text-center">
 
                             <!-- Parallax title -->
