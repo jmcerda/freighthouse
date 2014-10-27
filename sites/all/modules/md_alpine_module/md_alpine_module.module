@@ -97,20 +97,7 @@ function md_alpine_module_block_view($delta = '') {
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
-                            <!-- Parallax Body -->
-                            <div class="container-fluid">
-                                <div class="parallax_container_add">
-                                    <div class="col-md-12">
-                                        <div class="element-line">
-                                            <span class="about_text">
-                                            '$nid = 106
-                                            print render(field_view_field('node', $node, 'body'));'
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Parallax Body -->
+
                             <!-- Parallax content -->
                             <div class="parallax-content">
                                 <div class="cart">
