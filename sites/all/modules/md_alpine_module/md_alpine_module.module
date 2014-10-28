@@ -98,7 +98,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style="container">
+                            <div class="container">
                                 <div class="parallax_container_add">
                                     <div class="element-line">
                                         <span class="marcom_blocks parallax-box fh_box">
@@ -208,7 +208,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style="container">
+                            <div class="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
@@ -314,7 +314,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style="container">
+                            <div class="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
@@ -426,7 +426,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style ="container">
+                            <div class="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
