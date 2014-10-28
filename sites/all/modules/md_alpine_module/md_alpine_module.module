@@ -426,7 +426,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div style="container">
+                            <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
@@ -456,8 +456,8 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right"
-                                        <p>Placeholder
-                                        </p>
+                                        <p>We have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
+                                        <p>We are ALWAYS available any time to provide you with immediate assistance!</p>
                                     </span>
                                     </span>
                                 </div>
