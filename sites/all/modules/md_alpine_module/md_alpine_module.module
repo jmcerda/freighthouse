@@ -101,7 +101,7 @@ function md_alpine_module_block_view($delta = '') {
                             <div style="container">
                                 <div class="parallax_container_add">
                                     <div class="element-line">
-                                        <span class="marcom_blocks">
+                                        <span class="parallax-box fh_box">
                                             <ul>
                                             <li>
                                             <h4>Segmentation</h4>
