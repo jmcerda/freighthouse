@@ -98,6 +98,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
+                            <div class="container">
                             <div class="parallax_container_add">
                                 <span class="marcom_blocks">
                                 <ul>
@@ -143,6 +144,7 @@ function md_alpine_module_block_view($delta = '') {
                                 </li>
                                 </ul>
                             </span>
+                            </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
@@ -203,6 +205,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
+                            <div class="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
@@ -222,6 +225,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                     </span>
+                                </div>
                                 </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
@@ -418,6 +422,7 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
+                            <div class="container">
                             <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
@@ -453,6 +458,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     </span>
                                 </div>
+                            </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
