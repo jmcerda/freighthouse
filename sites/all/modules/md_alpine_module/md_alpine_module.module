@@ -313,7 +313,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                                 <p style="color:#d8d8d8">The battle between marketing and IT is over.</p>
                                             </big>
-                                            <p>Never again be a hostage of your IT department...</br>they really do not like you</p>
+                                            <p>Never again be a hostage of your IT department...</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT and developer resources.</p>
                                             <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
@@ -419,45 +419,44 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div style ="container">
-                                <div class="parallax_container_add">
-                                    <span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12">
-                                            <span class="par_left">
-                                                <big>
-                                                <p style="color:#ffcc00">You know how much development staffing sucks!</p>
-                                                </big>
-                                                <p>Most employment agencies dont know the first thing about development.</p>
-                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
+                                    <div class="parallax_container_add">
+                                        <span>
+                                            <span class="col-md-6 col-sm-12 col-xs-12">
+                                                <span class="par_left">
+                                                    <big>
+                                                    <p style="color:#ffcc00">You know how much development staffing sucks!</p>
+                                                    </big>
+                                                    <p>Most employment agencies dont know the first thing about development.</p>
+                                                    <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
+                                                </span>
+                                                <span class="par_left">
+                                                    <big>
+                                                        <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                                    </big>
+                                                    <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.</p>
+                                                    <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.</p>
+                                                </span>
                                             </span>
-                                            <span class="par_left">
-                                                <big>
-                                                    <p style="color:#ffcc00">Productivity & Accountability.</p>
-                                                </big>
-                                                <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.</p>
-                                                <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.</p>
+                                            <span class="col-md-6 col-sm-12 col-xs-12">
+                                                <span class="par_right">
+                                                    <big>
+                                                        <p style="color:#ffcc00">Stability & Communication.</p>
+                                                    </big>
+                                                    <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
+                                                </span>
                                             </span>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
                                             <span class="par_right">
                                                 <big>
-                                                    <p style="color:#ffcc00">Stability & Communication.</p>
+                                                    <p style="color:#ffcc00">Support & Accessibility.</p>
                                                 </big>
-                                                <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
+                                                <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
+                                                <p>To date, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
                                             </span>
                                         </span>
-                                    </span>
-                                    <span class="col-md-6 col-sm-12 col-xs-12">
-                                        <span class="par_right">
-                                            <big>
-                                                <p style="color:#ffcc00">Support & Accessibility.</p>
-                                            </big>
-                                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
-                                            <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
-                                            <p>We are ALWAYS available any time to provide you with immediate assistance!</p>
-                                        </span>
-                                    </span>
+                                    </div>
                                 </div>
-                            </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
