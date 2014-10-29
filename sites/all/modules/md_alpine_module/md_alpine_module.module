@@ -286,7 +286,6 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                             </div>
                             <!-- Parallax content -->
-
                         </div>
                     </div>
                 </div>';
@@ -353,8 +352,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                         </div>
                                     </div>';
-
-                            }
+                                }
                             $block['content'] .= '
                                 </div>
                             </div>
