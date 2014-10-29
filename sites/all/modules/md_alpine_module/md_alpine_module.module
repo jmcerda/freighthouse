@@ -424,12 +424,15 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="col-md-6 col-sm-12 col-xs-12">
                                             <span class="par_left">
                                                 <big>
-                                                <p style="color:#ffcc00">You know how much development staffing sucks.</p>
+                                                <p style="color:#ffcc00">You know how much development staffing sucks!</p>
                                                 </big>
                                                 <p>Most employment agencies dont know the first thing about development.</p>
-                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.</p>
+                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
                                             </span>
                                             <span class="par_left">
+                                                <big>
+                                                    <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                                </big>
                                                 <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.</p>
                                                 <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.</p>
                                             </span>
@@ -437,14 +440,17 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="col-md-6 col-sm-12 col-xs-12">
                                             <span class="par_right">
                                                 <big>
-                                                    <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                                    <p style="color:#ffcc00">Stability & Communication.</p>
                                                 </big>
                                                 <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                             </span>
                                         </span>
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12">
-                                        <span class="par_right"
+                                        <span class="par_right">
+                                            <big>
+                                                <p style="color:#ffcc00">Support & Accessibility.</p>
+                                            </big>
                                             <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
                                             <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
                                             <p>We are ALWAYS available any time to provide you with immediate assistance!</p>
