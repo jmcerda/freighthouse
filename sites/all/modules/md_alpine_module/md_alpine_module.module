@@ -98,53 +98,53 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div class="container">
                             <div class="parallax_container_add">
-                                <span class="marcom_blocks">
-                                <ul>
-                                <li>
-                                <h4>Segmentation</h4>
-                                Individual and personalized user experience based on behaviour and preference data.
-                                </li>
-                                <li>
-                                <h4>Marketing Attribution</h4>
-                                Find exactly what exictes your audience provide content tailored to their needs.
-                                </li>
-                                <li>
-                                <h4>Mobile Analytics</h4>
-                                Analyze and monitor mobile campaigns and learn just how users engage with your brand.
-                                </li>
-                                <li>
-                                <h4>Predictive Marketing</h4>
-                                Gain insight into your campaigns and make decsisions that really matter.
-                                </li>
-                                <li>
-                                <h4>Real-time analytics</h4>
-                                Get a birds eye view of user engagement and instantly react to customer trends.
-                                </li>
-                                <li>
-                                <h4>Advanced visualization</h4>
-                                Collect deep analysis to quickly learn how you will improve before everyone else.
-                                </li>
-                                <li>
-                                <h4>Big Data</h4>
-                                Interpret complex datasets in real time to find insights and behaviors you normally would have missed - instantly.
-                                </li>
-                                <li>
-                                <h4>Social Analytics</h4>
-                               Learn what impact you are really creating with your clients and their networks to eliminate any unneeded or annoying contact.
-                                </li>
-                                <li>
-                                <h4>Customer analysis</h4>
-                                Focus on high value clients, know what they like and understand how to give it to them.
-                                </li>
-                                <li>
-                                <h4>Reports</h4>
-                                View and analyze your reporting data from comprehensive visualizations to maximize the comprehension of your current situation quickly and effectively.
-                                </li>
-                                </ul>
-                            </span>
-                            </div>
+                                <div class="element-line">
+                                    <span class="marcom_blocks">
+                                        <ul>
+                                            <li>
+                                                <h4>Segmentation</h4>
+                                                <p>Individual and personalized user experience based on behaviour and preference data.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Marketing Attribution</h4>
+                                                <p>Find exactly what exictes your audience provide content tailored to their needs.
+                                            </li>
+                                            <li>
+                                                <h4>Mobile Analytics</h4>
+                                                <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Predictive Marketing</h4>
+                                                <p>Gain insight into your campaigns and make decsisions that really matter.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Real-time analytics</h4>
+                                                <p>Get a birds eye view of user engagement and instantly react to customer trends.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Advanced visualization</h4>
+                                                <p>Collect deep analysis to quickly learn how you will improve before everyone else.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Big Data</h4>
+                                                <p>Interpret complex datasets in real time to find insights and behaviors you normally would have missed - instantly.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Social Analytics</h4>
+                                                <p>Learn what impact you are really creating with your clients and their networks to eliminate any unneeded or annoying contact.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Customer analysis</h4>
+                                                <p>Focus on high value clients, know what they like and understand how to give it to them.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Reports</h4>
+                                                <p>View and analyze your reporting data from comprehensive visualizations to maximize the comprehension of your current situation quickly and effectively.</p>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
@@ -205,28 +205,24 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div class="container">
+                            <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
-                                        <p>
-                                            What leads to an effective emotional design strategy?</br>Creating user experiences that not only include beautiful aesthetics and entice positive user response, but also engage and inspire.
-                                            </p>
+                                            <p>What leads to an effective emotional design strategy?</br>Creating user experiences that not only include beautiful aesthetics and entice positive user</p>
                                         </span>
                                         <span class="col-md-8 col-sm-11 col-xs-11 par_right">
                                             <big>
-                                            <p>“A minimalist yet sophisticated presentation layer and a workable personality layer."
-                                            </p>
+                                                <p>“A minimalist yet sophisticated presentation layer and a workable personality layer."</p>
                                             </big>
                                             <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
-                                            <a class="colorbox-load" href="//youtube.com/embed/PsYTvhGhmYo?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
-                                            </p>
+                                                <a class="colorbox-load" href="//youtube.com/embed/PsYTvhGhmYo?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
                                             <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
                                             <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                     </span>
                                 </div>
-                                </div>
+                            </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content social-link">
@@ -311,14 +307,16 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div class="container">
+                            <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-7 col-sm-11 col-xs-11 par_left">
-                                            <big><p style="color:#d8d8d8">The battle between marketing and IT is over.</p></big>
+                                            <big>
+                                                <p style="color:#d8d8d8">The battle between marketing and IT is over.</p>
+                                            </big>
                                             <p>Never again be a hostage of your IT department...</br>they really do not like you</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
-                                            <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT & developer resources.</p>
+                                            <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT and developer resources.</p>
                                             <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
                                         </span>
                                         <span class="col-md-4 col-sm-11 col-xs-11 par_right">
@@ -329,17 +327,17 @@ function md_alpine_module_block_view($delta = '') {
                                                 <li>Zero termination costs.</li>
                                                 <li>No recruiting fees...ever.</li>
                                             </ul>
+                                            </p>
                                         </span>
                                         <span class="col-md-4 col-sm-12 col-xs-12 par_right">
                                             <p><img style="width:80%" src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
                                         </span>
                                     </span>
                                 </div>
+                            </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
-                            <span class="col-md-12 par_center">
-                            </span>
                                 <div class="row text-center number-counters">';
                             $number = theme_get_setting('pr_'.$i.'_number');
                             foreach ($number as $key => $value){
@@ -422,40 +420,37 @@ function md_alpine_module_block_view($delta = '') {
                             </p>
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
-                            <div class="container">
-                            <div class="parallax_container_add">
+                            <div style ="container">
+                                <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
-                                        <span class="par_left">
-                                            <big>
-                                            <p style="color:#ffcc00">You know how much development staffing sucks.</p>
-                                            </big>
-                                            <p>Most employment agencies dont know the first thing about development.<p>
-                                            <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.
-                                            </p>
-                                        </span>
-                                        <span class="par_left">
-                                            <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.
-                                            </p>
-                                            <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.
-                                            </p>
-                                        </span>
+                                            <span class="par_left">
+                                                <big>
+                                                <p style="color:#ffcc00">You know how much development staffing sucks.</p>
+                                                </big>
+                                                <p>Most employment agencies dont know the first thing about development.</p>
+                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability so you dont have to.</p>
+                                            </span>
+                                            <span class="par_left">
+                                                <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.</p>
+                                                <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of qualified and thoroughly vetted developers that will deliver every time, by the hour and on demand.</p>
+                                            </span>
                                         </span>
                                         <span class="col-md-6 col-sm-12 col-xs-12">
-                                        <span class="par_right">
-                                        <big>
-                                            <p style="color:#ffcc00">Productivity & Accountability.</p>
-                                            </big>
-                                        <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
-                                        </span>
+                                            <span class="par_right">
+                                                <big>
+                                                    <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                                </big>
+                                                <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
+                                            </span>
                                         </span>
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12">
-                                    <span class="par_right"
-                                        <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
-                                        <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
-                                    <p>We are ALWAYS available any time to provide you with immediate assistance!</p>
-                                    </span>
+                                        <span class="par_right"
+                                            <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Usually within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
+                                            <p>So far, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
+                                            <p>We are ALWAYS available any time to provide you with immediate assistance!</p>
+                                        </span>
                                     </span>
                                 </div>
                             </div>
