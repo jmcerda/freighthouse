@@ -2004,3 +2004,10 @@ li.expanded, li.collapsed, li.leaf {
 .form-item .description {
 	display: none;
 }
+
+#head_logo img {
+  width:auto;
+/*  height: auto;*/
+/*  max-height: 100%;*/
+/*  max-width: 100%;*/
+}
