@@ -239,6 +239,8 @@ h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-grou
     border: 0;
     color: #7c7c7c;
     text-transform: uppercase;
+    border-radius:10px;
+    border:1px solid #7c7c7c;
 /*  background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
