@@ -2013,7 +2013,7 @@ li.expanded, li.collapsed, li.leaf {
 /*  max-width: 100%;*/
 }
 
-.par_light {
+p.lead.par_light {
 	color: #cccccc;
 	/*color: #5c5a52;*/
 }
