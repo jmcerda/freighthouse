@@ -10,7 +10,7 @@
         }
     });
 
-	
+
     $(document).ready(function() {
         console.log($(".md-section"));
 		loadingJS();
@@ -376,6 +376,9 @@
                 event.preventDefault();
             });
         });
+
+        //moving number animation to overview
+        $('#numberTarget>div').append( $('#numberMove') );
 
         //Navigation Dropdown
         $('.nav a.int-collapse-menu').click(function() {
