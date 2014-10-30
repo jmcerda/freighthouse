@@ -1173,6 +1173,10 @@ body.front #ajaxpage {
 }
 .form-button {
 	margin-top: 50px;
+	border:1px;
+	border-color:#cccccc;
+	border-radius: 10px;
+	font-weight: 200px;
 }
 .form-respond .content-message {
 	margin: 0 0 50px 0;
@@ -1576,7 +1580,11 @@ footer .social-icon a:hover {
 	display: inline-block;
 	cursor:auto;
 }
-.form-actions .mybutton span:before,.action .mybutton span:before {padding-top: 9px; height: 29px;}
+.form-actions .mybutton span:before,.action .mybutton span:before {
+	padding-top: 9px;
+	height: 29px;
+}
+
 .action .mybutton span .webform-submit,.form-actions .mybutton span input,
 .action .mybutton span input{
     display: inline-block;
