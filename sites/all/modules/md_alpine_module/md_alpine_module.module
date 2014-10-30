@@ -93,7 +93,7 @@ function md_alpine_module_block_view($delta = '') {
 
                             <!-- Parallax title -->
                             <h1>'.theme_get_setting('pr_'.$i.'_title').'</h1>
-                            <p class="lead">
+                            <p class="lead par_light">
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
@@ -167,7 +167,7 @@ function md_alpine_module_block_view($delta = '') {
                                             }
                                                 $block['content'] .= '
                                                 <div class="circ_counter_desc">
-                                                    <p class="lead">
+                                                    <p class="lead par_light">
                                                         '.$skills[$key]['title'].'
                                                     </p>
                                                     <p>
@@ -200,7 +200,7 @@ function md_alpine_module_block_view($delta = '') {
 
                             <!-- Parallax title -->
                             <h1>'.theme_get_setting('pr_'.$i.'_title').'</h1>
-                            <p class="lead">
+                            <p class="lead par_light">
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
@@ -265,7 +265,7 @@ function md_alpine_module_block_view($delta = '') {
                         <div class="container text-center">
                             <!-- Parallax title -->
                             <h1>'.theme_get_setting('pr_'.$i.'_title').'</h1>
-                            <p class="lead no-margin">
+                            <p class="lead  par_light no-margin">
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
@@ -301,7 +301,7 @@ function md_alpine_module_block_view($delta = '') {
                         <div class="container text-center">
                             <!-- Parallax title -->
                             <h1>'.theme_get_setting('pr_'.$i.'_title').'</h1>
-                            <p class="lead">
+                            <p class="lead par_light">
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->
@@ -343,7 +343,7 @@ function md_alpine_module_block_view($delta = '') {
                                     $block['content'] .= '<i class="'.$number[$key]['icon']['bundle'].' '.$number[$key]['icon']['icon'].' icon-4x"></i>';
                                 }
                                 $block['content'] .= '<strong data-to="'.$number[$key]['number_count'].'">'.$number[$key]['number_count'].'</strong>
-                                            <p class="lead">
+                                            <p class="lead par_light">
                                                 '.$number[$key]['des'].'
                                             </p>
                                         </div>
@@ -409,7 +409,7 @@ function md_alpine_module_block_view($delta = '') {
 
                             <!-- Parallax title -->
                             <h1>'.theme_get_setting('pr_'.$i.'_title').'</h1>
-                            <p class="lead">
+                            <p class="lead par_light">
                                 '.theme_get_setting('pr_'.$i.'_des').'
                             </p>
                             <!-- Parallax title -->

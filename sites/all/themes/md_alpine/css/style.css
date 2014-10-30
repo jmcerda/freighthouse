@@ -2012,3 +2012,8 @@ li.expanded, li.collapsed, li.leaf {
 /*  max-height: 100%;*/
 /*  max-width: 100%;*/
 }
+
+p.lead par_light {
+	color: #7c7c7c;
+	/*color: #5c5a52;*/
+}
