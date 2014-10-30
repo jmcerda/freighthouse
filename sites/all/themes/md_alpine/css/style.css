@@ -2015,5 +2015,5 @@ li.expanded, li.collapsed, li.leaf {
 
 p.lead.par_light {
 	color: #cccccc;
-	/*color: #5c5a52;*/
+	font-size: 1.25em;
 }
