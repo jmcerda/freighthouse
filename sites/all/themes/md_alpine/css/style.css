@@ -1984,11 +1984,6 @@ li.expanded, li.collapsed, li.leaf {
 	font-size: 1em;
 }
 
-.number-counters strong {
-	font-size: 40px !important;
-}
-
-
 .hi-icon-effect-1 .hi-icon:after {
   box-shadow: 0 0 0 4px rgba(255,255,255,0.20) !important;
 }/* BOX-SHADOW STANDARD COLOR */
