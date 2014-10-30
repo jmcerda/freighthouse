@@ -335,6 +335,28 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                             </div>
                             <!-- Parallax Body -->
+                            <!-- Parallax content -->
+                                            <div class="parallax-content">
+                                                <div class="row text-center number-counters">';
+                                            $number = theme_get_setting('pr_'.$i.'_number');
+                                            foreach ($number as $key => $value){
+                                                $block['content'] .= '
+                                                    <div class="col-md-3 col-sm-6">
+                                                        <div class="counters-item element-line">';
+                                                if(isset($number[$key]['icon'])) {
+                                                    $block['content'] .= '<i class="'.$number[$key]['icon']['bundle'].' '.$number[$key]['icon']['icon'].' icon-4x"></i>';
+                                                }
+                                                $block['content'] .= '<strong data-to="'.$number[$key]['number_count'].'">'.$number[$key]['number_count'].'</strong>
+                                                            <p class="lead">
+                                                                '.$number[$key]['des'].'
+                                                            </p>
+                                                        </div>
+                                                    </div>';
+                                                }
+                                            $block['content'] .= '
+                                                </div>
+                                            </div>
+                            <!-- Parallax content -->
                         </div>
                     </div>
                 </div>';
@@ -431,28 +453,6 @@ function md_alpine_module_block_view($delta = '') {
                                             </big>
                                             <p>While we generally work remotely, we can arrange for on-site assistance at your location - anywhere in the world. Within a week you will have a designer or developer in your office, ramped up and ready to go!</p>
                                             <p>To date, we have traveled over 73,000 miles and worked in 55 cities in 17 countries with locations in New York City and Mexico City.</p>
-                                            <!-- Parallax content -->
-                                            <div class="parallax-content">
-                                                <div class="row text-center number-counters">';
-                                            $number = theme_get_setting('pr_'.$i.'_number');
-                                            foreach ($number as $key => $value){
-                                                $block['content'] .= '
-                                                    <div class="col-md-3 col-sm-6">
-                                                        <div class="counters-item element-line">';
-                                                if(isset($number[$key]['icon'])) {
-                                                    $block['content'] .= '<i class="'.$number[$key]['icon']['bundle'].' '.$number[$key]['icon']['icon'].' icon-4x"></i>';
-                                                }
-                                                $block['content'] .= '<strong data-to="'.$number[$key]['number_count'].'">'.$number[$key]['number_count'].'</strong>
-                                                            <p class="lead">
-                                                                '.$number[$key]['des'].'
-                                                            </p>
-                                                        </div>
-                                                    </div>';
-                                                }
-                                            $block['content'] .= '
-                                                </div>
-                                            </div>
-                                            <!-- Parallax content -->
                                         </span>
                                     </span>
                                 </div>
