@@ -1589,7 +1589,7 @@ footer .social-icon a:hover {
     color: #cccccc;
     text-transform: uppercase;
     font-weight: 200;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
@@ -2015,5 +2015,5 @@ li.expanded, li.collapsed, li.leaf {
 
 p.lead.par_light {
 	color: #cccccc;
-	font-size: 1.25em;
+	font-size: 25px;
 }
