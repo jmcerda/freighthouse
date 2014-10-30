@@ -1585,7 +1585,7 @@ footer .social-icon a:hover {
 .action .mybutton span input{
     display: inline-block;
     padding: 10px 20px;
-    border: solid;
+    border: 1px solid;
     color: #cccccc;
     text-transform: uppercase;
     font-weight: 200;
