@@ -933,13 +933,13 @@ body.front #ajaxpage {
 #timeline .post-info .box-inner img,
 .post-avatar a img,.post-avatar img {
 	border: 1px solid #e1e1e1;
-	padding: 9px;
+	padding: 5px;
 	background: #fff;
 	display: block;
-    height: auto;
-    max-width: 100%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+	height: auto;
+	max-width: 100%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }
 #timeline .post-arrow {
 	background-image: url("../img/timeline-arrow-right.png");
@@ -1090,9 +1090,9 @@ body.front #ajaxpage {
 .number-counters strong {
 	color: #FFFFFF;
 	display: block;
-	font-size: 60px;
+	font-size: 35px;
 	font-weight: 200;
-	line-height: 60px;
+	line-height: 25px;
 }
 
 .client-list a img {
