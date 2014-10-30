@@ -1173,10 +1173,6 @@ body.front #ajaxpage {
 }
 .form-button {
 	margin-top: 50px;
-	border:1px;
-	border-color:#cccccc;
-	border-radius: 10px;
-	font-weight: 200px;
 }
 .form-respond .content-message {
 	margin: 0 0 50px 0;
@@ -1589,9 +1585,11 @@ footer .social-icon a:hover {
 .action .mybutton span input{
     display: inline-block;
     padding: 10px 20px;
-    border: 0;
+    border: 1px;
     color: #cccccc;
     text-transform: uppercase;
+    font-weight: 200px;
+    border-radius: 10px;
 }
 
 .mybutton2 a:hover, .mybutton2 button:hover, .mybutton2 a:focus
