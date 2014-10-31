@@ -2017,3 +2017,7 @@ p.lead.par_light {
 	color: #cccccc;
 	font-size: 25px;
 }
+
+.service-element .img-responsive {
+    width: 75%;
+}
