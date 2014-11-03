@@ -216,7 +216,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                             <p>What leads to an effective emotional design strategy?</p>
                                             </big>
-                                            <p>Creating user experiences that notp only include beautiful aesthetics and entice positive user experience, but also add a minimalist yet sophisticated presentation layer and a workable personality layer.
+                                            <p>Creating user experiences that not only include beautiful aesthetics and entice positive user experience, but also add a minimalist yet sophisticated presentation layer and a workable personality layer.
                                             </p>
                                         </span>
                                     </span>
@@ -421,11 +421,9 @@ function md_alpine_module_block_view($delta = '') {
                                                 <big>
                                                 <p style="color:#ffcc00">Knowledge & Expertise</p>
                                                 </big>
-                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability,providing only the resources you need to move forward.</p>
+                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
                                                 <p>Our consultants completely integrate into your organization. We are agile and able to adapt to any project management tool and methodology you throw at us.</p>
-                                                <p>Most importantly, WE KNOW WHAT WE ARE DOING! Our knowledge is our commodity and we leverage that combined expertise in order to accomplish your goals in a streamlined fashion.</p>
-                                                <p>Our project managers and graphic designers know how to code and our developers know how to manage (some of them even play an instrument or two).</p>
-                                                <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced professionals that will deliver every time, by the hour, and on demand.</p>
+                                                <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced developers that will deliver every time, by the hour and on demand.</p>
                                             </span>
                                             <span class="par_left">
                                                 <big>
@@ -450,8 +448,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility.</p>
                                             </big>
-                                            <p>We work remotely however we can arrange for on-site assistance at your location - worldwide.</p>
-                                            <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
+                                            <p>We work remotely however we can arrange for on-site assistance at your location - worldwide. Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
                                                 <p>Our stats to date:</p>
                                             </div>
