@@ -270,7 +270,7 @@ blockquote {
 .navbar-default {
     background: none repeat scroll 0 0 #222;
     border-bottom: medium none !important;
-    box-shadow: 0px !important;
+    box-shadow: 0 !important;
     transition: all 0.3s ease-out 0s;
     z-index: 600;
 }
@@ -1227,7 +1227,7 @@ footer .social-icon a:hover {
 	-webkit-border-radius: 50%;
 	/*-moz-border-radius: 50%;*/
 	border-radius: 50%;
-	zoom: 1;
+	/*zoom: 1;*/
 	filter: alpha(opacity=50);
 	opacity: 0.5;
 	z-index: 100;
@@ -1558,7 +1558,7 @@ footer .social-icon a:hover {
 }
 .mybutton a, .mybutton button, .action .mybutton {
 	text-transform: uppercase;
-	border: 1;
+	border: 1px;
 	padding: 0;
 	position: relative;
 	display: inline-block;
@@ -1631,7 +1631,7 @@ footer .social-icon a:hover {
 }
 .mybutton2 a, .mybutton2 button {
 	text-transform: uppercase;
-	border: 1;
+	border: 1px;
 	padding: 0;
 	position: relative;
 	display: inline-block;
