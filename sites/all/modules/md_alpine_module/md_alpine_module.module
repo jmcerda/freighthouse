@@ -517,6 +517,7 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                         </div>
                         <div id="socialTarget">
+                        <div></div>
                         </div>
                     </div>
                 </div>';
