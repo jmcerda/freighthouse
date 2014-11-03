@@ -516,10 +516,9 @@ function md_alpine_module_block_view($delta = '') {
                                 <!-- Parallax title -->
                             </div>
                         </div>
-                        <div id="socialTarget">
-                        <div></div>
-                        </div>
                     </div>
+                </div>
+                <div id="socialTarget">
                 </div>';
                             break;
                     }

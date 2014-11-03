@@ -375,7 +375,7 @@
         });
 
         //moving number animation to overview
-        $('#numberTarget>div').append( $('#numberMove') );
+        $('#numberTarget').append( $('#numberMove') );
         //moving connect to footer
         $('#socialTarget>div').append( $('#socialMove') );
 
