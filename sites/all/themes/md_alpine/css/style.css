@@ -1083,6 +1083,7 @@ body.front #ajaxpage {
 /* NUMBER COUNTER */
 .number-counters {
 	overflow: hidden;
+	margin-bottom: -40px;
 }
 
 .counters-item {
