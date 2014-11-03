@@ -516,6 +516,8 @@ function md_alpine_module_block_view($delta = '') {
                                 <!-- Parallax title -->
                             </div>
                         </div>
+                        <div id="socialTarget">
+                        </div>
                     </div>
                 </div>';
                             break;
@@ -704,7 +706,7 @@ function _md_alpine_footer_block_content(){
     global $base_url;
     $content = '';
     $content .= '
-            <footer class="text-center" id="socialTarget">';
+            <footer class="text-center">';
     if(theme_get_setting('ft_social')) {
         $content .= '<div class="social-icon">';
         $social_acc = theme_get_setting('ft_social');
