@@ -71,11 +71,6 @@
                                         <?php if(isset($value->field_field_sv_summary) && !empty($value->field_field_sv_summary[0])) :print $value->field_field_sv_summary[0]['rendered']['#markup']; endif;?>
                                     </div>
                                     <br />
-                                    <?php if(isset($value->field_field_sv_button_text)) :?>
-                                        <div class="mybutton medium">
-                                            <a href="<?php if(isset($value->field_field_sv_button_link) && !empty($value->field_field_sv_button_link[0])) : print $value->field_field_sv_button_link[0]['rendered']['#markup']; endif;?>"> <span data-hover="<?php print $value->field_field_sv_button_text[0]['rendered']['#markup'];?>"><?php print $value->field_field_sv_button_text[0]['rendered']['#markup'];?></span> </a>
-                                        </div>
-                                    <?php endif;?>
                                 </div>
                             </div>
                         </div>
