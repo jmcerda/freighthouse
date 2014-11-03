@@ -1086,13 +1086,14 @@ body.front #ajaxpage {
 }
 .counters-item {
 	overflow: hidden;
+	margin-top: 20px;
 }
 .number-counters strong {
 	color: #FFFFFF;
 	display: block;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 200;
-	line-height: 25px;
+	line-height: 22px;
 }
 
 .client-list a img {

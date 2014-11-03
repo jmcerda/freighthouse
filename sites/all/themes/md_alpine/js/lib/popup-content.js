@@ -167,7 +167,7 @@
                 });
                 var html = prepareWrap.html().replace(str,newstr);
                 prepareWrap.html('<li data-id="'+id.replace(str,newstr)+'" data-num="'+newnum+'" class="draggable-item sortable-item toggle-item">'+html+'</li>'); // Prepare new html
-                filestyle();
+                filestyle()
                 preview.find(".sortable").append($('<li id="'+id.replace(str,newstr)+'" data-id="'+id.replace(str,newstr)+'" data-num="'+newnum+'" class="draggable-item sortable-item toggle-item">'+html+'</li>')); // Append to preview
                 data[working].push(newnum);
                 click.attr('data-max-num',Math.max.apply(Math, data[working])); //  Change max num
