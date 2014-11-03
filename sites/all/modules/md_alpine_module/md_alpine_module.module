@@ -438,9 +438,9 @@ function md_alpine_module_block_view($delta = '') {
                                                 <big>
                                                     <p style="color:#ffcc00">Stability & Communication.</p>
                                                 </big>
-                                                <p>We start with establishing a line of constant communication -so the team is in sync and on the same page.</p>
+                                                <p>We start with establishing a line of constant communication -so the team is in sync.</p>
                                                 <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
-                                                <p>Never again depend on IT to get up and running</p>
+                                                <p>Never again depend on IT to get up and running!</p>
                                             </span>
                                         </span>
                                     </span>
