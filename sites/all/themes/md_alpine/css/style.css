@@ -1084,16 +1084,22 @@ body.front #ajaxpage {
 .number-counters {
 	overflow: hidden;
 }
+
 .counters-item {
 	overflow: hidden;
 	margin-top: 20px;
 }
+
 .number-counters strong {
 	color: #FFFFFF;
 	display: block;
 	font-size: 22px;
 	font-weight: 200;
 	line-height: 22px;
+}
+
+.counters-item p {
+	font-size: 21px;
 }
 
 .client-list a img {
