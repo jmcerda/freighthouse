@@ -209,16 +209,15 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
-                                            <p>What leads to an effective emotional design strategy?</br>Creating user experiences that not only include beautiful aesthetics and entice positive user</p>
+                                            <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
+                                            <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                         <span class="col-md-8 col-sm-11 col-xs-11 par_right">
                                             <big>
-                                                <p>“A minimalist yet sophisticated presentation layer and a workable personality layer."</p>
+                                            <p>What leads to an effective emotional design strategy?</p>
                                             </big>
-                                            <p>Jeremy Michael Cerda, Creative Director & Sr. Web Architect</p>
-                                                <a class="colorbox-load" href="//youtube.com/embed/PsYTvhGhmYo?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
-                                            <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
-                                            <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                            <p>Creating user experiences that notp only include beautiful aesthetics and entice positive user experience, but also add a minimalist yet sophisticated presentation layer and a workable personality layer.
+                                            </p>
                                         </span>
                                     </span>
                                 </div>
@@ -430,7 +429,7 @@ function md_alpine_module_block_view($delta = '') {
                                                 <big>
                                                     <p style="color:#ffcc00">Productivity & Accountability.</p>
                                                 </big>
-                                                <p>We provide a platform that seamlessly integrates the team from any location and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
+                                                <p>We provide a platform that seamlessly integrates the team from any location in the world and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                                 </span>
                                             </span>
                                         </span>
@@ -449,9 +448,9 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility.</p>
                                             </big>
-                                            <p>While our team is remote, we can arrange for on-site assistance at your location - anywhere in the world. Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
+                                            <p>We work remotely however we can arrange for on-site assistance at your location - anywhere in the world. Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
-                                                <p>To date, we have traveled over 73,000 miles and worked in 55 cities in 17 countries.</p>
+                                                <p>Our stats to date:</p>
                                             </div>
                                         </span>
                                     </span>
