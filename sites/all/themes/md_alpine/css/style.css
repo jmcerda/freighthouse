@@ -1871,7 +1871,7 @@ li.expanded, li.collapsed, li.leaf {
 
 .par_left {
   float: left;
-  text-align: left;
+  text-align: center;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
@@ -2020,4 +2020,8 @@ p.lead.par_light {
 
 .service-element .img-responsive {
     width: 75%;
+}
+
+.mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span:before, .csstransforms3d .mybutton button:hover span:before, .mybutton2 a span, .mybutton2 button span, .action .mybutton span input, .mybutton span input, .mybutton span:before, .action .mybutton span:before, .mybutton input[type="submit"] {
+	color:#cccccc;
 }
