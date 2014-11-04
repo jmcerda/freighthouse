@@ -706,12 +706,10 @@ function _md_alpine_footer_block_content(){
     global $base_url;
     $content = '';
     $content .= '
-            <div class="section-content">
                 <div class="container text-center">
-                    <div id="socialTarget">
+                    <div id="socialTarget" class="parallax-content social-link">
                     </div>
                 </div>
-            </div>
             <footer class="text-center">';
     if(theme_get_setting('ft_social')) {
         $content .= '<div class="social-icon">';
