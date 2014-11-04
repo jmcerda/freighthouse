@@ -227,7 +227,8 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content social-link" id="socialMove">
+                            <div id="socialMove">
+                            <div class="parallax-content social-link">
                                 <div class="row">';
                             $connect = theme_get_setting('pr_'.$i.'_connect');
 
@@ -250,7 +251,8 @@ function md_alpine_module_block_view($delta = '') {
                                     </div>';
                             }
                             $block['content'] .= '</div>
-                                </div>
+                            </div>
+                            </div>
                             <!-- Parallax content -->
                         </div>
                     </div>
