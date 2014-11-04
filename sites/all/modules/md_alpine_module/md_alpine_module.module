@@ -209,8 +209,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span>
                                         <span class="col-md-3 col-sm-11 col-xs-11 par_left">
-                                            <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
-                                            <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                            <p>"Placeholder</p>
                                         </span>
                                         <span class="col-md-8 col-sm-11 col-xs-11 par_right">
                                             <big>
@@ -219,12 +218,16 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Creating user experiences that not only include beautiful aesthetics and entice positive user experience, but also add a minimalist yet sophisticated presentation layer and a workable personality layer.
                                             </p>
                                         </span>
+                                        <span class="col-md-8 col-sm-11 col-xs-11 par_right">
+                                        <p>"Adding gorgeous content, artwork, and media to every user experience, and using delivery strategies based on real time data and analytics, we are positioned to provide a completely vertically integrated solution each time to every client."</p>
+                                            <p>Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                        </span>
                                     </span>
                                 </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content social-link">
+                            <div class="parallax-content social-link" id="socialMove">
                                 <div class="row">';
                             $connect = theme_get_setting('pr_'.$i.'_connect');
 
@@ -514,6 +517,8 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="socialTarget">
                 </div>';
                             break;
                     }

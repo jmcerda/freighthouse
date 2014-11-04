@@ -166,9 +166,6 @@
         });
 
 
-
-
-
         var menuStickyEnable = Drupal.settings.menuStickyEnable;
         if(menuStickyEnable == '1') {
             if($("body").hasClass("logged-in") && $("body").hasClass("toolbar")) {
@@ -378,7 +375,9 @@
         });
 
         //moving number animation to overview
-        $('#numberTarget>div').append( $('#numberMove') );
+        $('#numberTarget').append( $('#numberMove') );
+        //moving connect to footer
+        $('#socialTarget>div').append( $('#socialMove') );
 
         //Navigation Dropdown
         $('.nav a.int-collapse-menu').click(function() {
