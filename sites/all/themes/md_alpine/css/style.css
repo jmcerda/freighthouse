@@ -1901,10 +1901,11 @@ li.expanded, li.collapsed, li.leaf {
 
 .par_center {
   text-align: center;
-  background: rgba(0, 0, 0, 0.50);
+/*  background: rgba(0, 0, 0, 0.50);*/
   border-radius: 5px;
   padding: 25px;
   color: #cccccc;
+  font-size: 1.25em;
 }
 
 .number_left {
