@@ -99,52 +99,37 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div class="parallax_container_add">
-                                <div class="element-line">
-                                    <span class="marcom_blocks">
-                                        <ul>
-                                            <li>
-                                                <h4>Segmentation</h4>
-                                                <p>Individual and personalized user experience based on behaviour and preference data.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Marketing Attribution</h4>
-                                                <p>Find exactly what exictes your audience provide content tailored to their needs.
-                                            </li>
-                                            <li>
-                                                <h4>Mobile Analytics</h4>
-                                                <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Predictive Marketing</h4>
-                                                <p>Gain insight into your campaigns and make decsisions that really matter.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Real-time analytics</h4>
-                                                <p>Get a birds eye view of user engagement and instantly react to customer trends.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Advanced visualization</h4>
-                                                <p>Collect deep analysis to quickly learn how you will improve before everyone else.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Big Data</h4>
-                                                <p>Interpret complex datasets in real time to find insights and behaviors you normally would have missed - instantly.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Social Analytics</h4>
-                                                <p>Learn what impact you are really creating with your clients and their networks to eliminate any unneeded or annoying contact.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Customer analysis</h4>
-                                                <p>Focus on high value clients, know what they like and understand how to give it to them.</p>
-                                            </li>
-                                            <li>
-                                                <h4>Reports</h4>
-                                                <p>View and analyze your reporting data from comprehensive visualizations to maximize the comprehension of your current situation quickly and effectively.</p>
-                                            </li>
-                                        </ul>
+                                <span class="col-md-6 col-sm-12 col-xs-12">
+                                    <span class="par_left">
+                                    <big>
+                                        <p style="color:#ffcc00">Design Strategies</p>
+                                    </big>
+                                    <p>Client focus -  know what they like and understand how to give it to them.</p>
+                                    <p> We find exactly what exictes your audience and provide content tailored to their needs.</p>
+                                    <p>Lead generation and conversion rate optimization</p>
+                                    <big>Mobile Analytics & Marketing</big>
+                                    <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
+                                    <big>Segmentation</big>
+                                    <p>Individual and personalized user experience based on behaviour and preference data.</p>
                                     </span>
-                                </div>
+                                </span>
+                                <span class="col-md-6 col-sm-12 col-xs-12">
+                                    <span class="par_right">
+                                        <big>
+                                            <p style="color:#ffcc00">Data & Analytics</p>
+                                        </big>
+                                        <big>Project Performance</big>
+                                        <p>You cannot simply rely on keyword metrics anymore!</p> We focus on key performance indicators such as conversion rates and user experience metrics.</p>
+                                        <p> We gain insight into your campaigns and make decsisions that really matter.</p>
+                                        <big>Easy to read analytics</big>
+                                        <p>With advances presentation and visualizations you can get a birds eye view of user engagement, collect deep real time analysis and instantly react to customer trends.</p>
+                                        <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
+                                        <big>Social Strategies</big>
+                                        <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                    </span>
+                                </span>
+                            </div>
+                            </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
@@ -220,7 +205,7 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="parallax_container_add">
                                         <span class="col-md-12">
-                                        <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
+                                        <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
                                         </span>
                                 </div>
                             </div>
@@ -431,7 +416,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </span>
                                             <span class="par_left">
                                                 <big>
-                                                    <p style="color:#ffcc00">Productivity & Accountability.</p>
+                                                    <p style="color:#ffcc00">Productivity & Accountability</p>
                                                 </big>
                                                 <p>We provide a platform that seamlessly integrates the team from any location in the world and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                                 </span>
@@ -440,7 +425,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="col-md-6 col-sm-12 col-xs-12">
                                             <span class="par_right">
                                                 <big>
-                                                    <p style="color:#ffcc00">Stability & Communication.</p>
+                                                    <p style="color:#ffcc00">Stability & Communication</p>
                                                 </big>
                                                 <p>We start with establishing a line of constant communication -so the team is in sync.</p>
                                                 <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
@@ -451,7 +436,7 @@ function md_alpine_module_block_view($delta = '') {
                                     <span class="col-md-6 col-sm-12 col-xs-12">
                                         <span class="par_right" id="numberTarget">
                                             <big>
-                                                <p style="color:#ffcc00">Support & Accessibility.</p>
+                                                <p style="color:#ffcc00">Support & Accessibility</p>
                                             </big>
                                             <p>We work remotely however we can arrange for on-site assistance at your location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
