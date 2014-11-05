@@ -766,7 +766,9 @@ function md_alpine_process_page(&$vars) {
     // Make sure the shortcut link is the first item in title_suffix.
     $vars['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
-
+	
+	
+	var_dump($vars);
 }
 
 /**
