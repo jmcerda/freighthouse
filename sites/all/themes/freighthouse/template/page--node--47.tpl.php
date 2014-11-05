@@ -12,7 +12,9 @@
     <div class="col-lg-12">
       <?php //print render($page['content']); ?>
       <?php $block = module_invoke('webform', 'block_view', 'request-proposal');
-print render($block['content']);?>
+print render($block['content']);
+echo "custom processor";
+?>
     </div>
   </div>
 </div>
