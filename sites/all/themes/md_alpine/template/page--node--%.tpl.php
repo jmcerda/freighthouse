@@ -1,7 +1,6 @@
 <div id="page-wrapper">
     <div id="page">
-        <?php die($node);?>
-        <?php if($page['navigation']):?>
+        <?php if($page['navigation'] && $node->nid != '47'):?>
             <?php print render($page['navigation']);?>
         <?php endif;?>
         <section class="section-content blog-content">
