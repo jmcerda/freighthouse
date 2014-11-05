@@ -133,8 +133,7 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content">
-                                <div class="col-md-6 col-sm-12 col-xs-12"
+                            <div class="parallax-content col-md-6 col-sm-12 col-xs-12">
                                 <div class="cart">
                                     <div class="cart_container">
                                         <div class="row">';
@@ -163,7 +162,6 @@ function md_alpine_module_block_view($delta = '') {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>';
                             }
                     $block['content'] .= '</div>
