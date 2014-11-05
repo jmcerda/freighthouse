@@ -208,7 +208,7 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span>
-                                        <span class="col-md-3 col-sm-11 col-xs-11 par_left">
+                                        <span class="col-md-4 col-sm-11 col-xs-11 par_left">
                                             <big>
                                             <p>What leads to an effective emotional design strategy?</p>
                                             </big>
@@ -222,7 +222,7 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="parallax_container_add">
                                         <span class="col-md-12">
-                                        <p class="par_center">graphic design | illustration | motion graphics | animation | photography | audio | video</p>
+                                        <p class="par_center">design | illustration | motion graphics | animation | photography | audio | video</p>
                                         </span>
                                 </div>
                             </div>
