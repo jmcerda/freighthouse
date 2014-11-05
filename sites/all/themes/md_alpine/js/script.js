@@ -357,7 +357,7 @@
          }*/
         //Navigation Scrolling
         $(function() {
-            $('#brand, .nav li a, a.start-button, fh_box a, int-collapse-menu, a.int-collapse-menu, a.dropdown-toggle').bind('click', function(event) {
+            $('#brand, .nav li a, a.start-button, a.fh_box, a.int-collapse-menu, a.int-collapse-menu, a.dropdown-toggle').bind('click', function(event) {
                 var $anchor = $(this);
                 if($($anchor.attr('href')).offset() != undefined) {
                     if($("body").hasClass("logged-in")) {
