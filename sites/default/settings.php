@@ -237,10 +237,19 @@ $databases = array (
   'default' =>
   array (
     'default' =>
-    array (
+    /*array (
       'database' => 'freighthouse',
       'username' => 'freighthouse',
       'password' => 'freighthouse',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),*/
+	array (
+      'database' => 'db_freighthouse',
+      'username' => 'root',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
