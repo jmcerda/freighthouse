@@ -775,7 +775,6 @@ function md_alpine_process_page(&$vars) {
  * Implements hook_preprocess_page().
  */
 function md_alpine_preprocess_page(&$vars, $hook) {
-    die($vars);
 	// Page title in node page
     if(isset($vars['node'])) {
         $node = $vars['node'];
