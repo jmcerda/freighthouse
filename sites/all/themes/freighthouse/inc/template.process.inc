@@ -775,7 +775,8 @@ function md_alpine_process_page(&$vars) {
  * Implements hook_preprocess_page().
  */
 function md_alpine_preprocess_page(&$vars, $hook) {
-    // Page title in node page
+    die($vars);
+	// Page title in node page
     if(isset($vars['node'])) {
         $node = $vars['node'];
         $vars['page_title'] = $vars['node']->type;
@@ -792,16 +793,13 @@ function md_alpine_preprocess_page(&$vars, $hook) {
             $nids[] .= $record['nid'];
         }
         $current_node_key =  array_search($nid, $nids);
-        echo "here";
-		exit($current_node_key);
-		if($current_node_key!="47"){ /*john custom condition */
-			if(($current_node_key-1) > 0) {
-				$vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));
-			}
-			if(($current_node_key + 1) != sizeof($nids)) {
-				$vars['next_link'] = url('node/'.$nids[$current_node_key+1],array('absolute'=>true));
-			}
+		if(($current_node_key-1) > 0) {
+			$vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));
 		}
+		if(($current_node_key + 1) != sizeof($nids)) {
+			$vars['next_link'] = url('node/'.$nids[$current_node_key+1],array('absolute'=>true));
+		}
+	
     }
     if(theme_get_setting('footer_text')){
         $vars['footer_text'] = theme_get_setting('footer_text');
