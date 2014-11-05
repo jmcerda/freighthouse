@@ -1903,9 +1903,11 @@ li.expanded, li.collapsed, li.leaf {
   text-align: center;
 /*  background: rgba(0, 0, 0, 0.50);*/
   border-radius: 5px;
-  padding: 25px;
+  /*padding: 25px;*/
   color: #cccccc;
   font-size: 1.25em;
+  padding-top: 25px;
+  margin-bottom: -40px;
 }
 
 .number_left {
