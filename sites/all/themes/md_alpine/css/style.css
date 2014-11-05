@@ -1901,11 +1901,9 @@ li.expanded, li.collapsed, li.leaf {
 
 .par_center {
   text-align: center;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
-  /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
+  background: rgba(0, 0, 0, 0.50);
   border-radius: 5px;
-  padding: 30px;
-  margin-bottom: 20px;
+  padding: 25px;
   color: #cccccc;
 }
 
