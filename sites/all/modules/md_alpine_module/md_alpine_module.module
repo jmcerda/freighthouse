@@ -102,9 +102,9 @@ function md_alpine_module_block_view($delta = '') {
                                 <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_left">
                                     <big>
-                                        <p style="color:#ffcc00">Design Strategies</p>
+                                        <p style="color:#ffcc00">Design Strategy</p>
                                     </big>
-                                    <p>Client focus -  know what they like and understand how to give it to them.</p>
+                                    <p>Client focus - know what they like and understand how to give it to them.</p>
                                     <p> We find exactly what exictes your audience and provide content tailored to their needs.</p>
                                     <p>Lead generation and conversion rate optimization</p>
                                     <big>Mobile Analytics & Marketing</big>
@@ -134,6 +134,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div class="parallax-content">
+                                <div class="col-md-6 col-sm-12 col-xs-12"
                                 <div class="cart">
                                     <div class="cart_container">
                                         <div class="row">';
@@ -162,6 +163,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 </div>';
                             }
                     $block['content'] .= '</div>
