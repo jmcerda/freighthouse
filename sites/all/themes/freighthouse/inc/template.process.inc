@@ -766,7 +766,9 @@ function md_alpine_process_page(&$vars) {
     // Make sure the shortcut link is the first item in title_suffix.
     $vars['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
-
+	
+	
+	var_dump($vars);
 }
 
 /**
@@ -790,7 +792,8 @@ function md_alpine_preprocess_page(&$vars, $hook) {
             $nids[] .= $record['nid'];
         }
         $current_node_key =  array_search($nid, $nids);
-        var_dump($current_node_key);
+        echo "here";
+		var_dump($current_node_key);
 		if($current_node_key!="47"){ /*john custom condition */
 			if(($current_node_key-1) > 0) {
 				$vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));

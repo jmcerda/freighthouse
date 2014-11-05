@@ -13,7 +13,7 @@
       <?php print render($page['content']); ?>
       <?php $block = module_invoke('webform', 'block_view', 'request-proposal');
 print render($block['content']);?>
-<?php echo "custom";?>
+<?php echo "custom content";?>
     </div>
   </div>
 </div>
