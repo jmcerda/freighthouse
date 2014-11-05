@@ -790,7 +790,8 @@ function md_alpine_preprocess_page(&$vars, $hook) {
             $nids[] .= $record['nid'];
         }
         $current_node_key =  array_search($nid, $nids);
-        var_dump($current_node_key);
+        echo "here";
+		var_dump($current_node_key);
 		if($current_node_key!="47"){ /*john custom condition */
 			if(($current_node_key-1) > 0) {
 				$vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));
