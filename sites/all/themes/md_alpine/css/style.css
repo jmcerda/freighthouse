@@ -1883,7 +1883,7 @@ li.expanded, li.collapsed, li.leaf {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   /*background: none repeat scroll 0 0 rgba(255,255,255,0.70);*/
   border-radius: 5px;
-  padding: 25px;
+  /*padding: 25px;*/
   color: #cccccc;
   margin-bottom: 20px;
 }
