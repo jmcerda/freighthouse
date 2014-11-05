@@ -107,10 +107,17 @@ function md_alpine_module_block_view($delta = '') {
                                     <p>Client focus - know what they like and understand how to give it to them.</p>
                                     <p> We find exactly what exictes your audience and provide content tailored to their needs.</p>
                                     <p>Lead generation and conversion rate optimization</p>
-                                    <big>Mobile Analytics & Marketing</big>
+                                    <big>
+                                        <p style="color:#ffcc00">Mobile Analytics & Marketing</p>
+                                    </big>
                                     <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
-                                    <big>Segmentation</big>
+                                    <big>
+                                        <p style="color:#ffcc00">Segmentation</p>
+                                    </big>
                                     <p>Individual and personalized user experience based on behaviour and preference data.</p>
+                                    <big>
+                                        <p style="color:#ffcc00">Interaction Design</p>
+                                    </big>
                                     </span>
                                 </span>
                                 <span class="col-md-6 col-sm-12 col-xs-12">
