@@ -1,5 +1,6 @@
 <div id="page-wrapper">
     <div id="page">
+        <?php exit($node);?>
         <?php if($page['navigation']):?>
             <?php print render($page['navigation']);?>
         <?php endif;?>
