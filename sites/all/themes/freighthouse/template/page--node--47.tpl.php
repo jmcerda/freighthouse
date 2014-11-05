@@ -10,10 +10,9 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <?php print render($page['content']); ?>
+      <?php //print render($page['content']); ?>
       <?php $block = module_invoke('webform', 'block_view', 'request-proposal');
 print render($block['content']);?>
-<?php echo "custom";?>
     </div>
   </div>
 </div>
