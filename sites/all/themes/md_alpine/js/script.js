@@ -376,8 +376,8 @@
 
         //moving number animation to overview
         $('#numberTarget').append( $('#numberMove') );
-        //moving connect to footer
-        $('#socialTarget>div').append( $('#socialMove') );
+        //moving connect
+        //$('#socialTarget').append( $('#socialMove') );
 
         //Navigation Dropdown
         $('.nav a.int-collapse-menu').click(function() {
