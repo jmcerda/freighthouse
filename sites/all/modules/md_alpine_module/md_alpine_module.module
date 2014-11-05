@@ -220,7 +220,7 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="parallax_container_add">
                                         <span class="col-md-12">
-                                        <p class="par_center">design | illustration | motion graphics | animation | photography | audio | video</p>
+                                        <p class="par_center">design  |  illustration  |  motion  |  animation  |  photography  |  audio  |  video</p>
                                         </span>
                                 </div>
                             </div>
