@@ -219,7 +219,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
-                                        <span class="col-md -12">
+                                        <span class="col-md-12">
                                         <p>graphic design | illustration | motion graphics | animation | photography | audio | video</p>
                                         </span>
                                     </span>
