@@ -1024,6 +1024,11 @@ body.front #ajaxpage {
 }
 
 /* RADIAL PROGRESS BAR */
+
+.skillSize {
+	max-width: 100%;
+}
+
 .circular-content {
 	display: inline-block;
 	height: auto;

@@ -140,14 +140,14 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content" id="marcomMove">
+                            <div class="parallax-content skillSize" id="marcomMove">
                                 <div class="cart">
                                     <div class="cart_container">
                                         <div class="row">';
                             $skills = theme_get_setting('pr_'.$i.'_skill');
 
                             foreach($skills as $key => $value) {
-                                 $block['content'] .= '<div class="col-md-2">
+                                 $block['content'] .= '<div class="col-md-4">
                                     <div class="element-line">
                                         <div class="circular-content">
                                             <div class="circular-item hidden">';
