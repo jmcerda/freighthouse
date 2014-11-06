@@ -411,36 +411,31 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
-                                    <span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12">
-                                            <span class="par_left">
-                                                <big>
-                                                <p style="color:#ffcc00">Knowledge & Expertise</p>
-                                                </big>
-                                                <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
-                                                <p>Our consultants completely integrate into your organization. We are agile and adapt to an    y project management tool and methodology you throw at us.</p>
-                                                <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced developers that will deliver every time, by the hour and on demand.</p>
-                                            </span>
-                                            <span class="par_left">
-                                                <big>
-                                                    <p style="color:#ffcc00">Productivity & Accountability</p>
-                                                </big>
-                                                <p>We provide a platform that seamlessly integrates the team from any location in the world and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
-                                                </span>
-                                            </span>
+                                    <span class="col-md-6 col-sm-12 col-xs-12">
+                                        <span class="par_left">
+                                            <big>
+                                            <p style="color:#ffcc00">Knowledge & Expertise</p>
+                                            </big>
+                                            <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
+                                            <p>Our consultants completely integrate into your organization. We are agile and adapt to an    y project management tool and methodology you throw at us.</p>
+                                            <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced developers that will deliver every time, by the hour and on demand.</p>
                                         </span>
-                                        <span class="col-md-6 col-sm-12 col-xs-12">
-                                            <span class="par_right">
-                                                <big>
-                                                    <p style="color:#ffcc00">Stability & Communication</p>
-                                                </big>
-                                                <p>We start with establishing a line of constant communication -so the team is in sync.</p>
-                                                <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
-                                                <p>Never again depend on IT to get up and running!</p>
-                                            </span>
+                                        <span class="par_left">
+                                            <big>
+                                                <p style="color:#ffcc00">Productivity & Accountability</p>
+                                            </big>
+                                            <p>We provide a platform that seamlessly integrates the team from any location in the world and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                         </span>
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12">
+                                        <span class="par_right">
+                                            <big>
+                                                <p style="color:#ffcc00">Stability & Communication</p>
+                                            </big>
+                                            <p>We start with establishing a line of constant communication -so the team is in sync.</p>
+                                            <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
+                                            <p>Never again depend on IT to get up and running!</p>
+                                        </span>
                                         <span class="par_right" id="numberTarget">
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
