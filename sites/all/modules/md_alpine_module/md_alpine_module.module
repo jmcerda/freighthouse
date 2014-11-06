@@ -121,7 +121,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                 </span>
                                 <span class="col-md-6 col-sm-12 col-xs-12">
-                                    <span id="marcomTarget" class="par_right">
+                                    <span class="par_right">
                                         <big>
                                             <p style="color:#ffcc00">Data & Analytics</p>
                                         </big>
@@ -133,6 +133,8 @@ function md_alpine_module_block_view($delta = '') {
                                         <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                         <big>Social Strategies</big>
                                         <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                    </span>
+                                    <span id="marcomTarget">
                                     </span>
                                 </span>
                             </div>
