@@ -1028,7 +1028,6 @@ body.front #ajaxpage {
 	display: inline-block;
 	height: auto;
 	text-align: center;
-	max-width: 100%;
 }
 .cart {
 	position: relative;
