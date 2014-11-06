@@ -1053,6 +1053,7 @@ body.front #ajaxpage {
 }
 .circular-pie {
 	max-width: 100% !important;
+	max-height: 100% !important;
 }
 .circular-pie span {
 	display: block;
