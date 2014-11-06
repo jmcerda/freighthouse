@@ -927,13 +927,14 @@ body.front #ajaxpage {
 #timeline .post-info .box-inner,
 .post-avatar a {
 	display: block;
-	width: 113px;
-	margin: 10px auto;
+	width: 75px;
+	margin: auto;
+	padding: 3px;
 }
 #timeline .post-info .box-inner img,
 .post-avatar a img,.post-avatar img {
 	border: 1px solid #e1e1e1;
-	padding: 5px;
+	padding: 3px;
 	background: #fff;
 	display: block;
 	height: auto;
