@@ -1076,6 +1076,8 @@ body.front #ajaxpage {
 	letter-spacing: -3px;
 	color: #FFFFFF;
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+	line-height: 150px !important;
+
 }
 
 .circular-pie canvas {
