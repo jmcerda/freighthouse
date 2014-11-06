@@ -1054,8 +1054,8 @@ body.front #ajaxpage {
 	left: 0;
 }
 .circular-pie {
-	width: 100% !important;
-	height: 100% !important;
+	width: 310px;
+	height: 310px;
 }
 .circular-pie span {
 	display: block;
