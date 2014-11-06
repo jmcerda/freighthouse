@@ -1026,14 +1026,15 @@ body.front #ajaxpage {
 /* RADIAL PROGRESS BAR */
 
 .skillSize {
-	max-width: 100%;
-	display: inline-block;
+
 }
 
 .circular-content {
 	display: inline-block;
 	height: auto;
 	text-align: center;
+	max-width: 100%;
+	line-height: normal;
 }
 .cart {
 	position: relative;
