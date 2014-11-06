@@ -1033,11 +1033,12 @@ body.front #ajaxpage {
 	text-align: center;
 	max-width: 100%;
 	line-height: normal;
+	margin-top: -70px;
 }
 .cart {
 	position: relative;
 	overflow: hidden;
-	min-height: 388px;
+	/*min-height: 388px;*/
 }
 .cart .hidden {
 	display: none;
