@@ -1055,7 +1055,7 @@ body.front #ajaxpage {
 }
 .circular-pie .easyPieChart span {
 	max-width: 100% !important;
-	height: 150px;
+	height: 150px !important;
 }
 
 .circular-pie span {
