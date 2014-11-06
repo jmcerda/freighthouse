@@ -207,11 +207,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </p>
                                         <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                     </span>
-                                </div>
-                                <div class="parallax_container_add">
-                                        <span class="col-md-12">
-                                        <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
-                                        </span>
+                                    <span class="col-md-12">
+                                    <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
+                                    </span>
                                 </div>
                             </div>
                             <!-- Parallax Body -->
