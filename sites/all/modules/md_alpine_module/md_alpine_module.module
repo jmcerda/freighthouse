@@ -147,7 +147,7 @@ function md_alpine_module_block_view($delta = '') {
                             $skills = theme_get_setting('pr_'.$i.'_skill');
 
                             foreach($skills as $key => $value) {
-                                 $block['content'] .= '<div class="col-md-4">
+                                 $block['content'] .= '<div class="col-md-2">
                                     <div class="element-line">
                                         <div class="circular-content">
                                             <div class="circular-item hidden">';
