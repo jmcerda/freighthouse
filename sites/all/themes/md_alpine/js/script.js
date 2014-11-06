@@ -378,6 +378,8 @@
         $('#numberTarget').append( $('#numberMove') );
         //moving connect
         //$('#socialTarget').append( $('#socialMove') );
+        //moving marcom
+        $('#marcomTarget').append( $('#marcomMove') );
 
         //Navigation Dropdown
         $('.nav a.int-collapse-menu').click(function() {
