@@ -1025,7 +1025,8 @@ body.front #ajaxpage {
 
 /* RADIAL PROGRESS BAR */
 
-.skillSize {}
+.skillSize {
+}
 
 .circular-content {
 	display: inline-block;
@@ -1051,12 +1052,10 @@ body.front #ajaxpage {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width:100% !important;
-	height: 100% !important;
 }
 .circular-pie {
-	width: 310px;
-	height: 310px;
+	width: 100% !important;
+	height: 100% !important;
 }
 .circular-pie span {
 	display: block;
