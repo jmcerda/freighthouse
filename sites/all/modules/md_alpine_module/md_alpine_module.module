@@ -120,8 +120,8 @@ function md_alpine_module_block_view($delta = '') {
                                     </big>
                                     </span>
                                 </span>
-                                <span id="marcomTarget" class="col-md-6 col-sm-12 col-xs-12">
-                                    <span class="par_right">
+                                <span class="col-md-6 col-sm-12 col-xs-12">
+                                    <span id="marcomTarget" class="par_right">
                                         <big>
                                             <p style="color:#ffcc00">Data & Analytics</p>
                                         </big>
