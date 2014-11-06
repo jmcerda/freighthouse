@@ -304,7 +304,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
-                                    <span class="col-md-7 col-sm-11 col-xs-11">
+                                    <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_left">
                                             <big>
                                                 <p style="color:#d8d8d8">The battle between marketing and IT is over.</p>
