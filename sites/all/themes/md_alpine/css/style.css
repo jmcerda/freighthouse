@@ -1075,7 +1075,7 @@ body.front #ajaxpage {
 }
 
 .circular-pie canvas {
-	max-width: 100%;
+	max-width: 100% !important;
 }
 
 .circ_counter_desc {
