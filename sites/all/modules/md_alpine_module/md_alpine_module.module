@@ -134,13 +134,15 @@ function md_alpine_module_block_view($delta = '') {
                                         <big>Social Strategies</big>
                                         <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
                                     </span>
+                                    <span id="marcomTarget">
+                                    </span>
                                 </span>
                             </div>
                             </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content">
+                            <div class="parallax-content" id="marcomMove">
                                 <div class="cart">
                                     <div class="cart_container">
                                         <div class="row">';
