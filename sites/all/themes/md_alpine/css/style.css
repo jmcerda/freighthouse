@@ -1027,6 +1027,7 @@ body.front #ajaxpage {
 
 .skillSize {
 	max-width: 100%;
+	display: inline-block;
 }
 
 .circular-content {
