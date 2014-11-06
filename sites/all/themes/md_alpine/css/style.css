@@ -1068,6 +1068,7 @@ body.front #ajaxpage {
 	/*height: 210px;*/
 	/*width: 210px;*/
 	max-width: 100% !important;
+	max-height: 100% !important;
 	z-index: 10;
 	line-height: 210px;
 	border-radius: 100%;
