@@ -1053,8 +1053,8 @@ body.front #ajaxpage {
 	top: 0;
 	left: 0;
 }
-.circular-pie {
-	/*max-height: 100% !important;*/
+.circular-pie .easyPieChart span {
+	max-width: 100% !important;
 }
 
 .circular-pie span {
