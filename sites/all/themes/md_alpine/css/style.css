@@ -1081,6 +1081,7 @@ body.front #ajaxpage {
 }
 
 .circular-pie canvas {
+	height:150px !important;
 	max-width: 100% !important;
 	line-height: 150px !important;
 }
