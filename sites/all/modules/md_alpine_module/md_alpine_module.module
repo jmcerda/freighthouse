@@ -211,12 +211,13 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_right">
+                                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/XixbpJN1jOw" frameborder="0"></iframe>
+                                            </p>
+                                        </span>
+                                        <span class="par_right">
                                             <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
-                                        <span class="par_right">
-                                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/XixbpJN1jOw" frameborder="0" allowfullscreen></iframe>
-                                            </p>
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
                                         <span>
