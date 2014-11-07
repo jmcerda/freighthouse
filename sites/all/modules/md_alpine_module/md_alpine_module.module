@@ -205,12 +205,18 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="par_left">
                                             <p>What leads to an effective emotional design strategy?</p>
                                         </span>
+                                        <span class="par_left">
+                                            <p>Our front end developers are real artists who love to code. These are creative analytical thinkers who will shape your vision into a reality.</p>
+                                        </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_right">
                                             <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
+                                        <span class="par_right">
+                                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/XixbpJN1jOw" frameborder="0" allowfullscreen></iframe>
+                                            </p>
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
                                         <span>
@@ -424,7 +430,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p style="color:#ffcc00">Knowledge & Expertise</p>
                                             </big>
                                             <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
-                                            <p>Our consultants completely integrate into your organization. We are agile and adapt to an    y project management tool and methodology you throw at us.</p>
+                                            <p>Our consultants completely integrate into your organization. We are agile and adapt to any project management tool and methodology you throw at us.</p>
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced developers that will deliver every time, by the hour and on demand.</p>
                                         </span>
                                         <span class="par_left">
