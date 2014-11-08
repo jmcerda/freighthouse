@@ -238,11 +238,11 @@ $databases = array (
   array (
     'default' =>
     array (
-      'database' => 'freighthouse',
-      'username' => 'freighthouse',
-      'password' => 'freighthouse',
-      'host' => 'localhost',
-      'port' => '',
+      'database' => 'pantheon',
+      'username' => 'pantheon',
+      'password' => '46a3d2cb6c14466cac68db9d7d1f6e1f',
+      'host' => 'dbserver.cristobal.531b089d-6258-49a0-9288-27ac611267a9.drush.in',
+      'port' => '17179',
       'driver' => 'mysql',
       'prefix' => '',
     ),
