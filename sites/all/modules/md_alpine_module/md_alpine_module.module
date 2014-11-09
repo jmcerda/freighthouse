@@ -203,10 +203,12 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <p>What leads to an effective emotional design strategy?</p>
+                                            <p>The internet is our canvas. Every single idea has to be on the web if its able to communicate.</p>
+                                            <p>Our front end developers are real artists who love to code as much as they love to paint. These are analytical thinkers who live everyday creating and will shape your vision into a reality.</p>
+                                            <p>We use every medium available from photography to audio and video production.<p>
                                         </span>
                                         <span class="par_left">
-                                            <p>Our front end developers are real artists who love to code. These are creative analytical thinkers who will shape your vision into a reality.</p>
+                                            <p>What leads to an effective emotional design strategy?</p>
                                         </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
