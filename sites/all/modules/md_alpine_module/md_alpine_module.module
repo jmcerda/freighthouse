@@ -210,7 +210,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
-                                        <video id="XixbpJN1jOw" class="sublime" width="100%" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
+                                        <video id="XixbpJN1jOw" class="sublime" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
+                                        </video>
+                                        <video id="XixbpJN1jOw" class="sublime" width="640" title="Art Metamorphosis Miami by Art Soiree" height="360" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
                                         </video>
                                         <span class="par_right">
                                             <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
