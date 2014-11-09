@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div id="page">
         <?php if($page['navigation'] && $node->nid != '47'):?>
-         <?php       //print render($page['navigation']);?>
+         <?php       print render($page['navigation']);?>
         <?php endif;?>
         <section class="section-content blog-content">
             <?php if($page['spb_enabled'] == FALSE):?>
