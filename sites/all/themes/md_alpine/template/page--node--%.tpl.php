@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div id="page">
-        <?php if($page['navigation'] && $node->nid != '47'):?>
-         <?php       print $node->title;//print render($page['navigation']);?>
+        <?php if($page['navigation'] || $node->nid != '47'):?>
+         <?php       print render($page['navigation']);?>
         <?php endif;?>
         <section class="section-content blog-content">
             <?php if($page['spb_enabled'] == FALSE):?>
@@ -15,7 +15,7 @@
                         <span><?php print t('Posted by');?> <a href="<?php print base_url().'/user/'.$node->uid;?>"><?php print $node->name;?></a></span>
                         <span class="line big"></span>
                     </div>
-                    <h1 class="item_left"><?php print //$node->title;?></h1>
+                    <h1 class="item_left"><?php print $node->title;?></h1>
                     <div>
                         <span class="line"></span>
                         <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
