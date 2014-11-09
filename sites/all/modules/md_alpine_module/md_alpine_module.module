@@ -212,7 +212,7 @@ function md_alpine_module_block_view($delta = '') {
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <video id="XixbpJN1jOw" class="sublime" width="640" height="360" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
                                         </video>
-                                        <span class="par_right">
+                                        <span class="par_right" style="margin-top:25px">
                                             <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
