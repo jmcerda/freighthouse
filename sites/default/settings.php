@@ -253,6 +253,7 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
+  /*
 	array (
       'database' => 'db_freighthouse',
       'username' => 'root',
@@ -262,6 +263,7 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
+    */
   ),
 );
 
