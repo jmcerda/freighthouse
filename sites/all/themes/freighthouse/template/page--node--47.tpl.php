@@ -55,6 +55,7 @@
                 <?php endif;?>
 
                 <?php if($page['spb_enabled'] == FALSE):?>
+                    <!--
                     <div class="row">
                         <div class="col-md-12">
                             <div class="element-line">
@@ -73,6 +74,7 @@
                             </div>
                         </div>
                     </div>
+                    --> 
                 <?php endif;?>
             <?php if($page['spb_enabled'] == FALSE):?>
             </div>
