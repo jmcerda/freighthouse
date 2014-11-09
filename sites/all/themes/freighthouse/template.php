@@ -4,7 +4,6 @@
  * @param $form
  * @param $form_state
  * @param $form_id
- * john mod 3
  */
 // drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/fh.css', array('group' => CSS_THEME));
 
