@@ -237,12 +237,30 @@ $databases = array (
   'default' =>
   array (
     'default' =>
+<<<<<<< HEAD
     array (
       'database' => 'pantheon',
       'username' => 'pantheon',
       'password' => '46a3d2cb6c14466cac68db9d7d1f6e1f',
       'host' => 'dbserver.cristobal.531b089d-6258-49a0-9288-27ac611267a9.drush.in',
       'port' => '17179',
+=======
+    /*array (
+      'database' => 'freighthouse',
+      'username' => 'freighthouse',
+      'password' => 'freighthouse',
+      'host' => 'localhost',
+      'port' => '',
+>>>>>>> a6d9cf573dc3b7e16d404f5ea204bc04ac4120bc
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),*/
+	array (
+      'database' => 'db_freighthouse',
+      'username' => 'root',
+      'password' => '',
+      'host' => 'localhost',
+      'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
     ),

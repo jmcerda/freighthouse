@@ -766,14 +766,16 @@ function md_alpine_process_page(&$vars) {
     // Make sure the shortcut link is the first item in title_suffix.
     $vars['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
-
+	
+	
+	var_dump($vars);
 }
 
 /**
  * Implements hook_preprocess_page().
  */
 function md_alpine_preprocess_page(&$vars, $hook) {
-    // Page title in node page
+	// Page title in node page
     if(isset($vars['node'])) {
         $node = $vars['node'];
         $vars['page_title'] = $vars['node']->type;
@@ -790,12 +792,13 @@ function md_alpine_preprocess_page(&$vars, $hook) {
             $nids[] .= $record['nid'];
         }
         $current_node_key =  array_search($nid, $nids);
-        if(($current_node_key-1) > 0) {
-            $vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));
-        }
-        if(($current_node_key + 1) != sizeof($nids)) {
-            $vars['next_link'] = url('node/'.$nids[$current_node_key+1],array('absolute'=>true));
-        }
+		if(($current_node_key-1) > 0) {
+			$vars['previous_link'] = url('node/'.$nids[$current_node_key-1],array('absolute'=>true));
+		}
+		if(($current_node_key + 1) != sizeof($nids)) {
+			$vars['next_link'] = url('node/'.$nids[$current_node_key+1],array('absolute'=>true));
+		}
+	
     }
     if(theme_get_setting('footer_text')){
         $vars['footer_text'] = theme_get_setting('footer_text');
