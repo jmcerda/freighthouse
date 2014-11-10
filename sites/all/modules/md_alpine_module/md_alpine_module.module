@@ -204,17 +204,13 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>Artistic design, production, and marketing</big>
+                                            <big>Artistic design, production, and marketing</big><hr />
                                             <p>Art Direction, Buying, and Consulting</p>
                                             <p>Graphic Arts & Design</p>
                                             <p>Brand Development</p>
                                             <p>UI/UX Design</p>
                                             <p>3D & Animation</p>
                                             <p>Audio & Video Production</p>
-                                        </span>
-                                        <span class="par_right">
-                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. Analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
-                                            <p>We are committed to spreading art in every sense into our communities and onto our screens</p>
                                         </span>
                                         <span class="par_left">
                                         <big>What leads to an effective emotional design strategy?</big><hr />
@@ -228,8 +224,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>We support local organizations who beleive in investing in our creative communities enriches not only us but everything
-
+                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. Analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are committed to spreading art in every sense into our communities in addition to our screens.</p>
+                                            <p>We exclusively support organizations who beleive in investing in the people and the creative arts, and we choose to build professional relationships and work in cooperation with these entities in preference.</p>
                                             </p>
                                         </span>
                                     </span>
