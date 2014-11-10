@@ -123,4 +123,4 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 //   }
 // }
 
-drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style.css', array('group' => CSS_THEME));
+drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-responsive.css', array('group' => CSS_THEME));
