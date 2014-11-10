@@ -6,9 +6,11 @@
         transform: rotateX(90deg) translateY(-22px) !important;
         
         cursor: pointer;
-        
+        padding:0 !important;
   }
-
+  .webform-client-form .mybutton a, .webform-client-form .mybutton button, .webform-client-form .action .mybutton {
+  	border: 0 !important;
+  }
 /*}*/
 
 /*
