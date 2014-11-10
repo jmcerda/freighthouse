@@ -389,3 +389,16 @@ h1,h1 a, h2,h2 a, h3,h3 a, h4,h4 a, h5,h5 a, h6,h1 a, .section-title, .form-grou
 .owl-theme .owl-next {
   right: -100px;
 }
+
+
+@media (min-width: 992px) {
+
+  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
+        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
+        -moz-transform: rotateX(90deg) translateY(-22px) !important;
+        transform: rotateX(90deg) translateY(-22px) !important;
+        cursor: pointer;
+        
+  }
+
+}
