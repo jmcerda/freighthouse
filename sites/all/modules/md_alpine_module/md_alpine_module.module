@@ -208,14 +208,14 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We use every medium available from photography to audio and video production.</p>
                                         </span>
                                         <span class="par_left">
-                                            <p>What leads to an effective emotional design strategy?</p>
                                         </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <video id="XixbpJN1jOw" class="sublime" width="640" height="360" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
                                         </video>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
+                                            <big>What leads to an effective emotional design strategy?</big><hr />
+                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                     </span>
@@ -322,7 +322,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT and developer resources.</p>
                                             <a href="#5ciBJeqsBh0" class="sublime" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit">
-                                                &gt;Watch the video
+                                                &gt; Watch the video
                                             </a>
                                             <video id="5ciBJeqsBh0" width="640" height="360" title="Pantheon One" style="display:none" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
                                             </video>
