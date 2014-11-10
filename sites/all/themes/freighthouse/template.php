@@ -69,7 +69,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
             </div>';
                 break;
         }
-    } else {
+    } else if (strpos($form_id,"webform_client_form") == true) {
         /*
         $form['#attributes']['class'][] = 'element-inline';
         $form['actions']['submit']['#value'] = 'Send Message';
