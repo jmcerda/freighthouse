@@ -1,9 +1,19 @@
 /*@media (min-width: 292px) {*/
 
   .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
-        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
+       /* -webkit-transform: rotateX(90deg) translateY(-22px) !important;
         -moz-transform: rotateX(90deg) translateY(-22px) !important;
         transform: rotateX(90deg) translateY(-22px) !important;
+        */
+        -webkit-transition: -webkit-transform 0.3s;
+-moz-transition: -moz-transform 0.3s;
+transition: transform 0.3s;
+-webkit-transform-origin: 50% 0;
+-moz-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
         cursor: pointer;
         
   }
