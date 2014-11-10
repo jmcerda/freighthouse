@@ -203,17 +203,21 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <p>What leads to an effective emotional design strategy?</p>
+                                            <p>The internet is our canvas. Every single idea has to be on the web if its able to communicate.</p>
+                                            <p>Our front end developers are real artists who love to code as much as they love to paint. These are analytical thinkers who live everyday creating and will shape your vision into a reality.</p>
+                                            <p>We use every medium available from photography to audio and video production.</p>
                                         </span>
                                         <span class="par_left">
-                                            <p>Our front end developers are real artists who love to code. These are creative analytical thinkers who will shape your vision into a reality.</p>
                                         </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
-                                        <video id="XixbpJN1jOw" class="sublime" width="640" height="360" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
+                                        <span class="par_right" style="margin-left:0px">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="680" height="382" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
+                                        </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>"We create user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by combining a thoughtfully sophisticated presentation layer with a workable personality layer."</p>
+                                            <big>What leads to an effective emotional design strategy?</big><hr />
+                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
                                             <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
 <<<<<<< HEAD
@@ -322,7 +326,11 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Never again be a hostage of your IT department...</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT and developer resources.</p>
-                                            <a style="color:#ffcc00" class="colorbox-load" href="//youtube.com/embed/5ciBJeqsBh0?width=560&height=315&rel=0&wmode=transparent&modestbranding=1&controls=0&autoplay=1&playlist=0&iv_load_policy=0&showinfo=0&iframe=true">&gt; Watch the video</a>
+                                            <a href="#5ciBJeqsBh0" class="sublime" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit">
+                                                &gt; Watch the video
+                                            </a>
+                                            <video id="5ciBJeqsBh0" width="640" height="360" title="Pantheon One" style="display:none" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
+                                            </video>
                                         </span>
                                     </span>
                                     <span class="col-md-4 col-sm-12 col-xs-12">
