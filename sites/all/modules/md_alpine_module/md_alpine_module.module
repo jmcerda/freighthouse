@@ -212,7 +212,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="680" height="382" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="680" height="382" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="680x382" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
