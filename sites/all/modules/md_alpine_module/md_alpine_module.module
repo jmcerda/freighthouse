@@ -212,7 +212,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_right" style="margin-left:0px">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="640" height="360" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="700" height="393" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
