@@ -204,7 +204,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>Artistic design, production, and marketing</big><hr />
+                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><hr />
                                             <p>Art Direction, Buying, and Consulting</p>
                                             <p>Graphic Arts & Design</p>
                                             <p>Brand Development</p>
@@ -467,7 +467,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
                                             <p>Never again depend on IT to get up and running!</p>
                                         </span>
-                                        <span class="par_right" id="numberTarget">
+                                        <span class="par_right">
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
                                             </big>
@@ -475,6 +475,8 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
                                                 <p>Our reach so far:</p>
+                                            </div>
+                                            <div id="numberTarget">
                                             </div>
                                         </span>
                                     </span>
