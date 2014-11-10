@@ -214,8 +214,11 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                         <span class="par_left">
                                         <big>What leads to an effective emotional design strategy?</big><hr />
-                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
-                                            <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                        <figure class="quote">
+                                            <blockquote>Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer.</blockquote>
+                                            <figcaption>Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
+                                        </figure>
+                                            <p>""</p>
                                         </span>
                                     </span>
                                     <span class="col-md-7 col-sm-12 col-xs-12">
