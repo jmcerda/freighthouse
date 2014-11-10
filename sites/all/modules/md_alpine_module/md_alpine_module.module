@@ -215,20 +215,20 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="par_left">
                                         <big>What leads to an effective emotional design strategy?</big><hr />
                                         <figure class="quote">
-                                            <blockquote>Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer.</blockquote>
-                                            <figcaption>Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
+                                            <blockquote>Creating user experiences that include beautiful aesthetics, gorgeous content and entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer.</blockquote>
+                                            <figcaption>- Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
                                         </figure>
                                         </span>
                                     </span>
                                     <span class="col-md-7 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="680" height="382" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="680x382" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. Analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
-                                            <p>We are committed to spreading art in every sense into our communities in addition to our screens.</p>
-                                            <p>We exclusively support organizations who beleive in investing in the people and the creative arts, and we choose to build professional relationships and work in cooperation with these entities in preference.</p>
+                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. We are analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are committed to spreading design in every sense into our communities in addition to on our screens.</p>
+                                            <p>We exclusively support organizations who beleive in investing in the people and the creative arts, and we alway choose to build professional relationships and work in cooperation with these entities with preference.</p>
                                             </p>
                                         </span>
                                     </span>
