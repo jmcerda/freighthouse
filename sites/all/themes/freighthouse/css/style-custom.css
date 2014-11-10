@@ -1,4 +1,4 @@
-@media (min-width: 292px) {
+/*@media (min-width: 292px) {*/
 
   .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
         -webkit-transform: rotateX(90deg) translateY(-22px) !important;
@@ -8,7 +8,7 @@
         
   }
 
-}
+/*}*/
 
 /*
 @media (max-width: 767px) {
