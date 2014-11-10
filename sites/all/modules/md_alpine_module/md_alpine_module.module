@@ -133,6 +133,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                         <big>Social Strategies</big>
                                         <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                        <big>Live Event Marketing</big>
                                     </span>
                                     <span id="marcomTarget" class="par_right">
                                     </span>
@@ -203,11 +204,22 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <p>The internet is our canvas. Every single idea has to be on the web if its able to communicate.</p>
-                                            <p>Our front end developers are real artists who love to code as much as they love to paint. These are analytical thinkers who live everyday creating and will shape your vision into a reality.</p>
-                                            <p>We use every medium available from photography to audio and video production.</p>
+                                            <big>Artistic design, production, and marketing</big>
+                                            <p>Art Direction, Buying, and Consulting</p>
+                                            <p>Graphic Arts & Design</p>
+                                            <p>Brand Development</p>
+                                            <p>UI/UX Design</p>
+                                            <p>3D & Animation</p>
+                                            <p>Audio & Video Production</p>
+                                        </span>
+                                        <span class="par_right">
+                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. Analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are committed to spreading art in every sense into our communities and onto our screens</p>
                                         </span>
                                         <span class="par_left">
+                                        <big>What leads to an effective emotional design strategy?</big><hr />
+                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
+                                            <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
                                         </span>
                                     </span>
                                     <span class="col-md-8 col-sm-12 col-xs-12">
@@ -216,9 +228,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <big>What leads to an effective emotional design strategy?</big><hr />
-                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
-                                            <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                            <p>We support local organizations who beleive in investing in our creative communities enriches not only us but everything
+
+                                            </p>
                                         </span>
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
