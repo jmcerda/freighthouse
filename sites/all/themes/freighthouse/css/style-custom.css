@@ -26,6 +26,9 @@
   .webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button{
   	background: none !important;
   }
+  .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span{
+  	padding: 0px !important;
+  }
 
   .mybutton.medium input[type="submit"] {
 	border: none !important;
