@@ -25,6 +25,7 @@
   }
   .webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button{
   	background: none !important;
+  	padding: 0 !important;
   }
   .webform-client-form .mybutton{
   	/*
