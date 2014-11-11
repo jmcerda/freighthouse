@@ -21,6 +21,11 @@
      	perspective: 1000px !important;
 
   }
+  .webform-client-form .mybutton{
+  	width: 175px !important;
+  	height: 75px !important;
+  	display:block !important;
+  }
 /*}*/
 
 /*
