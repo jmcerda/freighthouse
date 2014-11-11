@@ -13,8 +13,6 @@
    		-webkit-transition: -webkit-transform 0.3s;
     	-moz-transition: -moz-transform 0.3s;
     	transform-style: preserve-3d;
-    	position: absolute;
-     	top: 100%;
 
   }
   .webform-client-form .mybutton a, .webform-client-form .mybutton button, .webform-client-form .action .mybutton {
