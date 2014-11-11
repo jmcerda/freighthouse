@@ -204,7 +204,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><hr />
+                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big>
                                             <p>Art Direction, Buying, and Consulting</p>
                                             <p>Graphic Arts & Design</p>
                                             <p>Brand Development</p>
@@ -213,7 +213,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Audio & Video Production</p>
                                         </span>
                                         <span class="par_left">
-                                        <big>What leads to an effective emotional design strategy?</big><hr />
+                                        <big>What leads to an effective emotional design strategy?</big>
                                         <figure class="quote">
                                             <blockquote>Creating user experiences that include beautiful aesthetics, gorgeous content and entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer.</blockquote>
                                             <figcaption>- Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
@@ -226,9 +226,9 @@ function md_alpine_module_block_view($delta = '') {
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>We are real artists who love to code as much as we love to paint, write and play the piano. We are analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
-                                            <p>We are committed to spreading design in every sense into our communities in addition to on our screens.</p>
-                                            <p>We exclusively support organizations who beleive in investing in the people and the creative arts, and we alway choose to build professional relationships and work in cooperation with these entities with preference.</p>
+                                            <p>Our people are real artists who love to code as much as they love to paint, write or play the piano. We are analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are committed to spreading art and design in every sense into our communities in addition to on our screens.</p>
+                                            <p>We exclusively work with and support organizations who beleive in investing in people and the creative arts as we strive to ensure that form expands function.</p>
                                             </p>
                                         </span>
                                     </span>
