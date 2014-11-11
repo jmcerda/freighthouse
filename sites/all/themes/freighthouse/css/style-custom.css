@@ -29,6 +29,7 @@
 
   .mybutton.medium input[type="submit"] {
 	border: none !important;
+	padding: 10px 40px;
   }
   
   .webform-client-form .mybutton{
