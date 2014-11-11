@@ -86,7 +86,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
         $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
               <div class="col-md-12 text-center">
-                <div class="action mybutton medium"><a><span data-hover="SEND MESSAGE">';
+                <div class="action mybutton"><a><span data-hover="SEND MESSAGE">';
         $form['actions']['submit']['#sufix'] = '</span></a></div>
                 </div>
               </div>
