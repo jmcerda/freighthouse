@@ -23,6 +23,9 @@
 
 	    */
   }
+  .webform-client-form .mybutton button{
+  	background: none !important;
+  }
   .webform-client-form .mybutton{
   	/*
   	width: 175px !important;
