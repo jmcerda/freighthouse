@@ -25,8 +25,12 @@
   }
   .webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button{
   	background: none !important;
-  	padding: 0 !important;
   }
+
+  .mybutton.medium input[type="submit"] {
+	border: none !important;
+  }
+  
   .webform-client-form .mybutton{
   	/*
   	width: 175px !important;
