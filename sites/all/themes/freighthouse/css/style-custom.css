@@ -6,7 +6,7 @@
         transform: rotateX(90deg) translateY(-22px) !important;
         
         cursor: pointer;
-        
+        padding: 0px !important;
         /*
         -webkit-perspective: 1000px;
    		-moz-perspective: 1000px;
