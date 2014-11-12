@@ -1,0 +1,58 @@
+/*@media (min-width: 292px) {*/
+
+  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span, #user-login .mybutton button:hover span, #user-register-form .mybutton button:hover span {
+        
+        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
+        -moz-transform: rotateX(90deg) translateY(-22px) !important;
+        transform: rotateX(90deg) translateY(-22px) !important;
+        
+        cursor: pointer;
+        padding: 0px !important;
+        /*
+        -webkit-perspective: 1000px;
+   		-moz-perspective: 1000px;
+   		-webkit-transition: -webkit-transform 0.3s;
+    	-moz-transition: -moz-transform 0.3s;
+    	transform-style: preserve-3d;
+    	position: absolute !important;
+     	top: 100% !important;
+     	left:0 !important;
+     	display:block !important;
+     	-webkit-perspective: 1000px !important;
+     	perspective: 1000px !important;
+
+	    */
+  }
+  .webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button{
+  	background: none !important;
+  }
+  .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span{
+  	padding: 0px !important;
+  }
+
+  .mybutton.medium input[type="submit"] {
+	border: none !important;
+	padding: 10px 40px;
+  }
+  
+  .webform-client-form .mybutton{
+  	/*
+  	width: 175px !important;
+  	height: 0px !important;
+  	display:block !important;
+  	margin: 0 auto !important;
+  	*/
+  }
+/*}*/
+
+/*
+@media (max-width: 767px) {
+
+  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
+        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
+        -moz-transform: rotateX(90deg) translateY(-22px) !important;
+        transform: rotateX(90deg) translateY(-22px) !important;
+        cursor: pointer;
+        
+  }
+}*/

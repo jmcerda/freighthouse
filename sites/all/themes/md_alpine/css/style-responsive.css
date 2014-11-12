@@ -269,11 +269,18 @@ Author URI: http://themeforest.net/user/creativeispiration
 		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
-	.webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
+	.webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
         -webkit-transform: none;
         -moz-transform: none;
         transform: none;
         cursor: pointer;
+        /*
+        -webkit-transform: rotateX(90deg) translateY(-22px);
+        -moz-transform: rotateX(90deg) translateY(-22px);
+        transform: rotateX(90deg) translateY(-22px);
+        cursor: pointer;
+        */
+        
 	}
     .mybutton a:hover span, .mybutton button:hover span, .action .mybutton:hover span,.form-actions .mybutton:hover span {
         -webkit-transform: rotateX(90deg) translateY(-22px);

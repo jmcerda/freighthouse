@@ -20,8 +20,8 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 $form['actions']['submit']['#value'] = t('Login');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
               <div class="col-md-12 text-center">
-                  <div class="action mybutton medium"><span>';
-                $form['actions']['submit']['#suffix'] = '</span></div>
+                  <div class="action mybutton medium"><button onclick="this.submit();"><span style="position:relative; display:inline-block; " data-hover="Login">';
+                $form['actions']['submit']['#suffix'] = '</span></button></div>
               </div>
             </div>';
                 break;
@@ -36,8 +36,8 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 $form['actions']['submit']['#value'] = t('Sign up');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
               <div class="col-md-12 text-center">
-                  <div class="action mybutton medium"><span>';
-                $form['actions']['submit']['#suffix'] = '</span></div>
+                  <div class="action mybutton medium"><button onclick="this.submit();"><span style="position:relative; display:inline-block; " data-hover="Sign up">';
+                $form['actions']['submit']['#suffix'] = '</span></button></div>
               </div>
             </div>';
                 break;
@@ -70,7 +70,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 break;
         }
     } else {
-
+        /*
         $form['#attributes']['class'][] = 'element-inline';
         $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
@@ -81,6 +81,16 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 </div>
               </div>
             ';
+        */   
+        $form['#attributes']['class'][] = 'element-line';
+        $form['actions']['submit']['#value'] = 'Send Message';
+        $form['actions']['submit']['#prefix'] = '<div class="row">
+              <div class="col-md-12 text-center">
+                <div class="action mybutton"><button onclick="this.submit();"><span style="position:relative; display:inline-block;" data-hover="SEND MESSAGE">';
+        $form['actions']['submit']['#sufix'] = '</span></button></div>
+                </div>
+              </div>
+            ';    
     }
 }
 
@@ -112,8 +122,5 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 //       break;
 //   }
 // }
-function freighthouse_preprocess_page(&$variables) {
-  if (!empty($variables['node']) && !empty($variables['node']->type) && $variables['node']->type=="webform") {
-    $variables['theme_hook_suggestions'][] = 'page__node__' . $variables['node']->type;
-  }
-}
+
+drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css', array('group' => CSS_THEME));
