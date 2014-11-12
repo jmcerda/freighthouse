@@ -133,6 +133,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                         <big>Social Strategies</big>
                                         <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                        <big>Live Event Marketing</big>
                                     </span>
                                     <span id="marcomTarget" class="par_right">
                                     </span>
@@ -201,24 +202,34 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
-                                    <span class="col-md-4 col-sm-12 col-xs-12">
+                                    <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <p>The internet is our canvas. Every single idea has to be on the web if its able to communicate.</p>
-                                            <p>Our front end developers are real artists who love to code as much as they love to paint. These are analytical thinkers who live everyday creating and will shape your vision into a reality.</p>
-                                            <p>We use every medium available from photography to audio and video production.</p>
+                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big>
+                                            <p>Art Direction, Buying, and Consulting</p>
+                                            <p>Graphic Arts & Design</p>
+                                            <p>Brand Development</p>
+                                            <p>UI/UX Design</p>
+                                            <p>3D & Animation</p>
+                                            <p>Audio & Video Production</p>
                                         </span>
                                         <span class="par_left">
+                                        <big>What leads to an effective emotional design strategy?</big>
+                                        <figure class="quote">
+                                            <p>"Creating user experiences that include beautiful aesthetics, gorgeous content and entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
+                                            <figcaption>- Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
+                                        </figure>
                                         </span>
                                     </span>
-                                    <span class="col-md-8 col-sm-12 col-xs-12">
-                                        <span class="par_right" style="margin-left:0px">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="680" height="382" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
+                                    <span class="col-md-7 col-sm-12 col-xs-12">
+                                        <span class="par_right">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <big>What leads to an effective emotional design strategy?</big><hr />
-                                            <p>"Creating user experiences that not only include beautiful aesthetics and gorgeous content, but also entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
-                                            <p class="color:#ffcc00">Jeremy Michael Cerda</br>Creative Director & Sr. Web Architect</p>
+                                            <p>Our people are real artists who love to code as much as they love to paint, write or play the piano. We are analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are committed to spreading art and design in every sense into our communities in addition to on our screens.</p>
+                                            <p>We exclusively work with and support organizations who beleive in investing in people and the creative arts as we strive to ensure that form expands function.</p>
+                                            </p>
                                         </span>
 <<<<<<< HEAD
                                     </span>
@@ -459,7 +470,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>The right infrastructure choices are made from day one, which means streamlined development and collaboration.</p>
                                             <p>Never again depend on IT to get up and running!</p>
                                         </span>
-                                        <span class="par_right" id="numberTarget">
+                                        <span class="par_right">
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
                                             </big>
@@ -467,6 +478,8 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
                                                 <p>Our reach so far:</p>
+                                            </div>
+                                            <div id="numberTarget">
                                             </div>
                                         </span>
                                     </span>
