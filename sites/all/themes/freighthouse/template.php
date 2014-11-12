@@ -112,3 +112,8 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 //       break;
 //   }
 // }
+function freighthouse_preprocess_page(&$variables) {
+  if (!empty($variables['node']) && !empty($variables['node']->type) && $variables['node']->type=="webform") {
+    $variables['theme_hook_suggestions'][] = 'page__node__' . $variables['node']->type;
+  }
+}
