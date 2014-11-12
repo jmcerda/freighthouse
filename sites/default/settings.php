@@ -244,6 +244,7 @@ $databases = array (
       'host' => 'dbserver.cristobal.531b089d-6258-49a0-9288-27ac611267a9.drush.in',
       'port' => '17179',
     */
+    
     array (
       'database' => 'freighthouse',
       'username' => 'freighthouse',
@@ -253,6 +254,7 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
+    
   /*
 	array (
       'database' => 'db_freighthouse',
