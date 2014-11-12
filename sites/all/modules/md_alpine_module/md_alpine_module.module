@@ -226,9 +226,8 @@ function md_alpine_module_block_view($delta = '') {
                                         </video>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>Our people are real artists who love to code as much as they love to paint, write or play the piano. We are analytical thinkers who live everyday challenging our minds to see what nobody else sees.</p>
-                                            <p>We are committed to spreading art and design in every sense into our communities in addition to on our screens.</p>
-                                            <p>We exclusively work with and support organizations who beleive in investing in people and the creative arts as we strive to ensure that form expands function.</p>
+                                            <p>We are real artists who love to code as much as we love to paint, write or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
                                             </p>
                                         </span>
                                     </span>
