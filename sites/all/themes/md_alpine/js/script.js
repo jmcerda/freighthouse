@@ -344,9 +344,8 @@
          $(".comment-formular textarea").attr('class','form-control input-lg');
          }*/
         var basePath = Drupal.settings.basePath;
-         if($("body").hasClass("front")) {
+        /* if($("body").hasClass("front")) {
          $("ul.navbar-nav li").each(function(){
-         console.log('here');
          var link = $(this).find("a");
          link.removeClass("active");
          var href = link.attr('href');
@@ -355,7 +354,7 @@
          link.attr('href',newHref);
          }
          })
-         }
+         }*/
         //Navigation Scrolling
         $(function() {
             $('#brand, .nav li a, a.start-button, a.fh_box, a.int-collapse-menu, a.int-collapse-menu, a.dropdown-toggle').bind('click', function(event) {
