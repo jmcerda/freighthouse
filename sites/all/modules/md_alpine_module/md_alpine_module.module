@@ -495,7 +495,7 @@ function md_alpine_module_block_view($delta = '') {
                                                 if($overview[$key]['icon']['icon'] != null && $overview[$key]['des'] != null) {
                                                     $block['content'] .= '
                                                         <div class="parallax-box fh_box">
-                                                            <a href="'.$overview[$key]['link'].'"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
+                                                            <a href="'.$overview[$key]['link'].'" class="int-collapse-menu"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
                                                             <p>
                                                                 '.$overview[$key]['des'].'
                                                             </p> </a>
