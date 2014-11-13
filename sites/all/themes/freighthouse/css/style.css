@@ -2063,12 +2063,13 @@ p.lead.par_light {
 #assoc{padding: 0;width: 320px;margin: 0 auto;}
 #assoc img{width:48%; }
 /* Request proposal CSS*/
+.page-type-webform .item_right .form-item{ clear:both;}
 .page-type-webform .item_right{ right:-15px;}
 .page-type-webform .item_right form label{ font-size:14px; width: 21%; float: left;}
 .page-type-webform .item_right form input[type="text"],.page-type-webform .item_right form input[type="email"]{ width: 62%;}
 .page-type-webform .item_right form select{ width: 62%; font-size: 14px!important;}
 .page-type-webform .item_right form select.month,.page-type-webform .item_right form select.day,.page-type-webform .item_right form select.year{ width: auto;}
-.page-type-webform .item_right form .form-textarea-wrapper{ width: 62%;}
+.page-type-webform .item_right form .form-textarea-wrapper{ width: 62%; float:left;}
 .page-type-webform .item_right form .form-textarea-wrapper textarea{ width: 100%;}
 .page-type-webform .item_right form textarea{ width: 62%;}
 .page-type-webform .item_right form .webform-calendar{ margin-top:4px;}
