@@ -256,8 +256,6 @@ function md_alpine_superfish_build($variables) {
                         if ((isset($context->reactions['menu']))) {
                             if ($menu_item['link']['href'] == $context->reactions['menu']) {
                                 $menu_item['link']['localized_options']['attributes']['class'][] = 'active';
-                                echo "testing john";
-                                var_dump($context);
                             }
                         }
                     }

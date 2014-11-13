@@ -127,9 +127,23 @@ drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css
 
 
 function freighthouse_menu_link(array $variables) {
-
+	  
+	  
+	  if (function_exists('context_active_contexts')) {
+			if ($contexts = context_active_contexts()) {
+				foreach ($contexts as $context) {
+					if ((isset($context->reactions['menu']))) {
+						if ($menu_item['link']['href'] == $context->reactions['menu']) {
+							$menu_item['link']['localized_options']['attributes']['class'][] = 'active';
+							echo "testing john";
+							var_dump($context);
+						}
+					}
+				}
+			}
+		}
+			
       $element = $variables['element'];
-      var_dump($element);
       $sub_menu = '';
 
       if ($element['#below']) {
