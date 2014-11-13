@@ -129,6 +129,7 @@ drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css
 function freighthouse_menu_link(array $variables) {
 
       $element = $variables['element'];
+      var_dump($element);
       $sub_menu = '';
 
       if ($element['#below']) {
