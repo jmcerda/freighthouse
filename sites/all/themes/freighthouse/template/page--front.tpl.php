@@ -1,7 +1,3 @@
-<?php
-drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
-?>
-
 <!-- Intro loader -->
 <div class="mask">
     <div id="intro-loader"></div>
@@ -146,3 +142,4 @@ drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
 <?php if($page['footer']):?>
     <?php print render($page['footer']);?>
 <?php endif;?>
+ <a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>

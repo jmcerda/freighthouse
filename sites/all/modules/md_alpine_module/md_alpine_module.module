@@ -215,7 +215,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="par_left">
                                         <big>What leads to an effective emotional design strategy?</big>
                                         <figure class="quote">
-                                            <p>"Creating user experiences that include beautiful aesthetics, gorgeous content and entice positive user interaction by fusing a sophisticated presentation layer with a workable personality layer."</p>
+                                            <p>"Creating user experiences that include beautiful aesthetics, gorgeous content, a sophisticated presentation layer and a workable personality layer."</p>
                                             <figcaption>- Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
                                         </figure>
                                         </span>
@@ -231,14 +231,11 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We exclusively work with and support organizations who beleive in investing in people and the creative arts as we strive to ensure that form expands function.</p>
                                             </p>
                                         </span>
-<<<<<<< HEAD
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
                                         <span>
                                             <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
                                         </span>
-=======
->>>>>>> a6d9cf573dc3b7e16d404f5ea204bc04ac4120bc
                                     </span>
                                 </div>
                             </div>
@@ -498,7 +495,7 @@ function md_alpine_module_block_view($delta = '') {
                                                 if($overview[$key]['icon']['icon'] != null && $overview[$key]['des'] != null) {
                                                     $block['content'] .= '
                                                         <div class="parallax-box fh_box">
-                                                            <a href="'.$overview[$key]['link'].'"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
+                                                            <a href="'.$overview[$key]['link'].'" class="int-collapse-menu"> <i class="'.$overview[$key]['icon']['bundle'].' '.$overview[$key]['icon']['icon'].' icon-4x"></i> <h4>'.$overview[$key]['title'].'</h4>
                                                             <p>
                                                                 '.$overview[$key]['des'].'
                                                             </p> </a>
@@ -526,7 +523,7 @@ function md_alpine_module_block_view($delta = '') {
                         $block['content'] .= 'parallax-background-color';
                     }
                     $block['content'] .= '">
-                    <div class="section-content" id="contact">
+                    <div class="section-content" >
                         <div class="container text-center">
                             <div class="item_right">
                                 <!-- Parallax title -->';
