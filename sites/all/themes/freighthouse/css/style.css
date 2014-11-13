@@ -2062,3 +2062,11 @@ p.lead.par_light {
 #contact{padding-bottom: 0;}
 #assoc{padding: 0;width: 320px;margin: 0 auto;}
 #assoc img{width:48%; }
+/* Request proposal CSS*/
+.page-type-webform .item_right{ right:-15px;}
+.page-type-webform .item_right form label{ font-size:14px; width: 15%;}
+.page-type-webform .item_right form input[type="text"]{ width: 62%;}
+.page-type-webform .item_right form select{ width: 62%;}
+.page-type-webform .item_right form .form-textarea-wrapper{ width: 62%;}
+.page-type-webform .item_right form .form-textarea-wrapper textarea{ width: 100%;}
+.page-type-webform .item_right form textarea{ width: 62%;}
