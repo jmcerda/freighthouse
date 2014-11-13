@@ -130,6 +130,7 @@ function freighthouse_menu_link(array $variables) {
 	  
 	  
 	  if (function_exists('context_active_contexts')) {
+			echo "function exist";
 			if ($contexts = context_active_contexts()) {
 				foreach ($contexts as $context) {
 					if ((isset($context->reactions['menu']))) {
@@ -142,7 +143,7 @@ function freighthouse_menu_link(array $variables) {
 				}
 			}
 		}
-			
+	  echo "function does not exist";		
       $element = $variables['element'];
       $sub_menu = '';
 
@@ -153,7 +154,7 @@ function freighthouse_menu_link(array $variables) {
 
       // if link class is active, make li class as active too
       if(strpos($output,"active")>0){
-          $element['#attributes']['class'][] = "active-john";
+          $element['#attributes']['class'][] = "active";
       }
       return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
   
