@@ -126,7 +126,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css', array('group' => CSS_THEME));
 
 
-function _menu_link(array $variables) {
+function freighthouse_menu_link(array $variables) {
 
       $element = $variables['element'];
       $sub_menu = '';
