@@ -99,8 +99,9 @@
     });
 
     function loadingJS() {
-        //Back To Top
+    //moving social icons    
     $("#socialMove").appendTo("#top-portfolio-social");
+    //Back To Top
         $(window).scroll(function() {
             if ($(window).scrollTop() > 400) {
                 $("#back-top").fadeIn(200);
@@ -377,7 +378,6 @@
         //moving number animation to overview
         $('#numberTarget').append( $('#numberMove') );
         //moving connect
-        //$('#socialTarget').append( $('#socialMove') );
         //moving marcom
         $('#marcomTarget').append( $('#marcomMove') );
 
