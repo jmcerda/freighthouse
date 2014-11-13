@@ -255,7 +255,7 @@ $databases = array (
       'prefix' => '',
     ),
     
-  /*
+    /*
 	array (
       'database' => 'db_freighthouse',
       'username' => 'root',
