@@ -122,4 +122,4 @@
 <?php endif; ?>
 
 </div><?php /* class view */ ?>
-
+<div id="top-portfolio-social" class="top-portfolio-social"></div>
