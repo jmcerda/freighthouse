@@ -126,9 +126,9 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css', array('group' => CSS_THEME));
 
 
-function freighthouse_menu_link(array $variables) {
+function _menu_link(array $variables) {
 
-  $element = $variables['element'];
+      $element = $variables['element'];
       $sub_menu = '';
 
       if ($element['#below']) {
@@ -141,6 +141,6 @@ function freighthouse_menu_link(array $variables) {
           $element['#attributes']['class'][] = "active-john";
       }
       return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-  }
+  
 
 }
