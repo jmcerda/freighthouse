@@ -100,7 +100,7 @@
 
     function loadingJS() {
         //Back To Top
-
+    $("#socialMove").appendTo("#top-portfolio-social");
         $(window).scroll(function() {
             if ($(window).scrollTop() > 400) {
                 $("#back-top").fadeIn(200);
