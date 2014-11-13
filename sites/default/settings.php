@@ -246,7 +246,6 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
-<<<<<<< HEAD
     
     /*
 	array (
@@ -259,8 +258,6 @@ $databases = array (
       'prefix' => '',
     ),
     */
-=======
->>>>>>> 02b613f2c910c973532231e92d6ada36a8253460
   ),
 );
 
