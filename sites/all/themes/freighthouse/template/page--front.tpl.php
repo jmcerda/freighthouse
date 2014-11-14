@@ -1,4 +1,3 @@
-
 <!-- Intro loader -->
 <div class="mask">
     <div id="intro-loader"></div>
