@@ -10,7 +10,10 @@
 	$("ul.navbar-nav li").each(function(){
 		var link = $(this).find("a");
 		link.removeClass("active");
+		
+		$(this).removeClass("active");
 		console.log(link);
+		
 		var href = link.attr('href');
 		if(href.search("#") != -1) {
 			var newHref = href.replace(basePath,'');
