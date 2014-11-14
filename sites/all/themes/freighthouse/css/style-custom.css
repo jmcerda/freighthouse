@@ -44,12 +44,15 @@
    }
     
 	/* added to fix css issue on front page consulting section parallax box*/
-   .parallax-box a:hover{ 
+   #consulting .parallax-box:hover{
+   	border:1px solid #7c7c7c !important; 
+   }
+   #consulting .parallax-box a:hover{ 
    	   background-color: transparent !important;
 	  -moz-border-radius:10px !important;
 	  -webkit-border-radius:10px !important;
 	  border-radius:10px !important;
-   	  border:1px solid #7c7c7c !important; 
+   	  border:0px!important; 
     }
   
 /*}*/
