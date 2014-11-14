@@ -8,7 +8,6 @@
         
         cursor: pointer;
         padding: 0px !important;
-		border:1px solid #7c7c7c !important;
         /*
         -webkit-perspective: 1000px;
    		-moz-perspective: 1000px;
@@ -30,7 +29,7 @@
   }
   .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span{
   	padding: 0px !important;
-	border:soild 1px !important;
+	border:1px solid #7c7c7c !important;
   }
 
   .mybutton input[type="submit"] {
