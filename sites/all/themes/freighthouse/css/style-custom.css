@@ -43,12 +43,7 @@
 	border:1px solid #7c7c7c !important;
    }
   
-  	/*
-  	width: 175px !important;
-  	height: 0px !important;
-  	display:block !important;
-  	margin: 0 auto !important;
-  	*/
+   .parallax-box a:hover{ border:0px !important;}
   
 /*}*/
 
