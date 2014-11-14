@@ -111,11 +111,11 @@
         });
         $('#back-top').click(function(event) {
             event.preventDefault();
-            $('body').stop().animate({
+            $('html, body').stop().animate({
                 scrollTop : 0
             }, 1500, 'easeInOutExpo');
 			//window.scroll(0, 0);
-			$("html, body").animate({ scrollTop: 0 }, 600);
+			//$("html, body").animate({ scrollTop: 0 }, 600);
         });
         //Elements Appear from top
 
