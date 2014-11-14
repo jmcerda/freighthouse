@@ -204,7 +204,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><br />
+                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><hr />
                                             <p>Graphic Arts, Illustration & Design</p>
                                             <p>Asset Production and Development</p>
                                             <p>Art Direction, Buying, and Consulting</p>
@@ -213,20 +213,20 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>3D & Animation</p>
                                         </span>
                                         <span class="par_left">
-                                        <big>What leads to an effective emotional design strategy?</big>
-                                        <figure class="quote">
-                                            <p>"Creating user experiences that include beautiful aesthetics, gorgeous content, a sophisticated presentation layer and a workable personality layer."</p>
-                                            <figcaption>- Jeremy Michael Cerda, <cite>Creative Director & Sr. Web Architect</cite></figcaption>
-                                        </figure>
+                                        <p>What leads to an effective emotional design strategy?</p>
+                                        <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
+                                            - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
+                                        </small>
                                         </span>
                                     </span>
                                     <span class="col-md-7 col-sm-12 col-xs-12">
                                         <span class="par_right">
                                         <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
+                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
-                                            <p>We are real artists who love to code as much as we love to paint, write or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
+                                            <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
                                             <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
                                             </p>
                                         </span>
@@ -350,7 +350,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </ul>
                                         </span>
                                         <span class="par_right">
-                                            <p><img style="width:80%" src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
+                                            <p><img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
                                         </span>
                                     </span>
                                 </div>
@@ -462,7 +462,8 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                                 <p style="color:#ffcc00">Communication & Stability</p>
                                             </big>
-                                            <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration so the team is in sync at all times.</p>
+                                            <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration - so the team is in sync at all times.</p>
+                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding,building, and launching your sites.</p>
                                         </span>
                                         <span class="par_right">
                                             <big>
