@@ -55,10 +55,8 @@ function md_alpine_preprocess_html(&$vars) {
     drupal_add_js($themepath . '/js/lib/jquery.validate.min.js');
     drupal_add_js($themepath . '/js/lib/portfolio_custom.js');    
     drupal_add_js($themepath . '/js/lib/retina-1.1.0.min.js');
+    drupal_add_js($themepath . '/js/script.js');
     drupal_add_js('http://maps.google.com/maps/api/js?sensor=false');
-	
-	$themepath = drupal_get_path('theme', 'freighthouse');
-	drupal_add_js($themepath . '/js/script.js');
 
     /* ------------------------- Add favicon Page ------------------------*/
     if (theme_get_setting('toggle_favicon') == 1) {
