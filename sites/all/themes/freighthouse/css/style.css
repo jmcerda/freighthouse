@@ -384,7 +384,7 @@ blockquote {
   text-align: center;
   vertical-align: middle;
 }
-
+.intro-video .start-button span{padding:0 30px;line-height:40px !important;font-size:15px !important;}
 .fullscreen-image {
   background-image: url('../img/video-bg.jpg');
     position: absolute;
@@ -403,7 +403,7 @@ blockquote {
 #video-controls {
     bottom: 1.5%;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -75px;
     position: absolute;
     width: 200px;
     z-index: 10;
