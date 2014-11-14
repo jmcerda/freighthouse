@@ -119,7 +119,7 @@
 
         $('.item_top').each(function() {
             $(this).appear(function() {
-                $(this).delay(150).animate({
+                $(this).delay(300).animate({
                     opacity : 1,
                     top : "0px"
                 }, 1000);
