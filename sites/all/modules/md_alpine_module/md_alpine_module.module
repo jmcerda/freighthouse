@@ -529,7 +529,7 @@ function md_alpine_module_block_view($delta = '') {
                             if(!empty($contact_icon_no1['bundle']) && !empty($contact_icon_no1['icon'])) {
                                 $block['content'] .= '<h1><i class="'.$contact_icon_no1['bundle'].' '.$contact_icon_no1['icon'].' icon-5x"></i></h1>';
                             }
-                            $block['content'] .= '<span class="call-number">'.theme_get_setting('pr_'.$i.'_contact_title_no1').'</span>
+                            $block['content'] .= '<a href="tel:'.theme_get_setting('pr_'.$i.'_contact_title_no1').'"><span class="call-number">'.theme_get_setting('pr_'.$i.'_contact_title_no1').'</span></a>
                                 <p class="lead">
                                     '.theme_get_setting('pr_'.$i.'_contact_des_no1').'
                                 </p>
