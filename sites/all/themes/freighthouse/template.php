@@ -123,4 +123,8 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 //   }
 // }
 
+/*css includes*/
 drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css', array('group' => CSS_THEME));
+
+/*js includes*/
+drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/script-freighthouse.js',  array('type' => 'file', 'scope' => 'footer'));

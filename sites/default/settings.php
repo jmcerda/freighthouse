@@ -237,6 +237,7 @@ $databases = array (
   'default' =>
   array (
     'default' =>
+    
     array (
       'database' => 'freighthouse',
       'username' => 'freighthouse',
@@ -245,10 +246,21 @@ $databases = array (
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
+    ), 
+    /*
+	array (
+      'database' => 'db_freighthouse',
+      'username' => 'root',
+      'password' => '',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
     ),
+   */  
   ),
 );
-
+//$conf['clean_url'] = 0;
 /**
  * Access control for update.php script.
  *
@@ -301,7 +313,7 @@ $drupal_hash_salt = 'ApVxFjp-K6Q4rvY5qLA68cPIAPVDfiPPwfOxUmW_SrU';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.example.com';  // NO trailing slash!
+ //$base_url = 'http://localhost/freighthouse';  // NO trailing slash!
 
 /**
  * PHP settings:
