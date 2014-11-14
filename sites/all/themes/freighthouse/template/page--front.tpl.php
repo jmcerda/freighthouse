@@ -26,9 +26,11 @@ drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
 
 <?php if($page['parallax_one']):?>
     <!-- Parallax Container -->
-        <div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <!--<div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">-->
+        <section id="consulting" class="section-content">
             <?php print render($page['parallax_one']);?>
-        </div>
+        </section>    
+        <!--</div>-->
     <!-- Parallax Container -->
 <?php endif;?>
 
