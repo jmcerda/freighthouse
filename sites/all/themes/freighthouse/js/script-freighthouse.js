@@ -1,6 +1,6 @@
  //john uncommented to make li element active on specific part of frontpage
  var basePath = Drupal.settings.basePath;
-  
+  console.log(basePath + " basepath");
  if($("body").hasClass("front")) {
 	$("ul.navbar-nav li").each(function(){
 		var link = $(this).find("a");
