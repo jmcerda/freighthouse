@@ -462,7 +462,8 @@ function md_alpine_module_block_view($delta = '') {
                                             <big>
                                                 <p style="color:#ffcc00">Communication & Stability</p>
                                             </big>
-                                            <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration so the team is in sync at all times.</p>
+                                            <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration - so the team is in sync at all times.</p>
+                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding,building, and launching your sites.</p>
                                         </span>
                                         <span class="par_right">
                                             <big>
