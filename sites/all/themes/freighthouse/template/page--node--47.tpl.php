@@ -8,7 +8,7 @@
             <div class="container">
             <?php endif;?>
                 <!-- Section title -->
-                <?php if(isset($node) && !empty($node->title)):?>
+                <?php /* if(isset($node) && !empty($node->title)):?>
                 <div class="section-title text-center">
                     <div>
                         <span class="line big"></span>
@@ -27,7 +27,7 @@
                         </p>
                     <?php endif;?>
                 </div>
-                <?php endif; ?>
+                <?php endif; */?>
                 <!-- Section title -->
                 <?php if(!$page['spb_enabled'] || $page['spb_enabled'] == FALSE):?>
                 <div class="row">
