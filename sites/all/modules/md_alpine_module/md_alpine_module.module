@@ -214,7 +214,7 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                         <span class="par_left">
                                         <p>What leads to an effective emotional design strategy?</p>
-                                        <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, a sophisticated presentation layer and a workable personality layer."<br />
+                                        <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                             - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
                                         </small>
                                         </span>
@@ -223,7 +223,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <span class="par_right">
                                         <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
-                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> in Miami Beach</i></small>
+                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
                                         </span>
                                         <span class="par_right" style="margin-top:25px">
                                             <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
@@ -350,7 +350,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </ul>
                                         </span>
                                         <span class="par_right">
-                                            <p><img style="width:80%" src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
+                                            <p><img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
                                         </span>
                                     </span>
                                 </div>
