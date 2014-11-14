@@ -344,7 +344,8 @@
          $(".comment-formular textarea").attr('class','form-control input-lg');
          }*/
         var basePath = Drupal.settings.basePath;
-         if($("body").hasClass("front")) {
+         //john uncommented to make li element active on specific part of frontpage
+		 if($("body").hasClass("front")) {
          $("ul.navbar-nav li").each(function(){
          var link = $(this).find("a");
          link.removeClass("active");
@@ -355,6 +356,7 @@
          }
          })
          }
+		 //end uncomment
         //Navigation Scrolling
         $(function() {
             $('#brand, .nav li a, a.start-button, a.fh_box, a.int-collapse-menu, a.int-collapse-menu, a.dropdown-toggle').bind('click', function(event) {
