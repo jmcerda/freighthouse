@@ -110,7 +110,7 @@
             }
         });
         $('#back-top').click(function(event) {
-            event.preventDefault();
+            //event.preventDefault();
             $('body').stop().animate({
                 scrollTop : 0
             }, 1500, 'easeInOutExpo');
