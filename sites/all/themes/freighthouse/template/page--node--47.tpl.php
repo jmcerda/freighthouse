@@ -80,9 +80,9 @@
             </div>
             <?php endif;?>
         </section>
-        <?php if($page['footer']):?>
+        <?php /* if($page['footer']):?>
             <?php print render($page['footer']);?>
-        <?php endif;?>
+        <?php endif; */?>
         <!-- Back to top -->
         <a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>
     </div>
