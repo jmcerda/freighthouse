@@ -1,3 +1,7 @@
+<?php
+drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
+?>
+
 <!-- Intro loader -->
 <div class="mask">
     <div id="intro-loader"></div>
@@ -138,6 +142,10 @@
     </section>
     <!-- Contact Section -->
 <?php endif;?>
+    <section id="assoc" class="section-content">
+        <img src="<?php echo path_to_theme()?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
+        <img src="<?php echo path_to_theme()?>/images/freelancersunion_member.png" alt="freelancer union"/>        
+    </section>
 
 <?php if($page['footer']):?>
     <?php print render($page['footer']);?>
