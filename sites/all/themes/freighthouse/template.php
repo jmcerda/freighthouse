@@ -125,10 +125,10 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 
 drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css', array('group' => CSS_THEME));
 
-
+/*
 function freighthouse_menu_link(array $variables) {
 	  
-	  /*
+	  
 	  if (function_exists('context_active_contexts')) {
 			echo "function exist";
 			if ($contexts = context_active_contexts()) {
@@ -158,6 +158,7 @@ function freighthouse_menu_link(array $variables) {
           $element['#attributes']['class'][] = "active";
       }
       return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-      */
+      
 
 }
+*/
