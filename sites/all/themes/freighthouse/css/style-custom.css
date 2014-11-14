@@ -44,6 +44,10 @@
    }
     
 	/* added to fix css issue on front page consulting section parallax box*/
+   #consulting .parallax-box a{
+   	 border:1px solid transparent  !important;
+   }
+   
    #consulting .parallax-box a:hover{ 
    	   background-color: transparent !important;
 	  -moz-border-radius:10px !important;
