@@ -2,9 +2,10 @@
 
   .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span, #user-login .mybutton button:hover span, #user-register-form .mybutton button:hover span {
         
-        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
-        -moz-transform: rotateX(90deg) translateY(-22px) !important;
-        transform: rotateX(90deg) translateY(-22px) !important;
+		
+        -webkit-transform: rotateX(90deg) translateY(-22px);
+        -moz-transform: rotateX(90deg) translateY(-22px);
+        transform: rotateX(90deg) translateY(-22px);
         
         cursor: pointer;
         padding: 0px !important;
@@ -38,7 +39,7 @@
   }
   
   /* add to override button border */
-  .section-title .lead strong, .progress .progress-bar, .nav-tabs > li > a, .parallax-box a:hover, .pager .puls > a:hover, .pricing-box .pricing-featured li.price-row, .pager .pagination li a:hover, .widget .widget-tag li a:hover, .hi-icon-effect-1 .hi-icon, .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .action .mybutton span input, .mybutton span input, .mybutton span:before, .action .mybutton span:before, .mybutton input[type="submit"], .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
+  .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
 	border:1px solid #7c7c7c !important;
    }
   
@@ -48,17 +49,18 @@
   	display:block !important;
   	margin: 0 auto !important;
   	*/
-  }
+  
 /*}*/
 
-/*
 @media (max-width: 767px) {
 
-  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
-        -webkit-transform: rotateX(90deg) translateY(-22px) !important;
-        -moz-transform: rotateX(90deg) translateY(-22px) !important;
-        transform: rotateX(90deg) translateY(-22px) !important;
+  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
         cursor: pointer;
+      
         
-  }
-}*/
+	}
+
+}
