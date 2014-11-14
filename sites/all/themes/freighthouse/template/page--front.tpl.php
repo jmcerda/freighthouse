@@ -1,6 +1,3 @@
-<?php
-drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
-?>
 
 <!-- Intro loader -->
 <div class="mask">
