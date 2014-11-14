@@ -111,7 +111,7 @@
         });
         $('#back-top').click(function(event) {
             event.preventDefault();
-            $('html, body').stop().animate({
+            $('body').stop().animate({
                 scrollTop : 0
             }, 1500, 'easeInOutExpo');
         });
