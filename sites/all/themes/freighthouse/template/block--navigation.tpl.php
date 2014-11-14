@@ -5,7 +5,7 @@ if(theme_get_setting('logo_normal_path')) {
 } else {
     $logo_path = $base_url.'/'.drupal_get_path('theme','md_alpine').'/img/logo.png';
 }
- $logo_path = $base_url.'/'.drupal_get_path('theme','freighthouse').'/img/fh_logo40.png';
+ $logo_path = $base_url.'/'.drupal_get_path('theme','freighthouse').'/images/fh_logo40.png';
 ?>
 <div id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-inner">
