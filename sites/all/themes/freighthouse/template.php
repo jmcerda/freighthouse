@@ -128,3 +128,6 @@ drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css
 
 /*js includes*/
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/script-freighthouse.js',  array('type' => 'file', 'scope' => 'footer'));
+$themepath = drupal_get_path('theme', 'freighthouse');
+drupal_add_js($themepath . '/js/script.js');
+drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
