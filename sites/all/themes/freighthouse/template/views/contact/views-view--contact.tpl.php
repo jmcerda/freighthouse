@@ -34,7 +34,15 @@
 </div>
 <?php endif;?>
 
-<canvas id="clockid" class="CoolClock"></canvas>
+<!-- clock time zone -->
+<div class="container">
+ <div class="section-title text-center">
+  <div class="item_fade_in" style="opacity: 1; right: 0px;">
+    <canvas id="clockid" class="CoolClock"></canvas>
+   </div>
+  </div>
+</div>
+        
 
 <!-- Google maps print -->
 <?php if(theme_get_setting('enable_map') == 1) :?>
