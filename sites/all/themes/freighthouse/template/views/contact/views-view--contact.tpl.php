@@ -38,27 +38,27 @@
 <div class="container">
  <div class="section-title text-center">
   <div class="item_fade_in" style="opacity: 1; right: 0px;">
-    <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="timezone_NYC" class="CoolClock:swissRail:80::-4 timeclock"></canvas>
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
+    	<canvas id="timezone_NYC" class="CoolClock:swissRail:80::-4"></canvas>
         <span>NYC</span>
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="timezone_MEX" class="CoolClock:swissRail:80::-6 timeclock"></canvas>
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
+    	<canvas id="timezone_MEX" class="CoolClock:swissRail:80::-6"></canvas>
         <span>MEX</span>
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="timezone_RU" class="CoolClock:swissRail:80::+7 timeclock"></canvas>
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
+    	<canvas id="timezone_RU" class="CoolClock:swissRail:80::+7"></canvas>
         <span>RU</span>
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="timezone_AMS" class="CoolClock:swissRail:80::+1 timeclock"></canvas>
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
+    	<canvas id="timezone_AMS" class="CoolClock:swissRail:80::+1"></canvas>
         <span>AMS</span>
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
     	<canvas id="timezone_MNL" class="CoolClock:swissRail:80::+8 timeclock"></canvas>
         <span>MNL</span>
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
     	<canvas id="timezone_IND" class="CoolClock:swissRail:80::+5 timeclock"></canvas>
         <span>IND</span>
     </div>
