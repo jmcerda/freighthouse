@@ -38,22 +38,22 @@
 <div class="container">
  <div class="section-title text-center">
   <div class="item_fade_in" style="opacity: 1; right: 0px;">
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_NYC" class="CoolClock:swissRail:80:-5"></canvas>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_MEX" class="CoolClock:swissRail:80:-6"></canvas>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_RU" class="CoolClock:swissRail:80:+7"></canvas>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_AMS" class="CoolClock:swissRail:80:+1"></canvas>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_MNL" class="CoolClock:swissRail:80:+8"></canvas>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="col-md-2 col-sm-2 col-xs-12">
     	<canvas id="timezone_IND" class="CoolClock:swissRail:80:+5"></canvas>
     </div>
    </div>
