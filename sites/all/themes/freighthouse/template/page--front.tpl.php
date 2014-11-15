@@ -134,7 +134,7 @@
     </div>
     <!-- Parallax Container -->
 <?php endif;?>
-
+<canvas id="clockid" class="CoolClock"></canvas>
 <?php if($page['contact']):?>
     <!-- Contact Section -->
     <section id="contact" class="section-content">
