@@ -41,37 +41,37 @@
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_NYC" class="CoolClock:freightHouse:80::-4"></canvas>
-            <div>-NYC-</div>
+            <div><h4>-NYC-</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MEX" class="CoolClock:freightHouse:80::-6"></canvas>
-            <div>-MEX-</div>
+            <div><h4>-MEX-</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_RU" class="CoolClock:freightHouse:80::+7"></canvas>
-            <div>-RU-</div>
+            <div><h4>-RU-</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_AMS" class="CoolClock:freightHouse:80::+1"></canvas>
-            <div>-AMS-</div>
+            <div><h4>-AMS-</h4></div>
         </div>    
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MNL" class="CoolClock:freightHouse:80::+8"></canvas>
-            <div>-MNL-</div>
+            <div><h4>-MNL-</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_IND" class="CoolClock:freightHouse:80::+5"></canvas>
-            <div>-IND-</div>
+            <div><h4>-IND-</h4></div>
         </div>
     </div>
   
