@@ -57,7 +57,8 @@
     }
   
 	.timeclock{display:table;}
-	.timeclock span{display:table-row;}
+	.timeclock span{display:table-row !important;}
+	
 @media (max-width: 767px) {
 
   .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
