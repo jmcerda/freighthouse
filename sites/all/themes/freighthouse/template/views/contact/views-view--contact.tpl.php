@@ -39,10 +39,10 @@
  <div class="section-title text-center">
   <div class="item_fade_in" style="opacity: 1; right: 0px;">
     <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="clockid" class="CoolClock"></canvas>
+    	<canvas id="timezone01" class="CoolClock"></canvas>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-12">
-    	<canvas id="clockid" class="CoolClock"></canvas>
+    	<canvas id="timezone02" class="CoolClock"></canvas>
     </div>
    </div>
   </div>
