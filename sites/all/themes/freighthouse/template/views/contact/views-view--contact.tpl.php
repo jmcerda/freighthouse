@@ -55,11 +55,11 @@
         <span>AMS</span>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
-    	<canvas id="timezone_MNL" class="CoolClock:swissRail:80::+8 timeclock"></canvas>
+    	<canvas id="timezone_MNL" class="CoolClock:swissRail:80::+8"></canvas>
         <span>MNL</span>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-12 timeclock">
-    	<canvas id="timezone_IND" class="CoolClock:swissRail:80::+5 timeclock"></canvas>
+    	<canvas id="timezone_IND" class="CoolClock:swissRail:80::+5"></canvas>
         <span>IND</span>
     </div>
    </div>
