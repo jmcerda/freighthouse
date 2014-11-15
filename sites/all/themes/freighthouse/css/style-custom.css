@@ -57,6 +57,7 @@
     }
   
 	.timeclock{display:table;}
+	.timeclock div{text-align:center !important;}
 	.timeclock span{display:table-row !important;}
 	
 @media (max-width: 767px) {
