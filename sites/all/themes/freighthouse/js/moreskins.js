@@ -7,7 +7,7 @@ CoolClock.config.skins = {
 		hourHand:         { lineWidth: 8, startAt: -15, endAt: 50, color: "black", alpha: 1 },
 		minuteHand:       { lineWidth: 7, startAt: -15, endAt: 75, color: "black", alpha: 1 },
 		secondHand:       { lineWidth: 1, startAt: -20, endAt: 85, color: "#ffcc00", alpha: 1 },
-		secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "red", color: "red", alpha: 1 }
+		secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "#ffcc00", color: "#ffcc00", alpha: 1 }
 	},
 	
 	swissRail: {
