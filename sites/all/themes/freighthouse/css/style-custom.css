@@ -64,8 +64,12 @@
 	.par_left{text-align:left !important;}
 	.par_right{text-align:left !important;}
 	.circ_counter_desc{text-align:left !important;}
-	.section-title.text-center{text-align:center !important;} /* if section title align center */
 	.text-center{text-align:left !important;}
+	/* don't align to left */
+	.section-title.text-center{text-align:center !important;} 
+	#six-parallax .text-center{text-align:center !important;}
+	#seven-parallax .text-center{text-align:center !important;}
+	
 	
 @media (max-width: 767px) {
 
