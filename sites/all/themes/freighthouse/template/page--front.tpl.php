@@ -24,7 +24,7 @@
     <!-- Parallax Container -->
         <!-- john commented and update into section to make the menu work and highlighted acoordingly-->
         <!--<div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">-->
-        <section id="consulting" class="section-content">
+        <section id="one-parallax consulting" class="parallax section-content" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
             <?php print render($page['parallax_one']);?>
         </section>    
         <!--</div>-->
