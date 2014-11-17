@@ -44,6 +44,10 @@
    }
     
 	/* added to fix css issue on front page consulting section parallax box*/
+   #consulting{
+   	 padding:0 !important;
+   }
+   
    #consulting .parallax-box a{
    	 border:1px solid transparent  !important;
    }
@@ -55,7 +59,8 @@
 	  border-radius:10px !important;
    	  border:1px solid #7c7c7c  !important; 
     }
-  
+   #consulting .parallax-overlay {padding: 90px 0 !important;}
+   
 	.timeclock{display:table;}
 	.timeclock div{text-align:center !important;}
 	.timeclock span{display:table-row !important;}
