@@ -5,6 +5,9 @@ base theme = md_alpine
 
 ; ; stylesheets[all][] = css/fh.css
 stylesheets[all][] = css/style.css
+scripts[] = js/excanvas.js
+scripts[] = js/moreskins.js
+scripts[] = js/coolclock.js
 
 settings[toggle_logo] = 1
 settings[toggle_name] = 1
