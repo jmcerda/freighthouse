@@ -60,9 +60,16 @@
 	.timeclock div{text-align:center !important;}
 	.timeclock span{display:table-row !important;}
 	
+	/* block content align left */
+	.par_left{text-align:left !important;}
+	.par_right{text-align:left !important;}
+	.circ_counter_desc{text-align:left !important;}
+	.section-title.text-center{text-align:center !important;} /* if section title align center */
+	.text-center{text-align:left !important;}
+	
 @media (max-width: 767px) {
 
-  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
+    .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
         -webkit-transform: none;
         -moz-transform: none;
         transform: none;
@@ -71,4 +78,15 @@
         
 	}
 
+}
+
+
+@media (max-width: 568px) {
+	
+	/* Block content center on smartphones */
+	.par_left{text-align:center !important;}
+	.par_right{text-align:center !important;}
+	.circ_counter_desc{text-align:center !important;}
+	.text-center{text-align:center !important;}
+	
 }
