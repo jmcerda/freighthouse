@@ -13,7 +13,7 @@ scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
 scripts[] = js/gk9qliwk.js
 scripts[] = js/excanvas.js
-scripts[] = js/moreskins.js
+;scripts[] = js/moreskins.js
 scripts[] = js/coolclock.js
 
 
