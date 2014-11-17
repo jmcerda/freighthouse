@@ -3,11 +3,18 @@ description = Subtheme for MD Alpine
 core = 7.x
 base theme = md_alpine
 
+; CSS INCLUDES
 ; ; stylesheets[all][] = css/fh.css
 stylesheets[all][] = css/style.css
-scripts[] = js/excanvas.js
-scripts[] = js/moreskins.js
+stylesheets[all][] = css/style-custom.css
+
+; JS INCLUDES
+scripts[] = js/script-freighthouse.js
+scripts[] = js/script.js
+scripts[] = js/gk9qliwk.js
 scripts[] = js/coolclock.js
+scripts[] = js/moreskins.js
+scripts[] = js/excanvas.js
 
 settings[toggle_logo] = 1
 settings[toggle_name] = 1
