@@ -1,20 +1,22 @@
 @media screen and (min-width:640px) and (max-width:767px){
     
-    #head_logo img{ width:100%;}
-    .section-title h1{ font-size:3em; }
-    .par_left{ width:100%;}
-    .par_right{ width:100%;}
-    .parallax-content .col-md-1{ width:33%;}
+    #head_logo img{ width:100%!important;}
+    .section-title h1{ font-size:3em!important; }
+    .par_left{ width:100%!important;}
+    .par_right{ width:100%!important;}
+    .parallax-content .col-md-1{ width:33%!important;}
     .element-line form{ width:90%; margin: 0 auto;}
-    .element-line form .row{ margin-left: 0px; margin-right: 0px;}
+    .element-line form .row{ margin-left: 0px!important; margin-right: 0px!important;}
 }
 @media screen and (min-width:320) and (max-width:639px){
-    #head_logo img{ width:100%;}
-    .section-title h1{ font-size:3em; }
-    .par_left{ width:100%;}
-    .par_right{ width:100%;}
-    .parallax-content .col-md-1{ width:33%;}
+    #head_logo img{ width:100%!important;}
+    .section-title h1{ font-size:1.5em!important; }
+    .par_left{ width:100%!important;}
+    .par_right{ width:100%!important;}
+    .parallax-content .col-md-1{ width:33%!important;}
     .element-line form{ width:90%; margin: 0 auto;}
-    .element-line form .row{ margin-left: 0px; margin-right: 0px;}
+    .element-line form .row{ margin-left: 0px!important; margin-right: 0px!important;}
+    .par_left > big {font-size: 0.8em!important;}
+    .call-number{ font-size: 47px!important;}
     
 }
