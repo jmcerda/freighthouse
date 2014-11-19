@@ -12,11 +12,10 @@ stylesheets[all][] = css/style-responsive.css
 ; JS INCLUDES
 scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
-; ; scripts[] = js/gk9qliwk.js
 scripts[] = js/excanvas.js
 ; ; scripts[] = js/moreskins.js
 scripts[] = js/coolclock.js
-scripts[] = http://cdn.sublimevideo.net/js/gk9qliwk.js
+; ; scripts[] = http://cdn.sublimevideo.net/js/gk9qliwk.js
 
 
 settings[toggle_logo] = 1

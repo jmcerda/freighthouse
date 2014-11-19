@@ -2095,3 +2095,6 @@ p.lead.par_light {
   border:1px solid #7c7c7c;
 }
 
+.center-override {
+  text-align: center !important;
+}
