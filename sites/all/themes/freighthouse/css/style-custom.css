@@ -62,7 +62,7 @@
 }
 /* block content align left */
 
-.par_left {
+/*.par_left {
     text-align: left !important;
 }
 .par_right {
@@ -73,7 +73,7 @@
 }
 .text-center {
     text-align: left !important;
-}
+}*/
 /* don't align to left */
 
 .section-title.text-center {
