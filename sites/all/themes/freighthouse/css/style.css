@@ -2035,7 +2035,7 @@ li.expanded, li.collapsed, li.leaf {
 }/* BACKGROUND STANDARD COLOR(RGBA) */
 
 .mybutton a span, .mybutton button span, .action .mybutton span, .form-actions .mybutton {
-  color: #cccccc;
+  color: #7c7c7c;
 }
 
 .form-item .description {
