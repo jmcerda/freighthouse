@@ -19,15 +19,15 @@
     .parallax_container_add .par_center {word-break: break-all;}
 }
 @media screen and (min-width:320px) and (max-width:639px){
-    #head_logo img{ width:100%!important;}
+/*    #head_logo img{ width:100%!important;}
     .section-title h1{ font-size:1.5em!important; }
     .par_left{ width:100%!important;}
     .par_right{ width:100%!important;}
     .par_right img{ width:100%!important;}
     .parallax-content .col-md-1{ width:33%!important;}
     .element-line form{ width:90%; margin: 0 auto;}
-    .element-line form .row{ margin-left: 0px!important; margin-right: 0px!important;}
-    .par_left > big {font-size: 0.8em!important;}
+    .element-line form .row{ margin-left: 0px!important; margin-right: 0px!important;}*/
+    /*.par_left > big {font-size: 0.8em!important;} */
     .call-number{ font-size: 47px!important;}
     .parallax_container_add .par_center {word-break: break-all;}
 
