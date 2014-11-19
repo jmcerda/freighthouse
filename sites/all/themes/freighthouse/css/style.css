@@ -410,7 +410,7 @@ blockquote {
 }
 #video-controls a {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 2px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 50%;
     color: #FFFFFF;
     cursor: pointer;
@@ -1598,7 +1598,7 @@ footer .social-icon a:hover {
     color: #FFF;
 }
 .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton {
-  color: #cccccc;
+  color: #7c7c7c;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -1900,7 +1900,7 @@ li.expanded, li.collapsed, li.leaf {
 
 .par_left {
   float: left;
-  text-align: center;
+  text-align: left;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   border-radius: 5px;
   padding: 25px;
@@ -1908,14 +1908,22 @@ li.expanded, li.collapsed, li.leaf {
   margin-bottom: 20px;
 }
 
-.par_right {
+.par_left big {
   text-align: center;
+}
+
+.par_right {
+  text-align: left;
   float: right;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
   border-radius: 5px;
   padding: 25px;
   color: #cccccc;
   margin-bottom: 20px;
+}
+
+.par_right big {
+  text-align: center;
 }
 
 .par_center {

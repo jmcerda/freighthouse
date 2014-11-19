@@ -1,5 +1,5 @@
 CoolClock.config.skins = {
-	
+
 	swissRail: {
 		outerBorder:      { lineWidth: 2, radius: 95, color: "black", alpha: 1 },
 		smallIndicator:   { lineWidth: 2, startAt: 88, endAt: 92, color: "black", alpha: 1 },

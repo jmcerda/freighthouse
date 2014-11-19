@@ -99,8 +99,8 @@
     });
 
     function loadingJS() {
-    //moving social icons    
-    $("#socialMove").appendTo("#top-portfolio-social");
+    //moving social icons
+    // $("#socialMove").appendTo("#top-portfolio-social");
     //Back To Top
         $(window).scroll(function() {
             if ($(window).scrollTop() > 400) {
