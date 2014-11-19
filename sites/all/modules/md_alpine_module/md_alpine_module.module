@@ -212,7 +212,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Audio & Video Production</p>
                                             <p>3D & Animation</p>
                                         </span>
-                                        <span class="par_left center-override">
+                                        <span class="par_left">
                                         <p>What leads to an effective emotional design strategy?</p>
                                         <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                             - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
