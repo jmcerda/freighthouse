@@ -2058,10 +2058,13 @@ p.lead.par_light {
   --webkit-border-radius: 5px;
   margin-bottom: 25px;
 }
+
 /*Member Association logos*/
 #contact{padding-bottom: 0;}
 #assoc{padding: 0;width: 320px;margin: 0 auto;}
-#assoc img{width:48%; }
+#assoc img{width:48%;
+}
+
 /* Request proposal CSS*/
 .page-type-webform .item_right .form-item{ clear:both;}
 .page-type-webform .item_right{ right:-15px;}
