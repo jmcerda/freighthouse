@@ -62,13 +62,13 @@
 }
 /* block content align left */
 
-/*.par_left {
+.par_left {
     text-align: left !important;
 }
 .par_right {
     text-align: left !important;
 }
-.circ_counter_desc {
+/*.circ_counter_desc {
     text-align: left !important;
 }
 .text-center {
