@@ -6,8 +6,8 @@ a, .section-title h1 i, .pricing-box li h1, .slide-content h1 strong, .timeline-
 	background-color: transparent;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
-  border-radius:10px;
-  border:2px solid #7c7c7c;
+  border-radius:5px;
+  border:1px solid #7c7c7c;
 }/* BACKGROUND STANDARD COLOR */
 
 .nav-tabs > li > a, .form-group .form-control.error, .form-group .form-control.error:focus {
