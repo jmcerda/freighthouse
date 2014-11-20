@@ -247,7 +247,7 @@ function md_alpine_module_block_view($delta = '') {
 
                             foreach($connect as $key => $value) {
                                 $block['content'] .= '<!-- Link item -->
-                                    <div class="col-md-6 col-sm-3 col-xs-3">
+                                    <div class="col-md-1 col-sm-2 col-xs-2">
                                         <div class="element-line">
                                             <div class="item_top">';
                                 if(isset($connect[$key]['icon'])) {
