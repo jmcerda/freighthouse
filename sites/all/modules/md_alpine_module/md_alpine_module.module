@@ -247,7 +247,7 @@ function md_alpine_module_block_view($delta = '') {
 
                             foreach($connect as $key => $value) {
                                 $block['content'] .= '<!-- Link item -->
-                                    <div class="col-md-1 col-sm-2 col-xs-2">
+                                    <div class="col-md-6 col-sm-3 col-xs-3">
                                         <div class="element-line">
                                             <div class="item_top">';
                                 if(isset($connect[$key]['icon'])) {
@@ -349,8 +349,8 @@ function md_alpine_module_block_view($delta = '') {
                                                 <li>No recruiting fees...ever.</li>
                                             </ul>
                                         </span>
-                                        <span class="par_right lazy">
-                                            <p><img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
+                                        <span>
+                                            <img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png">
                                         </span>
                                     </span>
                                 </div>
@@ -472,7 +472,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>We work remotely however we can arrange for on-site assistance at your location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
-                                                <p>Our reach so far:</p>
+                                                <center>Our reach so far:</center>
                                             </div>
                                             <div id="numberTarget">
                                             </div>
