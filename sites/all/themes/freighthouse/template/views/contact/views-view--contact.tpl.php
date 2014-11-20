@@ -41,43 +41,43 @@
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:freightHouse:40::-8:00"></canvas>
-            <div><h4>SFO</h4></div>
+            <p>SFO</p>
         </div>
     </div>
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MCI" class="CoolClock:freightHouse:40::-6"></canvas>
-            <div><h4>MCI</h4></div>
+            <p>MCI</p>
         </div>
     </div>
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MEX" class="CoolClock:freightHouse:40::-6"></canvas>
-            <div><h4>MEX</h4></div>
+            <p>MEX</p>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+<!--     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_WAS" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>WAS</h4></div>
+            <p>WAS</p>
         </div>
-    </div>
+    </div> -->
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>NYC</h4></div>
+            <p>NYC</p>
         </div>
     </div>
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_AMS" class="CoolClock:freightHouse:40::+1"></canvas>
-            <div><h4>AMS</h4></div>
+            <p>AMS</p>
         </div>
     </div>
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MNL" class="CoolClock:freightHouse:40::+8"></canvas>
-            <div><h4>MNL</h4></div>
+            <p>MNL</p>
         </div>
     </div>
   </div>
