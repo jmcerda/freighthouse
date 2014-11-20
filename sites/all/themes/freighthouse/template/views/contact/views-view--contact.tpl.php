@@ -76,7 +76,7 @@
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_IND" class="CoolClock:freightHouse:40::+5"></canvas>
+            <canvas id="timezone_IND" class="CoolClock:freightHouse:40::+5:30"></canvas>
             <div><h4>DEL</h4></div>
         </div>
     </div>
