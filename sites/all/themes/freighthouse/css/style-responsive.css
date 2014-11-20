@@ -405,4 +405,7 @@ Author URI: http://themeforest.net/user/creativeispiration
     .post-info .text-center {
         display: none;
     }
+    .timeclock {
+        display: none;
+    }
 }
