@@ -26,7 +26,7 @@
         <div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <section id="consulting" class="section-content">
             <?php print render($page['parallax_one']);?>
-        </section>    
+        </section>
         </div>
         <!-- end john comment-->
     <!-- Parallax Container -->
@@ -143,8 +143,8 @@
     <!-- Contact Section -->
 <?php endif;?>
     <section id="assoc" class="section-content">
-        <img src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
-        <img src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>        
+        <img class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
+        <img class="lazy src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>
     </section>
 
 <?php if($page['footer']):?>
