@@ -417,13 +417,13 @@ blockquote {
     display: inline-block;
     font-family: 'fontello';
     font-size: 14px;
-    height: 40px;
-    line-height: 36px;
+    height: 30px;
+    line-height: 30px;
     margin: 4px;
     opacity: 0.5;
     text-align: center;
     text-decoration: none;
-    width: 40px;
+    width: 30px;
 
 }
 
