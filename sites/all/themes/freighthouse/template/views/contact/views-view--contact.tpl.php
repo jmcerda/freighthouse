@@ -40,19 +40,19 @@
 
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-5"></canvas>
+            <canvas id="timezone_NYC" class="CoolClock:simple:40::-5"></canvas>
             <div><h4>NYC</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_MCI" class="CoolClock:freightHouse:40::-6"></canvas>
+            <canvas id="timezone_MCI" class="CoolClock:simple:40::-6"></canvas>
             <div><h4>MCI</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_MEX" class="CoolClock:freightHouse:40::-6"></canvas>
+            <canvas id="timezone_MEX" class="CoolClock:simple:40::-6"></canvas>
             <div><h4>MEX</h4></div>
         </div>
     </div>
@@ -64,19 +64,19 @@
     </div> -->
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_AMS" class="CoolClock:freightHouse:40::+1"></canvas>
+            <canvas id="timezone_AMS" class="CoolClock:simple:40::+1"></canvas>
             <div><h4>AMS</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_MNL" class="CoolClock:freightHouse:40::+8"></canvas>
+            <canvas id="timezone_MNL" class="CoolClock:simple:40::+8"></canvas>
             <div><h4>MNL</h4></div>
         </div>
     </div>
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_IND" class="CoolClock:freightHouse:40::+5:30"></canvas>
+            <canvas id="timezone_IND" class="CoolClock:simple:40::+5:30"></canvas>
             <div><h4>DEL</h4></div>
         </div>
     </div>
