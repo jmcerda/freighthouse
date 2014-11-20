@@ -27,12 +27,13 @@
  * @ingroup views_templates
  */
 ?>
-<?php if(isset( $view->result[0])) : $view_result = $view->result[0];?>
+
+<!-- <?php if(isset( $view->result[0])) : $view_result = $view->result[0];?>
 <div class="section-title text-center">
     <?php if(isset($view_result)) : print $view_result->node_title; endif;?>
     <br>
 </div>
-<?php endif;?>
+<?php endif;?> -->
 
 <!-- clock time zone -->
 <div class="parallax-content">
