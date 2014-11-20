@@ -74,11 +74,9 @@
                             </div>
                         </div>
                     </div>
-                    --> 
+                    -->
                 <?php endif;?>
-            <?php if($page['spb_enabled'] == FALSE):?>
-            </div>
-            <?php endif;?>
+                </div>
         </section>
         <?php /* if($page['footer']):?>
             <?php print render($page['footer']);?>
