@@ -29,12 +29,12 @@ CoolClock.config = {
 		// There are more skins in moreskins.js
 		// Try making your own skin by copy/pasting one of these and tweaking it
 		freightHouse: {
-			outerBorder:      { lineWidth: 1, radius: 95, color: "#7c7c7c", alpha: .8 },
+			outerBorder:      { lineWidth: 1, radius: 95, color: "#7c7c7c", alpha: .9 },
 			// smallIndicator:   { lineWidth: 1, startAt: 88, endAt: 92, color: "#ffcc00", alpha: 1 },
-			largeIndicator:   { lineWidth: 2, startAt: 79, endAt: 92, color: "#7c7c7c", alpha: .8 },
-			hourHand:         { lineWidth: 4, startAt: -15, endAt: 50, color: "#7c7c7c", alpha: .8 },
-			minuteHand:       { lineWidth: 4, startAt: -15, endAt: 75, color: "#7c7c7c", alpha: .8 },
-			secondHand:       { lineWidth: 1, startAt: -20, endAt: 85, color: "#ffcc00", alpha: .8 },
+			largeIndicator:   { lineWidth: 2, startAt: 79, endAt: 92, color: "#7c7c7c", alpha: .9 },
+			hourHand:         { lineWidth: 4, startAt: -15, endAt: 50, color: "#7c7c7c", alpha: .9 },
+			minuteHand:       { lineWidth: 4, startAt: -15, endAt: 75, color: "#7c7c7c", alpha: .9 },
+			secondHand:       { lineWidth: 1, startAt: -20, endAt: 85, color: "#ffcc00", alpha: .9 },
 			// secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "#ffcc00", color: "#ffcc00", alpha: 1 }
 		},
 		swissRail: {
