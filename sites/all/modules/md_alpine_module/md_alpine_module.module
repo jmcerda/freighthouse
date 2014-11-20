@@ -349,7 +349,7 @@ function md_alpine_module_block_view($delta = '') {
                                                 <li>No recruiting fees...ever.</li>
                                             </ul>
                                         </span>
-                                        <span class="par_right">
+                                        <span class="par_right lazy">
                                             <p><img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
                                         </span>
                                     </span>
@@ -408,7 +408,7 @@ function md_alpine_module_block_view($delta = '') {
                             foreach ($customer as $key => $value){
                                 $block['content'] .= '<!-- Client item -->
                                     <div class="item">
-                                        <a href="'.$customer[$key]['link'].'" class="zoom"> <img class="img-responsive client-logo" src="'.md_alpine_theme_setting_check_path($customer[$key]['image']).'" alt=""/> </a>
+                                        <a href="'.$customer[$key]['link'].'" class="zoom"> <img class="img-responsive lazy client-logo" src="'.md_alpine_theme_setting_check_path($customer[$key]['image']).'" alt=""/> </a>
                                     </div>
                                     <!-- Client item -->';
                             }

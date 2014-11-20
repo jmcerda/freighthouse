@@ -53,7 +53,7 @@ $social = $row->field_field_location_socials;
                         </div>
                     </div>
                 </div>
-                <img src="<?php print image_style_url('location_thumbnail',$row->field_field_location_thumbnail[0]['rendered']['#item']['uri']);?>" alt="" class="img-responsive">
+                <img src="<?php print image_style_url('location_thumbnail',$row->field_field_location_thumbnail[0]['rendered']['#item']['uri']);?>" alt="" class="img-responsive lazy">
             </div>
         </div>
     </div>

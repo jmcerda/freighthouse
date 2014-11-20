@@ -35,7 +35,7 @@
             <div class="pull-left rotate">
                 <?php
                     if($thumbnail != null) {
-                        print '<img class="media-object img-circle" src="'.image_style_url('about_us_thumbnail',$thumbnail[0]['rendered']['#item']['uri']).'" alt=""/>';
+                        print '<img class="media-object img-circle lazy" src="'.image_style_url('about_us_thumbnail',$thumbnail[0]['rendered']['#item']['uri']).'" alt=""/>';
                     }
                 ?>
             </div>
