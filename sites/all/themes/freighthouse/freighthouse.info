@@ -15,7 +15,7 @@ scripts[] = js/script.js
 scripts[] = js/excanvas.js
 ; ; scripts[] = js/moreskins.js
 scripts[] = js/coolclock.js
-; ; scripts[] = http://cdn.sublimevideo.net/js/gk9qliwk.js
+scripts[] = js/lazyload.js
 
 
 settings[toggle_logo] = 1
