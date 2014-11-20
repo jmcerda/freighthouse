@@ -40,7 +40,7 @@
 
     <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
     	<div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-4"></canvas>
+            <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-5"></canvas>
             <div><h4>NYC</h4></div>
         </div>
     </div>
