@@ -38,13 +38,11 @@
 <!-- clock time zone -->
 <div class="parallax-content">
  <div class="row">
-    <div class="col-md-2 col-sm-4 col-xs-12 timeclock">
+    <div class="col-md-6 col-sm-4 col-xs-2 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:simple:40::-8:00"></canvas>
             <div><h4>SFO</h4></div>
         </div>
-    </div>
-    <div class="col-md-6 col-sm-4 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MCI" class="CoolClock:simple:40::-6"></canvas>
             <div><h4>MCI</h4></div>
