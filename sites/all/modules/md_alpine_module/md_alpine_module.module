@@ -204,7 +204,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left center-override">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><hr />
+                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
                                             <p>Graphic Arts, Illustration & Design</p>
                                             <p>Asset Production and Development</p>
                                             <p>Art Direction, Buying, and Consulting</p>
@@ -221,7 +221,7 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-7 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
+                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
                                         </video>
                                         <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
                                         </span>

@@ -2058,6 +2058,7 @@ p.lead.par_light {
   border-radius: 5px;
   --webkit-border-radius: 5px;
   margin-bottom: 25px;
+  max-width: 100%;
 }
 
 /*Member Association logos*/
