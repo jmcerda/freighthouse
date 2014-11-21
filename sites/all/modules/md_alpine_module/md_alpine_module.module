@@ -202,39 +202,33 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
-                                    <span class="col-md-5 col-sm-12 col-xs-12">
-                                        <span class="par_left center-override">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
-                                            <p>Graphic Arts, Illustration & Design</p>
-                                            <p>Asset Production and Development</p>
-                                            <p>Art Direction, Buying, and Consulting</p>
-                                            <p>UX and Interaction Design</p>
-                                            <p>Audio & Video Production</p>
-                                            <p>3D & Animation</p>
-                                        </span>
-                                        <span class="par_left">
+                                    <span class="col-md-5 col-sm-12 col-xs-12 par_left center-override">
+                                        <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
+                                        <p>Graphic Arts, Illustration & Design</p>
+                                        <p>Asset Production and Development</p>
+                                        <p>Art Direction, Buying, and Consulting</p>
+                                        <p>UX and Interaction Design</p>
+                                        <p>Audio & Video Production</p>
+                                        <p>3D & Animation</p>
+                                    </span>
+                                    <span class="col-md-5 col-sm-12 col-xs-12 par_left">
                                         <p>What leads to an effective emotional design strategy?</p>
                                         <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                             - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
                                         </small>
-                                        </span>
                                     </span>
-                                    <span class="col-md-7 col-sm-12 col-xs-12">
-                                        <span class="par_right">
+                                    <span class="col-md-7 col-sm-12 col-xs-12 par_right">
                                         <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="585" height="329" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
                                         </video>
-                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
-                                        </span>
-                                        <span class="par_right" style="margin-top:25px">
-                                            <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
-                                            <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
-                                            </p>
-                                        </span>
+                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i>
+                                        </small>
+                                    </span>
+                                    <span class="col-md-7 col-sm-12 col-xs-12 par_right" style="margin-top:25px">
+                                        <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
+                                        <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
-                                        <span>
                                             <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
-                                        </span>
                                     </span>
                                 </div>
                             </div>
