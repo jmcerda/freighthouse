@@ -348,7 +348,7 @@ function md_alpine_module_block_view($delta = '') {
                                             </ul>
                                         </span>
                                         <span>
-                                            <img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png">
+                                            <img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png" style="max-width:100%">
                                         </span>
                                     </span>
                                 </div>
