@@ -239,7 +239,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div id="socialMove">
-                            <div class="parallax-content social-link">
+                            <div class="parallax-content social-link mobile-hide">
                                 <div class="row">';
                             $connect = theme_get_setting('pr_'.$i.'_connect');
 

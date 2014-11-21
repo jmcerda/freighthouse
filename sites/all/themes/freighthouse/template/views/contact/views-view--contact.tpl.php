@@ -36,7 +36,7 @@
 <?php endif;?> -->
 
 <!-- clock time zone -->
-<div class="parallax-content">
+<div class="parallax-content mobile-hide">
  <div class="row">
     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">

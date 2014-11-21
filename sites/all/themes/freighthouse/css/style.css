@@ -565,7 +565,7 @@ div.mc-image {
 
 #portfolio-wrap {
   list-style: none;
-  margin: 0;
+  margin: -90px 0;
   padding: 0;
   overflow: hidden;
 }
@@ -960,7 +960,7 @@ body.front #ajaxpage {
   right: 100%;
 }
 .action {
-  margin-top: 50px;
+  margin: 20px 0;
 }
 
 /* ##### PARALLAX AREA ##### */
