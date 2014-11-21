@@ -143,10 +143,8 @@
     <!-- Contact Section -->
 <?php endif;?>
     <section id="assoc" class="section-content">
-        <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
             <img class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12">
             <img class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>
         </div>
     </section>
