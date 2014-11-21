@@ -202,8 +202,7 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax Body -->
                             <div style ="container">
                                 <div class="parallax_container_add">
-                                    <span class="col-md-5 col-sm-12 col-xs-12">
-                                        <span class="par_left center-override">
+                                    <span class="col-md-5 col-sm-12 col-xs-12 par_left center-override">
                                             <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
                                             <p>Graphic Arts, Illustration & Design</p>
                                             <p>Asset Production and Development</p>
@@ -211,7 +210,8 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>UX and Interaction Design</p>
                                             <p>Audio & Video Production</p>
                                             <p>3D & Animation</p>
-                                        </span>
+                                    </span>
+                                    <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left"
                                             <p>What leads to an effective emotional design strategy?</p>
                                             <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
