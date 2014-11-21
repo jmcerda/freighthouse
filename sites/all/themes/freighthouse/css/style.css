@@ -1943,6 +1943,7 @@ li.expanded, li.collapsed, li.leaf {
 .parallax_container_add {
   width: 100%;
   display: inline-block;
+  margin-top: 40px;
 }
 
 .about_image {

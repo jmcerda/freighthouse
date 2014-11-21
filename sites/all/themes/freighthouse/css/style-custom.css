@@ -63,6 +63,7 @@
 
 .timeclock h4 {
   font-weight: 200;
+  color:#7c7c7c;
 }
 
 .section-title.text-center {
@@ -90,4 +91,8 @@ footer.text-center {
 
 .webform-client-form-1 {
   margin-top: 0px;
+}
+
+.cboxClose {
+  display: none;
 }

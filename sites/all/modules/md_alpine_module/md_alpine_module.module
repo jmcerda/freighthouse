@@ -336,7 +336,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <a href="#5ciBJeqsBh0" class="sublime" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit">
                                                 &gt; Watch the video
                                             </a>
-                                            <video id="5ciBJeqsBh0" width="640" height="360" title="Pantheon One" style="display:none" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
+                                            <video id="5ciBJeqsBh0" title="Pantheon One" style="display:none;max-dth=100%;" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
                                             </video>
                                         </span>
                                     </span>
@@ -463,13 +463,13 @@ function md_alpine_module_block_view($delta = '') {
                                                 <p style="color:#ffcc00">Communication & Stability</p>
                                             </big>
                                             <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration - so the team is in sync at all times.</p>
-                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding,building, and launching your sites.</p>
+                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding, building, and launching your sites.</p>
                                         </span>
                                         <span class="par_right">
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
                                             </big>
-                                            <p>We work remotely however we can arrange for on-site assistance at your location - worldwide.</p>
+                                            <p>We work remotely however we can arrange for on-site assistance at any location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
                                                 <center>Our reach so far:</center>
