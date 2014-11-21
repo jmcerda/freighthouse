@@ -213,8 +213,10 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Audio & Video Production</p>
                                             <p>3D & Animation</p>
                                         </span>
+                                    </span>
+                                    <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                        <p>What leads to an effective emotional design strategy?</p>
+                                        <p>What leads to an effective design strategy?</p>
                                         <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                             - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
                                         </small>
@@ -226,6 +228,8 @@ function md_alpine_module_block_view($delta = '') {
                                         </video>
                                         <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
                                         </span>
+                                    </span>
+                                    <span class="col-md-7 col-sm-12 col-xs-12">
                                         <span class="par_right" style="margin-top:25px">
                                             <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
                                             <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
