@@ -1897,6 +1897,7 @@ li.expanded, li.collapsed, li.leaf {
   padding: 25px;
   color: #cccccc;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .par_left big {
@@ -1911,6 +1912,7 @@ li.expanded, li.collapsed, li.leaf {
   padding: 25px;
   color: #cccccc;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .par_right big {
