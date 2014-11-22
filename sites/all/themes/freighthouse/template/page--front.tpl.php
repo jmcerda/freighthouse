@@ -143,15 +143,15 @@
     <!-- Contact Section -->
 <?php endif;?>
     <div class="footer">
-        <div class="col-lg-3 text-center">
+        <div class="col-lg-2 text-center">
             <img class="lazy mobile-hide" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
         </div>
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-8 col-sm-12">
             <?php if($page['footer']):?>
                 <?php print render($page['footer']);?>
             <?php endif;?>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
             <img class="lazy mobile-hide" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>
         </div>
     </div>
