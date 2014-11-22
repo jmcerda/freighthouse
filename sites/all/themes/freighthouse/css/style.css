@@ -2072,6 +2072,16 @@ p.lead.par_light {
   text-align: center;
 }*/
 
+#assoc-left {
+  display: block;
+  float: right;
+}
+
+#assoc-right {
+  display: block;
+  float: left;
+}
+
 /* Request proposal CSS*/
 .page-type-webform .item_right .form-item{ clear:both;}
 .page-type-webform .item_right{ right:-15px;}
