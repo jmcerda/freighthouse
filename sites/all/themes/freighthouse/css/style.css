@@ -2064,9 +2064,14 @@ p.lead.par_light {
 }
 
 /*Member Association logos*/
-#contact{padding-bottom: 0;}
-#assoc{padding: 0;width: 320px;margin: 0 auto;}
-#assoc img{width:48%;
+#contact{
+  padding-bottom: 0;
+}
+#assoc {
+  padding: 0;
+  margin: 0 auto;
+  max-width:33%;
+  text-align: center;
 }
 
 /* Request proposal CSS*/
