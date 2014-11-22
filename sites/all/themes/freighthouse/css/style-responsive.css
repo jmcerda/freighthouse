@@ -402,9 +402,6 @@ Author URI: http://themeforest.net/user/creativeispiration
 }
 
 @media (max-width: 768px) {
-    .post-info .text-center {
-        display: none;
-    }
     .mobile-hide {
         display: none;
     }
