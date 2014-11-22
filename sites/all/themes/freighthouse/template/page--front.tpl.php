@@ -143,7 +143,7 @@
     <!-- Contact Section -->
 <?php endif;?>
     <div class="footer">
-        <div id="assoc" class="col-md-4">
+        <div class="col-md-4 text-center">
             <img class="lazy mobile-hide" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
         </div>
         <div class="col-md-4 col-sm-12">
@@ -151,7 +151,7 @@
                 <?php print render($page['footer']);?>
             <?php endif;?>
         </div>
-        <div id="assoc" class="col-md-4">
+        <div class="col-md-4 text-center">
             <img class="lazy mobile-hide" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>
         </div>
     </div>

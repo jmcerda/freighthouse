@@ -2067,10 +2067,10 @@ p.lead.par_light {
 #contact{
   padding-bottom: 0;
 }
-#assoc {
+/*#assoc {
   max-width:33%;
   text-align: center;
-}
+}*/
 
 /* Request proposal CSS*/
 .page-type-webform .item_right .form-item{ clear:both;}
