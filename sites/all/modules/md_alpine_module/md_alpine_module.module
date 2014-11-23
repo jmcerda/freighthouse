@@ -188,7 +188,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left center-override">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
+                                            <big style="color:#ffcc00">Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
                                             <p>Graphic Arts, Illustration & Design</p>
                                             <p>Asset Production and Development</p>
                                             <p>Art Direction, Buying, and Consulting</p>
@@ -197,7 +197,7 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>3D & Animation</p>
                                         </span>
                                         <span class="par_left"
-                                            <p>What leads to an effective emotional design strategy?</p>
+                                            <p style="color:#ffcc00"><i>What leads to an effective emotional design strategy?</i></p>
                                             <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                                 - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
                                             </small>
@@ -309,8 +309,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>
-                                                <p style="color:#d8d8d8">The battle between marketing and IT is over.</p>
+                                            <big style="color:#ffcc00">The battle between marketing and IT is over.</big>
                                             </big>
                                             <p>Never again be a hostage of your IT department...</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
