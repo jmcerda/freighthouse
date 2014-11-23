@@ -109,19 +109,15 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>You cannot simply rely on keyword metrics anymore!</p>
                                             <p>We focus on key performance indicators such as conversion rates and user interaction data, gaining insight into your campaigns to help you make decsisions that really matter.</p>
                                         <big style="color:#ffcc00">Mobile Analytics & Marketing</big>
-                                            <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
                                     </span>
                                 </span>
                                 <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
                                     <big style="color:#ffcc00">Data & Analytics</big>
-                                    <big>Project Performance</big>
-                                    <big>Easy to read analytics</big>
-                                        <p>With advances presentation and visualizations you can get a birds eye view of user engagement, collect deep real time analysis and instantly react to customer trends.</p>
-                                        <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
-                                        <big>Social Strategies</big>
-                                        <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
-                                        <big>Live Event Marketing</big>
+                                        <p>Learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                        <p>Easily analyze and monitor project performance and learn just how users engage with your brand.</p>
+                                        <p>With advances presentation and visualizations you can get a birds eye view of user engagement while collecting deep real time analysis so you can quickly react to customer trends.</p>
+                                        <p>Interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
                                     <span id="marcomTarget" class="par_right">
                                     </span>
