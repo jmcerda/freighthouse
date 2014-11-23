@@ -103,21 +103,18 @@ function md_alpine_module_block_view($delta = '') {
                                     <span class="par_left">
                                         <big style="color:#ffcc00">Interaction Design Strategy</big>
                                             <p>Know what your clients want and understand how to give it to them.</p>
-                                            <p> We find exactly what exictes your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics.</p>
-                                            <p>Create individual and personalized user experiences based on behaviour and preference data.</p>
+                                            <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics.</p>
                                         <big style="color:#ffcc00">Lead generation and conversion rate optimization</big>
                                             <p>You cannot simply rely on keyword metrics anymore!</p>
                                             <p>We focus on key performance indicators such as conversion rates and user interaction data, gaining insight into your campaigns to help you make decsisions that really matter.</p>
-                                        <big style="color:#ffcc00">Mobile Analytics & Marketing</big>
                                     </span>
                                 </span>
                                 <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
                                     <big style="color:#ffcc00">Data & Analytics</big>
                                         <p>Learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
-                                        <p>Easily analyze and monitor project performance and learn just how users engage with your brand.</p>
-                                        <p>With advances presentation and visualizations you can get a birds eye view of user engagement while collecting deep real time analysis so you can quickly react to customer trends.</p>
-                                        <p>Interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
+                                        <p>We help you analyze and monitor project performance to learn just how users engage with your brand and easily.</p>
+                                        <p>Our advances in metric presentation and visualization give you a birds eye view of user engagement while collecting deep real time analysis - so you can quickly react to customer trends and create individual and personalized user experiences based on behaviour and preference data, while interpreting complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
                                     <span id="marcomTarget" class="par_right">
                                     </span>
