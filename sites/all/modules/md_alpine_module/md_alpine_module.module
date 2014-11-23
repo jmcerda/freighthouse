@@ -323,7 +323,7 @@ function md_alpine_module_block_view($delta = '') {
                                         </span>
                                     </span>
                                     <span class="col-md-4 col-sm-12 col-xs-12">
-                                        <span class="par_right center-override">
+                                        <span class="par_right">
                                             <ul style="list-style-type: none;">
                                                 <li>Seamless architecutre</li>
                                                 <li>Complete accountability</li>
