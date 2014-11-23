@@ -103,7 +103,7 @@ function md_alpine_module_block_view($delta = '') {
                                     <span class="par_left">
                                         <big style="color:#ffcc00">Interaction Design Strategy</big>
                                         <p>Know what your clients want and understand how to give it to them.</p>
-                                        <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics.</p>
+                                        <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics and usability testing data.</p>
                                     </span>
                                     <span id="marcomTarget" class="par_left"></span>
                                 </div>
