@@ -89,7 +89,6 @@ regions[content] = Main Page Content
 
 regions[footer] = Footer
 
-project status url = http://updates.megadrupal.com/release-history
 version = "7.x-2.4"
 core = "7.x"
 project = "md_alpine"

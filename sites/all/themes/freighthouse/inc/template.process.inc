@@ -55,7 +55,7 @@ function md_alpine_preprocess_html(&$vars) {
     drupal_add_js($themepath . '/js/lib/portfolio_custom.js');
     drupal_add_js($themepath . '/js/script.js');
     drupal_add_js($themepath . '/js/lib/retina-1.1.0.min.js');
-    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false');
+    drupal_add_js('//maps.google.com/maps/api/js?sensor=false');
 
     /* ------------------------- Add favicon Page ------------------------*/
     if (theme_get_setting('toggle_favicon') == 1) {
@@ -305,7 +305,7 @@ function md_alpine_preprocess_html(&$vars) {
     }
 	// Typekit
 	if (theme_get_setting('typekit_id')) {
-		drupal_add_js('http://use.typekit.net/'.theme_get_setting('typekit_id').'.js', 'external');
+		drupal_add_js('//use.typekit.net/'.theme_get_setting('typekit_id').'.js', 'external');
 		drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
 	}
 
@@ -766,8 +766,8 @@ function md_alpine_process_page(&$vars) {
     // Make sure the shortcut link is the first item in title_suffix.
     $vars['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
-	
-	
+
+
 	var_dump($vars);
 }
 
@@ -798,7 +798,7 @@ function md_alpine_preprocess_page(&$vars, $hook) {
 		if(($current_node_key + 1) != sizeof($nids)) {
 			$vars['next_link'] = url('node/'.$nids[$current_node_key+1],array('absolute'=>true));
 		}
-	
+
     }
     if(theme_get_setting('footer_text')){
         $vars['footer_text'] = theme_get_setting('footer_text');

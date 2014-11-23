@@ -48,7 +48,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
 		'#prefix'  				=> '<div id="md-design" class="md-tabcontent clearfix">',
 		'#suffix'        => '</div><!-- / #md-design -->',
 	);
-	
+
 	$form['md_alpine_settings']['design']['design_htmllist'] = array(
 		'#markup' 				=> '<div class="md-listleft">
 				<ul>
@@ -198,7 +198,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
         ),
         '#description' => 'To use MD Fullscreen Slider you need remove "Header Block" from header region and replace with your custom slider block '.l('here',''.$base_url.'/admin/structure/block'),
     );
-   
+
     $form['md_alpine_settings']['design']['design_header']['header_video'] = array(
         '#type' => 'fieldset',
         '#title' => 'Custom Video Background',
@@ -419,7 +419,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
             'easeInOutBack'  => 'easeInOutBack',
         ),
         '#default_value'    => theme_get_setting('header_slide_effect') ? theme_get_setting('header_slide_effect') : 'fade',
-        '#description' => 'Visit '.l('here','http://jqueryui.com/resources/demos/effect/easing.html').' for more detail. Some effect are removed for better display reason.',
+        '#description' => 'Visit '.l('here','//jqueryui.com/resources/demos/effect/easing.html').' for more detail. Some effect are removed for better display reason.',
     );
 
     $form['md_alpine_settings']['design']['design_header']['header_content']['hd_slide_content_wrapper'] = array(
@@ -874,7 +874,7 @@ function md_alpine_theme_settings_design(&$form, &$form_state) {
         '#type' => 'textarea',
         '#title'    => 'Footer Text Display',
         '#resizable'    => false,
-        '#default_value'    => theme_get_setting('footer_text') ? theme_get_setting('footer_text') : '© Copyright 2013 by Alpine Studios. All Rights Reserved. Powered by <a href="http://www.creative-ispiration.com"> <strong>creative-ispiration.com</strong> </a>'
+        '#default_value'    => theme_get_setting('footer_text') ? theme_get_setting('footer_text') : '© Copyright 2013 by Alpine Studios. All Rights Reserved. Powered by <a href="//www.creative-ispiration.com"> <strong>creative-ispiration.com</strong> </a>'
     );
     /* 5.
        --------------------------------- 404 Page -------------------------------------------*/

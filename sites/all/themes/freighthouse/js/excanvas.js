@@ -4,7 +4,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//   http://www.apache.org/licenses/LICENSE-2.0
+//   //www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -331,7 +331,7 @@ if (!window.CanvasRenderingContext2D) {
 
   contextPrototype.quadraticCurveTo = function(aCPx, aCPy, aX, aY) {
     // the following is lifted almost directly from
-    // http://developer.mozilla.org/en/docs/Canvas_tutorial:Drawing_shapes
+    // //developer.mozilla.org/en/docs/Canvas_tutorial:Drawing_shapes
     var cp1x = this.currentX_ + 2.0 / 3.0 * (aCPx - this.currentX_);
     var cp1y = this.currentY_ + 2.0 / 3.0 * (aCPy - this.currentY_);
     var cp2x = cp1x + (aX - this.currentX_) / 3.0;

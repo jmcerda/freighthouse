@@ -4,7 +4,7 @@
  * Released under the BSD License.
  *
  * Display an analog clock using canvas.
- * http://randomibis.com/coolclock/
+ * //randomibis.com/coolclock/
  *
  */
 
@@ -195,7 +195,7 @@ CoolClock.prototype = {
 	},
 
 	// Draw a radial line by rotating then drawing a straight line
-	// Ha ha, I think I've accidentally used Taus, (see http://tauday.com/)
+	// Ha ha, I think I've accidentally used Taus, (see //tauday.com/)
 	radialLineAtAngle: function(angleFraction,skin) {
 		this.ctx.save();
 		this.ctx.translate(this.renderRadius,this.renderRadius);

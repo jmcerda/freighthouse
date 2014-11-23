@@ -53,10 +53,10 @@ function md_alpine_preprocess_html(&$vars) {
     drupal_add_js($themepath . '/js/lib/jquery.hoverdir.js');
     drupal_add_js($themepath . '/js/lib/owl.carousel.min.js');
     drupal_add_js($themepath . '/js/lib/jquery.validate.min.js');
-    drupal_add_js($themepath . '/js/lib/portfolio_custom.js');    
+    drupal_add_js($themepath . '/js/lib/portfolio_custom.js');
     drupal_add_js($themepath . '/js/lib/retina-1.1.0.min.js');
 //    drupal_add_js($themepath . '/js/script.js');
-    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false');
+    drupal_add_js('//maps.google.com/maps/api/js?sensor=false');
 
 
     /* ------------------------- Add favicon Page ------------------------*/
@@ -310,7 +310,7 @@ function md_alpine_preprocess_html(&$vars) {
     }
 	// Typekit
 	if (theme_get_setting('typekit_id')) {
-		drupal_add_js('http://use.typekit.net/'.theme_get_setting('typekit_id').'.js', 'external');
+		drupal_add_js('//use.typekit.net/'.theme_get_setting('typekit_id').'.js', 'external');
 		drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
 	}
 
@@ -852,7 +852,7 @@ function md_alpine_preprocess_maintenance_page(&$vars) {
         drupal_add_css('public://icon/fontello/fontello/css/fontello.css');
         drupal_add_css('public://icon/fontello/fontello/css/animation.css');
     }
-   
+
     /********************************** Skin ********************************/
     if (theme_get_setting('skins') != '0') {
         drupal_add_css($theme_path . '/css/colors/'.theme_get_setting('skins').'.css', array('group' => CSS_THEME));
