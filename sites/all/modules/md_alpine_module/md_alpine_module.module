@@ -324,11 +324,13 @@ function md_alpine_module_block_view($delta = '') {
                                     </span>
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                            <ul>
-                                                <li>Seamless architecutre and accountability</li>
-                                                <li>Zero ramp up costs.</li>
-                                                <li>Zero termination costs.</li>
-                                                <li>No recruiting fees...ever.</li>
+                                            <ul style="text-decoration:none;">
+                                                <li>Seamless architecutre</li>
+                                                <li>Complete accountability</li>
+                                                <li>Zero ramp up costs</li>
+                                                <li>Zero termination costs</li>
+                                                <li>100 percent scalable</li>
+                                                <li>Rapid builds & deployments</li>
                                             </ul>
                                         </span>
                                         <span>
