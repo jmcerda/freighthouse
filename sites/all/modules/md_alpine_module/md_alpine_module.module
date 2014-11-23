@@ -110,12 +110,11 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
                                         <big style="color:#ffcc00">Make decisions that matter...</big>
-                                        <p>You cannot simply rely on keyword metrics anymore!</p>
+                                        <p>You cannot simply rely on keyword metrics to monitor project performance.</p>
                                         <p>Gain profound insight into your campaigns, learn how users engage with your brand, and drive lead generation by focusing on user interaction data, conversion rate optimization and other key indicators.</p>
                                     </span>
                                     <span class="par_right">
                                         <big style="color:#ffcc00">Data & Analytics</big>
-                                        and monitor project performance
                                         <p>Learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
                                         <p>Our advances in metric presentation and visualization give you a birds eye view of user engagement while collecting deep real time analysis - so you can quickly react to customer trends and create individual and personalized user experiences based on behaviour and preference data, while interpreting complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
