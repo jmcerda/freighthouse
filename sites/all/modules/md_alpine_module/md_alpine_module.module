@@ -121,7 +121,7 @@ function md_alpine_module_block_view($delta = '') {
                                         <p>Gain profound insight into your campaigns so you can quickly react to customer trends and create individual and personalized user experiences while interpreting complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
                                     <span>
-                                    <a href="#http://www.iab.net/media/file/B2BResearch2014.pdf">&gt; read the report</a>
+                                    <a href="//www.iab.net/media/file/B2BResearch2014.pdf">&gt; read the report</a>
                                     </span>
                                 </div>
                             </div>
