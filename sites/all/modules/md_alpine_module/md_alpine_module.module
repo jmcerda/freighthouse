@@ -101,34 +101,22 @@ function md_alpine_module_block_view($delta = '') {
                             <div class="parallax_container_add">
                                 <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_left">
-                                    <big>
-                                        <p style="color:#ffcc00">Design Strategy</p>
-                                    </big>
-                                    <p>Client focus - know what they like and understand how to give it to them.</p>
-                                    <p> We find exactly what exictes your audience and provide content tailored to their needs.</p>
-                                    <p>Lead generation and conversion rate optimization</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Mobile Analytics & Marketing</p>
-                                    </big>
-                                    <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Segmentation</p>
-                                    </big>
-                                    <p>Individual and personalized user experience based on behaviour and preference data.</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Interaction Design</p>
-                                    </big>
+                                        <big style="color:#ffcc00">Interaction Design Strategy</big>
+                                            <p>Know what your clients want and understand how to give it to them.</p>
+                                            <p> We find exactly what exictes your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics.</p>
+                                            <p>Create individual and personalized user experiences based on behaviour and preference data.</p>
+                                        <big style="color:#ffcc00">Lead generation and conversion rate optimization</big>
+                                            <p>You cannot simply rely on keyword metrics anymore!</p>
+                                            <p>We focus on key performance indicators such as conversion rates and user interaction data, gaining insight into your campaigns to help you make decsisions that really matter.</p>
+                                        <big style="color:#ffcc00">Mobile Analytics & Marketing</big>
+                                            <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
                                     </span>
                                 </span>
                                 <span class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
-                                        <big>
-                                            <p style="color:#ffcc00">Data & Analytics</p>
-                                        </big>
-                                        <big>Project Performance</big>
-                                        <p>You cannot simply rely on keyword metrics anymore!</p> We focus on key performance indicators such as conversion rates and user experience metrics.</p>
-                                        <p> We gain insight into your campaigns and make decsisions that really matter.</p>
-                                        <big>Easy to read analytics</big>
+                                    <big style="color:#ffcc00">Data & Analytics</big>
+                                    <big>Project Performance</big>
+                                    <big>Easy to read analytics</big>
                                         <p>With advances presentation and visualizations you can get a birds eye view of user engagement, collect deep real time analysis and instantly react to customer trends.</p>
                                         <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                         <big>Social Strategies</big>
