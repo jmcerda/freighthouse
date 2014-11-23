@@ -19,7 +19,6 @@
     padding: 3px 10px;
     font-size: 12px;
     -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
     background: #869791;
     filter: Alpha(Opacity=50);/*IE7 fix*/
@@ -48,7 +47,6 @@
     filter: Alpha(Opacity=50);/*IE7 fix*/
     opacity: 0.5;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
     background: #869791;
 }
@@ -68,7 +66,6 @@
     padding: 2px 10px;
     font-size: 12px;
     -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
 }
 
