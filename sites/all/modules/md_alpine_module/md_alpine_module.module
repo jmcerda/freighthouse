@@ -101,8 +101,10 @@ function md_alpine_module_block_view($delta = '') {
                             <div class="parallax_container_add">
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_left">
-                                        <big style="color:#ffcc00">Interaction Design Strategy</big>
+                                        <big style="color:#ffcc00">Content Marketing and Interaction Strategy</big>
                                         <p>Know what your clients want and understand how to give it to them.</p>
+                                        <p>Delivering original content is essential to connecting with your audience.</p>
+                                        <p>We will develop and oversee a documented content strategy & methodology while engineering distribution networks across multiple digital media channels to deliver original segmented content.</p>
                                         <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics and usability testing data.</p>
                                     </span>
                                     <span id="marcomTarget" class="par_left"></span>
