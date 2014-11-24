@@ -379,7 +379,13 @@
     /*.par_left > big {font-size: 0.8em!important;} */
     .call-number{ font-size: 47px!important;}
     .parallax_container_add .par_center {word-break: break-all;}
-
+    #head_logo img{ width: 100%!important;}
+    .circular-content{ margin-top: 0!important}
+    .circular-pie span{ height: 150px!important; width: 150px!important; }
+    .circular-pie{ width: 150px!important;}
+    .element-line form{ width: 90%; margin: 0 auto;}
+    .about_text{ text-align: center;}    
+    #map_canvas{ height: auto!important;}
 }
 
 @media (max-width:1024px) {
