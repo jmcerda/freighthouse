@@ -2111,6 +2111,7 @@ p.lead.par_light {
 .mybutton a:hover span, .mybutton button:hover span, .action .mybutton:hover span, .form-actions .mybutton:hover span{
 transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(90deg) translateY(-22px) !important;-moz-transform:rotateX(90deg) translateY(-22px) !important;
 }
+.post-avatar{ text-align: center; display: inline-block;}
 .post-avatar img {transform: rotate(0deg); width: 75px;}
-.post-avatar img{transition-duration:0.8s;width: 75px; padding:3px;transition-property:transform}
+.post-avatar img{transition-duration:0.8s;width: 75px; padding:3px;transition-property:transform;}
 .post-avatar:hover img {transform: rotate(360deg);}
