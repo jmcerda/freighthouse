@@ -26,7 +26,7 @@
         <div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <section id="consulting" class="section-content">
             <?php print render($page['parallax_one']);?>
-        </section>    
+        </section>
         </div>
         <!-- end john comment-->
     <!-- Parallax Container -->
@@ -142,12 +142,17 @@
     </section>
     <!-- Contact Section -->
 <?php endif;?>
-    <section id="assoc" class="section-content">
-        <img src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
-        <img src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>        
-    </section>
-
-<?php if($page['footer']):?>
-    <?php print render($page['footer']);?>
-<?php endif;?>
+    <div class="footer">
+        <div class="col-lg-2 mobile-hide">
+            <img id="assoc-left" class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+            <?php if($page['footer']):?>
+                <?php print render($page['footer']);?>
+            <?php endif;?>
+        </div>
+        <div class="col-md-2 mobile-hide">
+            <img id="assoc-right" class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/freelancersunion_member.png" alt="freelancer union"/>
+        </div>
+    </div>
  <a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>

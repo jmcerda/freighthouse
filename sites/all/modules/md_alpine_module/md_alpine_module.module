@@ -99,47 +99,31 @@ function md_alpine_module_block_view($delta = '') {
                             <!-- Parallax title -->
                             <!-- Parallax Body -->
                             <div class="parallax_container_add">
-                                <span class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_left">
-                                    <big>
-                                        <p style="color:#ffcc00">Design Strategy</p>
-                                    </big>
-                                    <p>Client focus - know what they like and understand how to give it to them.</p>
-                                    <p> We find exactly what exictes your audience and provide content tailored to their needs.</p>
-                                    <p>Lead generation and conversion rate optimization</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Mobile Analytics & Marketing</p>
-                                    </big>
-                                    <p>Analyze and monitor mobile campaigns and learn just how users engage with your brand.</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Segmentation</p>
-                                    </big>
-                                    <p>Individual and personalized user experience based on behaviour and preference data.</p>
-                                    <big>
-                                        <p style="color:#ffcc00">Interaction Design</p>
-                                    </big>
+                                        <big style="color:#ffcc00">Content Marketing & Interaction Strategy</big>
+                                        <p>Know what your clients want and understand how to give it to them.</p>
+                                        <p>We develop original content and oversee a documented content strategy & methodology while engineering distribution networks across multiple digital media channels to deliver original segmented content.</p>
+                                        <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics and usability testing data.</p>
                                     </span>
-                                </span>
-                                <span class="col-md-6 col-sm-12 col-xs-12">
+                                    <span id="marcomTarget" class="par_left"></span>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
-                                        <big>
-                                            <p style="color:#ffcc00">Data & Analytics</p>
-                                        </big>
-                                        <big>Project Performance</big>
-                                        <p>You cannot simply rely on keyword metrics anymore!</p> We focus on key performance indicators such as conversion rates and user experience metrics.</p>
-                                        <p> We gain insight into your campaigns and make decsisions that really matter.</p>
-                                        <big>Easy to read analytics</big>
-                                        <p>With advances presentation and visualizations you can get a birds eye view of user engagement, collect deep real time analysis and instantly react to customer trends.</p>
-                                        <p>You can easily interpret complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
-                                        <big>Social Strategies</big>
-                                        <p>Social analytics helps you learn what buzz you really are creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
-                                        <big>Live Event Marketing</big>
+                                        <big style="color:#ffcc00">Make decisions that matter...</big>
+                                        <p>You cannot simply rely on keyword metrics to monitor project performance.</p>
+                                        <p>Learn what buzz you are really creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
+                                        <p>Find just how users engage with your brand and drive conversion rate optimization by focusing on real time user interaction data and key indicators such as social trends and market performance.</p>
                                     </span>
-                                    <span id="marcomTarget" class="par_right">
+                                    <span class="par_right">
+                                        <big style="color:#ffcc00">Clear Data & Analytics</big>
+                                        <p>Our advances in metric presentation and visualization give you a birds eye view of user engagement while collecting deep real time analysis.</p>
+                                        <p>Gain profound insight into your campaigns so you can quickly react to customer trends and create individual and personalized user experiences while interpreting complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
-                                </span>
-                            </div>
-                            </div>
+                                    <span>
+                                    <a style="float:left;padding:10px 25px;" href="//www.iab.net/media/file/B2BResearch2014.pdf">&gt; read the report</a>
+                                    </span>
+                                </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
@@ -203,8 +187,9 @@ function md_alpine_module_block_view($delta = '') {
                             <div style ="container">
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
-                                        <span class="par_left">
-                                            <big>Design&nbsp;&nbsp;|&nbsp;&nbsp;Production&nbsp;&nbsp;|&nbsp;&nbsp;Marketing</big><hr />
+                                        <span class="par_left center-override">
+                                            <big style="color:#ffcc00">Design&nbsp;&nbsp;|&nbsp;&nbsp;Production</big>
+                                            <br />
                                             <p>Graphic Arts, Illustration & Design</p>
                                             <p>Asset Production and Development</p>
                                             <p>Art Direction, Buying, and Consulting</p>
@@ -212,36 +197,34 @@ function md_alpine_module_block_view($delta = '') {
                                             <p>Audio & Video Production</p>
                                             <p>3D & Animation</p>
                                         </span>
-                                        <span class="par_left">
-                                        <p>What leads to an effective emotional design strategy?</p>
-                                        <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
-                                            - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
-                                        </small>
+                                        <span class="par_left"
+                                            <p><i>What leads to an effective emotional design strategy?</i></p>
+                                            <small>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
+                                                - Jeremy Michael Cerda, Creative Director & Sr. Web Architect
+                                            </small>
                                         </span>
                                     </span>
                                     <span class="col-md-7 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                        <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width=585 height="329" title="Art Metamorphosis Miami by Art Soiree" data-embed-size="585x329" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fill" preload="none">
-                                        </video>
-                                        <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i></small>
+                                            <video id="XixbpJN1jOw" class="sublime" poster="http://dev-freighthouse.gotpantheon.com/sites/default/files/katya_cover.jpg" width="585" height="329" title="Art Metamorphosis Miami by Art Soiree" data-uid="XixbpJN1jOw" data-youtube-id="XixbpJN1jOw" data-autoresize="fit" preload="none">
+                                            </video>
+                                            <small><i>Featured Artist <a href="//katyakrupko.com">Katya Krupko</a> for <a href="//artsoiree.com">Art Soriee</a> - Miami Beach</i>
+                                            </small>
                                         </span>
-                                        <span class="par_right" style="margin-top:25px">
+                                        <span class="par_right">
                                             <p>We are real artists who love to code as much as we love to draw, paint or play the piano. Analytical thinkers, we live everyday challenging our minds to see what nobody else sees.</p>
                                             <p>We are exclusively committed to working with and supporting organizations who beleive in investing in people, the creative arts and those who believe that form enhances function.</p>
-                                            </p>
                                         </span>
                                     </span>
                                     <span class="col-md-12 col-sm-12 col-xs-12">
-                                        <span>
                                             <p class="par_center">design&nbsp;&nbsp;|&nbsp;&nbsp;illustration&nbsp;&nbsp;|&nbsp;&nbsp;motion&nbsp;&nbsp|&nbsp;&nbsp;animation&nbsp;&nbsp;|&nbsp;&nbsp;photography&nbsp;&nbsp;|&nbsp;&nbsp;audio&nbsp;&nbsp;|&nbsp;&nbsp;video</p>
-                                        </span>
                                     </span>
                                 </div>
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
                             <div id="socialMove">
-                            <div class="parallax-content social-link">
+                            <div class="parallax-content social-link mobile-hide">
                                 <div class="row">';
                             $connect = theme_get_setting('pr_'.$i.'_connect');
 
@@ -327,8 +310,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>
-                                                <p style="color:#d8d8d8">The battle between marketing and IT is over.</p>
+                                            <big style="color:#ffcc00">The battle between marketing and IT is over.</big>
                                             </big>
                                             <p>Never again be a hostage of your IT department...</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
@@ -336,21 +318,23 @@ function md_alpine_module_block_view($delta = '') {
                                             <a href="#5ciBJeqsBh0" class="sublime" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit">
                                                 &gt; Watch the video
                                             </a>
-                                            <video id="5ciBJeqsBh0" width="640" height="360" title="Pantheon One" style="display:none" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
+                                            <video id="5ciBJeqsBh0" title="Pantheon One" style="display:none;max-dth=100%;" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
                                             </video>
                                         </span>
                                     </span>
                                     <span class="col-md-4 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                            <ul>
-                                                <li>Seamless architecutre and accountability</li>
-                                                <li>Zero ramp up costs.</li>
-                                                <li>Zero termination costs.</li>
-                                                <li>No recruiting fees...ever.</li>
+                                            <ul style="list-style-type: none;">
+                                                <li>Seamless architecutre</li>
+                                                <li>Complete accountability</li>
+                                                <li>Zero ramp up costs</li>
+                                                <li>Zero termination costs</li>
+                                                <li>100 percent scalable</li>
+                                                <li>Rapid builds & deployments</li>
                                             </ul>
                                         </span>
-                                        <span class="par_right">
-                                            <p><img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png"></p>
+                                        <span>
+                                            <img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png" style="max-width:100%">
                                         </span>
                                     </span>
                                 </div>
@@ -408,7 +392,7 @@ function md_alpine_module_block_view($delta = '') {
                             foreach ($customer as $key => $value){
                                 $block['content'] .= '<!-- Client item -->
                                     <div class="item">
-                                        <a href="'.$customer[$key]['link'].'" class="zoom"> <img class="img-responsive client-logo" src="'.md_alpine_theme_setting_check_path($customer[$key]['image']).'" alt=""/> </a>
+                                        <a href="'.$customer[$key]['link'].'" class="zoom"> <img class="img-responsive lazy client-logo" src="'.md_alpine_theme_setting_check_path($customer[$key]['image']).'" alt=""/> </a>
                                     </div>
                                     <!-- Client item -->';
                             }
@@ -463,16 +447,16 @@ function md_alpine_module_block_view($delta = '') {
                                                 <p style="color:#ffcc00">Communication & Stability</p>
                                             </big>
                                             <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration - so the team is in sync at all times.</p>
-                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding,building, and launching your sites.</p>
+                                            <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding, building, and launching your sites.</p>
                                         </span>
                                         <span class="par_right">
                                             <big>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
                                             </big>
-                                            <p>We work remotely however we can arrange for on-site assistance at your location - worldwide.</p>
+                                            <p>We work remotely however we can arrange for on-site assistance at any location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div>
-                                                <p>Our reach so far:</p>
+                                                <center>Our current reach:</center>
                                             </div>
                                             <div id="numberTarget">
                                             </div>

@@ -253,7 +253,7 @@ function _md_alpine_process_google_web_font($fonts) {
  * Get fonts information from type-kit id
  */
 function _md_alpine_process_typekit_font($typekit_id) {
-    $tk_url = 'http://typekit.com/api/v1/json/kits/' . $typekit_id . '/published';
+    $tk_url = '//typekit.com/api/v1/json/kits/' . $typekit_id . '/published';
     $typekit = json_decode(file_get_contents($tk_url), true);
     for ($i = 0; $i < count($typekit['kit']['families']); $i++) {
         $fontarray[] = $typekit['kit']['families'][$i]['name'];
@@ -679,7 +679,7 @@ function _md_alpine_theme_default_settings ($theme_settings) {
     $default_settings['footer_background'] = 'color';
     $default_settings['ft_bg_color'] = 'f0f0f0';
     $default_settings['footer_content_display'] = '1';
-    $default_settings['social_link_1'] = 'http://facebook.com';
+    $default_settings['social_link_1'] = '//facebook.com';
     $default_settings['nf_background'] = 'custom';
     $default_settings['preloader_delay_time'] = '350';
     $default_settings['preloader_bg_type'] = 'skin';
@@ -696,9 +696,9 @@ function _md_alpine_theme_default_settings ($theme_settings) {
     $default_settings['typo_view_title_enable'] = 0;
     $default_settings['maintenance_message'] = '<p><span>Our awesome website is</span> <br> Under construction </p>';
     $default_settings['footer_text'] = 'Alpine™ design by
-<a class="underline" target="blank" href="http://themeforest.net/user/creativeispiration">CreativeIspiration</a>
+<a class="underline" target="blank" href="//themeforest.net/user/creativeispiration">CreativeIspiration</a>
 - Drupal theme by
-<a class="underline" target="blank" href="http://themeforest.net/user/megadrupal">MegaDrupal</a>
+<a class="underline" target="blank" href="//themeforest.net/user/megadrupal">MegaDrupal</a>
 <br>
 — Made with
 <i class="fontello icon-heart text-color"></i>

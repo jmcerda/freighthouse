@@ -113,12 +113,12 @@ function md_alpine_theme_settings_general(&$form, &$form_state) {
 		'#prefix'  				=> '<div id="favicon-webclip" class="md-tabcontent clearfix">',
 		'#suffix'        => '</div><!-- / #favicon-webclip -->',
 	);
-	
+
 		$webclip_path = theme_get_setting('webclip_path');
 		if (file_uri_scheme($webclip_path) == 'public') {
 			$webclip_path = file_uri_target($webclip_path);
 		}
-		 
+
 		$form['md_alpine_settings']['general']['favicon_webclip']['webclip_path'] = array(
 			'#type' 					=> 'textfield',
 			'#title'					=> t('Path to custom Webclip'),
@@ -126,11 +126,11 @@ function md_alpine_theme_settings_general(&$form, &$form_state) {
 			'#default_value' 	=>  $webclip_path,
 			'#prefix'					=> '<h3>Web Clip Settings</h3>',
 		);
-		
+
 		$form['md_alpine_settings']['general']['favicon_webclip']['webclip_upload'] = array(
 			'#type' => 'file',
 		);
-		
+
 		$form['md_alpine_settings']['general']['favicon_webclip']['webclip_precomp'] = array(
 	    '#type' => 'checkbox',
 	    '#title' => t('Use the default precomposed iOS touch icon.'),
@@ -153,32 +153,32 @@ function md_alpine_theme_settings_general(&$form, &$form_state) {
 			'#title'         => t('@import'),
 			'#resizable' => FALSE,
 			'#rows' => 1,
-			'#description' => t("For example: http://fonts.googleapis.com/css?family=Kavoon|Hanalei+Fill"),
+			'#description' => t("For example: //fonts.googleapis.com/css?family=Kavoon|Hanalei+Fill"),
 			'#default_value' 	=>  theme_get_setting('googlewebfonts'),
 			'#prefix'					=> '<h3>Google Web Fonts</h3>
 		<ul class="steps">
-			<li>Go to <a href="http://www.google.com/webfonts" target="_blank">www.google.com/webfonts</a>, choose your fonts and add to collection</li>
+			<li>Go to <a href="//www.google.com/webfonts" target="_blank">www.google.com/webfonts</a>, choose your fonts and add to collection</li>
       <li>Click &quot;Use&quot; in the bottom bar after choose fonts</li>
       <li>Find &quot;Integrate the fonts into your CSS&quot;, copy all code from that field and paste it below to activate.</li>
 		</ul>',
 		);
-		
+
 		$form['md_alpine_settings']['general']['custom_font']['typekit_id'] = array(
 			'#type' 					=> 'textfield',
 			'#title'         => t('Typekit'),
-			'#description'   	=> t('<strong>* Note:</strong> Your kit must contain fonts and be published before entering your Typekit ID below. Check out <a href="http://help.typekit.com/customer/portal/articles/6780-adding-fonts-to-your-site" target="_blank">this article at Typekit\'s Help Center</a> for detailed information on how to add fonts to your kit. (Make sure you skip the part about adding CSS selectors, and remember to republish your kit after making any changes.)'),
+			'#description'   	=> t('<strong>* Note:</strong> Your kit must contain fonts and be published before entering your Typekit ID below. Check out <a href="//help.typekit.com/customer/portal/articles/6780-adding-fonts-to-your-site" target="_blank">this article at Typekit\'s Help Center</a> for detailed information on how to add fonts to your kit. (Make sure you skip the part about adding CSS selectors, and remember to republish your kit after making any changes.)'),
 			'#default_value' 	=>  theme_get_setting('typekit_id'),
 			'#prefix'					=> '<h3>Enter Your Typekit ID</h3>
 		<ul class="steps">
-			<li>Go to <a href="http://typekit.com/" target="_blank">www.typekit.com</a> and Log in to your account</li>
+			<li>Go to <a href="//typekit.com/" target="_blank">www.typekit.com</a> and Log in to your account</li>
 			<li>In the top bar of the Typekit website, click the green &quot;Launch Kit Editor&quot; button.</li>
 			<li>In the top bar of the popup that appears, click the &quot;Kit Settings&quot; link and paste your domain. Once you\'ve done this, click &quot;Save Settings.&quot;</li>
 			<li>In the same top bar of the popup, click the &quot;embed code&quot; link.</li>
 			<li>In the overlay that appears, there is a line at the   bottom that says, &quot;If you are using a plugin or service that asks for a   Typekit ID, use this: ____.&quot; This is your Typekit ID. Paste it below to activate.</li>
 		</ul>',
 		);
-		
-		
+
+
 	/* Hidden input
 	--------------------------------------------------------------------------*/
 	$form['md_alpine_settings']['general']['savedcolor1'] = array(

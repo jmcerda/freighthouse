@@ -1,4 +1,4 @@
-name = Freighthouse
+  name = Freighthouse
 description = Subtheme for MD Alpine
 core = 7.x
 base theme = md_alpine
@@ -7,15 +7,15 @@ base theme = md_alpine
 ; ; stylesheets[all][] = css/fh.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/style-custom.css
-stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/style-responsive.css
 
 ; JS INCLUDES
 scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
-scripts[] = js/gk9qliwk.js
 scripts[] = js/excanvas.js
 ; ; scripts[] = js/moreskins.js
 scripts[] = js/coolclock.js
+scripts[] = js/lazyload.js
 
 
 settings[toggle_logo] = 1
@@ -89,7 +89,6 @@ regions[content] = Main Page Content
 
 regions[footer] = Footer
 
-project status url = http://updates.megadrupal.com/release-history
 version = "7.x-2.4"
 core = "7.x"
 project = "md_alpine"

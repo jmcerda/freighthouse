@@ -57,7 +57,7 @@
         <div class="col-md-6">
             <div class="element-line">
                 <?php if(theme_get_setting('team_image_path')):?>
-                <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center img-rounded about_image" alt="We are Freighthouse">
+                <img src="<?php print md_alpine_theme_setting_check_path(theme_get_setting('team_image_path'));?>" class="img-responsive img-center img-rounded about_image lazy" alt="We are Freighthouse">
                 <?php endif;?>
             </div>
         </div>

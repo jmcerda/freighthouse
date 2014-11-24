@@ -4,7 +4,7 @@
  * Released under the BSD License.
  *
  * Display an analog clock using canvas.
- * http://randomibis.com/coolclock/
+ * //randomibis.com/coolclock/
  *
  */
 
@@ -29,13 +29,13 @@ CoolClock.config = {
 		// There are more skins in moreskins.js
 		// Try making your own skin by copy/pasting one of these and tweaking it
 		freightHouse: {
-			outerBorder:      { lineWidth: 2, radius: 95, color: "black", alpha: 1 },
-			smallIndicator:   { lineWidth: 2, startAt: 88, endAt: 92, color: "#ffcc00", alpha: 1 },
-			largeIndicator:   { lineWidth: 4, startAt: 79, endAt: 92, color: "black", alpha: 1 },
-			hourHand:         { lineWidth: 8, startAt: -15, endAt: 50, color: "black", alpha: 1 },
-			minuteHand:       { lineWidth: 7, startAt: -15, endAt: 75, color: "black", alpha: 1 },
-			secondHand:       { lineWidth: 1, startAt: -20, endAt: 85, color: "#ffcc00", alpha: 1 },
-			secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "#ffcc00", color: "#ffcc00", alpha: 1 }
+			outerBorder:      { lineWidth: 1, radius: 95, color: "#7c7c7c" },
+			// smallIndicator:   { lineWidth: 1, startAt: 88, endAt: 92, color: "#ffcc00", alpha: 1 },
+			largeIndicator:   { lineWidth: 1, startAt: 79, endAt: 92, color: "#7c7c7c" },
+			hourHand:         { lineWidth: 1, startAt: -15, endAt: 50, color: "#7c7c7c" },
+			minuteHand:       { lineWidth: 1, startAt: -15, endAt: 75, color: "#7c7c7c" },
+			secondHand:       { lineWidth: 1, startAt: -20, endAt: 85, color: "#ffcc00" },
+			// secondDecoration: { lineWidth: 1, startAt: 70, radius: 4, fillColor: "#ffcc00", color: "#ffcc00", alpha: 1 }
 		},
 		swissRail: {
 			outerBorder: { lineWidth: 2, radius:95, color: "black", alpha: 1 },
@@ -195,7 +195,7 @@ CoolClock.prototype = {
 	},
 
 	// Draw a radial line by rotating then drawing a straight line
-	// Ha ha, I think I've accidentally used Taus, (see http://tauday.com/)
+	// Ha ha, I think I've accidentally used Taus, (see //tauday.com/)
 	radialLineAtAngle: function(angleFraction,skin) {
 		this.ctx.save();
 		this.ctx.translate(this.renderRadius,this.renderRadius);

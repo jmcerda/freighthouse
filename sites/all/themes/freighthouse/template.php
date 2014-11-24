@@ -5,7 +5,6 @@
  * @param $form_state
  * @param $form_id
  */
-// drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/fh.css', array('group' => CSS_THEME));
 
 function freighthouse_form_alter(&$form, &$form_state, $form_id) {
     if (strpos($form_id,"webform_client_form") === false) {
@@ -81,7 +80,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 </div>
               </div>
             ';
-        */   
+        */
         $form['#attributes']['class'][] = 'element-line';
         $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
@@ -90,9 +89,11 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
         $form['actions']['submit']['#sufix'] = '</span></button></div>
                 </div>
               </div>
-            ';    
+            ';
     }
 }
+
+drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
 
 /**
  * Theme the username/password description of the user login form
@@ -131,7 +132,6 @@ drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css
 /*
 $themepath = drupal_get_path('theme', 'freighthouse');
 drupal_add_js($themepath . '/js/script.js');
-drupal_add_js('//cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/script-freighthouse.js',  array('type' => 'file', 'scope' => 'footer'));
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/coolclock.js',  array('type' => 'file', 'scope' => 'footer'));
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/moreskins.js',  array('type' => 'file', 'scope' => 'footer'));

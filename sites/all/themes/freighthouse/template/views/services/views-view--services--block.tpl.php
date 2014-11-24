@@ -63,7 +63,7 @@
                         <div class="item service-element">
                             <div class="row">
                                 <div class="col-md-7">
-                                    <img class="img-responsive img-center img-rounded" src="<?php if(isset($value->field_field_sv_thumbnail[0])) : print image_style_url('services_thumbnail',$value->field_field_sv_thumbnail[0]['rendered']['#item']['uri']);endif;?>" alt=""/>
+                                    <img class="img-responsive img-center img-rounded lazy" src="<?php if(isset($value->field_field_sv_thumbnail[0])) : print image_style_url('services_thumbnail',$value->field_field_sv_thumbnail[0]['rendered']['#item']['uri']);endif;?>" alt=""/>
                                 </div>
                                 <div class="col-md-5">
                                     <h2><?php print $value->node_title;?></h2>

@@ -1,102 +1,97 @@
+.webform-client-form .mybutton a:hover span, .webform-client-form .mybutton button:hover span, .webform-client-form .action .mybutton:hover span, .webform-client-form .form-actions .mybutton:hover span, #user-login .mybutton button:hover span, #user-register-form .mybutton button:hover span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+    cursor: pointer;
+    padding: 0px !important;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px !important;
+     /* -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transform-style: preserve-3d;
+      position: absolute !important;
+      top: 100% !important;
+      left:0 !important;
+      display:block !important;*/
+}
+.webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button {
+    background: none !important;
+    border: 0px !important;
+}
+.webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
+    padding: 0px !important;
+    border: 1px solid #7c7c7c !important;
+    /* to override button border */
+}
+/*.mybutton input[type="submit"] {
+    border: 0px !important;
+    padding: 10px 40px;
+}*/
+/* add to override button border */
 
+.mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
+    border: 1px solid #7c7c7c !important;
+}
+/* added to fix css issue on front page consulting section parallax box*/
 
-  .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span, #user-login .mybutton button:hover span, #user-register-form .mybutton button:hover span {
-        
-		
-        -webkit-transform: rotateX(90deg) translateY(-22px);
-        -moz-transform: rotateX(90deg) translateY(-22px);
-        transform: rotateX(90deg) translateY(-22px);
-        
-        cursor: pointer;
-        padding: 0px !important;
-        /*
-        -webkit-perspective: 1000px;
-   		-moz-perspective: 1000px;
-   		-webkit-transition: -webkit-transform 0.3s;
-    	-moz-transition: -moz-transform 0.3s;
-    	transform-style: preserve-3d;
-    	position: absolute !important;
-     	top: 100% !important;
-     	left:0 !important;
-     	display:block !important;
-     	-webkit-perspective: 1000px !important;
-     	perspective: 1000px !important;
-
-	    */
-  }
-  .webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button{
-  	background: none !important;
-	border:0px !important;
-  }
-  .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span{
-  	padding: 0px !important;
-	border:1px solid #7c7c7c !important; /* to override button border */
-  }
-
-  .mybutton input[type="submit"] {
-	border: 0px !important;
-	padding: 10px 40px;
-  }
-  
-  /* add to override button border */
-  .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
-	border:1px solid #7c7c7c !important;
-   }
-    
-	/* added to fix css issue on front page consulting section parallax box*/
-   #consulting{
-   	 padding:0 !important;
-   }
-   
-   #consulting .parallax-box a{
-   	 border:1px solid transparent  !important;
-   }
-   
-   #consulting .parallax-box a:hover{ 
-   	   background-color: transparent !important;
-	  -moz-border-radius:10px !important;
-	  -webkit-border-radius:10px !important;
-	  border-radius:10px !important;
-   	  border:1px solid #7c7c7c  !important; 
-    }
-   #consulting .parallax-overlay {padding: 90px 0 !important;}
-   
-	.timeclock{display:table;}
-	.timeclock div{text-align:center !important;}
-	.timeclock span{display:table-row !important;}
-	
-	/* block content align left */
-	.par_left{text-align:left !important;}
-	.par_right{text-align:left !important;}
-	.circ_counter_desc{text-align:left !important;}
-	.text-center{text-align:left !important;}
-	/* don't align to left */
-	.section-title.text-center{text-align:center !important;} 
-	#six-parallax .text-center{text-align:center !important;}
-	#seven-parallax .text-center{text-align:center !important;}
-	.post-info.text-center{text-align:center !important;}
-	footer.text-center{text-align:center !important;}
-	.form-actions .text-center{text-align:center !important;}
-@media (max-width: 767px) {
-
-    .webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
-        -webkit-transform: none;
-        -moz-transform: none;
-        transform: none;
-        cursor: pointer;
-      
-        
-	}
-
+#consulting {
+    padding: 0 !important;
+}
+#consulting .parallax-box a {
+    border: 1px solid transparent !important;
+}
+#consulting .parallax-box a:hover {
+    background-color: transparent !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important;
+    border: 1px solid #7c7c7c !important;
+}
+#consulting .parallax-overlay {
+    padding: 90px 0 !important;
+}
+.timeclock {
+    display: table;
+}
+.timeclock div {
+    text-align: center !important;
+}
+.timeclock span {
+    display: table-row !important;
 }
 
+.timeclock h4 {
+  font-weight: 200;
+  color:#7c7c7c;
+}
 
-@media (max-width: 568px) {
-	
-	/* Block content center on smartphones */
-	.par_left{text-align:center !important;}
-	.par_right{text-align:center !important;}
-	.circ_counter_desc{text-align:center !important;}
-	.text-center{text-align:center !important;}
-	
+.section-title.text-center {
+    text-align: center !important;
+}
+#six-parallax .text-center {
+    text-align: center !important;
+}
+#seven-parallax .text-center {
+    text-align: center !important;
+}
+.post-info.text-center {
+    text-align: center !important;
+}
+footer.text-center {
+    text-align: center !important;
+}
+.form-actions .text-center {
+    text-align: center !important;
+}
+
+.center-override {
+  text-align: center !important;
+}
+
+.webform-client-form-1 {
+  margin-top: 0px;
+}
+
+.cboxClose {
+  display: none;
 }

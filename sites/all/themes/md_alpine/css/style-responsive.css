@@ -1,6 +1,6 @@
 /*
 Theme Name: Alpine
-Theme URI: http://www.creative-ispiration.com/themes/alpine/
+Theme URI: //www.creative-ispiration.com/themes/alpine/
 Description: Responsive One Page HTML5/CSS3 Parallax Site Template
 Version: 1.0
 Author: Creative-Ispiration
@@ -10,9 +10,9 @@ Author URI: http://themeforest.net/user/creativeispiration
 
 /* ExtraSmall devices (tablets, 767px and down) */
 @media (max-width: 767px) {
-	
+
 	.flexslider{ text-align:center;}
-	
+
 	#home .section-title h1 {
 		font-size: 33px;
 		line-height: 36px;
@@ -40,7 +40,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 		right: 18px;
         top:50%;
 	}
-	
+
 	.navbar .show-menu {
 		display: block;
 	}
@@ -92,9 +92,9 @@ Author URI: http://themeforest.net/user/creativeispiration
 	#ajaxpage .section-title h1 {
 		font-size: 40px;
 	}
-	.mybutton.ultra a, 
+	.mybutton.ultra a,
 	.mybutton.ultra button,
-	.mybutton2.ultra a, 
+	.mybutton2.ultra a,
 	.mybutton2.ultra button{
 		font-size: 13px;
 		line-height: 40px;
@@ -129,7 +129,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 		line-height: 65px;
 		font-weight: 600;
 	}
-	
+
 	.timeline-content #timeline .timeline-item, .timeline-content #timeline .timeline-item:nth-child(2n) {
 		clear: both;
 		float: none;
@@ -183,11 +183,11 @@ Author URI: http://themeforest.net/user/creativeispiration
 		margin: 40px 0 0 0;
 		text-align:center;
 	}
-	
+
 	#map_canvas {
 		height: 350px;
 	}
-	
+
 }
 
 @media (max-width: 1024px) {
@@ -228,28 +228,28 @@ Author URI: http://themeforest.net/user/creativeispiration
 	}
 	.project-description{ text-align:center;}
 	.navbar .nav > li > a{ padding:0 12px;}
-	
+
 	#home .section-title h1 {
 		font-size: 80px;
 		line-height:80px;
 		font-weight: 600;
 	}
-	
-	
+
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+
 	.flexslider{ text-align:left;}
-	
+
 	#home .section-title h1 {
 		font-size: 110px;
 		line-height: 100px;
 		letter-spacing:-3px;
 		font-weight: 400;
 	}
-	
+
 	.project-description{ text-align:inherit;}
 	.navbar .nav > li > a{ padding:0 15px;}
 	.mybutton a, .mybutton button, .action .mybutton span:before,.form-actions .mybutton span:before {
@@ -269,7 +269,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
-	.webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span { 
+	.webform-client-form .mybutton a:hover span,.webform-client-form .mybutton button:hover span,.webform-client-form .action .mybutton:hover span,.webform-client-form .form-actions .mybutton:hover span {
         -webkit-transform: none;
         -moz-transform: none;
         transform: none;
@@ -280,7 +280,7 @@ Author URI: http://themeforest.net/user/creativeispiration
         transform: rotateX(90deg) translateY(-22px);
         cursor: pointer;
         */
-        
+
 	}
     .mybutton a:hover span, .mybutton button:hover span, .action .mybutton:hover span,.form-actions .mybutton:hover span {
         -webkit-transform: rotateX(90deg) translateY(-22px);
@@ -305,7 +305,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 		-moz-transform-origin: 50% 0;
 		transform-origin: 50% 0;
 	}
-	
+
 	.mybutton2 a, .mybutton2 button {
 	overflow: hidden;
 	margin: 0 15px;
@@ -341,7 +341,7 @@ Author URI: http://themeforest.net/user/creativeispiration
 		transform: translateX(0%);
 	}
     .service-element{ text-align:inherit;}
-	
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
