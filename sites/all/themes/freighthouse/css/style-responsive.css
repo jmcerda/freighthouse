@@ -384,7 +384,8 @@
     .circular-pie span{ height: 150px!important; width: 150px!important; }
     .circular-pie{ width: 150px!important;}
     .element-line form{ width: 90%; margin: 0 auto;}
-    .about_text{ text-align: center;}
+    .about_text{ text-align: center;}    
+    #map_canvas{ height: auto!important;}
 }
 
 @media (max-width:1024px) {

@@ -2106,4 +2106,10 @@ p.lead.par_light {
 .intro-item {
   max-width: 100%;
 }
-
+/* added on 24-11-14*/
+#cboxLoadedContent .section-content{ padding-top:0px;}
+.mybutton a:hover span, .mybutton button:hover span, .action .mybutton:hover span, .form-actions .mybutton:hover span{
+transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(90deg) translateY(-22px) !important;-moz-transform:rotateX(90deg) translateY(-22px) !important;
+}
+.post-avatar img {transform: rotate(0deg); width: 75px;}
+.post-avatar a:hover {transform: rotate(360deg);}
