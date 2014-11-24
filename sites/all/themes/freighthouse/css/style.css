@@ -2107,7 +2107,7 @@ p.lead.par_light {
   max-width: 100%;
 }
 /* added on 24-11-14*/
-#cboxLoadedContent #page-wrapper .section-content{ padding-top:0px!important;}
+#page-wrapper .section-content{ padding-top:0px!important;}
 .mybutton a:hover span, .mybutton button:hover span, .action .mybutton:hover span, .form-actions .mybutton:hover span{
 transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(90deg) translateY(-22px) !important;-moz-transform:rotateX(90deg) translateY(-22px) !important;
 }
