@@ -97,7 +97,7 @@
 
 <?php if($page['portfolio']):?>
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section-content">
+    <section id="portfolio" class="section-content mobile-hide">
         <?php print render($page['portfolio']);?>
     </section>
     <!-- Portfolio Section -->

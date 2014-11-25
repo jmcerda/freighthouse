@@ -127,7 +127,7 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content skillSize" id="marcomMove">
+                            <div class="parallax-content skillSize mobile-hide" id="marcomMove">
                                 <div class="cart">
                                     <div class="cart_container">
                                         <div class="row">';
@@ -466,7 +466,7 @@ function md_alpine_module_block_view($delta = '') {
                             </div>
                             <!-- Parallax Body -->
                             <!-- Parallax content -->
-                            <div class="parallax-content">
+                            <div class="parallax-content mobile-hide">
                                 <div class="row">';
                             $overview = theme_get_setting('pr_'.$i.'_overview');
                             foreach ($overview as $key => $value){
