@@ -55,7 +55,8 @@ function md_alpine_preprocess_html(&$vars) {
     drupal_add_js($themepath . '/js/lib/portfolio_custom.js');
     drupal_add_js($themepath . '/js/script.js');
     drupal_add_js($themepath . '/js/lib/retina-1.1.0.min.js');
-    drupal_add_js('https://maps.google.com/maps/api/js?sensor=false&callback=initialize');
+    // drupal_add_js('https://maps.google.com/maps/api/js?sensor=false&callback=initialize');
+    drupal_add_js('https://maps.google.com/maps/api/js?sensor=false&callback=gMapsCallback');
 
     /* ------------------------- Add favicon Page ------------------------*/
     if (theme_get_setting('toggle_favicon') == 1) {
