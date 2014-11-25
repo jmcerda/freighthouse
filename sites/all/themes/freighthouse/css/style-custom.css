@@ -96,7 +96,7 @@ footer.text-center {
   display: none;
 }
 /**fix for bottom webform button*/
-.webform-client-form .form-actions .mybutton:hover span{        
+.webform-client-form .mybutton button:hover span{        
         -webkit-perspective: 0px !important;
         -moz-perspective: 0px !important;
         perspective: 0px !important;
