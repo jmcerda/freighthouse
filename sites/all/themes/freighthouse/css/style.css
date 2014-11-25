@@ -2115,5 +2115,3 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 .post-avatar img {transform: rotate(0deg); width: 75px;}
 .post-avatar img{transition-duration:0.8s;width: 75px; padding:3px;transition-property:transform;}
 .post-avatar:hover img {transform: rotate(360deg);}
-/**fix for bottom webform button*/
- #user-register-form .mybutton button:hover span{perspective:0px!important;}
