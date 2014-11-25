@@ -455,10 +455,10 @@ function md_alpine_module_block_view($delta = '') {
                                             </big>
                                             <p>We work remotely however we can arrange for on-site assistance at any location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
-                                            <div>
+                                            <div class="mobile-hide">
                                                 <center>Our current reach:</center>
                                             </div>
-                                            <div id="numberTarget">
+                                            <div id="numberTarget" class="mobile-hide">
                                             </div>
                                         </span>
                                     </span>
