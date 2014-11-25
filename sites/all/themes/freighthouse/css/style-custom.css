@@ -95,3 +95,5 @@ footer.text-center {
 .cboxClose {
   display: none;
 }
+/**fix for bottom webform button*/
+ .webform-client-form .mybutton button:hover span{perspective:0px!important;}
