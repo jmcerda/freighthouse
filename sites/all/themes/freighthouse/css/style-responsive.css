@@ -248,7 +248,11 @@
         perspective: 1000px;
         letter-spacing: 0;
     }
-    .action.mybutton button:hover span{perspective:0 !important;}
+    .webform-client-form .form-actions .mybutton:hover span{        
+        -webkit-perspective: 0px !important;
+        -moz-perspective: 0px !important;
+        perspective: 0px !important;
+    }
     .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton span  {
         -webkit-transition: -webkit-transform 0.3s;
         -moz-transition: -moz-transform 0.3s;
