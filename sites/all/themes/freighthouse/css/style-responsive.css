@@ -243,11 +243,11 @@
     .project-description{ text-align:inherit;}
     .navbar .nav > li > a{ padding:0 15px;}
     .mybutton a, .mybutton button, .action .mybutton span:before,.form-actions .mybutton span:before {
-        -webkit-perspective: 1000px;
+        /*-webkit-perspective: 1000px;
         -moz-perspective: 1000px;
-        perspective: 1000px;
+        perspective: 1000px; */
         letter-spacing: 0;
-    }
+    }    
     .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton span  {
         -webkit-transition: -webkit-transform 0.3s;
         -moz-transition: -moz-transform 0.3s;
