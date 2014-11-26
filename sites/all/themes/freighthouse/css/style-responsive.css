@@ -388,7 +388,7 @@
     #map_canvas{ height: auto!important;}
     .call-number{ font-size: 40px!important;}
     .section-title h1{ font-size: 38px;}
-    #webform-client-form-1 input[type="text"]{ width: 100%;}
+    #webform-client-form-1 input[type="text"],#webform-client-form-1 input[type="email"]{ width: 100%;}
     #webform-client-form-1 input[type="submit"]{ border:none; padding: 4px 25px;}
 }
 
