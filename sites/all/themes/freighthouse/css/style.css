@@ -1048,8 +1048,8 @@ body.front #ajaxpage {
 }
 .circular-pie {
   max-width: 100% !important;
- /* height: 150px !important;
-  line-height: 150px !important; */
+  height: 150px !important;
+  line-height: 150px !important;
 }
 
 .circular-pie span {
@@ -1077,8 +1077,8 @@ body.front #ajaxpage {
 
 .circular-pie canvas {
   max-width: 100% !important;
-  /*height:150px !important;
-  line-height: 150px !important; */
+  height:150px !important;
+  line-height: 150px !important;
 }
 
 .circ_counter_desc {
