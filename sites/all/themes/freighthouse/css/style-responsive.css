@@ -386,6 +386,10 @@
     .element-line form{ width: 90%; margin: 0 auto;}
     .about_text{ text-align: center;}    
     #map_canvas{ height: auto!important;}
+    .call-number{ font-size: 40px!important;}
+    .section-title h1{ font-size: 38px;}
+    #webform-client-form-1 input[type="text"]{ width: 100%;}
+    #webform-client-form-1 input[type="submit"]{ border:none; padding: 4px 25px;}
 }
 
 @media (max-width:1024px) {
