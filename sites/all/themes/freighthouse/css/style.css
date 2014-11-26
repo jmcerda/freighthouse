@@ -1065,19 +1065,19 @@ body.front #ajaxpage {
   /*max-height: 100%*/
   z-index: 10;
   /*line-height: 210px;
-  border-radius: 100%;*/  
+  border-radius: 100%;*/
   text-align: center;
   font-size: 42px;
   letter-spacing: -3px;
   color: #FFFFFF;
   /*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); */
-  line-height: 300% !important; 
+  line-height: 300% !important;
 
 }
 
 .circular-pie canvas {
   max-width: 100% !important;
-  /*height:150px !important;  
+  /*height:150px !important;
   line-height: 150px !important; */
 }
 
@@ -1676,9 +1676,9 @@ footer .social-icon a:hover {
 .navbar.navbar-fixed-top{
     height: auto;
 }*/
-.owl-theme .owl-controls{
+/*.owl-theme .owl-controls{
     margin-top:25px;
-}
+}*/
 /*.owl-theme .owl-controls .owl-page span {*/
     /*margin: 0 3px;*/
     /*width: 10px;*/
