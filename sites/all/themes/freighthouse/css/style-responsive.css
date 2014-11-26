@@ -247,7 +247,7 @@
         -moz-perspective: 1000px;
         perspective: 1000px; */
         letter-spacing: 0;
-    }    
+    }
     .mybutton a span, .mybutton button span, .action .mybutton span,.form-actions .mybutton span  {
         -webkit-transition: -webkit-transform 0.3s;
         -moz-transition: -moz-transform 0.3s;
@@ -384,7 +384,7 @@
     .circular-pie span{ height: 150px!important; width: 150px!important; }
     .circular-pie{ width: 150px!important;}
     .element-line form{ width: 90%; margin: 0 auto;}
-    .about_text{ text-align: center;}    
+    .about_text{ text-align: center;}
     #map_canvas{ height: auto!important;}
     .call-number{ font-size: 40px!important;}
     .section-title h1{ font-size: 38px;}
@@ -407,5 +407,12 @@
     }
     .mobile-hide {
         display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .circular-pie {
+        height: 150px !important;
+        line-height: 150px !important;
     }
 }
