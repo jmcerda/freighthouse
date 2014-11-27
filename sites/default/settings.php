@@ -1,5 +1,14 @@
 <?php
-
+// Require SSL.
+if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
+  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
+  if (!isset($_SERVER['HTTP_X_SSL']) ||
+    (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://www.freighthouse.nyc'. $_SERVER['REQUEST_URI']);
+    exit();
+  }
+}
 // All Pantheon Environments.
 if (defined('PANTHEON_ENVIRONMENT')) {
   // Use Redis for caching.
