@@ -3,7 +3,7 @@ description = "Creates an interface for the allowed protocols used in filter_xss
 core = 7.x
 files[] = filter_protocols.module
 files[] = filter_protocols.admin.inc
-config = admin/config/content/formats/protocols
+configure = admin/config/content/formats/protocols
 
 ; Information added by drupal.org packaging script on 2011-04-16
 version = "7.x-1.2"
