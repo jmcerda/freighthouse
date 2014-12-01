@@ -37,7 +37,7 @@ function freighthouse_theme() {
 }
 
 function freighthouse_form_alter(&$form, &$form_state, $form_id) {
-    if (strpos($form_id,"webform_client_form") === false) {
+    if (strpos($form_id,"webform_client_form_1") === false) {
         switch ($form_id) {
             case 'user_login':
                 $form['name']['#attributes']['class'][] = 'form-control input-lg';
