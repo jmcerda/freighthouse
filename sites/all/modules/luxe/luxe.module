@@ -82,8 +82,7 @@ function luxe_login_page() {
             '#value' => t('Create an account'),
             '#type' => 'submit'
             )
-      )
-    ;
+      );
   }
 
   $vars = array(
