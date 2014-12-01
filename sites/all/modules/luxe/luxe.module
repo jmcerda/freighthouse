@@ -83,7 +83,7 @@ function luxe_login_page() {
             '#type' => 'submit'
             )
       )
-    else;
+    ;
   }
 
   $vars = array(
