@@ -61,10 +61,10 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 $form['account']['mail']['#attributes']['class'][] = 'form-control input-lg';
                 $form['account']['mail']['#prefix'] = '<div class="col-md-12 col-sm-12 col-md-12 col-xs-12">';
                 $form['account']['mail']['#suffix'] = '</div>';
-                $form['actions']['submit']['#value'] = t('Sign up');
+                $form['actions']['submit']['#value'] = t('Join Freighthouse');
                 $form['actions']['submit']['#prefix'] = '<div class="row">
               <div class="col-md-12 text-center">
-                  <div class="action mybutton medium"><button onclick="this.submit();"><span style="position:relative; display:inline-block; " data-hover="Sign up">';
+                  <div class="action mybutton medium"><button onclick="this.submit();"><span style="position:relative; display:inline-block; " data-hover="Join Freighthouse">';
                 $form['actions']['submit']['#suffix'] = '</span></button></div>
               </div>
             </div>';
