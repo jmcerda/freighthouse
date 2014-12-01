@@ -22,11 +22,11 @@
                     <div class="<?php print $content_wrapper_classes;?>">
                         <?php print render($page['content']);?>
                     </div>
-                    <?php if($page['sidebar']):?>
+<!--                     <?php if($page['sidebar']):?>
                         <div class="<?php print $sidebar_wrapper_classes;?>">
                             <?php print render($page['sidebar']);?>
                         </div>
-                    <?php endif;?>
+                    <?php endif;?> -->
                 </div>
             <?php if(empty($page['spb_enabled']) || $page['spb_enabled'] == FALSE):?>
                 </div>
