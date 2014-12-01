@@ -98,6 +98,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 break;
         }
     } else {
+        /*
         $form['#attributes']['class'][] = 'element-inline';
         $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
@@ -108,6 +109,7 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
                 </div>
               </div>
             ';
+        */
         $form['#attributes']['class'][] = 'element-line';
         $form['actions']['submit']['#value'] = 'Send Message';
         $form['actions']['submit']['#prefix'] = '<div class="row">
