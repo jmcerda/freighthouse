@@ -206,14 +206,16 @@ class views_plugin_cache extends views_plugin {
     // Slightly less simple for CSS:
     $css = drupal_add_css();
     $css_start = isset($this->storage['css']) ? $this->storage['css'] : array();
-    $this->storage['css'] = $array_mapping_func($css, $css_start);
+    //$this->storage['css'] = $array_mapping_func($css, $css_start);
+    $this->storage['css'] = $this->assetDiff($css, $css_start, $array_mapping_func);
 
     // Get javascript after/before views renders.
     $js = drupal_add_js();
     $js_start = isset($this->storage['js']) ? $this->storage['js'] : array();
     // If there are any differences between the old and the new javascript then
     // store them to be added later.
-    $this->storage['js'] = $array_mapping_func($js, $js_start);
+    //$this->storage['js'] = $array_mapping_func($js, $js_start);
+    $this->storage['js'] = $this->assetDiff($js, $js_start, $array_mapping_func);
 
     // Special case the settings key and get the difference of the data.
     $settings = isset($js['settings']['data']) ? $js['settings']['data'] : array();
