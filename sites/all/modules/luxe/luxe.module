@@ -71,7 +71,7 @@ function luxe_login_page() {
   } else {
     $register_form = array(
         '#method' => 'post',
-        '#action' => url('user/register/'),
+        '#action' => url('client/register/'),
         '#form_id' => 'user_login_register',
         '#type' => 'form',
         'username' => array(
