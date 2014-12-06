@@ -4,9 +4,7 @@
             <?php print render($page['navigation']);?>
         <?php endif;?>
         <section class="section-content blog-content">
-            <?php if($page['spb_enabled'] == FALSE):?>
             <div class="container">
-            <?php endif;?>
                 <!-- Section title -->
                 <?php if(isset($node) && !empty($node->title)):?>
                 <div class="section-title text-center">
@@ -29,9 +27,7 @@
                 </div>
                 <?php endif; ?>
                 <!-- Section title -->
-                <?php if(!$page['spb_enabled'] || $page['spb_enabled'] == FALSE):?>
                 <div class="row">
-                <?php endif;?>
                     <?php if (!empty($messages) || !empty($tabs['#primary']) || !empty($tabs['#secondary'])): ?>
                         <div class="col-md-12">
                             <?php print $messages; ?>
@@ -50,11 +46,7 @@
                             <?php print render($page['sidebar']);?>
                         </div>
                     <?php endif;?>
-                <?php if(!$page['spb_enabled'] || $page['spb_enabled'] == FALSE):?>
                 </div>
-                <?php endif;?>
-
-                <?php if($page['spb_enabled'] == FALSE):?>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="element-line">
@@ -63,7 +55,6 @@
                                     <div class="puls previous">
                                         <a href="<?php print $previous_link;?>">&larr; <?php print t('Older');?></a>
                                     </div>
-                                    <?php endif;?>
                                     <?php if(isset($next_link)):?>
                                     <div class="puls next">
                                         <a href="<?php print $next_link;?>"><?php print t('Newer');?> &rarr;</a>
@@ -74,9 +65,7 @@
                         </div>
                     </div>
                 <?php endif;?>
-            <?php if($page['spb_enabled'] == FALSE):?>
             </div>
-            <?php endif;?>
         </section>
         <?php if($page['footer']):?>
             <?php print render($page['footer']);?>
