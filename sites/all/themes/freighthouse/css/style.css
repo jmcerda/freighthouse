@@ -2118,3 +2118,19 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 .post-avatar:hover img {transform: rotate(360deg);}
 #webform-client-form-1 input[type="submit"]{ border: none; padding: 5px 25px!important;}
 .action.mybutton > button > span:before{ padding-top: 5px!important;}
+
+/*user login form*/
+#luxe-wrap {
+  width: 100%;
+  float: left;
+}
+
+#luxe-login {
+  width: 49%;
+  float: left;
+}
+
+#luxe-login-register {
+  width: 49%;
+  float: left;
+}
