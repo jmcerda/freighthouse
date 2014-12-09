@@ -122,7 +122,11 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
     }
 }
 
-drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
+
+
+drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external',
+  array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
+  );
 
 /**
  * Theme the username/password description of the user login form
