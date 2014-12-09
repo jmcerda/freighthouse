@@ -24,8 +24,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="75" class="blog-page <?php print $classes; ?>" <?php print $attributes;?> >
 <?php print $page_top; ?>
     <?php print $page; ?>
+    <?php print $scripts; ?>
     <?php
-    print $scripts;
     print $page_bottom;
     if (isset($footer_code)): print $footer_code; endif;
 ?>
