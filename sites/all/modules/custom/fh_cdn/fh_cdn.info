@@ -1,0 +1,6 @@
+name = FH CDN
+description = simple cdn to provide cookie free domain
+core = 7.x
+package = Freighthouse
+version = 7.x-1.0
+project = fh_cdn
