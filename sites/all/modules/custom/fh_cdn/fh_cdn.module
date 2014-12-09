@@ -25,7 +25,7 @@ function fh_cdn_file_url_alter(&$original_uri) {
     if ($wrapper = file_stream_wrapper_get_instance_by_uri($original_uri)) {
       $uri = str_replace($GLOBALS['base_url'] . '/', '', $wrapper->getExternalUrl());
 
-      $original_uri = variable_get('fh_cdn', 'https://CDN.MYDOMAIN.COM') . '/' . $uri;
+      $original_uri = variable_get('fh_cdn_cdn', 'https://CDN.MYDOMAIN.COM') . '/' . $uri;
       return;
     }
     else {
@@ -33,7 +33,7 @@ function fh_cdn_file_url_alter(&$original_uri) {
     }
   }
   else {
-    $original_uri = variable_get('fh_cdn', 'http://cdn.freighthouse.nyc') . '/' . $original_uri;
+    $original_uri = variable_get('fh_cdn_cdn', 'http://cdn.freighthouse.nyc') . '/' . $original_uri;
   }
 
 }
