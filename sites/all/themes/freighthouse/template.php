@@ -123,10 +123,12 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 }
 
 
+// Force js to load in footer
 
-drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external'
-  //array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
-  );
+drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
+// drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external',
+//   array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
+//   );
 
 /**
  * Theme the username/password description of the user login form
