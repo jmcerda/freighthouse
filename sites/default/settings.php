@@ -246,7 +246,7 @@ $databases = array (
   'default' =>
   array (
     'default' =>
-    
+
     array (
       'database' => 'freighthouse',
       'username' => 'freighthouse',
@@ -255,7 +255,7 @@ $databases = array (
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
-    ), 
+    ),
     /*
 	array (
       'database' => 'db_freighthouse',
@@ -266,7 +266,7 @@ $databases = array (
       'driver' => 'mysql',
       'prefix' => '',
     ),
-   */  
+   */
   ),
 );
 //$conf['clean_url'] = 0;
@@ -609,3 +609,5 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+$conf["fh_cdn"] = 'https://cdn.freighthouse.nyc';
