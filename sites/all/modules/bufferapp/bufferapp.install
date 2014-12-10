@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions for Buffer module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function bufferapp_uninstall() {
+
+  // Delete all generated variables from database
+  db_delete('variable')
+    ->condition('name', 'bufferapp_%', 'LIKE')
+     ->execute();
+  cache_clear_all('variables', 'cache_bootstrap');
+}
+
