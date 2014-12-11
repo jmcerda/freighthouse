@@ -754,9 +754,10 @@ function PushtapePlayer () {
     sm._writeDebug('pushtapePlayer.init(): Found ' + foundItems + ' relevant items in ' + scope);
 
 
-    /** If addControlsMarkup is false (default), you are expected to add all the
-     *  control markup in HTML yourself (i.e. allowing you to radically alter positioning of things)
-     *  If addControlsMarkup = true, it will insert HTML into the top/bottom (addControlsMarkup.position) of the playlist scope
+    /**
+     * If addControlsMarkup is false (default), you are expected to add all the
+     * control markup in HTML yourself (i.e. allowing you to radically alter positioning of things)
+     * If addControlsMarkup = true, it will insert HTML into the top/bottom (addControlsMarkup.position) of the playlist scope
      */
     if (self.config.addControlsMarkup.enabled && foundItems > 0) {
       sm._writeDebug('Attempting to add controls markup using class: ' + self.config.addControlsMarkup.controlsMarkupClass);

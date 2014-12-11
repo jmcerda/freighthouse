@@ -12,7 +12,7 @@
  * Player
  */
 .pt-play-pause:focus {
-  /* @TODO: Add another indicator here or remove to address accessibility*/
+  /* @TODO: Add another indicator here or remove to address accessibility */
   outline:0;
   opacity:.8; /* Some sort of indicator, at least*/
 }
@@ -133,9 +133,7 @@
  * Genericons for better icons. 
  * See: http://genericons.com/
  */
-.pt-link {
-
-}
+.pt-link {}
 .pt-link:before {
   font-family:Genericons;
   content: '\f452 ';

@@ -1,6 +1,7 @@
 (function ($) {
   Drupal.behaviors.pushtapePlayerConfig = {
     attach: function (context, settings) {
+      // Load once
       if (context == document) {
         soundManager.setup({
           url:  Drupal.settings.pushtapePlayerSM2.url,
@@ -20,7 +21,6 @@
           }
         });
       }
-  
     }
   };
 })(jQuery);

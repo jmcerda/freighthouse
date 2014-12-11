@@ -1,14 +1,9 @@
 <?php
 /**
  * @file
- * Provide a block for global controls, as well as a field formatter for audio links.
- * Settings page 
+ * Provide a block for Pushtape Player global controls, as well as a field formatter for audio links.
  *
  */
-
-/* hook_menu */
-/*admin/config/media/pushtape-player*/
-// Build up settings for the player
 
 /**
  * Implements hook_init().
@@ -18,7 +13,6 @@ function pushtape_player_init() {
   if (!drupal_installation_attempted()) {
     _pushtape_player_doheader();
   }
-
 }
 
 /**
@@ -35,6 +29,9 @@ function pushtape_player_menu() {
   return $items;
 }
 
+/**
+ * Pushtape Player settings form callback
+ */
 function pushtape_player_settings_form($form, &$form_state) {
   $form['settings']['pushtape_player_block'] = array(
       '#markup' => t('This page only configures the pushtape-player.js script defaults. You may need to additionally configure the <a href="!link"><em>Pushtape Player Controls</em> block</a> to position the global player controls.', array('!link' => url('admin/structure/block/manage/pushtape_player/controls/configure'))),
@@ -76,7 +73,6 @@ function pushtape_player_settings_form($form, &$form_state) {
     '#description' => t("Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.", array('%blog' => 'blog', '%blog-wildcard' => 'blog/*', '%front' => '<front>')),
   );
   return system_settings_form($form);
-
 }
 
 /**
@@ -132,27 +128,34 @@ function _pushtape_player_doheader() {
     ),
   );
 
-
   // Give other modules the possibility to override settings and style.
   $data = &$js_settings;
   drupal_alter('pushtapePlayerConfig', $data);
+  
+  // Load genericons from library
+  if (module_exists('libraries') && $genericons_path = libraries_get_path('genericons')) {
+   drupal_add_css($genericons_path . '/genericons/genericons.css');
+  }
 
   // Add and initialise the scripts.
-  // Soundmanager2 Drupal module uses hook_library instead of hook_libraries_info so we can't use libraries_load('soundmanager2') as expected.
-  // Maintainers for SM2 Drupal module are non-responsive so we have to load it in a hacky way.
-  $sm2_library_path = variable_get('sm2_path', 'sites/all/libraries/soundmanager2');
-  drupal_add_js($sm2_library_path . '/script/soundmanager2-jsmin.js');
-  drupal_add_js(array('pushtapePlayerSM2' => array('url' => base_path() . $sm2_library_path . '/swf/', 'debug' => TRUE)), array('type' => 'setting', 'scope' => JS_DEFAULT));
+  if ($sm2_library_path = libraries_get_path('soundmanager2')) {
+    // Add Soundmanager2
+    drupal_add_js($sm2_library_path . '/script/soundmanager2-jsmin.js');
+    drupal_add_js(array('pushtapePlayerSM2' => array('url' => base_path() . $sm2_library_path . '/swf/', 'debug' => TRUE)), array('type' => 'setting', 'scope' => JS_DEFAULT));
+    
+    // Pushtape player settings
+    drupal_add_js(array('pushtapePlayerConfig' => $js_settings), array('type' => 'setting', 'scope' => JS_DEFAULT));
+    
+    // Pushtape player constructor
+    drupal_add_js(drupal_get_path('module', 'pushtape_player') . '/js/pushtape-player.js', array('scope' => 'footer'));
   
-  // Pushtape player settings
-  drupal_add_js(array('pushtapePlayerConfig' => $js_settings), array('type' => 'setting', 'scope' => JS_DEFAULT));
-  
-  // Pushtape player constructor
-  drupal_add_js(drupal_get_path('module', 'pushtape_player') . '/js/pushtape-player.js', array('scope' => 'footer'));
-  
-  // Pushtape player instance
-  drupal_add_js(drupal_get_path('module', 'pushtape_player') . '/js/pushtape-player-init.js', array('scope' => 'footer'));
-  $already_added = TRUE;
+    // Pushtape player instance
+    drupal_add_js(drupal_get_path('module', 'pushtape_player') . '/js/pushtape-player-init.js', array('scope' => 'footer'));
+    $already_added = TRUE;
+  }
+  else {
+    watchdog('pushtape_player', 'Soundmanager2 library not found. Normally found in your libraries directory, i.e. profiles/pushtape/libraries/soundmanager2 or sites/all/libraries/soundmanager2');  
+  }
 }
 
 
@@ -172,7 +175,6 @@ function pushtape_player_field_formatter_info() {
   );
 }
 
-
 /**
  * Implements hook_field_formatter_settings_form().
  */
@@ -184,7 +186,6 @@ function pushtape_player_field_formatter_settings_form($field, $instance, $view_
   $element = array();
 
   switch ($display['type']) {
-    // SoundManager 2 Page Player
     case 'pushtape_player':
       $element['text'] = array(
         '#title' => t('Link text'),
@@ -337,7 +338,7 @@ function pushtape_player_theme() {
 
 
 /**
- * Implement hook_block_info()
+ * Implements hook_block_info()
  */
 function pushtape_player_block_info() {
   $blocks = array();
@@ -347,6 +348,9 @@ function pushtape_player_block_info() {
   return $blocks;
 }
 
+/**
+ * Implements hook_block_view
+ */
 function pushtape_player_block_view($delta = '') {
   // This example is adapted from node.module.
   $block = array();
@@ -408,5 +412,4 @@ function theme_pushtape_player_controls() {
 EOD;
 
   return $output;
-
 }
