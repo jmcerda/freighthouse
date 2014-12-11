@@ -2139,6 +2139,6 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 }
 
-.looking {
-
+.fh_form_item {
+  display:inline;
 }

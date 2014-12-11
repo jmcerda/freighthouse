@@ -3,9 +3,9 @@
         <?php if($page['navigation'] && $node->nid != '47'):?>
          <?php       print render($page['navigation']);?>
         <?php endif;?>
-        <section class="section-content blog-content">
+        <section class="section-content">
             <div class="container">
-                <div class="row">
+                <div class="row" fh_form_item>
                         <div class="col-md-12">
                             <?php print $messages; ?>
                             <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
