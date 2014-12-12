@@ -11,7 +11,7 @@ function freighthouse_theme() {
 
   $items['user_login'] = array(
     'render element' => 'form',
-    'path' => drupal_get_path('theme', 'freighthouse') . '/templates',
+    'path' => drupal_get_path('theme', 'freighthouse') . '/template',
     'template' => 'user-login',
     'preprocess functions' => array(
        'freighthouse_preprocess_user_login'
@@ -19,7 +19,7 @@ function freighthouse_theme() {
   );
   $items['user_register_form'] = array(
     'render element' => 'form',
-    'path' => drupal_get_path('theme', 'freighthouse') . '/templates',
+    'path' => drupal_get_path('theme', 'freighthouse') . '/template',
     'template' => 'user-register-form',
     'preprocess functions' => array(
       'freighthouse_preprocess_user_register_form'
@@ -27,7 +27,7 @@ function freighthouse_theme() {
   );
   $items['user_pass'] = array(
     'render element' => 'form',
-    'path' => drupal_get_path('theme', 'freighthouse') . '/templates',
+    'path' => drupal_get_path('theme', 'freighthouse') . '/template',
     'template' => 'user-pass',
     'preprocess functions' => array(
       'freighthouse_preprocess_user_pass'
