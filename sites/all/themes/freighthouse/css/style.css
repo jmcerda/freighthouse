@@ -1606,7 +1606,7 @@ footer .social-icon a:hover {
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid;
-    color: #cccccc;
+    color: #7c7c7c;
     text-transform: uppercase;
     font-weight: 200;
     border-radius: 6px;
@@ -2054,7 +2054,7 @@ p.lead.par_light {
 }
 
 .mybutton {
-  color:#cccccc;
+  color:#7c7c7c;
 }
 
 .sublime {
@@ -2120,25 +2120,3 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 .action.mybutton > button > span:before{ padding-top: 5px!important;}
 
 /*user login form*/
-#luxe-wrap {
-  width: 100%;
-  float: left;
-}
-
-#luxe-login {
-  width: 49%;
-  float: left;
-}
-
-#luxe-login-register {
-  width: 49%;
-  float: left;
-}
-
-.what_wrapper {
-
-}
-
-.fh_form_item {
-  display:inline;
-}
