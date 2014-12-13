@@ -30,9 +30,18 @@
         <section class="section-content">
             <div class="container">
                 <div class="row col-lg-12">
-                    <?php
-                    // Print out the progress bar at the top of the page
-                    print drupal_render($form['progressbar']);?>
+                    <div>
+                        <?php print $messages; ?>
+                        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+                    </div>
+                    <?php if($content_wrapper_classes != null) :?>
+                        <div class="<?php print $content_wrapper_classes;?>">
+                    <?php endif;?>
+                            <?php print drupal_render($form['submitted']);
+                                  print drupal_render_children($form);?>
+                    <?php if($content_wrapper_classes != null) :?>
+                        </div>
+                    <?php endif;?>
                 </div>
             </div>
         </section>
@@ -40,12 +49,3 @@
         <a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>
     </div>
 </div>
-
-<?php
-  // Print out the main part of the form.
-  // Feel free to break this up and move the pieces within the array.
-  print drupal_render($form['submitted']);
-
-  // Always print out the entire $form. This renders the remaining pieces of the
-  // form that haven't yet been rendered above (buttons, hidden elements, etc).
-  print drupal_render_children($form);
