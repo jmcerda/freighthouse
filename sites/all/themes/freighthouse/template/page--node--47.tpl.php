@@ -3,10 +3,13 @@
         <?php if($page['navigation'] && $node->nid != '47'):?>
          <?php       print render($page['navigation']);?>
         <?php endif;?>
+        <div class="section-title text-center">
+                <h1><?php print drupal_get_title();?></h1>
+        </div>
         <section class="section-content">
             <div class="container">
-                <div class="row" fh_form_item>
-                        <div class="col-md-12">
+                <div class="row fh_form_item col-md-12">
+                        <div>
                             <?php print $messages; ?>
                             <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
                         </div>
