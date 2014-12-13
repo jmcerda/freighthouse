@@ -32,14 +32,7 @@
                 <div class="row col-lg-12">
                     <?php
                     // Print out the progress bar at the top of the page
-                    print drupal_render($form['progressbar']);
-
-                    // Print out the preview message if on the preview page.
-                    if (isset($form['preview_message'])) {
-                      print '<div class="messages warning">';
-                      print drupal_render($form['preview_message']);
-                      print '</div>';
-                    }?>
+                    print drupal_render($form['progressbar']);?>
                 </div>
             </div>
         </section>
