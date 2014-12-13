@@ -21,17 +21,34 @@
  * - $form['preview']: A renderable representing the entire submission preview.
  */
 ?>
+
+<div id="page-wrapper">
+    <div id="page">
+        <div class="section-title text-center">
+            <h1><?php print drupal_get_title();?></h1>
+        </div>
+        <section class="section-content">
+            <div class="container">
+                <div class="row col-lg-12">
+                    <?php
+                    // Print out the progress bar at the top of the page
+                    print drupal_render($form['progressbar']);
+
+                    // Print out the preview message if on the preview page.
+                    if (isset($form['preview_message'])) {
+                      print '<div class="messages warning">';
+                      print drupal_render($form['preview_message']);
+                      print '</div>';
+                    }?>
+                </div>
+            </div>
+        </section>
+        <!-- Back to top -->
+        <a href="#" id="back-top"><i class="fontello icon-angle-up icon-2x"></i></a>
+    </div>
+</div>
+
 <?php
-  // Print out the progress bar at the top of the page
-  print drupal_render($form['progressbar']);
-
-  // Print out the preview message if on the preview page.
-  if (isset($form['preview_message'])) {
-    print '<div class="messages warning">';
-    print drupal_render($form['preview_message']);
-    print '</div>';
-  }
-
   // Print out the main part of the form.
   // Feel free to break this up and move the pieces within the array.
   print drupal_render($form['submitted']);
