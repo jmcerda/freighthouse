@@ -37,8 +37,7 @@
                     <?php if($content_wrapper_classes != null) :?>
                         <div class="<?php print $content_wrapper_classes;?>">
                     <?php endif;?>
-                            <?php print drupal_render($form['submitted']);
-                                  print drupal_render_children($form);?>
+                            <?php print render($page['content']);?>
                     <?php if($content_wrapper_classes != null) :?>
                         </div>
                     <?php endif;?>
