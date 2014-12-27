@@ -2120,3 +2120,7 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 .action.mybutton > button > span:before{ padding-top: 5px!important;}
 
 /*user login form*/
+
+#user-login ul li {
+  list-style: none;
+}
