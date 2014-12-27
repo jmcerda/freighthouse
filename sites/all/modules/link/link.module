@@ -10,7 +10,7 @@ define('LINK_INTERNAL', 'internal');
 define('LINK_FRONT', 'front');
 define('LINK_EMAIL', 'email');
 define('LINK_NEWS', 'news');
-define('LINK_DOMAINS', 'aero|arpa|asia|biz|build|com|cat|ceo|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|post|pro|tel|travel|mobi|local|xxx');
+define('LINK_DOMAINS', 'aero|arpa|asia|biz|build|com|cat|ceo|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|nyc|org|post|pro|tel|travel|mobi|local|xxx');
 
 define('LINK_TARGET_DEFAULT', 'default');
 define('LINK_TARGET_NEW_WINDOW', '_blank');
@@ -448,13 +448,13 @@ function _link_validate(&$item, $delta, $field, $entity, $instance, $langcode, &
 /**
  * Clean up user-entered values for a link field according to field settings.
  *
- * @param array $item 
+ * @param array $item
  *   A single link item, usually containing url, title, and attributes.
- * @param int $delta 
+ * @param int $delta
  *   The delta value if this field is one of multiple fields.
- * @param array $field 
+ * @param array $field
  *   The CCK field definition.
- * @param object $entity 
+ * @param object $entity
  *   The entity containing this link.
  */
 function _link_sanitize(&$item, $delta, &$field, $instance, &$entity) {
@@ -1142,7 +1142,7 @@ function link_views_api() {
 
 /**
  * Forms a valid URL if possible from an entered address.
- * 
+ *
  * Trims whitespace and automatically adds an http:// to addresses without a
  * protocol specified
  *
@@ -1173,13 +1173,13 @@ function link_cleanup_url($url, $protocol = 'http') {
 
 /**
  * Validates a URL.
- * 
+ *
  * Accepts all URLs following RFC 1738 standard for URL formation and all e-mail
  * addresses following the RFC 2368 standard for mailto address formation.
  *
  * @param string $text
  *   Url to be validated.
- * 
+ *
  * @return mixed
  *   Returns boolean FALSE if the URL is not valid. On success, returns one of
  *   the LINK_(linktype) constants.
@@ -1357,7 +1357,7 @@ function link_field_settings_form() {
 
 /**
  * Additional callback to adapt the property info of link fields.
- * 
+ *
  * @see entity_metadata_field_entity_property_info()
  */
 function link_field_property_info_callback(&$info, $entity_type, $field, $instance, $field_type) {
