@@ -80,22 +80,22 @@ if(isset($node->field_po_layout_mode)) {
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <p class="list-info">
-                                                    <i class="fontello icon-briefcase fa-sm"></i>
+                                                    <i class="fontello icon-briefcase fa-lg"></i>
                                                     <span><?php print render($content['field_po_author_name']);?></span>
                                                     <em><?php print render($content['field_po_author_company']);?></em>
                                                 </p>
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="list-info">
-                                                    <i class="fontello icon-calendar fa-sm"></i>
-                                                    <span><?php print t('Publish on');?></span>
+                                                    <i class="fontello icon-calendar fa-lg"></i>
+                                                    <span><?php print t('Created on');?></span>
                                                     <em><?php print date('d F, Y',$node->created);?></em>
                                                 </p>
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="list-info">
-                                                    <i class="fontello icon-tags fa-sm"></i>
-                                                    <span><?php print t('Tags');?></span>
+                                                    <i class="fontello icon-tags fa-lg"></i>
+                                                    <span><?php print t('Tags');?></</span>
                                                     <em><?php if(isset($taxonomy_output)): print $taxonomy_output; endif;?></em>
                                                 </p>
                                             </div>
@@ -135,18 +135,18 @@ if(isset($node->field_po_layout_mode)) {
 
                             <div class="project-details">
                                 <p class="list-info">
-                                    <i class="fontello icon-briefcase fa-sm"></i>
+                                    <i class="fontello icon-briefcase fa-lg"></i>
                                     <span><?php print render($content['field_po_author_name']);?></span>
                                     <em><?php print render($content['field_po_author_company']);?></em>
                                 </p>
                                 <p class="list-info">
-                                    <i class="fontello icon-calendar fa-sm></i>
+                                    <i class="fontello icon-calendar fa-lg"></i>
                                     <span><?php print t('Publish on');?></span>
                                     <em><?php print date('d F, Y',$node->created);?></em>
                                 </p>
                                 <p class="list-info">
-                                    <i class="fontello icon-tags fa-sm"></i>
-                                    <span><?php print t('Tags');?></</span>
+                                    <i class="fontello icon-tags fa-lg"></i>
+                                    <span><?php print t('Tags');?></span>
                                     <em><?php if(isset($taxonomy_output)) : print $taxonomy_output; endif ;?></em>
                                 </p>
                             </div>
