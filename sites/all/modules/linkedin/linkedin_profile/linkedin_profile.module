@@ -114,7 +114,7 @@ function linkedin_profile_user_load($users) {
             $items = array();
             $items_val = $profile[$key][$multiples[$key]];
             if (is_array($items_val)) {
-              if (isset($items_val['id'])) {
+              if ($items_val['id']) {
                 $variables[$multiples[$key]] = $items_val;
                 $items[] = theme('linkedin_profile_user_page_' . $multiples[$key] . '_item', $variables);
               }
@@ -229,13 +229,6 @@ function linkedin_profile_theme($existing, $type, $theme, $path) {
   );
 
   return $return;
-}
-
-/**
- * Preprocess function for linkedin user page position item
- */ 
-function linkedin_profile_preprocess_linkedin_profile_user_page_position_item(&$variables) {
-  $variables['position']['is-current'] = (strtolower($variables['position']['is-current'] == "true")) ? TRUE : FALSE;
 }
 
 /*
