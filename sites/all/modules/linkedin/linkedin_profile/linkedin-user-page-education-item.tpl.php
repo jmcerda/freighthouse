@@ -13,17 +13,17 @@ $education == $variables['education'];
 
   <p>
     <?php print $education['degree'] ?>
-    <?php if ($education['field-of-study']) : ?>
+    <?php if (isset($education['field-of-study'])) : ?>
       <?php print t('in') . ' ' . $education['field-of-study']; ?>
     <?php endif; ?>
-    <?php if ($education['school-name']) : ?>
+    <?php if (isset($education['school-name'])) : ?>
       <?php print t('at') . ' ' . $education['school-name']; ?>
     <?php endif; ?>
-    <?php if($education['start-date']['year'] || $education['end-date']['year']) : ?>
+    <?php if(isset($education['start-date']['year']) || isset($education['end-date']['year'])) : ?>
       <span class="linkedin-education-years">
       <?php print ' ('; ?>
       <?php print $education['start-date']['year']; ?>
-        <?php if($education['start-date']['year'] && $education['end-date']['year']) : ?>
+        <?php if(isset($education['start-date']['year']) && isset($education['end-date']['year'])) : ?>
           <?php print '-'; ?>
         <?php endif; ?>
       <?php print $education['end-date']['year']; ?>
