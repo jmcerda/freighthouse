@@ -95,7 +95,7 @@ if(isset($node->field_po_layout_mode)) {
                                             <div class="col-md-4">
                                                 <p class="list-info">
                                                     <i class="fontello icon-tags fa-lg"></i>
-                                                    <span><?php print t('Tags');?></</span>
+                                                    <span><?php print t('Tags');?></span>
                                                     <em><?php if(isset($taxonomy_output)): print $taxonomy_output; endif;?></em>
                                                 </p>
                                             </div>
