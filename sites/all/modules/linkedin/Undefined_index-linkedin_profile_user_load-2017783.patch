@@ -1,0 +1,13 @@
+diff --git a/linkedin_profile/linkedin_profile.module b/linkedin_profile/linkedin_profile.module
+index 9a984c3..4a9a002 100644
+--- a/linkedin_profile/linkedin_profile.module
++++ b/linkedin_profile/linkedin_profile.module
+@@ -110,7 +110,7 @@ function linkedin_profile_user_load($users) {
+             'value' => $value,
+           );
+           //deal with multi-values structured fields
+-          if (array_key_exists($key, $multiples)) {
++          if (in_array($key, $multiples)) {
+             $items = array();
+             $items_val = $profile[$key][$multiples[$key]];
+             if (is_array($items_val)) {

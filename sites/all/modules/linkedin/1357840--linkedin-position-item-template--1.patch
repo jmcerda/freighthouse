@@ -1,0 +1,85 @@
+=== modified file 'profiles/linkedin_profile/linkedin-user-page-position-item.tpl.php'
+--- old/linkedin_profile/linkedin-user-page-position-item.tpl.php	2012-02-27 00:42:00 +0000
++++ new/linkedin_profile/linkedin-user-page-position-item.tpl.php	2012-02-27 01:56:45 +0000
+@@ -1,48 +1,44 @@
+ <?php
+-
+-
+-
+ /**
+-* @file
+-* Template file for LinkedIn "Position" item as displayed on user page
+-* Copy it to your theme's folder if you want to override it.
+-*
+-* Be sure to check and comply to  http://developer.linkedin.com/docs/DOC-1091 before tweaking.
+-*/
+-$position == $variables['position'];
++ * @file
++ * Template file for LinkedIn "Position" item as displayed on user page
++ * Copy it to your theme's folder if you want to override it.
++ *
++ * Be sure to check and comply to  http://developer.linkedin.com/docs/DOC-1091 before tweaking.
++ */
+ ?>
+-<div class="linkedin-position<?php ($position['is-current'] == TRUE) ? print ' linkedin-position-current' : ''; ?>">
++<div class="linkedin-position<?php ($position['is-current'] === TRUE) ? print ' linkedin-position-current' : ''; ?>">
+
+   <h6>
+-    <?php ($position['is-current'] == TRUE) ? print t('Currently') . ' ' : ''; ?>
++    <?php ($position['is-current'] === TRUE) ? print t('Currently') . ' ' : ''; ?>
+     <?php if ($position['title']) : ?>
+     <?php print $position['title']; ?>
+     <?php endif; ?>
+     <?php if ($position['company']['name']) : ?>
+-    <?php ($position['is-current'] == TRUE) ? print t('at') . ' ' : print t('At') . ' '; ?>
++    <?php ($position['is-current'] === TRUE) ? print t('at') . ' ' : print t('At') . ' '; ?>
+     <?php print $position['company']['name'] ?>
+     <?php endif; ?>
+   </h6>
+
+ <p>
+-  <?php if ($position['start-date']['year']) : ?>
+-  <?php if ($position['end-date']['year']) : ?>
++  <?php if (isset($position['start-date']['year'])) : ?>
++  <?php if (isset($position['end-date']['year'])) : ?>
+   <?php print t('From') . ' '; ?>
+   <?php else : ?>
+   <?php print t('Since') . ' '; ?>
+   <?php endif; ?>
+-  <?php if ($position['start-date']['month']) : ?>
++  <?php if (isset($position['start-date']['month'])) : ?>
+   <?php print $position['start-date']['month'] . '/'; ?>
+   <?php endif; ?>
+   <?php print $position['start-date']['year']; ?>
+   <?php endif; ?>
+-  <?php if ($position['end-date']['year']) : ?>
+-  <?php if ($position['start-date']['year']) : ?>
++  <?php if (isset($position['end-date']['year'])) : ?>
++  <?php if (isset($position['start-date']['year'])) : ?>
+   <?php print ' ' . t('to') . ' '; ?>
+   <?php else : ?>
+   <?php t('Until') . ' '; ?>
+   <?php endif; ?>
+-  <?php if ($position['end-date']['month']) : ?>
++  <?php if (isset($position['end-date']['month'])) : ?>
+   <?php print $position['end-date']['month'] . '/'; ?>
+   <?php endif; ?>
+   <?php print $position['end-date']['year']; ?>
+
+=== modified file 'linkedin_profile/linkedin_profile.module'
+--- old/linkedin_profile/linkedin_profile.module	2012-02-27 01:24:48 +0000
++++ new/linkedin_profile/linkedin_profile.module	2012-02-27 01:56:05 +0000
+@@ -229,6 +229,13 @@
+   return $return;
+ }
+
++/**
++ * Preprocess function for linkedin user page position item
++ */
++function linkedin_profile_preprocess_linkedin_profile_user_page_position_item(&$variables) {
++  $variables['position']['is-current'] = (strtolower($variables['position']['is-current'] == "true")) ? TRUE : FALSE;
++}
++
+ /*
+  * Helper function : defines default values
+  */
