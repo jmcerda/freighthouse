@@ -40,16 +40,16 @@ function theme_linkedin_profile_user_page_item($variables) {
       break;
 
     case 'phone-numbers':
-      if ($item['value']['phone-numbers']['0']) {
+      if ($item['value']['phone-number']['phone-number']) {
         $phones = '<ul>';
-        for ($i = 0; $i < count($item['value']['phone-numbers']); $i++) {
-          $phones .= '<li>' . $item['value']['phone-numbers'][$i]['phone-type'] . ': ' . $item['value']['member-url'][$i]['phone-numbers'] . '</li>';
+        for ($i = 0; $i < count($item['value']['phone-number']); $i++) {
+          $phones .= '<li>' . $item['value']['phone-number'][$i]['phone-type'] . ': ' . $item['value']['member-url'][$i]['phone-number'] . '</li>';
         }
         $phones .= '</ul>';
         $item['value'] = $phones;
       }
       else {
-        $item['value'] = $item['value']['phone-numbers']['phone-type'] . ': ' . $item['value']['phone-numbers']['phone-numbers'];
+        $item['value'] = $item['value']['phone-number']['phone-type'] . ': ' . $item['value']['phone-number']['phone-number'];
       }
       break;
   }
