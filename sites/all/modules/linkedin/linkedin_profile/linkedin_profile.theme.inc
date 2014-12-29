@@ -40,7 +40,7 @@ function theme_linkedin_profile_user_page_item($variables) {
       break;
 
     case 'phone-numbers':
-      if ($item['value']['phone-number']['phone-number']) {
+      if ($item['value']['phone-number']['0']) {
         $phones = '<ul>';
         for ($i = 0; $i < count($item['value']['phone-number']); $i++) {
           $phones .= '<li>' . $item['value']['phone-number'][$i]['phone-type'] . ': ' . $item['value']['member-url'][$i]['phone-number'] . '</li>';
