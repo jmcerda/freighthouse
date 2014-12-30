@@ -29,8 +29,8 @@
     $icon_type = '';
     $portfolio_type = '';
     if(isset($multimedia) && count($multimedia) > 1 ) {
-        $icon_type = $icon_type = '<i class="fontello icon-digital9 icon-4x"></i>';
-        $portfolio_type  = t('Gallery Project');
+        $icon_type = $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
+        $portfolio_type  = t('Web Project');
     } else {
         if(isset($multimedia[0])) {
             $file_type = $multimedia[0]['rendered']['#file']->type;
