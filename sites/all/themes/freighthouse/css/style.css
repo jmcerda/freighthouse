@@ -760,9 +760,9 @@ body.front #ajaxpage {
   color: #fff;
 }
 .team-element .team-inner .team-detail .team-content p {
-  font-weight: 400;
+  font-weight: 200;
   margin-bottom: 25px;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
 }
 .team-element .team-inner .team-detail .team-content p, #team .team-element .team-inner .team-detail .team-content a {
