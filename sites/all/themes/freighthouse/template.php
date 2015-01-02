@@ -6,35 +6,35 @@
  * @param $form_id
  */
 
-function freighthouse_theme() {
-  $items = array();
+// function freighthouse_theme() {
+//   $items = array();
 
-  // $items['user_login'] = array(
-  //   'render element' => 'form',
-  //   'path' => drupal_get_path('theme', 'freighthouse') . '/template',
-  //   'template' => 'user-login',
-  //   'preprocess functions' => array(
-  //      'freighthouse_preprocess_user_login'
-  //   ),
-  // );
-  $items['user_register_form'] = array(
-    'render element' => 'form',
-    'path' => drupal_get_path('theme', 'freighthouse') . '/template',
-    'template' => 'user-register-form',
-    'preprocess functions' => array(
-      'freighthouse_preprocess_user_register_form'
-    ),
-  );
-  $items['user_pass'] = array(
-    'render element' => 'form',
-    'path' => drupal_get_path('theme', 'freighthouse') . '/template',
-    'template' => 'user-pass',
-    'preprocess functions' => array(
-      'freighthouse_preprocess_user_pass'
-    ),
-  );
-  return $items;
-}
+//   $items['user_login'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'freighthouse') . '/template',
+//     'template' => 'user-login',
+//     'preprocess functions' => array(
+//        'freighthouse_preprocess_user_login'
+//     ),
+//   );
+//   $items['user_register_form'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'freighthouse') . '/template',
+//     'template' => 'user-register-form',
+//     'preprocess functions' => array(
+//       'freighthouse_preprocess_user_register_form'
+//     ),
+//   );
+//   $items['user_pass'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'freighthouse') . '/template',
+//     'template' => 'user-pass',
+//     'preprocess functions' => array(
+//       'freighthouse_preprocess_user_pass'
+//     ),
+//   );
+//   return $items;
+// }
 
 function freighthouse_form_alter(&$form, &$form_state, $form_id) {
     if (strpos($form_id,"webform_client_form_1") === false) {
