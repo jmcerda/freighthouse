@@ -1,0 +1,13 @@
+name = OneLogin
+description = This module enables Drupal user authentication using OneLogin.
+core = 7.x
+configure = admin/config/people/onelogin
+
+dependencies[] = libraries (2.x)
+
+; Information added by drupal.org packaging script on 2013-08-30
+version = "7.x-1.0"
+core = "7.x"
+project = "onelogin"
+datestamp = "1377892349"
+
