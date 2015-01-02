@@ -56,7 +56,7 @@
             // }
             }
         else {
-            if(is_null($multimedia)) {
+            if(is_null(@$multimedia[0])) {
                 $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
                 $portfolio_type  = t('Development | Architecture');
             }
