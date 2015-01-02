@@ -30,7 +30,7 @@
     $portfolio_type = '';
     if(isset($multimedia) && count($multimedia) > 1 ) {
         $icon_type = $icon_type = '<i class="fontello icon-layers4 icon-4x"></i>';
-        $portfolio_type  = t('Development | Architecture | Creative Services | Marcomm');
+        $portfolio_type  = t('Dev | Architecture | Creative | Marcomm');
     } else {
         if(isset($multimedia[0])) {
             $file_type = $multimedia[0]['rendered']['#file']->type;
@@ -50,17 +50,18 @@
             //     $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
             //     $portfolio_type  = t('Development | Architecture');
             // }
-            if($file_type == 'image') {
-                $icon_type = '<i class="fontello icon-statistics icon-4x"></i>';
-                $portfolio_type  = t('Marcom');
+            // if($file_type == 'image') {
+            //     $icon_type = '<i class="fontello icon-statistics icon-4x"></i>';
+            //     $portfolio_type  = t('Marcom');
+            // }
             }
-        }
         else {
-            if(is_null($multimedia)) {
+            if(is_null($multimedia[0])) {
                 $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
                 $portfolio_type  = t('Development | Architecture');
             }
-    }}
+    }
+}
 ?>
 <!-- portfolio item -->
 <div class="portfolio-item <?php foreach($row->field_field_po_taxonomy as $key => $value): print 'tid-'.$value['raw']['tid'].' ';endforeach;?>">
