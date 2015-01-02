@@ -29,25 +29,37 @@
     $icon_type = '';
     $portfolio_type = '';
     if(isset($multimedia) && count($multimedia) > 1 ) {
-        $icon_type = $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
-        $portfolio_type  = t('Web Project');
+        $icon_type = $icon_type = '<i class="fontello icon-layers4 icon-4x"></i>';
+        $portfolio_type  = t('Development | Architecture | Creative Services | Marcomm');
     } else {
         if(isset($multimedia[0])) {
             $file_type = $multimedia[0]['rendered']['#file']->type;
             if($file_type == 'video') {
                 $icon_type = '<i class="fontello icon-camera42 icon-4x"></i>';
-                $portfolio_type  = t('Video Production');
+                $portfolio_type  = t('Video | Motion | Animation');
             }
             if($file_type == 'audio') {
                 $icon_type = '<i class="fontello icon-headset3 icon-4x"></i>';
                 $portfolio_type  = t('Audio Production');
             }
             if($file_type == 'image') {
-                $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
-                // $portfolio_type  = t('Single Image');
-                $portfolio_type  = t('Development & Architecture');
+                $icon_type = '<i class="fontello icon-brush icon-4x"></i>';
+                $portfolio_type  = t('Graphic Design | Illustration');
+            }
+            // if($file_type == 'image') {
+            //     $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
+            //     $portfolio_type  = t('Development | Architecture');
+            // }
+            if($file_type == 'image') {
+                $icon_type = '<i class="fontello icon-statistics icon-4x"></i>';
+                $portfolio_type  = t('Marcom');
             }
         }
+        else {
+            if(is_null($multimedia)) {
+                $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
+                $portfolio_type  = t('Development | Architecture');
+            }
     }
 ?>
 <!-- portfolio item -->
