@@ -60,7 +60,7 @@
                 $icon_type = '<i class="fontello icon-code8 icon-4x"></i>';
                 $portfolio_type  = t('Development | Architecture');
             }
-    }
+    }}
 ?>
 <!-- portfolio item -->
 <div class="portfolio-item <?php foreach($row->field_field_po_taxonomy as $key => $value): print 'tid-'.$value['raw']['tid'].' ';endforeach;?>">
