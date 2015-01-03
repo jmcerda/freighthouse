@@ -44,7 +44,7 @@ $social = $row->field_field_team_socials;
                                     $field_collection_item = $value['rendered']['entity']['field_collection_item'][$field_collection_val];
                                 ?>
                                     <li>
-                                        <a href="<?php print $field_collection_item['field_team_social_link'][0]['#markup'];?>"><i class="<?php print $field_collection_item['field_team_social_icon'][0]['#bundle'].' '.$field_collection_item['field_team_social_icon'][0]['#icon'];?> icon-2x"></i></a>
+                                        <a href="<?php print $field_collection_item['field_team_social_link'][0]['#markup'];?>"><i class="<?php print $field_collection_item['field_team_social_icon'][0]['#bundle'].' '.$field_collection_item['field_team_social_icon'][0]['#icon'];?> icon-1x"></i></a>
                                     </li>
                                 <?php endforeach;?>
                             </ul>
