@@ -29,6 +29,7 @@ $social = $row->field_field_team_socials;
 
 ?>
 <!-- Team item -->
+<div class="col-lg-1 col-md-1>"
 <div class="col-md-2 col-sm-2 col-md-2 col-xs-12">
     <div class="element-line">
         <div class="item_top">
@@ -57,5 +58,6 @@ $social = $row->field_field_team_socials;
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- Team item -->
