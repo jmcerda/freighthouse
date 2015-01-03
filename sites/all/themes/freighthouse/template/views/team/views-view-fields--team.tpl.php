@@ -29,7 +29,7 @@ $social = $row->field_field_team_socials;
 
 ?>
 <!-- Team item -->
-<div class="row seven-cols">
+<div class="seven-cols">
 <div class="col-lg-1 col-md-3 col-sm-4 col-xs-6">
     <div class="element-line">
         <div class="item_top">
