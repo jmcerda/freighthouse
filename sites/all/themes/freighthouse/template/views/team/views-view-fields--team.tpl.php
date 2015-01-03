@@ -36,7 +36,7 @@ $social = $row->field_field_team_socials;
                 <div class="team-inner">
                     <div class="team-detail">
                         <div class="team-content">
-                            <h3><?php print $fields['title']->content;?></h3>
+                            <h4><?php print $fields['title']->content;?></h4>
                             <?php print $fields['field_team_job']->content;?>
                             <ul>
                                 <?php foreach($social as $key => $value):
