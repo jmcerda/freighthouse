@@ -42,7 +42,7 @@ if(isset($node->field_po_layout_mode)) {
                 <div class="section-title text-center">
                     <div>
                         <span class="line big"></span>
-                        <span><?php print t('Created by ');?><a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
+                        <span><?php print t('Posted by ');?><a href="<?php print url('/user/'.$node->uid);?>"><?php print $node->name;?></a></span>
                         <span class="line big"></span>
                     </div>
                     <h1><?php print $node->title;?></h1>
@@ -70,7 +70,7 @@ if(isset($node->field_po_layout_mode)) {
                             <div class="col-md-12">
                                 <div class="text-center">
                                     <div class="project-details">
-                                        <h4><?php print t('The Solution');?></h4>
+                                        <h4><?php print t('Project Description');?></h4>
                                         <p>
                                            <?php print render($content['field_po_description']);?>
                                         </p>
@@ -88,14 +88,14 @@ if(isset($node->field_po_layout_mode)) {
                                             <div class="col-md-4">
                                                 <p class="list-info">
                                                     <i class="fontello icon-calendar fa-lg"></i>
-                                                    <span><?php print t('Created on');?></span>
+                                                    <span><?php print t('Publish on');?></span>
                                                     <em><?php print date('d F, Y',$node->created);?></em>
                                                 </p>
                                             </div>
                                             <div class="col-md-4">
                                                 <p class="list-info">
                                                     <i class="fontello icon-tags fa-lg"></i>
-                                                    <span><?php print t('Tags');?></span>
+                                                    <span><?php print t('Tags');?></</span>
                                                     <em><?php if(isset($taxonomy_output)): print $taxonomy_output; endif;?></em>
                                                 </p>
                                             </div>
@@ -129,27 +129,27 @@ if(isset($node->field_po_layout_mode)) {
                         <div class="project-description">
 
                             <div class="project-details">
-                                <h4><?php print t('The Solution');?></h4>
+                                <h4><?php print t('Project Description');?></h4>
                                 <?php print render($content['field_po_description']);?>
                             </div>
-<!--
+
                             <div class="project-details">
                                 <p class="list-info">
                                     <i class="fontello icon-briefcase fa-lg"></i>
-                                    <span><?php //print render($content['field_po_author_name']);?></span>
-                                    <em><?php //print render($content['field_po_author_company']);?></em>
+                                    <span><?php print render($content['field_po_author_name']);?></span>
+                                    <em><?php print render($content['field_po_author_company']);?></em>
                                 </p>
                                 <p class="list-info">
                                     <i class="fontello icon-calendar fa-lg"></i>
-                                    <span><?php //print t('Created on');?></span>
-                                    <em><?php //print date('d F, Y',$node->created);?></em>
+                                    <span><?php print t('Publish on');?></span>
+                                    <em><?php print date('d F, Y',$node->created);?></em>
                                 </p>
                                 <p class="list-info">
                                     <i class="fontello icon-tags fa-lg"></i>
-                                    <span><?php //print t('Tags');?></span>
-                                    <em><?php //if(isset($taxonomy_output)) : print $taxonomy_output; endif ;?></em>
+                                    <span><?php print t('Tags');?></</span>
+                                    <em><?php if(isset($taxonomy_output)) : print $taxonomy_output; endif ;?></em>
                                 </p>
-                            </div> -->
+                            </div>
                             <?php if(isset($content['field_po_button_text']) && isset($content['field_po_button_link'])):?>
                                 <div class="mybutton medium">
                                     <a href="<?php print render($content['field_po_button_link']);?>"><span data-hover="<?php print ($node->field_po_button_text[$node->language][0]['value']);?>"><?php print ($node->field_po_button_text[$node->language][0]['value']);?></span></a>
