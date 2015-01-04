@@ -75,7 +75,7 @@ if(isset($node->field_po_layout_mode)) {
                                            <?php print render($content['field_po_description']);?>
                                         </p>
                                     </div>
-                                    <div class="project-details">
+                                    <!-- <div class="project-details">
 
                                         <div class="row">
                                             <div class="col-md-4">
@@ -95,12 +95,12 @@ if(isset($node->field_po_layout_mode)) {
                                             <div class="col-md-4">
                                                 <p class="list-info">
                                                     <i class="fontello icon-tags fa-lg"></i>
-                                                    <span><?php print t('Tags');?></</span>
+                                                    <span><?php print t('Tags');?></span>
                                                     <em><?php if(isset($taxonomy_output)): print $taxonomy_output; endif;?></em>
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <?php if(isset($content['field_po_button_text']) && isset($content['field_po_button_link'])):?>
                                         <div class="mybutton medium">
                                             <a href="<?php print render($content['field_po_button_link']);?>"><span data-hover="<?php print ($node->field_po_button_text[$node->language][0]['value']);?>"><?php print ($node->field_po_button_text[$node->language][0]['value']);?></span></a>
@@ -133,7 +133,7 @@ if(isset($node->field_po_layout_mode)) {
                                 <?php print render($content['field_po_description']);?>
                             </div>
 
-                            <div class="project-details">
+                            <!-- <div class="project-details">
                                 <p class="list-info">
                                     <i class="fontello icon-briefcase fa-lg"></i>
                                     <span><?php print render($content['field_po_author_name']);?></span>
@@ -146,10 +146,10 @@ if(isset($node->field_po_layout_mode)) {
                                 </p>
                                 <p class="list-info">
                                     <i class="fontello icon-tags fa-lg"></i>
-                                    <span><?php print t('Tags');?></</span>
+                                    <span><?php print t('Tags');?></span>
                                     <em><?php if(isset($taxonomy_output)) : print $taxonomy_output; endif ;?></em>
                                 </p>
-                            </div>
+                            </div> -->
                             <?php if(isset($content['field_po_button_text']) && isset($content['field_po_button_link'])):?>
                                 <div class="mybutton medium">
                                     <a href="<?php print render($content['field_po_button_link']);?>"><span data-hover="<?php print ($node->field_po_button_text[$node->language][0]['value']);?>"><?php print ($node->field_po_button_text[$node->language][0]['value']);?></span></a>
