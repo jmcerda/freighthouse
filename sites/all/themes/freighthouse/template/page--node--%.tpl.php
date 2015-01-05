@@ -3,7 +3,7 @@
         <?php if($page['navigation']):?>
             <?php print render($page['navigation']);?>
         <?php endif;?>
-        <section class="section-content blog-content">
+        <section class="section-content blog-content" style="padding-bottom:0px;">
             <div class="container">
                 <!-- Section title -->
                 <?php if(isset($node) && !empty($node->title)):?>
@@ -49,7 +49,7 @@
                 </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="element-line">
+                            <!-- <div class="element-line"> -->
                                 <div class="pager">
                                     <?php if(isset($previous_link)):?>
                                     <div class="puls previous">
@@ -61,7 +61,7 @@
                                     </div>
                                     <?php endif;?>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 <?php endif;?>
