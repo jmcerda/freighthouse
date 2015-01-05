@@ -67,7 +67,7 @@
 <div class="portfolio-item <?php foreach($row->field_field_po_taxonomy as $key => $value): print 'tid-'.$value['raw']['tid'].' ';endforeach;?>">
     <div class="portfolio">
         <!-- <a href="#!?q=ajax_portfolio&nid= -->
-        <a href="node/<?php print $row->nid;?>" data-nid="<?php print $row->nid;?>" class="zoom colorbox-node"> <?php if(isset($fields['field_po_thumbnail']) && !empty($row->field_field_po_thumbnail)):?><img class="lazy" src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt="Freighthouse"/><?php endif;?>
+        <a href="node/<?php print $row->nid;?>&iframe=true" data-nid="<?php print $row->nid;?>" class="zoom colorbox-node"> <?php if(isset($fields['field_po_thumbnail']) && !empty($row->field_field_po_thumbnail)):?><img class="lazy" src="<?php print image_style_url('portfolio_thumbnails',$row->field_field_po_thumbnail[0]['rendered']['#item']['uri']);?>" alt="Freighthouse"/><?php endif;?>
             <div class="hover-items">
                 <span> <?php if($icon_type): print $icon_type; endif;?> <em class="lead"><?php print $fields['title']->content;?></em> <em><?php if($portfolio_type): print $portfolio_type; endif;?></em> </span>
             </div>
