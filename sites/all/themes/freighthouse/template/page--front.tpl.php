@@ -103,20 +103,20 @@
     <!-- Portfolio Section -->
 <?php endif;?>
 
-<?php if($page['pricing']):?>
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-content">
-        <?php print render($page['pricing']);?>
-    </section>
-    <!-- Pricing Section -->
-<?php endif;?>
-
 <?php if($page['parallax_six']):?>
     <!-- Parallax Container -->
     <div id="six-parallax" class="parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <?php print render($page['parallax_six']);?>
     </div>
     <!-- Parallax Container -->
+<?php endif;?>
+
+<?php if($page['pricing']):?>
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-content">
+        <?php print render($page['pricing']);?>
+    </section>
+    <!-- Pricing Section -->
 <?php endif;?>
 
 <?php if($page['blog']):?>
