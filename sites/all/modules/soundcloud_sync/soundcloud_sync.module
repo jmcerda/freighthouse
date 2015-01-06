@@ -1,0 +1,384 @@
+<?php
+
+/**
+ * @file
+ * The SoundCloud integration module.
+ */
+
+
+define('SOUNDCLOUD_ADMIN_URL', 'admin/config/services/soundcloud');
+
+/**
+ * Implements hook_permission().
+ */
+function soundcloud_sync_permission() {
+  return array(
+    'administer soundcloud' => array(
+      'title' => t('Administer SoundCloud Sync'),
+      'description' => t('Perform administrative actions with SoundCloud service.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function soundcloud_sync_menu() {
+  $items = array();
+
+  $items[SOUNDCLOUD_ADMIN_URL] = array(
+    'title' => 'SoundCloud Sync',
+    'description' => 'Provides configuration options for SoundCloud service.',
+    'access arguments' => array('administer soundcloud'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('soundcloud_sync_admin_settings_form'),
+    'file' => 'soundcloud_sync.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_init()
+ * Check if we received code from SouldCloud.com and request 'access token'.
+ *
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_init() {
+  if ($_GET['q'] == SOUNDCLOUD_ADMIN_URL && isset($_GET['code'])) {
+    $client = soundcloud_sync_api_get_client();
+    $response = $client->accessToken($_GET['code']);
+    variable_set('soundcloud_sync_access_token', $response['access_token']);
+    drupal_set_message('Sucessfully connected to SoundCloud.com.');
+    drupal_goto(SOUNDCLOUD_ADMIN_URL);
+  }
+}
+
+
+/**
+ * Alter any file field to provide ability to sync files with SoundCloud.com
+ *
+ * @param array $form
+ * @param array $form_state
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_form_field_ui_field_edit_form_alter(&$form, &$form_state) {
+  if ($form['#field']['type'] == 'file') {
+    $form['instance']['settings']['soundcloud'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('SoundCloud Sync settings'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+    );
+    $form['instance']['settings']['soundcloud']['enable'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Enable SoundCloud synchronization.'),
+      '#default_value' => isset($form['#instance']['settings']['soundcloud']['enable'])
+      ? $form['#instance']['settings']['soundcloud']['enable'] : 0,
+      '#description' => t('If selected files will be uploaded to SoundCloud.com and updated on each node change.'),
+    );
+  }
+}
+
+// NODES
+
+function soundcloud_sync_node_update($node) {
+  // For now we will update file each time node saved to avoid problems.
+  soundcloud_sync_node_file_upload($node);
+}
+
+
+function soundcloud_sync_node_insert($node) {
+  soundcloud_sync_node_file_upload($node);
+}
+
+
+function soundcloud_sync_node_delete($node) {
+  $fids_list = soundcloud_sync_get_fids($node);
+  foreach ($fids_list as $fid) {
+    $track_id = soundcloud_sync_db_get_track_id($fid);
+    $params = array('track[id]' => $track_id);
+    soundcloud_sync_api_tracks($track_id, $params, 'delete');
+    soundcloud_sync_db_delete_track($fid);
+  }
+}
+
+
+function soundcloud_sync_node_file_upload($node) {
+  if (!variable_get('soundcloud_sync_access_token', '')) return;
+
+  $fids_list = soundcloud_sync_get_fids($node);
+  $op = 'post';
+  $track_id = '';
+  foreach ($fids_list as $fid) {
+    $params = soundcloud_sync_params_track($fid, $node);
+    $track_id = soundcloud_sync_db_get_track_id($fid);
+    if ($track_id) {
+      $op = 'put';
+    }
+    $response = soundcloud_sync_api_tracks($track_id, $params, $op);
+    // TODO: if response code 404 we should upload again file.
+    if ($response && !$track_id) {
+      $track = json_decode($response);
+      db_insert('soundcloud_tracks')
+        ->fields(array('fid' => $fid, 'track_id' => $track->id))
+        ->execute();
+    }
+  }
+}
+
+
+function soundcloud_sync_params_track($fid, $node) {
+  $list = soundcloud_sync_get_field_value($node, array('body', 'field_image'));
+  $params = array(
+    'track[title]'          => $node->title,
+
+    'track[created_at]'     => format_date($node->created, 'custom', 'Y-m-d H:i:s'),
+    'track[release_day]'   => format_date($node->created, 'custom', 'd'),
+    'track[release_month]' => format_date($node->created, 'custom', 'm'),
+    'track[release_year]'  => format_date($node->created, 'custom', 'Y'),
+
+    'track[asset_data]'     => new CurlFile(soundcloud_sync_get_absolute_file_path($fid)),
+    'track[description]'    => $list['body'],
+    'track[artwork_data]'   => $list['field_image'][0],
+    'track[tag_list]'       => implode(' ', array_map(
+      function ($el) {return '"' . $el . '"';},
+      array_merge(
+        array("Громадське радіо"),
+        $list['field_program'],
+        $list['field_presenter'],
+        $list['field_guest']
+        // TODO: 'field_tags,',
+      )
+    )),
+    'track[sharing]'        => 'public',
+    'track[genre]'          => 'Podcast',
+    'track[track_type]'     => 'spoken',
+    'track[downloadable]'   => true,
+    'track[license]'        => "all-rights-reserved",
+  );
+
+
+  return $params;
+}
+
+
+
+
+function soundcloud_sync_get_field_value($node, $field_names = array()) {
+  if (! is_array($field_names) && count($field_names) < 1) return;
+
+  $list = array();
+
+  $fields = field_info_instances("node", $node->type);
+  foreach ($fields as $name => $instance) {
+    #if (in_array($name, $field_names)) {
+
+      $field_items = field_get_items('node', $node, $name);
+      foreach ($field_items as $item) {
+        switch ($name) {
+          case 'field_image':
+            $list[$name][] = new CurlFile(soundcloud_sync_get_absolute_file_path($item['fid']));
+            break;
+          case 'body':
+            $output = field_view_field('node', $node, $name);
+            $list[$name] = render($output);
+            break;
+          case 'field_program':
+            if ($item['tid']) {
+              $term = taxonomy_term_load($item['tid']);
+              $list[$name][] = $term->name;
+            }
+            break;
+          case 'field_guest':
+            $list[$name][] = $item['name'];
+            break;
+          case 'field_presenter':
+            $user = user_load($item['target_id']);
+            $first_name = field_view_field('user', $user, 'field_first_name');
+            $last_name = field_view_field('user', $user, 'field_last_name');
+            $list[$name][] = $first_name[0]['#markup'] . ' ' . $last_name[0]['#markup'];
+            break;
+          default:
+            $list[$name][] = $item;
+            break;
+        }
+      }
+    #}
+  }
+
+
+  watchdog('debug', print_r($list, 1));
+  return $list;
+}
+
+
+// SOUNDCLOUD API
+
+/**
+ * Creates SoundCloud client using previously stored as variables
+ *'Client ID' and 'Client Secret'.
+ *
+ * @access public
+ * @return void Returns SoundCloud client object.
+ */
+function soundcloud_sync_api_get_client() {
+  require_once 'Services/Soundcloud.php';
+
+  try {
+    $client = new Services_Soundcloud(
+      variable_get('soundcloud_sync_client_id', ''),
+      variable_get('soundcloud_sync_client_secret', ''),
+      url('admin/config/services/soundcloud', array('absolute' => true))
+    );
+  }
+  catch (Services_Soundcloud_Missing_Client_Id_Exception $e) {
+    watchdog('soundcloud', $e->getMessage(), array(), WATCHDOG_ERROR);
+  }
+
+  return $client;
+}
+
+
+/**
+ * Redirects to SoundCloud.com authorization page.
+ *
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_api_connect() {
+  $client = soundcloud_sync_api_get_client();
+  variable_set('soundcloud_sync_access_token', '');
+  // Request non-expiring token which shouldn't be refreshed.
+  // @see https://developers.soundcloud.com/blog/non-expiring-tokens
+  header("Location: " . $client->getAuthorizeUrl(array('scope' => 'non-expiring')));
+  exit;
+}
+
+/**
+ * Manages tracks at SoundCloud.com.
+ * @see https://developers.soundcloud.com/docs/api/reference#tracks
+ *
+ * @param integer $fid File ID.
+ * @param string $op Operation. Default is 'post'. Possible values: put, get, delete.
+
+ * @param object $node Node object.
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_api_tracks($track_id = null, $params = array(), $op = 'post') {
+  if (!is_array($params) && count($params) < 1) return;
+  if (!$access_token = variable_get('soundcloud_sync_access_token', '')) return;
+  try {
+    $client = soundcloud_sync_api_get_client();
+    $client->setAccessToken($access_token);
+    $path = 'tracks';
+    if ($track_id) {
+      $path .= '/' . $track_id;
+    }
+    if ($op == 'delete') {
+      $params = array();
+    }
+    //TODO: Check if track exists.
+    // $tracks = $client->get('tracks', array('q' => 'buskers', 'license' => 'cc-by-sa'));
+
+    $response = $client->$op($path, $params);
+    watchdog('soundcloud', 'Operation: ' . $op . ' track ID: ' . $track_id . "\n" . 'Response: ' . print_r($response, 1));
+    return $response;
+  }
+  catch (Services_Soundcloud_Missing_Client_Id_Exception $e) {
+    watchdog('soundcloud', $e->getMessage(), array(), WATCHDOG_ERROR);
+  }
+}
+
+
+// HELPERS
+
+/**
+ * Check if field was set for sync with SoundCloud.com
+ *
+ * @param array $instance Field instance.
+ * @access public
+ * @return void Returns TRUE if field was marked to be synced with SoundCloud.com and FALSE in other case.
+ */
+function soundcloud_sync_is_field_syncable($instance) {
+  return (isset($instance['settings']['soundcloud']) && $instance['settings']['soundcloud']['enable'] == 1);
+}
+
+
+/**
+ * Returns absolute path in local filesystem for given file.
+ *
+ * @param integer $fid
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_get_absolute_file_path($fid = 0) {
+  if (!$fid) return;
+  $file = file_load($fid);
+  $uri = file_stream_wrapper_get_instance_by_uri($file->uri);
+  return $uri->realpath();
+}
+
+
+
+function soundcloud_sync_get_url($fid = 0) {
+  if (!$fid) return;
+  $file = file_load($fid);
+  $uri = $file->uri;
+  return file_create_url($uri);
+}
+
+/**
+ * Builds a list of fid for all syncable files in node.
+ *
+ * @param object $node
+ * @access public
+ * @return void Returns array of fid.
+ */
+function soundcloud_sync_get_fids($node) {
+  $fids_list = array();
+
+  $fields = field_info_instances("node", $node->type);
+  foreach ($fields as $field_name => $instance) {
+    if (soundcloud_sync_is_field_syncable($instance)) {
+      $field_items = field_get_items('node', $node, $field_name);
+      foreach ($field_items as $item) {$fids_list[] = $item['fid'];}
+    }
+  }
+
+  return $fids_list;
+}
+
+
+// DATABASE
+
+/**
+ * Returns track ID for given fid.
+ *
+ * @param integer $fid
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_db_get_track_id($fid) {
+  // TODO: be sure to check empty results.
+  return db_select('soundcloud_tracks', 'st')->fields('st', array('track_id'))->condition('fid', $fid)->execute()->fetchField();
+}
+
+
+/**
+ * Removes track record from database.
+ *
+ * @param integer $fid
+ * @access public
+ * @return void
+ */
+function soundcloud_sync_db_delete_track($fid) {
+  db_delete('soundcloud_tracks')
+    ->condition('fid', $fid)
+    ->execute();
+}
+
+

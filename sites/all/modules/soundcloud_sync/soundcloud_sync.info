@@ -1,0 +1,15 @@
+name = SoundCloud Sync
+description = Implements upload and CRUD operations with music files at SoundCloud.com service.
+core = 7.x
+php = 5
+
+files[] = php-soundcloud-master/Services/Soundcloud.php
+
+configure = admin/config/services/soundcloud
+
+; Information added by Drupal.org packaging script on 2014-12-23
+version = "7.x-1.0-beta+6-dev"
+core = "7.x"
+project = "soundcloud_sync"
+datestamp = "1419367981"
+

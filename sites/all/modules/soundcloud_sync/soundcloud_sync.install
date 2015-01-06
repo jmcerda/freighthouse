@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Install file for the SoundCloud Sync module.
+ */
+
+/**
+ * Implementation of hook_schema().
+ */
+function soundcloud_sync_schema() {
+  $schema = array();
+
+  $schema['soundcloud_tracks'] = array(
+    'description' => 'Relation between file ID and SoundCloud track ID.',
+    'fields' => array(
+      'fid' => array(
+        'description' => 'The primary identifier for a file.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'track_id' => array(
+        'description' => 'The primary identifier for a uploaded file at SoundCloud.com.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => NULL,
+      ),
+    ),
+    'indexes' => array(
+      'track_id' => array('track_id'),
+    ),
+    'primary key' => array('fid'),
+    'foreign keys' => array(
+      'file_managed' => array(
+        'table' => 'file_managed',
+        'columns' => array('fid' => 'fid'),
+      ),
+    ),
+  );
+
+  return $schema;
+}
+
+
+/**
+ * Implements hook_uninstall().
+ */
+function soundcloud_sync_uninstall() {
+  db_drop_table('soundcloud_tracks');
+  drupal_flush_all_caches();
+}
