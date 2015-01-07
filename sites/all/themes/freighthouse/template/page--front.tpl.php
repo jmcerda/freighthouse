@@ -79,6 +79,14 @@
     <!-- Client Section -->
 <?php endif;?>
 
+<?php if($page['pricing']):?>
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-content">
+        <?php print render($page['pricing']);?>
+    </section>
+    <!-- Pricing Section -->
+<?php endif;?>
+
 <?php if($page['team']):?>
     <!-- Team Section -->
     <section id="team" class="section-content">
@@ -109,14 +117,6 @@
         <?php print render($page['parallax_six']);?>
     </div>
     <!-- Parallax Container -->
-<?php endif;?>
-
-<?php if($page['pricing']):?>
-    <!-- Pricing Section -->
-    <section id="pricing" class="section-content">
-        <?php print render($page['pricing']);?>
-    </section>
-    <!-- Pricing Section -->
 <?php endif;?>
 
 <?php if($page['blog']):?>
