@@ -52,7 +52,7 @@ $node = node_load($row->nid);
                             <?php endforeach;?>
                             <li class="btn-row">
                                 <div class="mybutton small">
-                                    <a href="<?php print $fields['field_pc_link']->content;?>"><span data-hover="<?php print $fields['field_pc_button_text_hover']->content;?>"><?php print $fields['field_pc_button_text']->content;?></span></a>
+                                    <a class="colorbox-load" href="<?php print $fields['field_pc_link']->content;?>"><span data-hover="<?php print $fields['field_pc_button_text_hover']->content;?>"><?php print $fields['field_pc_button_text']->content;?></span></a>
                                 </div>
                             </li>
                         </ul>
