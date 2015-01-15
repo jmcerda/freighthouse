@@ -680,9 +680,19 @@ function _md_alpine_header_block_content() {
                                     <p class="lead">
                                         '.$header_pt_slide[$key]['des'].'
                                     </p>
+                                    <div class=" col-lg-12 cta">
+                                        <div class="mybutton medium colorbox-load cta_button">
+                                        <a class="start-button" href="get-help?width=1000&height=1000&iframe=true">Get help now
+                                        </a>
+                                        </div>
+                                        <div class="mybutton medium colorbox-load cta_button">
+                                        <a class="start-button" href="project-proposal?width=1000&height=1000&iframe=true">Get Support
+                                        </a>
+                                        </div>
+                                    </div>
                                     <div class="mybutton medium">
 									<a class="start-button" href="'.$header_pt_slide[$key]['button_link'].'"> <span data-hover="'.$header_pt_slide[$key]['button_text_hover'].'">'.$header_pt_slide[$key]['button_text'].'</span> </a>
-								</div>
+								    </div>
                                 </div>
                                 <!-- Section title -->
                             </li>
