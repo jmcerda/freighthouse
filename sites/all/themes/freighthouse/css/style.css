@@ -2139,15 +2139,16 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 /* Header call to action */
 
-.cta span {
+.cta.a span {
     display: block; padding: 0 30px;
+    border: 1px solid #ffccoo !important
 }
 
 .cta_button {
     display: inline-block;
     font-size: 2em;
     font-weight: 200;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     line-height: 60px;
     color: #ffcc00;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
