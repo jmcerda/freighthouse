@@ -603,7 +603,7 @@ function _md_alpine_header_block_content() {
         $content .= '</ul>
                         </div>
                             <div class="mybutton ultra cta col-md-4 col-sm-12">
-                                <a class="start-button colorbox-node cta_button" href="get-help"><span data-hover="Do Work">New Project</span></a>
+                                <a class="start-button colorbox-node cta_button" href="get-help"><span style="border:1px solid #ffcc00 !important;color:#ffcc00 !important;" data-hover="Do Work">New Project</span></a>
                             </div>
                             <div class="mybutton ultra cta col-md-4 col-sm-12">
                                 <a class="start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
