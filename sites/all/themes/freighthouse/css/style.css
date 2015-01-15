@@ -2139,7 +2139,7 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 /* Header call to action */
 
-.cta.a span {
+.cta a span {
     display: block; padding: 0 30px;
     border: 1px solid #ffccoo !important
 }
