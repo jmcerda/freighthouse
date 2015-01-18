@@ -14,7 +14,7 @@ if(theme_get_setting('logo_normal_path')) {
                 <span class="sr-only">Toggle navigation</span>
                 <i class="icon fontello icon-menu icon-2x"></i>
             </button>
-            <a id="brand" class="navbar-brand" href="<?php print $base_url;?>"> <img width="40px" height="40px" src="<?php print $logo_path;?>" alt="Freighthouse"/> </a>
+            <a id="brand" class="navbar-brand item_left mobile-hide" href="<?php print $base_url;?>"> <img width="40px" height="40px" src="<?php print $logo_path;?>" alt="Freighthouse"/> </a>
             <div class="mybutton small cta item_fade_in">
                 <a class="start-button colorbox-node cta_button" href="get-help"><span data-hover="Do Work">New Project</span></a>
             </div>
