@@ -2155,3 +2155,8 @@ div.mybutton.ultra.cta.col-md-4.col-sm-12.a span
   border: 1px solid #ffcc00;
   color: #ffcc00;
   }
+
+.header_button a span {
+  border: 1px solid #fff;
+  color: #fff;
+}
