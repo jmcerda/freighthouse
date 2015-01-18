@@ -2139,14 +2139,14 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 /* Header call to action */
 
-.cta {
+/*.cta {
     margin-top: 10px;
-}
-/*
+}*/
+
 
 .cta_button span {
-    border: 1px solid #ffcc00;
-}*/
+    margin: 5px 10px;
+}
 /*
 div.mybutton.ultra.cta.col-md-4.col-sm-12.a span
   {border: 1px solid #ffcc00 !important;}*/
