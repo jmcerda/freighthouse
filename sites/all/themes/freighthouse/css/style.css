@@ -2150,3 +2150,8 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 /*
 div.mybutton.ultra.cta.col-md-4.col-sm-12.a span
   {border: 1px solid #ffcc00 !important;}*/
+
+.cta a span {
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  }
