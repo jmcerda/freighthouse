@@ -21,7 +21,7 @@
 }
 .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
     padding: 0px !important;
-    border: 1px solid #7c7c7c !important;
+    /*border: 1px solid #7c7c7c;*/
     /* to override button border */
 }
 /*.mybutton input[type="submit"] {
@@ -31,7 +31,7 @@
 /* add to override button border */
 
 .mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
-    border: 1px solid #7c7c7c !important;
+    border: 1px solid #7c7c7c;
 }
 /* added to fix css issue on front page consulting section parallax box*/
 
@@ -43,8 +43,8 @@
 }
 #consulting .parallax-box a:hover {
     background-color: transparent !important;
-    -webkit-border-radius: 10px !important;
-    border-radius: 10px !important;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
     border: 1px solid #7c7c7c !important;
 }
 #consulting .parallax-overlay {
