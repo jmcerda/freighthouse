@@ -992,7 +992,7 @@ body.front #ajaxpage {
   background: #fff;
   padding: 30px 20px;
   display: block;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .parallax-box a:hover i, .parallax-box a:hover h4 {
   color: #fff;
@@ -1894,7 +1894,7 @@ li.expanded, li.collapsed, li.leaf {
   float: left;
   text-align: left;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 25px;
   color: #cccccc;
   margin-bottom: 20px;
@@ -1909,7 +1909,7 @@ li.expanded, li.collapsed, li.leaf {
   text-align: left;
   float: right;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.50);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 25px;
   color: #cccccc;
   margin-bottom: 20px;
@@ -1923,7 +1923,7 @@ li.expanded, li.collapsed, li.leaf {
 .par_center {
   text-align: center;
 /*  background: rgba(0, 0, 0, 0.50);*/
-  border-radius: 5px;
+  border-radius: 3px;
   /*padding: 25px;*/
   color: #cccccc;
   font-size: 1.25em;
@@ -1957,7 +1957,7 @@ li.expanded, li.collapsed, li.leaf {
   opacity: .7;
   /*-moz-border-radius:5px;*/
   -webkit-border-radius:5px;
-  border-radius: 5px;
+  border-radius: 3px;
   /*text-align: center;*/
   margin-top: -60px;
 }
@@ -2003,7 +2003,7 @@ li.expanded, li.collapsed, li.leaf {
   list-style-type: none;
   border: 1px solid #7c7c7c;
   background-color:rgba(255,255,255,0.15);
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 25px;
 }
 
@@ -2058,8 +2058,8 @@ p.lead.par_light {
 }
 
 .sublime {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
   margin-bottom: 25px;
   max-width: 100%;
 }
@@ -2145,7 +2145,7 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 
 .cta_button span {
-    margin: 5px 10px;
+    margin: 10px 10px;
 }
 /*
 div.mybutton.ultra.cta.col-md-4.col-sm-12.a span
