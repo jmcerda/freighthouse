@@ -16,10 +16,10 @@ if(theme_get_setting('logo_normal_path')) {
             </button>
             <a id="brand" class="navbar-brand mobile-hide" href="<?php print $base_url;?>"> <img width="40px" height="40px" src="<?php print $logo_path;?>" alt="Freighthouse"/> </a>
             <div class="mybutton small cta item_fade_in">
-                <a class="start-button colorbox-node cta_button" href="get-help"><span data-hover="Do Work">New Project</span></a>
+                <a class="start-button colorbox-node cta_button" href="project-proposal"><span data-hover="Do Work">New Project</span></a>
             </div>
             <div class="mybutton small cta item_fade_in">
-                <a class="start-button colorbox-node cta_button" href="project-proposal"><span data-hover="Get Help">Get Support</span></a>
+                <a class="start-button colorbox-node cta_button" href="support"><span data-hover="Get Help">Get Support</span></a>
             </div>
         </div>
         <div class="navbar-collapse collapse">
