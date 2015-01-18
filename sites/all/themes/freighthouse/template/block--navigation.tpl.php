@@ -15,10 +15,10 @@ if(theme_get_setting('logo_normal_path')) {
                 <i class="icon fontello icon-menu icon-2x"></i>
             </button>
             <a id="brand" class="navbar-brand" href="<?php print $base_url;?>"> <img src="<?php print $logo_path;?>" alt=""/> </a>
-            <div class="mybutton medium cta item_fade_in item_right">
+            <div class="mybutton small cta item_fade_in item_right">
                 <a class="start-button colorbox-node cta_button" href="get-help"><span style="border:1px solid #ffcc00 !important;color:#ffcc00 !important;" data-hover="Do Work">New Project</span></a>
             </div>
-            <div class="mybutton medium cta item_fade_in item_right">
+            <div class="mybutton small cta item_fade_in item_right">
                 <a class="start-button colorbox-node cta_button" href="project-proposal"><span data-hover="Get Help">Get Support</span></a>
             </div>
         </div>
