@@ -15,24 +15,24 @@
       left:0 !important;
       display:block !important;*/
 }
-.webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button {
+/*.webform-client-form .mybutton button, #user-login .mybutton button, #user-register-form .mybutton button {
     background: none !important;
     border: 0px !important;
-}
-.webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
+}*/
+/*.webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
     padding: 0px !important;
-    /*border: 1px solid #7c7c7c;*/
-    /* to override button border */
-}
+    border: 1px solid #7c7c7c;
+    to override button border
+}*/
 /*.mybutton input[type="submit"] {
     border: 0px !important;
     padding: 10px 40px;
 }*/
 /* add to override button border */
 
-.mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
+/*.mybutton a span, .mybutton button span, .csstransforms3d .mybutton a:hover span::before, .csstransforms3d .mybutton button:hover span::before, .mybutton2 a span, .mybutton2 button span, .mybutton span:before, .action .mybutton span:before, .webform-client-form .mybutton button span, #user-login .mybutton button span, #user-register-form .mybutton button span {
     border: 1px solid #7c7c7c;
-}
+}*/
 /* added to fix css issue on front page consulting section parallax box*/
 
 #consulting {
@@ -92,6 +92,6 @@ footer.text-center {
   margin-top: 0px;
 }
 
-.cboxClose {
+/*.cboxClose {
   display: none;
-}
+}*/
