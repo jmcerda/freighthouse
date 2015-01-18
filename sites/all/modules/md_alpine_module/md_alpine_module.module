@@ -277,7 +277,7 @@ function md_alpine_module_block_view($delta = '') {
 										<div class="item_right">';
                             if(theme_get_setting('pr_'.$i.'_button_text') && theme_get_setting('pr_'.$i.'_button_text_hover')) {
                                 $block['content'] .= '<div class="mybutton ultra">
-												<a class="colorbox-load" href="'.theme_get_setting('pr_'.$i.'_button_link').'?width=1000&height=1000&iframe=true"> <span data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
+												<a class="colorbox-load" href="'.theme_get_setting('pr_'.$i.'_button_link').'?width=1000&height=1000&iframe=true"> <span style="border:1px solid #ccc;color:#ccc;" data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
 											</div>';
                             }
                             $block['content'] .= '</div>
