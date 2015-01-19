@@ -18,7 +18,7 @@ if(theme_get_setting('logo_normal_path')) {
             <div class="mybutton small cta item_fade_in">
                 <a class="start-button colorbox-node cta_button" href="project-proposal"><span data-hover="Do Work">New Project</span></a>
             </div>
-            <div class="mybutton small cta item_fade_in">
+            <div class="mybutton small cta item_fade_in" style="float:right">
                 <a class="start-button colorbox-node cta_button" href="demand-service-and-support"><span data-hover="Get Help">Get Support</span></a>
             </div>
         </div>
