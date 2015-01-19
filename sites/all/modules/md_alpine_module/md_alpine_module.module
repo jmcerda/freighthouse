@@ -602,8 +602,14 @@ function _md_alpine_header_block_content() {
 
         $content .= '</ul>
                         </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 mybutton small cta item_fade_in">
+                                <a class="start-button colorbox-node cta_button" href="project-proposal"><span data-hover="Start Now">For Startups</span></a>
+                            </div>
                             <div class="mybutton ultra header_button">
-                                <a class="start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span style="border:1px solid #ccc;color:#ccc;" data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
+                                <a class="col-lg-4 col-md-4 col-sm-12 start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span style="border:1px solid #ccc;color:#ccc;" data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span> </a>
+                            </div>
+                            <div class=" col-lg-4 col-md-4 col-sm-6 mybutton small cta item_fade_in">
+                                <a class="start-button colorbox-node cta_button" href="demand-service-and-support"><span data-hover="Get Help">For Enterprise</span></a>
                             </div>
                         </div>
                     </div>
