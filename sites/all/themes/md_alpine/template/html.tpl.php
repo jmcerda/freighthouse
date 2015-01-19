@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <?php
         print $styles;
-        print $scripts;
         global $base_url;
     ?>
     <style type="text/css">
@@ -25,8 +24,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="75" class="blog-page <?php print $classes; ?>" <?php print $attributes;?> >
 <?php print $page_top; ?>
     <?php print $page; ?>
-    <?php
-    print $page_bottom;
+    <?php print $scripts; ?>
+    <?php print $page_bottom;
     if (isset($footer_code)): print $footer_code; endif;
 ?>
 </body>
