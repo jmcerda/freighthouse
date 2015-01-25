@@ -41,8 +41,8 @@
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:freightHouse:40::-8"></canvas>
-            <div><h4>SFO</h4>
-            <p>156 2nd Street 94105</p>
+            <div><h4>SFO<br />
+            156 2nd Street 94105</h4>
             </div>
         </div>
     </div>
