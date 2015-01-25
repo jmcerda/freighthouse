@@ -41,7 +41,7 @@
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:freightHouse:40::-8"></canvas>
-            <div><h4>SFO<br />
+            <div><h4>SFO<br /><br />
             156 2nd Street 94105</h4>
             </div>
         </div>
@@ -55,24 +55,24 @@
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_WAS" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>WAS</h4>
-            <p>641 S Street NW 20001</p>
+            <div><h4>WAS<br /><br />
+            641 S Street NW 20001</h4>
             </div>
         </div>
     </div>
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MIA" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>MIA</h4>
-            <p>350 Lincoln Road 33139</p>
+            <div><h4>MIA<br /><br />
+            350 Lincoln Road 33139</h4>
             </div>
         </div>
     </div>
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>NYC</h4>
-            <p>175 Varick Street 10014</p>
+            <div><h4>NYC<br /><br />
+            175 Varick Street 10014</h4>
             </div>
         </div>
     </div>
