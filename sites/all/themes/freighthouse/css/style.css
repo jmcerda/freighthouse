@@ -2139,9 +2139,7 @@ transform:rotateX(90deg) translateY(-22px) !important;-webkit-transform:rotateX(
 
 /*FiveColums*/
 @media (min-width: 1200px) {
-  .five-cols .col-md-1,
-  .five-cols .col-sm-1,
-  .five-cols .col-lg-1 {
+  .five-cols {
     width: 20%;
     *width: 20%;
   }
