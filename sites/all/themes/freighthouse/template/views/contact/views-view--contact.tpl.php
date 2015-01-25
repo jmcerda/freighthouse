@@ -38,40 +38,42 @@
 <!-- clock time zone -->
 <div class="parallax-content mobile-hide">
  <div class="row">
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+    <div class="five_cols timeclock"
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:freightHouse:40::-8"></canvas>
-            <div><h4>SFO</h4></div>
+            <div><h4>SFO</h4>
+            <p>156 2nd Street 94105</p>
+            </div>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
-        <div class="item_fade_in" style="opacity: 1; right: 0px;">
-            <canvas id="timezone_MCI" class="CoolClock:freightHouse:40::-6"></canvas>
-            <div><h4>MCI</h4></div>
-        </div>
-    </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+    <div class="five_cols timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MEX" class="CoolClock:freightHouse:40::-6"></canvas>
             <div><h4>MEX</h4></div>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+    <div class="five_cols timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_NYC" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>NYC</h4></div>
+            <div><h4>NYC</h4>
+            <p>175 Varick Street 10014</p>
+            </div>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+    <div class="five_cols timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_WAS" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>WAS</h4></div>
+            <div><h4>WAS</h4>
+            <p>641 S Street NW 20001</p>
+            </div>
         </div>
     </div>
-    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 timeclock">
+    <div class="five_cols timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MIA" class="CoolClock:freightHouse:40::-5"></canvas>
-            <div><h4>MIA</h4></div>
+            <div><h4>MIA</h4>
+            <p>350 Lincoln Road 33139</p>
+            </div>
         </div>
     </div>
   </div>
