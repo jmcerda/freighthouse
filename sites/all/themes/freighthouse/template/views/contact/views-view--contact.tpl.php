@@ -37,8 +37,8 @@
 
 <!-- clock time zone -->
 <div class="parallax-content mobile-hide">
- <div class="row">
-    <div class="five_cols timeclock"
+ <div class="row col-lg-1">
+    <div class="five_cols timeclock">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_SFO" class="CoolClock:freightHouse:40::-8"></canvas>
             <div><h4>SFO</h4>
