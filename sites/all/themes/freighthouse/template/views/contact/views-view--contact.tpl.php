@@ -36,7 +36,7 @@
 <?php endif;?> -->
 
 <!-- clock time zone -->
-<div class="parallax-content mobile-hide">
+<!-- <div class="parallax-content mobile-hide">
  <div class="row">
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
@@ -83,7 +83,7 @@
         </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- Google maps print -->
