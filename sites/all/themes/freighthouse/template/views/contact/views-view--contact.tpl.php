@@ -49,7 +49,9 @@
     <div class="timeclock col-lg-2">
         <div class="item_fade_in" style="opacity: 1; right: 0px;">
             <canvas id="timezone_MEX" class="CoolClock:freightHouse:40::-6"></canvas>
-            <div><h4>MEX</h4></div>
+            <div><h4>MEX<br /><br />
+            Oriente 170 Moctezuma 2a Sección 15530</h4>
+            </div>
         </div>
     </div>
     <div class="timeclock col-lg-2">
