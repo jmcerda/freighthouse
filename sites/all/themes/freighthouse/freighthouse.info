@@ -14,7 +14,7 @@ scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
 scripts[] = js/excanvas.js
 ; ; scripts[] = js/moreskins.js
-scripts[] = js/coolclock.js
+; ; scripts[] = js/coolclock.js
 scripts[] = js/lazyload.js
 
 
