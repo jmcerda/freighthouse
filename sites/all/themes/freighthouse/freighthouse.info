@@ -10,7 +10,7 @@ stylesheets[all][] = css/style-custom.css
 stylesheets[all][] = css/style-responsive.css
 
 ; JS INCLUDES
-scripts[] = js/script-freighthouse.js
+; ; scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
 scripts[] = js/excanvas.js
 ; ; scripts[] = js/moreskins.js
