@@ -140,6 +140,7 @@
     <section id="contact" class="section-content">
         <?php print render($page['contact']);?>
     </section>
+    <div =id"support"></div>
     <!-- Contact Section -->
 <?php endif;?>
     <div class="footer">
