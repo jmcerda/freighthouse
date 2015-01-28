@@ -263,16 +263,16 @@ function md_alpine_module_block_view($delta = '') {
                             <div class="parallax-content">
                                 <div class="row">
                                     <div class="col-md-12">
-									<div class="element-line">
-										<div class="item_right">';
+                                    <div class="element-line">
+                                        <div class="item_right">';
                             if(theme_get_setting('pr_'.$i.'_button_text') && theme_get_setting('pr_'.$i.'_button_text_hover')) {
                                 $block['content'] .= '<div class="mybutton ultra">
-												<a class="colorbox-load" href="'.theme_get_setting('pr_'.$i.'_button_link').'?width=1000&height=1000&iframe=true"> <span style="border:1px solid #ccc;color:#ccc;" data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
-											</div>';
+                                                <a class="colorbox-load" href="'.theme_get_setting('pr_'.$i.'_button_link').'?width=1000&height=1000&iframe=true"> <span style="border:1px solid #ccc;color:#ccc;" data-hover="'.theme_get_setting('pr_'.$i.'_button_text_hover').'">'.theme_get_setting('pr_'.$i.'_button_text').'</span> </a>
+                                            </div>';
                             }
                             $block['content'] .= '</div>
-									</div>
-								</div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                             <!-- Parallax content -->
@@ -611,44 +611,44 @@ function _md_alpine_header_block_content() {
     if($header_bg_type == 'custom') {
         $header_slide = theme_get_setting('hd_slide');
         $content .= '<!-- Home Section -->
-		<section id="home">';
+        <section id="home">';
 
         $content .= '<a id="slider_left" class="fullscreen-slider-arrow"><img src="'.$base_url.'/'.theme_path().'/img/arrow_left.png" alt="Slide Left" /></a>
         <a id="slider_right" class="fullscreen-slider-arrow"><img src="'.$base_url.'/'.theme_path().'/img/arrow_right.png" alt="Slide Right" /></a>';
 
-        $content .=	'<div id="fullscreen-slider">';
+        $content .= '<div id="fullscreen-slider">';
         foreach ($header_slide as $key => $value) {
             $slide_image_path = md_alpine_theme_setting_check_path($header_slide[$key]['image']);
             $content .= '<!-- Slider item -->
-				<div class="slider-item">
-					<img src="'.$slide_image_path.'" alt="">
-					<div class="pattern">
-						<div class="slide-content">
-							<!-- Section title -->
-							<div class="section-title text-center">
-								<div>
-									<span class="line big"></span>
-									<span>'.$header_slide[$key]['before_title'].'</span>
-									<span class="line big"></span>
-								</div>
-								<h1>'.$header_slide[$key]['title'].'</h1>
-								<p class="lead">
+                <div class="slider-item">
+                    <img src="'.$slide_image_path.'" alt="">
+                    <div class="pattern">
+                        <div class="slide-content">
+                            <!-- Section title -->
+                            <div class="section-title text-center">
+                                <div>
+                                    <span class="line big"></span>
+                                    <span>'.$header_slide[$key]['before_title'].'</span>
+                                    <span class="line big"></span>
+                                </div>
+                                <h1>'.$header_slide[$key]['title'].'</h1>
+                                <p class="lead">
                                     '.$header_slide[$key]['des'].'
-								</p>
-								<div class="mybutton ultra">
-									<a class="start-button" href="'.$header_slide[$key]['button_link'].'"> <span data-hover="'.$header_slide[$key]['button_text_hover'].'">'.$header_slide[$key]['button_text'].'</span> </a>
-								</div>
-							</div>
-							<!-- Section title -->
-						</div>
-					</div>
-				</div>
-				<!-- Slider item -->';
+                                </p>
+                                <div class="mybutton ultra">
+                                    <a class="start-button" href="'.$header_slide[$key]['button_link'].'"> <span data-hover="'.$header_slide[$key]['button_text_hover'].'">'.$header_slide[$key]['button_text'].'</span> </a>
+                                </div>
+                            </div>
+                            <!-- Section title -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider item -->';
         }
-		$content .= '
-			</div>
-		</section>
-		<!-- Home Section -->';
+        $content .= '
+            </div>
+        </section>
+        <!-- Home Section -->';
 
     }
     if($header_bg_type == 'md_fullscreen_slider') {
@@ -656,17 +656,17 @@ function _md_alpine_header_block_content() {
     if($header_bg_type == 'pattern') {
         $header_pt_slide = theme_get_setting('hd_pt_slide');
         $content .= '<!-- Home Section -->
-		<section id="home" class="intro-pattern">';
+        <section id="home" class="intro-pattern">';
 
         if(theme_get_setting('header_pt_slide_auto') == false){
             $content .= '<a id="flexslider_left" class="fullscreen-slider-arrow"><img src="'.$base_url.'/'.theme_path().'/img/arrow_left.png" alt="Slide Left" /></a>
-			<a id="flexslider_right" class="fullscreen-slider-arrow"><img src="'.$base_url.'/'.theme_path().'/img/arrow_right.png" alt="Slide Right" /></a>';
+            <a id="flexslider_right" class="fullscreen-slider-arrow"><img src="'.$base_url.'/'.theme_path().'/img/arrow_right.png" alt="Slide Right" /></a>';
         }
 
-        $content .=	'<div class="text-slider">
-			    <div class="intro-item">
-			        <div class="intro-flexslider">
-			            <ul class="slides">';
+        $content .= '<div class="text-slider">
+                <div class="intro-item">
+                    <div class="intro-flexslider">
+                        <ul class="slides">';
         foreach ($header_pt_slide as $key => $value) {
             $content .= '<!-- Slider item -->
                             <li>
@@ -687,9 +687,9 @@ function _md_alpine_header_block_content() {
         $content .= '    </ul>
                     </div>
                 </div>
-			</div>
-		</section>
-		<!-- Home Section -->';
+            </div>
+        </section>
+        <!-- Home Section -->';
 
     }
     drupal_add_css($css,'inline');
