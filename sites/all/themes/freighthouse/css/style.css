@@ -2076,11 +2076,13 @@ p.lead.par_light {
 #assoc-left {
   display: block;
   float: right;
+  margin-top: -75px;
 }
 
 #assoc-right {
   display: block;
   float: left;
+  margin-top: -75px;
 }
 
 /* Request proposal CSS*/
