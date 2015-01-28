@@ -142,7 +142,6 @@
     </section>
     <!-- Contact Section -->
 <?php endif;?>
-    <div =id"supportlink"></div>
     <div class="footer">
         <div class="col-lg-2 mobile-hide">
             <img id="assoc-left" class="lazy" src="<?php echo drupal_get_path('theme', 'freighthouse')?>/images/Drupal_Association_org_mem.png" alt="drupal association"/>
