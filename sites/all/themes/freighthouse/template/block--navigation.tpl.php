@@ -22,7 +22,7 @@ if(theme_get_setting('logo_normal_path')) {
                 <a class="start-button cta_button" href="#webform-client-form-1"><span data-hover="Right Now">Get Support</span></a>
             </div>';}
                 else { echo '<div class="mybutton small cta item_fade_in" style="float:left">
-                <a class="start-button colorbox-node cta_button" href="support-request"><span data-hover="Right Now">Get Support</span></a>
+                <a class="start-button colorbox-node cta_button" href="support-request?width=90%25&height=90%25&iframe=true"><span data-hover="Right Now">Get Support</span></a>
             </div>';} ?>
         </div>
         <div class="navbar-collapse collapse">
