@@ -20,10 +20,10 @@ if(theme_get_setting('logo_normal_path')) {
             </div>
             <?php if (drupal_is_front_page()) { echo '<div class="mybutton small cta item_fade_in" style="float:left">
                 <a class="start-button cta_button" href="#webform-client-form-1"><span data-hover="Right Now">Get Support</span></a>
-            </div>'}
+            </div>'
                 else { echo '<div class="mybutton small cta item_fade_in" style="float:left">
                 <a class="start-button colorbox-node cta_button" href="support-request"><span data-hover="Right Now">Get Support</span></a>
-            </div>'} ?>
+            </div>'}} ?>
         </div>
         <div class="navbar-collapse collapse">
             <?php print $content;?>
