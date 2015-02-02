@@ -3,7 +3,7 @@
         <?php if($page['navigation']):?>
             <?php print render($page['navigation']);?>
         <?php endif;?>
-        <section class="section-content blog-content">
+        <section class="section-content">
             <!-- Section title -->
             <div class="section-title text-center">
                 <h1><?php print drupal_get_title();?></h1>
