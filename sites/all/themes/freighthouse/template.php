@@ -126,9 +126,6 @@ function freighthouse_form_alter(&$form, &$form_state, $form_id) {
 // Force js to load in footer
 
 drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
-// drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external',
-//   array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
-//   );
 
 /**
  * Theme the username/password description of the user login form
@@ -166,6 +163,7 @@ drupal_add_css(drupal_get_path('theme', 'freighthouse') . '/css/style-custom.css
 /*js includes*/
 /*
 $themepath = drupal_get_path('theme', 'freighthouse');
+drupal_add_js('https://cdn.sublimevideo.net/js/gk9qliwk.js', 'external');
 drupal_add_js($themepath . '/js/script.js');
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/script-freighthouse.js',  array('type' => 'file', 'scope' => 'footer'));
 drupal_add_js(drupal_get_path('theme', 'freighthouse') . '/js/coolclock.js',  array('type' => 'file', 'scope' => 'footer'));
