@@ -8,6 +8,7 @@ not after publish an existing node (for now).
 
 ## Installation & connection
 - download and install
+- go to bufferapp.com developer page and create an app (Callback URL field is not used, so fill it as you want)
 - go to admin/config/services/buffer and set access token and enable some profiles
 
 ## Configuration
