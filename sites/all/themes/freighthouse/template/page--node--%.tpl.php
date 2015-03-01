@@ -3,27 +3,29 @@
         <?php if($page['navigation']):?>
             <?php print render($page['navigation']);?>
         <?php endif;?>
-        <section class="section-content blog-content" style="padding-bottom:0px;">
+        <section class="section-content" style="padding-bottom:0px;">
             <div class="container">
                 <!-- Section title -->
-                <?php if(isset($node) && !empty($node->title)):?>
-                <div class="section-title text-center">
-                    <div>
-                        <span class="line big"></span>
-                        <span><?php print t('Posted by');?> <a href="<?php print base_url().'/user/'.$node->uid;?>"><?php print $node->name;?></a></span>
-                        <span class="line big"></span>
+                <div class="header_section">
+                    <?php if(isset($node) && !empty($node->title)):?>
+                    <div class="section-title text-center">
+                        <!-- <div>
+                            <span class="line big"></span>
+                            <span><?php print t('Posted by');?> <a href="<?php print base_url().'/user/'.$node->uid;?>"><?php print $node->name;?></a></span>
+                            <span class="line big"></span>
+                        </div> -->
+                        <h1 class="item_left"><?php print $node->title;?></h1>
+                        <!-- <div>
+                            <span class="line"></span>
+                            <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
+                            <span class="line"></span>
+                        </div> -->
+                        <?php if(isset($node->field_bl_description)):?>
+                            <p class="lead">
+                                <?php print $node->field_bl_description[$node->language][0]['value'];?>
+                            </p>
+                        <?php endif;?>
                     </div>
-                    <h1 class="item_left"><?php print $node->title;?></h1>
-                    <div>
-                        <span class="line"></span>
-                        <span><i class="fontello icon-calendar"></i><?php print date('d F Y',$node->created);?></span>
-                        <span class="line"></span>
-                    </div>
-                    <?php if(isset($node->field_bl_description)):?>
-                        <p class="lead">
-                            <?php print $node->field_bl_description[$node->language][0]['value'];?>
-                        </p>
-                    <?php endif;?>
                 </div>
                 <?php endif; ?>
                 <!-- Section title -->
