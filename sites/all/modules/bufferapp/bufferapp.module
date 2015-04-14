@@ -41,12 +41,69 @@ function bufferapp_permission() {
  */
 function bufferapp_form_node_form_alter(&$form, $form_state) {
   $type = $form['#node']->type;
-  if (variable_get('bufferapp_enable_' . $type) == 1) {
-    $form['options']['bufferapp'] = array(
+  if (variable_get('bufferapp_enable_' . $type) == 1 && !isset($form['nid']['#value'])) {
+    $form['bufferapp'] = array(
+        '#access' => 1,
+        '#type' => 'fieldset',
+        '#title' => t('Bufferapp'),
+        '#group' => 'additional_settings',
+        '#collapsed' => TRUE,
+        '#coppapsible' => TRUE,
+    );
+
+    $form['bufferapp']['bufferapp_enabled'] = array(
         '#type' => 'checkbox',
         '#title' => t('Send to Buffer'),
         '#default_value' => 1,
     );
+
+    if (variable_get('bufferapp_share_schedulable_' . $type, 0) == 1) {
+
+      $form['#validate'][] = 'buffer_node_submit_validate';
+
+      $form['bufferapp']['bufferapp_scheduled'] = array(
+          '#type' => 'checkbox',
+          '#title' => t('Scheduled update'),
+          '#default_value' => 0,
+      );
+
+      $date_format = 'Y-m-d H:i';
+      $date_type = 'date_select';
+      if (module_exists('date_popup')) {
+        $date_type = 'date_popup';
+      }
+      $date_default_value = date($date_format);
+
+      $form['bufferapp']['bufferapp_scheduled_at'] = array(
+          '#type' => $date_type,
+          '#date_format' => $date_format,
+          '#title' => t('Scheduled time'),
+          '#default_value' => $date_default_value,
+          '#size' => 10,
+          '#states' => array(
+              'visible' => array(
+                  ':input[name="bufferapp_scheduled"]' => array('checked' => TRUE),
+              ),
+          ),
+          '#description' => t('Insert a date in the future for at least 1 our. ATTENCTION: if the "Share now" checkbox is enabled for this content type, it will be disabled for this node.'),
+      );
+    }
+  }
+}
+
+/**
+ * Add validation to submit form if scheduled is enabled
+ * @param type $form
+ * @param type $form_state
+ */
+function buffer_node_submit_validate($form, $form_state) {
+  if ($form_state['values']['bufferapp_scheduled'] == 1) {
+    $scheduled_at = $form_state['values']['bufferapp_scheduled_at'];
+
+    // Check if the scheduled date and time is in the future
+    if (strtotime($scheduled_at) < strtotime(date('Y-m-d H:i') . '+ 59minutes')) {
+      form_set_error('bufferapp_scheduled_at', t('Attenction, Bufferapp schedule time must be in the future at least for 1 our.'));
+    }
   }
 }
 
@@ -77,6 +134,14 @@ function bufferapp_form_node_type_form_alter(&$form, $form_state) {
       '#title' => t('Share now'),
       '#default_value' => variable_get('bufferapp_share_now_' . $node_type, 0),
       '#description' => t('Send Buffer update immediatelly after the node is published'),
+  );
+
+  $form['bufferapp']['bufferapp_share_schedulable'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Scheduled'),
+      '#default_value' => variable_get('bufferapp_share_schedulable_' . $node_type, 0),
+      '#description' => t('Give users to add scheduled date and time for update. If user schedules date and time
+        the "Share now" option is disabled for that node.'),
   );
 
   $form['bufferapp']['bufferapp_text'] = array(
@@ -174,11 +239,16 @@ function bufferapp_form_node_type_form_alter(&$form, $form_state) {
 function bufferapp_node_insert($node) {
 
   if (user_access('send bufferapp updates')
-          && $node->bufferapp == 1
+          && $node->bufferapp_enabled == 1
           && $node->status == 1
           && variable_get('bufferapp_enable_' . $node->type) == 1) {
     $text = strip_tags(token_replace(variable_get('bufferapp_text_' . $node->type), array('node' => $node)));
 
+    // Prepare scheduled post
+    $scheduled_at = FALSE;
+    if ($node->bufferapp_scheduled == 1) {
+      $scheduled_at = strtotime($node->bufferapp_scheduled_at);
+    }
     // Prepare media array if enabled
     $attachment = variable_get('bufferapp_link_' . $node->type, NULL);
     if (is_string($attachment) && $attachment != 'none') {
@@ -196,7 +266,7 @@ function bufferapp_node_insert($node) {
           $image = entity_load('file', array($node->{$field_image}[LANGUAGE_NONE][0]['fid']));
           if (count($image) > 0) {
             $image = reset($image);
-            $url_image = file_create_url($image->uri);            
+            $url_image = file_create_url($image->uri);
             $media = array(
                 'thumbnail' => $url_image,
                 'picture' => $url_image,
@@ -208,7 +278,7 @@ function bufferapp_node_insert($node) {
     }
 
     $now = variable_get('bufferapp_share_now_' . $node->type, FALSE);
-    bufferapp_data($send = TRUE, $node, $text, $media, $now);
+    bufferapp_data($send = TRUE, $node, $text, $media, $now, $scheduled_at);
   }
 }
 
@@ -242,10 +312,15 @@ function bufferapp_profiles($bufferapp = NULL) {
  * @param array $media
  * @param bool $now 
  */
-function bufferapp_data($send = TRUE, $node = NULL, $text, $media = array(), $now = FALSE) {
+function bufferapp_data($send = TRUE, $node = NULL, $text, $media = array(), $now = FALSE, $scheduled_at = FALSE) {
   $data['text'] = $text;
   $data['media'] = $media;
   $data['now'] = $now;
+
+  if ($scheduled_at > 1) {
+    $data['now'] = FALSE;
+    $data['scheduled_at'] = $scheduled_at;
+  }
 
   // Get enabled profiles
   $bufferapp_profiles = bufferapp_profiles();
