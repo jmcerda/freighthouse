@@ -5,9 +5,9 @@ configure = admin/config/people/onelogin
 
 dependencies[] = libraries (2.x)
 
-; Information added by Drupal.org packaging script on 2015-03-06
-version = "7.x-1.1"
+; Information added by Drupal.org packaging script on 2015-09-04
+version = "7.x-1.2"
 core = "7.x"
 project = "onelogin"
-datestamp = "1425674883"
+datestamp = "1441407240"
 
