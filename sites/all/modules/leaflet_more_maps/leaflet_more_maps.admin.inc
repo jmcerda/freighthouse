@@ -10,18 +10,18 @@
  */
 function leaflet_more_maps_admin_configure() {
 
-  $skobbler_key = variable_get('leaflet_more_maps_skobbler_key');
-  $form['keys'] = array(
+  // First a global setting to enter the Google sat map version number
+  $form['global_settings'] = array(
     '#type' => 'fieldset',
     '#collapsible' => TRUE,
-    '#collapsed' => TRUE,
-    '#title' => t('Third party application keys'),
+    '#collapsed' => FALSE,
+    '#title' => t('Global settings'),
   );
-  $form['keys']['skobbler_key'] = array(
+  $form['global_settings']['google_satellite_version'] = array(
     '#type' => 'textfield',
-    '#title' => t('<a href="@url" target="skobbler">Skobbler</a> API key', array('@url' => 'http://maps.skobbler.com')),
-    '#default_value' => $skobbler_key,
-    '#description' => t('<a href="@url" target="skobbler">Generate Skobbler API key</a>. Make sure to add your Skobbler referrers when you generate your API key. If you are on a subdomain, make sure you add the root domain as well.', array('@url' => 'http://developer.skobbler.com/web-tiles/api-key')),
+    '#title' => t('Google satellite map version'),
+    '#default_value' => variable_get('google_satellite_version', '183'),
+    '#description' => t('If you find that tiles have gone missing, it is time to increase this number.'),
   );
 
   $map_info = array();
@@ -70,7 +70,7 @@ function leaflet_more_maps_admin_configure() {
       '#type' => 'checkbox',
       '#title' => t('Reverse order in layer switcher'),
       '#default_value' => $custom_map_layers[$i]['reverse-order'],
-      '#description' => t('The last layer in the switcher will be the default.'),
+      '#description' => t('The first layer in the switcher will be the default.'),
     );
     // Organise the $form_state['values'] structure available after submission.
     $form['map'][$i]['map-key']['#parents'] = array(
@@ -98,6 +98,9 @@ function leaflet_more_maps_admin_configure() {
 function leaflet_more_maps_admin_configure_form_submit($form, &$form_state) {
 
   // form_state_values_clean($form_state);
+
+  variable_set('google_satellite_version', $form_state['values']['google_satellite_version']);
+
   $custom_maps = $form_state['values']['map'];
 
   // Clear out the unticked boxes.
@@ -105,7 +108,6 @@ function leaflet_more_maps_admin_configure_form_submit($form, &$form_state) {
     $custom_map['layer-keys'] = array_filter($custom_map['layer-keys']);
   }
   variable_set('leaflet_more_maps_custom_maps', $custom_maps);
-  variable_set('leaflet_more_maps_skobbler_key', $form_state['values']['skobbler_key']);
 
   drupal_set_message(t('The map configurations have been saved.'));
 
