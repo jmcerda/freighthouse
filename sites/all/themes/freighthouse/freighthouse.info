@@ -3,19 +3,17 @@ description = Subtheme for MD Alpine
 core = 7.x
 base theme = md_alpine
 
-; CSS INCLUDES
-; ; stylesheets[all][] = css/fh.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/style-custom.css
 stylesheets[all][] = css/style-responsive.css
+;; stylesheets[all][] = css/fh.css
 
-; JS INCLUDES
-; ; scripts[] = js/script-freighthouse.js
 scripts[] = js/script.js
 scripts[] = js/excanvas.js
-; ; scripts[] = js/moreskins.js
-; ; scripts[] = js/coolclock.js
 scripts[] = js/lazyload.js
+;; scripts[] = js/moreskins.js
+;; scripts[] = js/coolclock.js
+;; scripts[] = js/script-freighthouse.js
 
 
 settings[toggle_logo] = 1
@@ -44,49 +42,26 @@ settings[menu_sticky] = 1
 settings[menu_custom_enable] = 0
 settings[sidebar_position] = 'right'
 
-
-; Important Drupal regions
-
 regions[header] = Header
-
 regions[navigation] = Navigation
-
 regions[sidebar] = Sidebar
-
 regions[about] = About
-
 regions[parallax_one] = Parallax One
-
 regions[service] = Service
-
 regions[parallax_two] = Parallax Two
-
 regions[portfolio] = Portfolio
-
 regions[parallax_three] = Parallax Three
-
 regions[team] = Team
-
 regions[location] = Location
-
 regions[parallax_four] = Parallax Four
-
 regions[client] = Client
-
 regions[parallax_five] = Parallax Five
-
 regions[pricing] = Pricing Table
-
 regions[parallax_six] = Parallax Six
-
 regions[blog] = Blog
-
 regions[parallax_seven] = Parallax Seven
-
 regions[contact] = Contact
-
 regions[content] = Main Page Content
-
 regions[footer] = Footer
 
 version = "7.x-2.4"

@@ -22,13 +22,11 @@
 
 <?php if($page['parallax_one']):?>
     <!-- Parallax Container -->
-        <!-- john add the section tag to make the menu work and highlighted acoordingly-->
         <div id="one-parallax" class="parallax"  data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
         <section id="consulting" class="section-content">
             <?php print render($page['parallax_one']);?>
         </section>
         </div>
-        <!-- end john comment-->
     <!-- Parallax Container -->
 <?php endif;?>
 
