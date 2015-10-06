@@ -37,7 +37,7 @@
 // }
 
 function freighthouse_preprocess_html(&$vars) {
-  drupal_add_js('//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js');
+  drupal_add_js('https://cdn.jsdelivr.net/afterglow/latest/afterglow.min.js');
 }
 
 function freighthouse_form_alter(&$form, &$form_state, $form_id) {
