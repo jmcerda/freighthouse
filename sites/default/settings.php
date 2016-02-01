@@ -251,7 +251,7 @@ $databases = array (
       'database' => 'freighthouse',
       'username' => 'freighthouse',
       'password' => 'freighthouse',
-      'host' => 'localhost',
+      'host' => '127.0.0.1',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
@@ -322,7 +322,7 @@ $drupal_hash_salt = 'ApVxFjp-K6Q4rvY5qLA68cPIAPVDfiPPwfOxUmW_SrU';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
- //$base_url = 'http://localhost/freighthouse';  // NO trailing slash!
+ $base_url = 'https://freighthouse.nyc';  // NO trailing slash!
 
 /**
  * PHP settings:
