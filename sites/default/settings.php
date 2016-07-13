@@ -267,8 +267,8 @@
       'prefix' => '',
     ),
    */
-  ),
-);
+//   ),
+// );
 //$conf['clean_url'] = 0;
 /**
  * Access control for update.php script.
