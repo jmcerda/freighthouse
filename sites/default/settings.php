@@ -1,36 +1,36 @@
 <?php
 // Require SSL.
-if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
-  $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
-  if (!isset($_SERVER['HTTP_X_SSL']) ||
-    (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
-    header('HTTP/1.0 301 Moved Permanently');
-    header('Location: https://www.freighthouse.nyc'. $_SERVER['REQUEST_URI']);
-    exit();
-  }
-}
+// if (isset($_SERVER['PANTHEON_ENVIRONMENT']) &&
+//   $_SERVER['PANTHEON_ENVIRONMENT'] === 'live') {
+//   if (!isset($_SERVER['HTTP_X_SSL']) ||
+//     (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
+//     header('HTTP/1.0 301 Moved Permanently');
+//     header('Location: https://www.freighthouse.nyc'. $_SERVER['REQUEST_URI']);
+//     exit();
+//   }
+// }
 // All Pantheon Environments.
-if (defined('PANTHEON_ENVIRONMENT')) {
-  // Use Redis for caching.
-  $conf['redis_client_interface'] = 'PhpRedis';
-  $conf['cache_backends'][] = 'sites/all/modules/redis/redis.autoload.inc';
-  $conf['cache_default_class'] = 'Redis_Cache';
-  $conf['cache_prefix'] = array('default' => 'pantheon-redis');
-  // Do not use Redis for cache_form (no performance difference).
-  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
-  // Use Redis for Drupal locks (semaphore).
-  $conf['lock_inc'] = 'sites/all/modules/redis/redis.lock.inc';
-}
+// if (defined('PANTHEON_ENVIRONMENT')) {
+//   // Use Redis for caching.
+//   $conf['redis_client_interface'] = 'PhpRedis';
+//   $conf['cache_backends'][] = 'sites/all/modules/redis/redis.autoload.inc';
+//   $conf['cache_default_class'] = 'Redis_Cache';
+//   $conf['cache_prefix'] = array('default' => 'pantheon-redis');
+//   // Do not use Redis for cache_form (no performance difference).
+//   $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+//   // Use Redis for Drupal locks (semaphore).
+//   $conf['lock_inc'] = 'sites/all/modules/redis/redis.lock.inc';
+// }
 
 // Optional Pantheon redis settings.
 // Higher performance for smaller page counts.
-if (defined('PANTHEON_ENVIRONMENT')) {
-  // High performance - no hook_boot(), no hook_exit(), ignores Drupal IP blacklists.
-  $conf['page_cache_without_database'] = TRUE;
-  $conf['page_cache_invoke_hooks'] = FALSE;
-  // Explicitly set page_cache_maximum_age as database won't be available.
-  $conf['page_cache_maximum_age'] = 900;
-}
+// if (defined('PANTHEON_ENVIRONMENT')) {
+//   // High performance - no hook_boot(), no hook_exit(), ignores Drupal IP blacklists.
+//   $conf['page_cache_without_database'] = TRUE;
+//   $conf['page_cache_invoke_hooks'] = FALSE;
+//   // Explicitly set page_cache_maximum_age as database won't be available.
+//   $conf['page_cache_maximum_age'] = 900;
+// }
 
 /**
  * @file
@@ -242,20 +242,20 @@ if (defined('PANTHEON_ENVIRONMENT')) {
  *   );
  * @endcode
  */
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
+// $databases = array (
+//   'default' =>
+//   array (
+//     'default' =>
 
-    array (
-      'database' => 'freighthouse',
-      'username' => 'freighthouse',
-      'password' => 'freighthouse',
-      'host' => '127.0.0.1',
-      'port' => '',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
+//     array (
+//       'database' => 'freighthouse',
+//       'username' => 'freighthouse',
+//       'password' => 'freighthouse',
+//       'host' => '127.0.0.1',
+//       'port' => '',
+//       'driver' => 'mysql',
+//       'prefix' => '',
+//     ),
     /*
 	array (
       'database' => 'db_freighthouse',
