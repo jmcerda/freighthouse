@@ -6,9 +6,9 @@ dependencies[] = leaflet
 
 configure = admin/config/services/leaflet-mapbox
 
-; Information added by drupal.org packaging script on 2013-06-17
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2016-03-09
+version = "7.x-1.5"
 core = "7.x"
 project = "leaflet_mapbox"
-datestamp = "1371460852"
+datestamp = "1457516269"
 

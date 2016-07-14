@@ -43,11 +43,22 @@ function soundcloud_sync_schema() {
   return $schema;
 }
 
-
 /**
  * Implements hook_uninstall().
  */
 function soundcloud_sync_uninstall() {
   db_drop_table('soundcloud_tracks');
   drupal_flush_all_caches();
+}
+
+/**
+ * Rename variables.
+ */
+function soundcloud_sync_update_7001() {
+  variable_set('soundcloud_sync_accessToken', variable_get('soundcloud_sync_access_token', ''));
+  variable_del('soundcloud_sync_access_token');
+  variable_set('soundcloud_sync_clientId', variable_get('soundcloud_sync_client_id', ''));
+  variable_del('soundcloud_sync_client_id');
+  variable_set('soundcloud_sync_clientSecret', variable_get('soundcloud_sync_client_secret', ''));
+  variable_del('soundcloud_sync_client_secret');
 }
