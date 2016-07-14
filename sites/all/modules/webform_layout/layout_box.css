@@ -10,7 +10,7 @@
   word-spacing: normal;
   /* hack for IE 6&7 */
   zoom: 1;
-  display: inline;
+  *display: inline;
 }
 
 .webform-layout-box.horiz > * + * {
