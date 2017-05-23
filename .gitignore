@@ -30,7 +30,8 @@
 ######################
 .DS_Store*
 ehthumbs.db
-Icon
+Icon
+
 Thumbs.db
 ._*
 
@@ -55,3 +56,4 @@ sftp-config.json
 # Pantheon files directory symlink #
 ####################################
 sites/default/files
+.idea*
