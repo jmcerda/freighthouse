@@ -605,7 +605,7 @@ function _md_alpine_header_block_content() {
                             </div>
                         
                             <div class="col-lg-4 mybutton ultra cta item_fade_in mobile-hide">
-                                <a class="start-button sublime" href="#HHEOrJWZMbw" style="float:right" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw"><span data-hover="Do Work">For Marketing</span></a>
+                                <a class="start-button sublime" href="#HHEOrJWZMbw" style="float:left" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw"><span data-hover="Do Work">For Marketing</span></a>
                                 <video data-autoresize="fit" data-uid="HHEOrJWZMbw" data-youtube-id="HHEOrJWZMbw" height="360" id="HHEOrJWZMbw" preload="none" style="display:none" title="Pantheon One" width="640"></video>
                             </div>
                             
