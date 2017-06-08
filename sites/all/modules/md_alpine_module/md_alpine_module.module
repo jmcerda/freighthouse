@@ -594,13 +594,13 @@ function _md_alpine_header_block_content() {
         $content .= '</ul>
                         </div>
                         		<div class="col-lg-6 mybutton ultra cta item_fade_in mobile-hide">
-                                <a class="start-button sublime" href="#ASO7GkE7cx0" style="float:right" data-autoresize="fit" data-youtube-id="ASO7GkE7cx0">
+                                <a class="start-button sublime" href="#ASO7GkE7cx0" data-autoresize="fit" data-youtube-id="ASO7GkE7cx0">
                                 		<span data-hover="Do Work">For Agencies</span>
                                 </a>
                                 <video data-autoresize="fit" data-uid="ASO7GkE7cx0" data-youtube-id="ASO7GkE7cx0" height="360" id="ASO7GkE7cx0" preload="none" style="display:none" title="Pantheon One" width="640"></video>
                             </div>
                             <div class="col-lg-6 mybutton ultra cta item_fade_in mobile-hide">
-                                <a class="start-button sublime" href="#HHEOrJWZMbw" style="float:left" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw"><span data-hover="Do Work">For Marketing</span></a>
+                                <a class="start-button sublime" href="#HHEOrJWZMbw" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw"><span data-hover="Do Work">For Marketing</span></a>
                                 <video data-autoresize="fit" data-uid="HHEOrJWZMbw" data-youtube-id="HHEOrJWZMbw" height="360" id="HHEOrJWZMbw" preload="none" style="display:none" title="Pantheon One" width="640"></video>
                             </div>
                             <div class="col-ms-12 mybutton ultra header_button">
