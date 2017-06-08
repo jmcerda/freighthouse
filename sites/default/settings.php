@@ -624,3 +624,20 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_authorize_operations'] = FALSE;
 
 # $conf["fh_cdn_cdn"] = 'https://cdn.freighthouse.nyc';
+
+$conf['theme_debug'] = TRUE;
+$conf['drupal_http_request_fails'] = FALSE;
+$cookie_domain = 'localhost';
+
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+	# Set appropriate paths for Composer Manager
+	$conf['composer_manager_file_dir'] = 'private://composer';
+	$conf['composer_manager_vendor_dir'] = $_SERVER['HOME'] . '/code/vendor';
+	# Disable autobuild on Pantheon
+	$conf['composer_manager_autobuild_file'] = 0;
+	$conf['composer_manager_autobuild_packages'] = 0;
+}
+
+$conf['locale_custom_strings_en'][''] = array(
+	'Sorry, unrecognized username or password. <a href="@password">Have you forgotten your password?</a>' => 'Sorry, unrecognized e-mail or password. <a href="@password">Have you forgotten your password?</a>',
+);
