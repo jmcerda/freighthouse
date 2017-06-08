@@ -101,7 +101,7 @@ function md_alpine_module_block_view($delta = '') {
                             <div class="parallax_container_add">
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_left">
-                                        <big style="color:#ffcc00">Content Marketing & Interaction Strategy</big>
+                                        <h3 style="color:#ffcc00">Content Marketing & Interaction Strategy</h3>
                                         <p>Know what your clients want and understand how to give it to them.</p>
                                         <p>We develop original content and oversee a documented content strategy & methodology while engineering distribution networks across multiple digital media channels to deliver original segmented content.</p>
                                         <p> We find exactly what excites your audience and provide content tailored to their needs, with intuitive interface design based on proven user experience metrics and usability testing data.</p>
@@ -300,16 +300,14 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-8 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big style="color:#ffcc00">The battle between marketing and IT is over.</big>
-                                            </big>
+                                            <h3 style="color:#ffcc00">The battle between marketing and IT is over.</h3>
                                             <p>Never again be a hostage of your IT department...</p>
                                             <p>We put the power in your hands and provide you with a consistent architecture and workflow throughout the entire development cycle that enables you to quickly and easily launch new projects and campaigns as needed.</p>
                                             <p>We work directly with your marketing department to get your agency and our developers working on the same platform so you can rapidly launch websites, centralize your web presence and get to market faster without having to deal with scarce IT and developer resources.</p>
-                                            <a href="#5ciBJeqsBh0" class="sublime" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit">
-                                                &gt; Watch the video
-                                            </a>
-                                            <video id="5ciBJeqsBh0" title="Pantheon One" style="display:none;max-dth=100%;" data-uid="5ciBJeqsBh0" data-youtube-id="5ciBJeqsBh0" data-autoresize="fit" preload="none">
-                                            </video>
+                                            <div class="item_fade_in">
+																								<a class="sublime" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw" href="#HHEOrJWZMbw">&gt; Learn How</a>
+																								<video data-autoresize="fit" data-uid="HHEOrJWZMbw" data-youtube-id="HHEOrJWZMbw" height="360" id="HHEOrJWZMbw" preload="none" style="display:none" title="Pantheon One" width="640">&nbsp;</video>
+																						</div>
                                         </span>
                                     </span>
                                     <span class="col-md-4 col-sm-12 col-xs-12">
@@ -322,6 +320,9 @@ function md_alpine_module_block_view($delta = '') {
                                                 <li>100 percent scalable</li>
                                                 <li>Rapid builds & deployments</li>
                                             </ul>
+                                        </span>
+                                        <span>
+                                            <img src="sites/all/themes/freighthouse/images/acquia-partner-logo.png" style="max-width:100%">
                                         </span>
                                         <span>
                                             <img src="sites/all/themes/freighthouse/images/Pantheon-Silver-Partner-Badge-Light.png" style="max-width:100%">
