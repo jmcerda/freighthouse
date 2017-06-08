@@ -110,13 +110,13 @@ function md_alpine_module_block_view($delta = '') {
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <span class="par_right">
-                                        <big style="color:#ffcc00">Make decisions that matter...</big>
+                                        <h3 style="color:#ffcc00">Make decisions that matter...</h3>
                                         <p>You cannot simply rely on keyword metrics to monitor project performance.</p>
                                         <p>Learn what buzz you are really creating with your clients and their networks so you can eliminate any unneeded or annoying contact.</p>
                                         <p>Find just how users engage with your brand and drive conversion rate optimization by focusing on real time user interaction data and key indicators such as social trends and market performance.</p>
                                     </span>
                                     <span class="par_right">
-                                        <big style="color:#ffcc00">Clear Data & Analytics</big>
+                                        <h3 style="color:#ffcc00">Clear Data & Analytics</h3>
                                         <p>Our advances in metric presentation and visualization give you a birds eye view of user engagement while collecting deep real time analysis.</p>
                                         <p>Gain profound insight into your campaigns so you can quickly react to customer trends and create individual and personalized user experiences while interpreting complex datasets to find insights and behaviors you normally would have missed - instantly.</p>
                                     </span>
@@ -188,7 +188,7 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-5 col-sm-12 col-xs-12">
                                         <span class="par_left center-override">
-                                            <big style="color:#ffcc00">What leads to an effective emotional design strategy?</big>
+                                            <h3 style="color:#ffcc00">What leads to an effective emotional design strategy?</h3>
                                             <p>"Creating user experiences that include beautiful aesthetics, gorgeous content, and a sophisticated personality layer."<br />
                                                 - Jeremy Michael Cerda, Web Architect
                                             </p>
@@ -418,32 +418,32 @@ function md_alpine_module_block_view($delta = '') {
                                 <div class="parallax_container_add">
                                     <span class="col-md-6 col-sm-12 col-xs-12">
                                         <span class="par_left">
-                                            <big>
+                                            <h3>
                                             <p style="color:#ffcc00">Knowledge & Expertise</p>
-                                            </big>
+                                            </h3>
                                             <p>We build dynamic teams of digital artists from the ground up to enrich your reach, productivity and marketability.</p>
                                             <p>Our consultants completely integrate into your organization. We are agile and adapt to any project management tool and methodology you throw at us.</p>
                                             <p>Whether its HTML, PHP, Javascript, Angular or Backbone, we have a team of experienced designers and developers that will deliver every time, by the hour and on demand.</p>
                                         </span>
                                         <span class="par_left">
-                                            <big>
+                                            <h3>
                                                 <p style="color:#ffcc00">Productivity & Accountability</p>
-                                            </big>
+                                            </h3>
                                             <p>We provide a platform that seamlessly connects the team from any location in the world and provides not only clean workflows, but also supports version control, quality control, and systemic monitoring of every developer for instant insight - at any time.</p>
                                         </span>
                                     </span>
                                     <span class="col-md-6 col-sm-12 col-xs-12">
                                         <span class="par_right">
-                                            <big>
+                                            <h3>
                                                 <p style="color:#ffcc00">Communication & Stability</p>
-                                            </big>
+                                            </h3>
                                             <p>We start by establishing continuous integration workflows and constant lines communication to everyone on the project which means streamlined development and collaboration - so the team is in sync at all times.</p>
                                             <p>Our infrastructure frees the team from environment builds, routine updates and maintenance requests - so they can focus on coding, building, and launching your sites.</p>
                                         </span>
                                         <span class="par_right">
-                                            <big>
+                                            <h3>
                                                 <p style="color:#ffcc00">Support & Accessibility</p>
-                                            </big>
+                                            </h3>
                                             <p>We work remotely however we can arrange for on-site assistance at any location - worldwide.</p>
                                             <p>Within a week you can have a designer or developer in your office, ramped up and ready to go!</p>
                                             <div class="mobile-hide">
@@ -600,16 +600,14 @@ function _md_alpine_header_block_content() {
                                 <video data-autoresize="fit" data-uid="ASO7GkE7cx0" data-youtube-id="ASO7GkE7cx0" height="360" id="ASO7GkE7cx0" preload="none" style="display:none" title="Freighthouse" width="640"></video>
                             </div>
                             <div class="col-lg-6 mybutton ultra cta item_fade_in mobile-hide">
-                                <a class="start-button sublime" href="#HHEOrJWZMbw" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw">
+                                <a class="start-button sublime" href="#0Kk_R557RQM" data-autoresize="fit" data-youtube-id="0Kk_R557RQM">
                                 		<span data-hover="Learn more">For Marketing</span>
                                 </a>
-                                <video data-autoresize="fit" data-uid="HHEOrJWZMbw" data-youtube-id="HHEOrJWZMbw" height="360" id="HHEOrJWZMbw" preload="none" style="display:none" title="Freighthouse" width="640"></video>
+                                <video data-autoresize="fit" data-uid="0Kk_R557RQM" data-youtube-id="0Kk_R557RQM" height="360" id="0Kk_R557RQM" preload="none" style="display:none" title="Freighthouse" width="640"></video>
                             </div>
-                            <div class="col-ms-12 mybutton ultra header_button">
+                            <div class="col-md-12 mybutton ultra header_button">
                                 <a class="start-button" href="'.theme_get_setting('header_vd_ti_button_link').'"> <span style="border:1px solid #ccc;color:#ffcc00;" data-hover="'.theme_get_setting('header_vd_ti_button_text_hover').'">'.theme_get_setting('header_vd_ti_button_text').'</span></a>
                             </div>
-                            
-                           
                         </div>
                     </div>
                 </div>
