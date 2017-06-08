@@ -641,4 +641,3 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
 $conf['locale_custom_strings_en'][''] = array(
 	'Sorry, unrecognized username or password. <a href="@password">Have you forgotten your password?</a>' => 'Sorry, unrecognized e-mail or password. <a href="@password">Have you forgotten your password?</a>',
 );
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_-';
