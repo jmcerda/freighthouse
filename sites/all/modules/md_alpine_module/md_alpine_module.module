@@ -594,7 +594,7 @@ function _md_alpine_header_block_content() {
         $content .= '</ul>
                         </div>
                             <div class="col-lg-4 mybutton ultra cta item_fade_in mobile-hide">
-                                <a class="start-button sublime" href="#HHEOrJWZMbw" style="float:right" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw" data-hover="Do Work"><span >For Agencies</span></a>
+                                <a class="start-button sublime" href="#HHEOrJWZMbw" style="float:right" data-autoresize="fit" data-youtube-id="HHEOrJWZMbw"><span data-hover="Do Work">For Agencies</span></a>
                                 <video data-autoresize="fit" data-uid="HHEOrJWZMbw" data-youtube-id="HHEOrJWZMbw" height="360" id="HHEOrJWZMbw" preload="none" style="display:none" title="Pantheon One" width="640"></video>
                             </div>
                             <div class="col-lg-4 mybutton ultra header_button">
